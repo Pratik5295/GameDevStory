@@ -7,6 +7,8 @@ namespace DevStory.UI
     /// The singleton instance for all the screens in the game
     /// Functionality: Switch and turn of screens that are not in use
     /// </summary>
+
+    [DefaultExecutionOrder(0)]
     public class ScreenManager : MonoBehaviour
     {
         public static ScreenManager Instance = null;
