@@ -22,6 +22,8 @@ namespace DevStory.PressureSystem
         public float GetMaxPressure => Pressure.MaximumPressure;
         public float GetCurrentPressure => Pressure.CurrentPressure;
 
+        public Action OnPressureMaxedOutEvent;
+
         private void Awake()
         {
             if (Instance == null)
@@ -34,6 +36,13 @@ namespace DevStory.PressureSystem
             }
 
             Pressure = new Pressure(0, 100);
+
+            Pressure.OnPressureMaxedOut += OnPressureMaxedOutHandler; 
+        }
+
+        private void OnDestroy()
+        {
+            Pressure.OnPressureMaxedOut -= OnPressureMaxedOutHandler;
         }
 
         /// <summary>
@@ -55,6 +64,15 @@ namespace DevStory.PressureSystem
         {
             Pressure.ReducePressure(_amount);
             OnPressureChangedEvent?.Invoke(Pressure.CurrentPressure);
+        }
+
+        /// <summary>
+        /// Event handler fired when the pressure gets maxed out
+        /// </summary>
+        private void OnPressureMaxedOutHandler()
+        {
+            OnPressureMaxedOutEvent?.Invoke();
+            Debug.Log("Pressure maxed out!");
         }
 
     }

@@ -1,5 +1,4 @@
-
-using Unity.VisualScripting;
+using System;
 
 namespace DevStory.PressureSystem
 {
@@ -22,6 +21,8 @@ namespace DevStory.PressureSystem
 
         public float MaximumPressure => maximumPressure;
 
+        public Action OnPressureMaxedOut;
+
         /// <summary>
         /// Pressure constructor
         /// </summary>
@@ -33,9 +34,12 @@ namespace DevStory.PressureSystem
        
         public void AddPressure(float _amount)
         {
+            if (pressureMaxedOut) return;
+
             if (currentPressure + _amount >= maximumPressure)
             {
                 pressureMaxedOut = true;
+                OnPressureMaxedOut?.Invoke();
             }
             currentPressure += _amount;
         }
