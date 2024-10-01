@@ -317,8 +317,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: DevStory.Dialogue.Dialogue, Assembly-CSharp
+      - m_Target: {fileID: 9160668568132983905}
+        m_TargetAssemblyTypeName: DevStory.Dialogue.DialogueScreen, Assembly-CSharp
         m_MethodName: ShowNextMessage
         m_Mode: 1
         m_Arguments:
