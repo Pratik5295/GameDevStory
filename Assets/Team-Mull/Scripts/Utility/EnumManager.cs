@@ -11,5 +11,11 @@ namespace MetaConstants.EnumManager
             CLOSED = 0,
             OPENED = 1
         }
+
+        public enum DialogMessageType
+        {
+            DEFAULT = 0,
+            ENDER = 1
+        }
     }
 }

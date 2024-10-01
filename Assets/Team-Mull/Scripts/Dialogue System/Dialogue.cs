@@ -1,4 +1,5 @@
 using UnityEngine;
+using static MetaConstants.EnumManager.EnumManager;
 
 namespace DevStory.Dialogue
 {
@@ -26,7 +27,7 @@ namespace DevStory.Dialogue
         {
             var currentMessageShown = currentDialogue.Messages[currentMessageIndex];
 
-            if (currentMessageShown.isConvoEnder)
+            if (currentMessageShown.Type == DialogMessageType.ENDER)
             {
                 return true;
             }

@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04d48516da680f04aa757b98deff11cc, type: 3}
   m_Name: TestDM4
   m_EditorClassIdentifier: 
-  CodeIdentifier: 0
   Speaker: You
   Message: I will not! I am tooo tired to code at the moment!
   Options: []
-  isConvoEnder: 1
+  Type: 1
