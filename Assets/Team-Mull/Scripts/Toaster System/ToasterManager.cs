@@ -53,11 +53,14 @@ namespace DevStory.Toaster
             {
                 ScreenManager.Instance.OnChangeActiveScreen(_data.OpenScreen);
             });
+
+            Open();
         }
 
         public void Open()
         {
-            toasterDisplay.SetActive(true); 
+            toasterDisplay.SetActive(true);
+            Debug.Log("Opening toaster");
         }
 
         public void Close()
