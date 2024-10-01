@@ -1,3 +1,5 @@
+using UnityEngine;
+
 namespace DevStory.Dialogue
 {
 
@@ -11,8 +13,11 @@ namespace DevStory.Dialogue
 
 
     [System.Serializable]
-    public class DialogueMessage
+    [CreateAssetMenu(fileName = "Dialogue Message", menuName = "Dialogue System/Create a Dialogue Message")]
+    public class DialogueMessageSO: ScriptableObject
     {
+        public int CodeIdentifier;
+
         //The one who is speaking 
         public string Speaker;
 
@@ -20,4 +25,5 @@ namespace DevStory.Dialogue
 
         public DialogueOption[] Options;
     }
+
 }

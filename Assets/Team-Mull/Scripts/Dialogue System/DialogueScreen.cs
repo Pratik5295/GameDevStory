@@ -1,12 +1,18 @@
+using DevStory.Interfaces.UI;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace DevStory.Dialogue
 {
-    public class DialogueManager : MonoBehaviour
+
+    /// <summary>
+    /// Extend this to 4 different UI classes
+    /// </summary>
+    public class DialogueScreen: MonoBehaviour, IScreen
     {
-        public DialogueMessage[] messages;
+        public Dialogue activeDialogue;
+        public DialogueMessageSO[] Messages;
 
         [SerializeField] private TextMeshProUGUI speakerText;
         [SerializeField] private TextMeshProUGUI dialogueText;
@@ -16,14 +22,35 @@ namespace DevStory.Dialogue
         public Button[] optionButtons;
         [SerializeField] private int currentMessageIndex = 0;
 
+        [SerializeField] private int lastMessageIndex;
+
+        //Reference to the next message button
+        [SerializeField] private GameObject nextButton;
+
         private void Start()
         {
+            SetActiveDialogue();
+        }
+
+        /// <summary>
+        /// Move to manager afterwards
+        /// </summary>
+        public void SetActiveDialogue()
+        {
+            lastMessageIndex = activeDialogue.Messages.Length;
+
+            Messages = activeDialogue.Messages;
+
             DisplayNextMessage(currentMessageIndex);
+
+            Open();
         }
 
         public void DisplayNextMessage(int _messageIndex)
         {
-            DialogueMessage currentMessage = messages[currentMessageIndex];
+            DialogueMessageSO currentMessage = Messages[currentMessageIndex];
+
+            Debug.Log($"Message:{currentMessage.Message} and Speaker: {currentMessage.Speaker}");
 
             dialogueText.text = currentMessage.Message;
             speakerText.text = currentMessage.Speaker;
@@ -31,6 +58,7 @@ namespace DevStory.Dialogue
             //Populate your options if any
             if (currentMessage.Options != null && currentMessage.Options.Length > 0)
             {
+                nextButton.SetActive(false);
                 for (int i = 0; i < optionButtons.Length; i++)
                 {
                     if (i < currentMessage.Options.Length)
@@ -53,6 +81,7 @@ namespace DevStory.Dialogue
             }
             else
             {
+                nextButton.SetActive(true);
                 //Hide all your options
                 foreach (var option in optionButtons)
                 {
@@ -60,5 +89,37 @@ namespace DevStory.Dialogue
                 }
             }
         }
+
+        public void ShowNextMessage()
+        {
+            if (ShownLastMessage())
+            {
+                Close();
+            }
+            else
+            {
+                currentMessageIndex++;
+                DisplayNextMessage(currentMessageIndex);
+            }
+        }
+
+        public bool ShownLastMessage()
+        {
+            return currentMessageIndex == lastMessageIndex - 1;
+        }
+
+
+        #region IScreen interface methods
+        public void Open()
+        {
+            gameObject.SetActive(true);
+        }
+
+        public void Close()
+        {
+            gameObject.SetActive(false);
+        }
+
+        #endregion
     }
 }
