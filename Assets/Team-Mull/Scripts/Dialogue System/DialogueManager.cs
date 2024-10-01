@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,9 +8,13 @@ namespace DevStory.Dialogue
     {
         public DialogueMessage[] messages;
 
+        [SerializeField] private TextMeshProUGUI speakerText;
+        [SerializeField] private TextMeshProUGUI dialogueText;
+
+
         //UI for options
         public Button[] optionButtons;
-        private int currentMessageIndex = 0;
+        [SerializeField] private int currentMessageIndex = 0;
 
         private void Start()
         {
@@ -18,22 +23,27 @@ namespace DevStory.Dialogue
 
         public void DisplayNextMessage(int _messageIndex)
         {
-            if (messages.Length == 0) return;
-
             DialogueMessage currentMessage = messages[currentMessageIndex];
 
+            dialogueText.text = currentMessage.Message;
+            speakerText.text = currentMessage.Speaker;
+
             //Populate your options if any
-            if(currentMessage.Options != null && currentMessage.Options.Length > 0)
+            if (currentMessage.Options != null && currentMessage.Options.Length > 0)
             {
                 for (int i = 0; i < optionButtons.Length; i++)
                 {
                     if (i < currentMessage.Options.Length)
                     {
                         optionButtons[i].gameObject.SetActive(true);
-                        optionButtons[i].GetComponentInChildren<Text>().text = currentMessage.Options[i].optionMessage;
+                        optionButtons[i].GetComponent<UIDialogueOption>().SetOption(currentMessage.Options[i].optionMessage);
                         int nextIndex = currentMessage.Options[i].nextMessageIndex;
                         optionButtons[i].onClick.RemoveAllListeners();
-                        optionButtons[i].onClick.AddListener(() => DisplayNextMessage(nextIndex));
+                        optionButtons[i].onClick.AddListener(() =>
+                        {
+                            currentMessageIndex = nextIndex;
+                            DisplayNextMessage(currentMessageIndex);
+                        });
                     }
                     else
                     {
