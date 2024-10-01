@@ -10,14 +10,21 @@ namespace DevStory.Dialogue
         [SerializeField] private int currentMessageIndex = 0;
         private int lastMessageIndex;
 
+        public int LastMessageIndex => lastMessageIndex;
+        public int CurrentIndex => currentMessageIndex;
+
         [SerializeField] private DialogueSO currentDialogue;
 
         public DialogueMessageSO[] Messages => currentDialogue.Messages;
 
+        private void Awake()
+        {
+            lastMessageIndex = currentDialogue.Messages.Length;
+        }
 
         public bool LastMessageShown()
         {
-            return currentMessageIndex == lastMessageIndex - 1;
+            return currentMessageIndex >= lastMessageIndex - 1;
         }
 
         public DialogueMessageSO GetMessage()
@@ -29,6 +36,11 @@ namespace DevStory.Dialogue
         {
             currentMessageIndex++;
             return currentDialogue.Messages[currentMessageIndex];
+        }
+
+        public void TraverseMessageCounter()
+        {
+            currentMessageIndex++;
         }
     }
 }

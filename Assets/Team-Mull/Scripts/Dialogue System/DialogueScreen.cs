@@ -1,4 +1,3 @@
-using DevStory.Interfaces.UI;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,10 +8,9 @@ namespace DevStory.Dialogue
     /// <summary>
     /// Extend this to 4 different UI classes
     /// </summary>
-    public class DialogueScreen: MonoBehaviour, IScreen
+    public class DialogueScreen: MonoBehaviour
     {
         public Dialogue activeDialogue;
-        public DialogueMessageSO[] Messages;
 
         [SerializeField] private TextMeshProUGUI speakerText;
         [SerializeField] private TextMeshProUGUI dialogueText;
@@ -20,35 +18,34 @@ namespace DevStory.Dialogue
 
         //UI for options
         public Button[] optionButtons;
-        [SerializeField] private int currentMessageIndex = 0;
-
-        [SerializeField] private int lastMessageIndex;
 
         //Reference to the next message button
         [SerializeField] private GameObject nextButton;
 
         private void Start()
         {
-            SetActiveDialogue();
+            //Only for testing, will be removed once dialogue manager is in place
+            if(activeDialogue != null)
+                SetActiveDialogue(activeDialogue);
         }
 
         /// <summary>
         /// Move to manager afterwards
         /// </summary>
-        public void SetActiveDialogue()
+        public void SetActiveDialogue(Dialogue _newDialogue)
         {
-            lastMessageIndex = activeDialogue.Messages.Length;
+            activeDialogue = _newDialogue;
 
-            Messages = activeDialogue.Messages;
 
-            DisplayNextMessage(currentMessageIndex);
+            DisplayNextMessage(0);
 
-            Open();
+            DialogueManager.Instance.Open();
         }
 
         public void DisplayNextMessage(int _messageIndex)
         {
-            DialogueMessageSO currentMessage = Messages[currentMessageIndex];
+            var currentMessage = activeDialogue.GetMessage();
+            
 
             Debug.Log($"Message:{currentMessage.Message} and Speaker: {currentMessage.Speaker}");
 
@@ -69,8 +66,7 @@ namespace DevStory.Dialogue
                         optionButtons[i].onClick.RemoveAllListeners();
                         optionButtons[i].onClick.AddListener(() =>
                         {
-                            currentMessageIndex = nextIndex;
-                            DisplayNextMessage(currentMessageIndex);
+                            DisplayNextMessage(nextIndex);
                         });
                     }
                     else
@@ -92,34 +88,16 @@ namespace DevStory.Dialogue
 
         public void ShowNextMessage()
         {
-            if (ShownLastMessage())
+            if (activeDialogue.LastMessageShown())
             {
-                Close();
+                DialogueManager.Instance.Close();
             }
             else
             {
-                currentMessageIndex++;
-                DisplayNextMessage(currentMessageIndex);
+                activeDialogue.TraverseMessageCounter();
+                DisplayNextMessage(activeDialogue.CurrentIndex);
             }
         }
-
-        public bool ShownLastMessage()
-        {
-            return currentMessageIndex == lastMessageIndex - 1;
-        }
-
-
-        #region IScreen interface methods
-        public void Open()
-        {
-            gameObject.SetActive(true);
-        }
-
-        public void Close()
-        {
-            gameObject.SetActive(false);
-        }
-
-        #endregion
+       
     }
 }

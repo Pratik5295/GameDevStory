@@ -481,6 +481,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8743942153783694739, guid: d944bd7b8b604554981f6d183c4d82bd, type: 3}
   m_PrefabInstance: {fileID: 9119201933738006814}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &607595829 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9160668568132983905, guid: d944bd7b8b604554981f6d183c4d82bd, type: 3}
+  m_PrefabInstance: {fileID: 9119201933738006814}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89e1e92aaee066c4ca697be0be3097e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &653466128
 GameObject:
   m_ObjectHideFlags: 0
@@ -1057,6 +1068,7 @@ Transform:
   - {fileID: 2055895689}
   - {fileID: 763221836}
   - {fileID: 751071343}
+  - {fileID: 1780499720}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1286822724
@@ -1923,6 +1935,51 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &1780499719
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1780499720}
+  - component: {fileID: 1780499721}
+  m_Layer: 0
+  m_Name: Dialogue Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1780499720
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780499719}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 982045158}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1780499721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780499719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cb3fdf01c0a15d46908ad05801a0ab6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueScreen: {fileID: 607595829}
 --- !u!114 &1859997223 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2135859952039330546, guid: 60250c7966eef4141b732ed08cb4b839, type: 3}
@@ -2455,7 +2512,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 535070214355297944, guid: d944bd7b8b604554981f6d183c4d82bd, type: 3}
       propertyPath: m_Name
-      value: Dialogue Test
+      value: Dialogue Screen
       objectReference: {fileID: 0}
     - target: {fileID: 535070214355297944, guid: d944bd7b8b604554981f6d183c4d82bd, type: 3}
       propertyPath: m_IsActive
