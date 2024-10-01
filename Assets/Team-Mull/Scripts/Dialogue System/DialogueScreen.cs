@@ -36,10 +36,7 @@ namespace DevStory.Dialogue
         {
             activeDialogue = _newDialogue;
 
-
             DisplayNextMessage();
-
-            DialogueManager.Instance.Open();
         }
 
         public void DisplayNextMessage()

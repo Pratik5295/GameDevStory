@@ -13,6 +13,8 @@ namespace DevStory.Dialogue
 
         [SerializeField] private DialogueScreen dialogueScreen;
 
+        [SerializeField] private Dialogue currentDialogue;
+
         private void Awake()
         {
             if(Instance == null)
@@ -23,6 +25,14 @@ namespace DevStory.Dialogue
             {
                 Destroy(gameObject);
             }
+        }
+
+        public void SetActiveDialog(Dialogue _newDialogue)
+        {
+            currentDialogue = _newDialogue;
+            dialogueScreen.SetActiveDialogue(currentDialogue);
+
+            Open();
         }
 
         #region IScreen interface methods
