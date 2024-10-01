@@ -24,6 +24,8 @@ namespace DevStory.Dialogue
         public string Message;
 
         public DialogueOption[] Options;
+
+        public bool isConvoEnder;
     }
 
 }

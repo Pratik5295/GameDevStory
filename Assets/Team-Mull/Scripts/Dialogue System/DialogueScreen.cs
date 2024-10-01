@@ -37,12 +37,12 @@ namespace DevStory.Dialogue
             activeDialogue = _newDialogue;
 
 
-            DisplayNextMessage(0);
+            DisplayNextMessage();
 
             DialogueManager.Instance.Open();
         }
 
-        public void DisplayNextMessage(int _messageIndex)
+        public void DisplayNextMessage()
         {
             var currentMessage = activeDialogue.GetMessage();
             
@@ -66,7 +66,8 @@ namespace DevStory.Dialogue
                         optionButtons[i].onClick.RemoveAllListeners();
                         optionButtons[i].onClick.AddListener(() =>
                         {
-                            DisplayNextMessage(nextIndex);
+                            activeDialogue.TraverseMessageCounterTo(nextIndex);
+                            DisplayNextMessage();
                         });
                     }
                     else
@@ -95,7 +96,7 @@ namespace DevStory.Dialogue
             else
             {
                 activeDialogue.TraverseMessageCounter();
-                DisplayNextMessage(activeDialogue.CurrentIndex);
+                DisplayNextMessage();
             }
         }
        

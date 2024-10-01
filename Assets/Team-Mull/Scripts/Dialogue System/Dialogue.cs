@@ -24,6 +24,13 @@ namespace DevStory.Dialogue
 
         public bool LastMessageShown()
         {
+            var currentMessageShown = currentDialogue.Messages[currentMessageIndex];
+
+            if (currentMessageShown.isConvoEnder)
+            {
+                return true;
+            }
+
             return currentMessageIndex >= lastMessageIndex - 1;
         }
 
@@ -41,6 +48,11 @@ namespace DevStory.Dialogue
         public void TraverseMessageCounter()
         {
             currentMessageIndex++;
+        }
+
+        public void TraverseMessageCounterTo(int _newCounter)
+        {
+            currentMessageIndex = _newCounter;
         }
     }
 }

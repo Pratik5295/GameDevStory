@@ -10,13 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 04d48516da680f04aa757b98deff11cc, type: 3}
-  m_Name: TestDM3
+  m_Name: TestDM5
   m_EditorClassIdentifier: 
-  CodeIdentifier: 2
-  Speaker: Boss
-  Message: Start Coding now!
-  Options:
-  - optionMessage: Say no!
-    nextMessageIndex: 3
-  - optionMessage: Say yes
-    nextMessageIndex: 4
+  CodeIdentifier: 0
+  Speaker: You
+  Message: Yes I will start coding right away!
+  Options: []
+  isConvoEnder: 1
