@@ -1,3 +1,5 @@
+using DevStory.Interfaces;
+using DevStory.Managers;
 using DevStory.Utility;
 using UnityEngine;
 
@@ -6,7 +8,7 @@ namespace DevStory.Gameplay.DragDrop
     /// <summary>
     /// This script will be added on a sprite to drag it when mouse is clicked
     /// </summary>
-    public class Dragger : MonoBehaviour
+    public class Dragger : MonoBehaviour, ISelected
     {
         [SerializeField] private Camera mainCamera;
 
@@ -29,6 +31,8 @@ namespace DevStory.Gameplay.DragDrop
         private void OnMouseDown()
         {
             offset = transform.position - GetMousePos();
+
+            PointManager.Instance.SelectSprite(this);
         }
 
         private void OnMouseDrag()
@@ -40,7 +44,19 @@ namespace DevStory.Gameplay.DragDrop
             transform.position = newPos;
         }
 
+        private void OnMouseUp()
+        {
+            PointManager.Instance.ResetSelected();
+        }
+
         private void LateUpdate()
+        {
+            LateMovementUpdater();
+        }
+
+        #region Movement Handlers
+
+        private void LateMovementUpdater()
         {
             // get the sprite's edge positions
             float spriteLeft = transform.position.x - spriteHalfSize.x;
@@ -74,9 +90,6 @@ namespace DevStory.Gameplay.DragDrop
             transform.position = clampedPosition;
         }
 
-
-
-
         private Vector3 GetMousePos()
         {
             Vector3 mousePoint = Input.mousePosition;
@@ -84,6 +97,8 @@ namespace DevStory.Gameplay.DragDrop
 
             return mainCamera.ScreenToWorldPoint(mousePoint);
         }
+
+        #endregion
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
