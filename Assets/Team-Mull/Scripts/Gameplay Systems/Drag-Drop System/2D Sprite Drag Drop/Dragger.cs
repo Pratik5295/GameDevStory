@@ -1,6 +1,7 @@
 using DevStory.Interfaces;
 using DevStory.Managers;
 using DevStory.Utility;
+using System;
 using UnityEngine;
 
 namespace DevStory.Gameplay.DragDrop
@@ -18,6 +19,8 @@ namespace DevStory.Gameplay.DragDrop
 
         [SerializeField] private Vector2 spriteSize;
         [SerializeField] private Vector2 spriteHalfSize;
+
+        public Action OnElementDroppedEvent;
 
         private void Start()
         {
@@ -47,6 +50,8 @@ namespace DevStory.Gameplay.DragDrop
         private void OnMouseUp()
         {
             PointManager.Instance.ResetSelected();
+
+            OnElementDroppedEvent?.Invoke();
         }
 
         private void LateUpdate()
@@ -100,12 +105,5 @@ namespace DevStory.Gameplay.DragDrop
 
         #endregion
 
-        private void OnTriggerEnter2D(Collider2D collision)
-        {
-            if(collision.gameObject.tag == "Place")
-            {
-                Debug.Log("Placer has been found");
-            }
-        }
     }
 }

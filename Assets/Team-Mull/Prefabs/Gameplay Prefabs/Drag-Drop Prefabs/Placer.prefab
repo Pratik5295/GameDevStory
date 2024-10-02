@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 4082306074529182954}
   - component: {fileID: 3700740909585230723}
   - component: {fileID: 8911917485360679495}
-  m_Layer: 0
+  - component: {fileID: 8430385484737347010}
+  m_Layer: 2
   m_Name: Placer
   m_TagString: Place
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -133,3 +134,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8430385484737347010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4065899957056980354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b51e8a60e7feeb84eb044a24431cdd59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CorrectValue: 0
+  heldPiece: {fileID: 0}

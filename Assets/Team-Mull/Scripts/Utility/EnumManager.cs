@@ -33,6 +33,12 @@ namespace MetaConstants.EnumManager
             FOUR = 4
         }
 
+        public enum PuzzlePieceResponse
+        {
+            FAIL = 0,
+            SUCCESS = 1
+        }
+
         #endregion
     }
 }

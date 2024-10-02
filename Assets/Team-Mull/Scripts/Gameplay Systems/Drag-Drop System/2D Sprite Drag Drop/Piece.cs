@@ -1,3 +1,4 @@
+using DevStory.Gameplay.DragDrop;
 using UnityEngine;
 using static MetaConstants.EnumManager.EnumManager;
 
@@ -13,5 +14,64 @@ namespace DevStory.Gameplay.Puzzles
         [SerializeField] protected PuzzlePieceVal PieceValue;
 
         public PuzzlePieceVal Value => PieceValue;
+
+        [SerializeField] private Dragger dragger;
+
+        [SerializeField] private Collider2D collidedWith;
+
+        [SerializeField] private Vector3 originalPosition;
+
+        private void Start()
+        {
+            dragger = GetComponent<Dragger>();
+            dragger.OnElementDroppedEvent += OnElementDroppedHandler;
+
+            originalPosition = transform.position;
+        }
+
+        private void OnDestroy()
+        {
+            dragger.OnElementDroppedEvent -= OnElementDroppedHandler;
+        }
+
+        private void OnElementDroppedHandler()
+        {
+            if (collidedWith == null) return;
+
+            var holder =
+                    collidedWith.gameObject.GetComponent<Holder>();
+
+            holder.SetPuzzlePiece(this);
+        }
+
+        public void ForceBackToOriginalPosition()
+        {
+            transform.position = originalPosition;
+        }
+
+
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            if (collision.gameObject.tag == "Place")
+            {
+                Debug.Log("Placer has been found");
+
+                collidedWith = collision;
+                
+            }
+        }
+
+        private void OnTriggerExit2D(Collider2D collision)
+        {
+            if(collision.gameObject.tag == "Place")
+            {
+                var holder =
+                    collidedWith.gameObject.GetComponent<Holder>();
+                holder.ResetPuzzlePiece();
+
+                collidedWith = null;
+                Debug.Log("Out of placer");
+            }
+        }
     }
 }
