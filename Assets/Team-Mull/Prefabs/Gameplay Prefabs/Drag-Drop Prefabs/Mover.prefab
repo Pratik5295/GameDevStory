@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8872966794920502276}
   - component: {fileID: 6263277146821069769}
   - component: {fileID: 1852406159687394336}
+  - component: {fileID: 7335414954251189899}
   m_Layer: 6
   m_Name: Mover
   m_TagString: Mover
@@ -179,3 +180,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &7335414954251189899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7069244581466073160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 353883c844109184d812c27c1a68a119, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PieceValue: 1

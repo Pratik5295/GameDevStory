@@ -17,5 +17,22 @@ namespace MetaConstants.EnumManager
             DEFAULT = 0,
             ENDER = 1
         }
+
+        #region Puzzle Handling Enums
+
+        /// <summary>
+        /// This enum value will be used by puzzles(Holder and Piece)
+        /// to determine if it is being placed on the right spot
+        /// </summary>
+        public enum PuzzlePieceVal
+        {
+            DEFAULT = 0,
+            ONE = 1,
+            TWO = 2,
+            THREE = 3,
+            FOUR = 4
+        }
+
+        #endregion
     }
 }
