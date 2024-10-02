@@ -33,10 +33,22 @@ namespace MetaConstants.EnumManager
             FOUR = 4
         }
 
+        /// <summary>
+        /// This refers to responses of each piece of the puzzle
+        /// </summary>
         public enum PuzzlePieceResponse
         {
             FAIL = 0,
             SUCCESS = 1
+        }
+
+        /// <summary>
+        /// This refers to the status of the entire puzzle
+        /// </summary>
+        public enum PuzzleStatus
+        {
+            UNSOLVED = 0,
+            SOLVED = 1
         }
 
         #endregion

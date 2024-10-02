@@ -9,7 +9,9 @@ namespace DevStory.Gameplay.Puzzles
 
         [SerializeField] private Piece heldPiece;
 
-        [SerializeField] private PuzzlePieceResponse Response;
+        [SerializeField] private PuzzlePieceResponse response;
+
+        public PuzzlePieceResponse Response => response;
 
         public void SetPuzzlePiece(Piece _piece)
         {
@@ -40,19 +42,19 @@ namespace DevStory.Gameplay.Puzzles
         {
             if (heldPiece == null)
             {
-                Response = PuzzlePieceResponse.FAIL;
+                response = PuzzlePieceResponse.FAIL;
                 Debug.Log("No piece by default failure response");
                 return;
             }
 
             if(heldPiece.Value == CorrectValue)
             {
-                Response = PuzzlePieceResponse.SUCCESS;
+                response = PuzzlePieceResponse.SUCCESS;
                 Debug.Log("Correct piece has been placed");
             }
             else
             {
-                Response = PuzzlePieceResponse.FAIL;
+                response = PuzzlePieceResponse.FAIL;
                 Debug.Log("Wrong response has been placed!");
             }
         }
