@@ -463,6 +463,53 @@ RectTransform:
   m_AnchoredPosition: {x: 4.23, y: 5.63}
   m_SizeDelta: {x: 5, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &736389941
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 736389943}
+  - component: {fileID: 736389942}
+  m_Layer: 0
+  m_Name: Puzzle-Object
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &736389942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736389941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d6afeb9a4efd0b42a6c345ed93dd95b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzleHolders:
+  - {fileID: 7582707797189159017}
+  currentPuzzleStatus: 0
+--- !u!4 &736389943
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736389941}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &841989437
 GameObject:
   m_ObjectHideFlags: 0
@@ -1128,6 +1175,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e86eeae93bc3b894aaf61f0dac8315c9, type: 3}
+--- !u!114 &7582707797189159017 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8430385484737347010, guid: e86eeae93bc3b894aaf61f0dac8315c9, type: 3}
+  m_PrefabInstance: {fileID: 7582707797189159016}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b51e8a60e7feeb84eb044a24431cdd59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8971983087983228559
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1200,3 +1258,4 @@ SceneRoots:
   - {fileID: 8971983087983228559}
   - {fileID: 1484603631}
   - {fileID: 649703252}
+  - {fileID: 736389943}

@@ -38,8 +38,9 @@ namespace MetaConstants.EnumManager
         /// </summary>
         public enum PuzzlePieceResponse
         {
-            FAIL = 0,
-            SUCCESS = 1
+            DEFAULT = 0,
+            FAIL = 1,
+            SUCCESS = 2
         }
 
         /// <summary>

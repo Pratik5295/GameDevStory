@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 using static MetaConstants.EnumManager.EnumManager;
 
 namespace DevStory.Gameplay.Puzzles
@@ -10,8 +11,11 @@ namespace DevStory.Gameplay.Puzzles
         [SerializeField] private Piece heldPiece;
 
         [SerializeField] private PuzzlePieceResponse response;
+        private PuzzlePieceResponse previousResponse = PuzzlePieceResponse.DEFAULT;
 
         public PuzzlePieceResponse Response => response;
+
+        public UnityEvent<PuzzlePieceResponse> OnResponseChangedEvent;
 
         public void SetPuzzlePiece(Piece _piece)
         {
@@ -57,6 +61,22 @@ namespace DevStory.Gameplay.Puzzles
                 response = PuzzlePieceResponse.FAIL;
                 Debug.Log("Wrong response has been placed!");
             }
+
+            if (previousResponse != PuzzlePieceResponse.DEFAULT)
+            {
+                //Response was changed from default
+
+                if(response != previousResponse)
+                {
+                    OnResponseChangedEvent?.Invoke(response);
+                }
+            }
+            else
+            {
+                OnResponseChangedEvent?.Invoke(response);
+            }
+
+            previousResponse = response;
         }
     }
 }
