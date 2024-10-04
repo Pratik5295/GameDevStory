@@ -156,7 +156,7 @@ MonoBehaviour:
   dragger: {fileID: 0}
   collidedWith: {fileID: 0}
   originalPosition: {x: 0, y: 0, z: 0}
-  Paint: 4
+  Paint: 3
 --- !u!114 &32072414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -291,7 +291,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 5
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.07843135, g: 0.16421291, b: 0.8862745, a: 1}
+  m_Color: {r: 0.21514687, g: 0.9056604, b: 0.10679956, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
