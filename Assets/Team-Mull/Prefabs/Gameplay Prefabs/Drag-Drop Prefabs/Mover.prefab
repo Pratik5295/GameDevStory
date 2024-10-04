@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 3440710178612215343}
   - component: {fileID: 4171044403450791957}
   - component: {fileID: 8872966794920502276}
-  - component: {fileID: 6263277146821069769}
   - component: {fileID: 1852406159687394336}
+  - component: {fileID: 6263277146821069769}
   - component: {fileID: 7335414954251189899}
   m_Layer: 6
   m_Name: Mover
@@ -136,23 +136,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &6263277146821069769
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7069244581466073160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28d0776385c7ff944b8c65ad3cf4e445, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainCamera: {fileID: 0}
-  spriteRenderer: {fileID: 0}
-  offset: {x: 0, y: 0, z: 0}
-  spriteSize: {x: 0, y: 0}
-  spriteHalfSize: {x: 0, y: 0}
 --- !u!50 &1852406159687394336
 Rigidbody2D:
   serializedVersion: 4
@@ -180,6 +163,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &6263277146821069769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7069244581466073160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28d0776385c7ff944b8c65ad3cf4e445, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  offset: {x: 0, y: 0, z: 0}
+  spriteSize: {x: 0, y: 0}
+  spriteHalfSize: {x: 0, y: 0}
 --- !u!114 &7335414954251189899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,3 +195,4 @@ MonoBehaviour:
   PieceValue: 1
   dragger: {fileID: 0}
   collidedWith: {fileID: 0}
+  originalPosition: {x: 0, y: 0, z: 0}

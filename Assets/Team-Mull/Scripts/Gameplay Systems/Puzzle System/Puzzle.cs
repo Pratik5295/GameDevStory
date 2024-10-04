@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using static MetaConstants.EnumManager.EnumManager;
+using UnityEngine.Events;
 
 namespace DevStory.Gameplay.Puzzles
 {
@@ -11,6 +12,8 @@ namespace DevStory.Gameplay.Puzzles
         [SerializeField] private PuzzleStatus currentPuzzleStatus;
 
         [SerializeField] private int solvedPuzzlePieces;
+
+        public UnityEvent OnPuzzleSolvedEvent;
 
         private void Start()
         {
@@ -38,11 +41,22 @@ namespace DevStory.Gameplay.Puzzles
             if(_receivedResponse == PuzzlePieceResponse.SUCCESS)
             {
                 solvedPuzzlePieces++;
+
+                //Remove it later, as we would be using Puzzle Submit buttons
+                ValidityCheck();
             }
             else
             {
                 if(solvedPuzzlePieces > 0)
                     solvedPuzzlePieces--;
+            }
+        }
+
+        public void ValidityCheck()
+        {
+            if (solvedPuzzlePieces == puzzleHolders.Count)
+            {
+                OnPuzzleSolvedEvent?.Invoke();
             }
         }
     }

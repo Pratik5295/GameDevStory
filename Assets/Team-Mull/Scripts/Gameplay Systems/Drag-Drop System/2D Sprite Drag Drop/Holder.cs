@@ -1,10 +1,11 @@
+using DevStory.Interfaces;
 using UnityEngine;
 using UnityEngine.Events;
 using static MetaConstants.EnumManager.EnumManager;
 
 namespace DevStory.Gameplay.Puzzles
 {
-    public class Holder : MonoBehaviour
+    public class Holder : MonoBehaviour,IHoldable
     {
         [SerializeField] private PuzzlePieceVal CorrectValue;
 
@@ -17,7 +18,48 @@ namespace DevStory.Gameplay.Puzzles
 
         public UnityEvent<PuzzlePieceResponse> OnResponseChangedEvent;
 
-        public void SetPuzzlePiece(Piece _piece)
+        /// <summary>
+        /// Holder logic to validate response
+        /// </summary>
+        protected virtual void CheckResponse()
+        {
+            if (heldPiece == null)
+            {
+                response = PuzzlePieceResponse.FAIL;
+            }
+            else
+            {
+                if (heldPiece.Value == CorrectValue)
+                {
+                    response = PuzzlePieceResponse.SUCCESS;
+                }
+                else
+                {
+                    response = PuzzlePieceResponse.FAIL;
+                }
+            }
+
+            //Checking if the response received is any different from the one already saved
+            if (previousResponse != PuzzlePieceResponse.DEFAULT)
+            {
+                //Response was changed from default
+
+                if(response != previousResponse)
+                {
+                    Debug.Log("Response changed!");
+                    OnResponseChangedEvent?.Invoke(response);
+                }
+            }
+            else
+            {
+                OnResponseChangedEvent?.Invoke(response);
+            }
+
+            previousResponse = response;
+        }
+
+        #region IHoldable interface handling
+        public void PiecePlaced(Piece _piece)
         {
             if (heldPiece != null)
             {
@@ -35,48 +77,13 @@ namespace DevStory.Gameplay.Puzzles
             CheckResponse();
         }
 
-        public void ResetPuzzlePiece()
+        public void PieceRemoved()
         {
             heldPiece = null;
 
             CheckResponse();
         }
 
-        private void CheckResponse()
-        {
-            if (heldPiece == null)
-            {
-                response = PuzzlePieceResponse.FAIL;
-                Debug.Log("No piece by default failure response");
-                return;
-            }
-
-            if(heldPiece.Value == CorrectValue)
-            {
-                response = PuzzlePieceResponse.SUCCESS;
-                Debug.Log("Correct piece has been placed");
-            }
-            else
-            {
-                response = PuzzlePieceResponse.FAIL;
-                Debug.Log("Wrong response has been placed!");
-            }
-
-            if (previousResponse != PuzzlePieceResponse.DEFAULT)
-            {
-                //Response was changed from default
-
-                if(response != previousResponse)
-                {
-                    OnResponseChangedEvent?.Invoke(response);
-                }
-            }
-            else
-            {
-                OnResponseChangedEvent?.Invoke(response);
-            }
-
-            previousResponse = response;
-        }
+        #endregion
     }
 }
