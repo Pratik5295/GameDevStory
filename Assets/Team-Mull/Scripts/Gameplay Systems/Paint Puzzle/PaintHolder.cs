@@ -9,7 +9,7 @@ namespace DevStory.Gameplay.Puzzles
     /// This script will be responsible to determine if the adjacent tiles have the same color
     /// This script will attached on all tiles/sprites that are paint holders
     /// </summary>
-    /// 
+    
     [RequireComponent(typeof(PaintTile))]
     public class PaintHolder : MonoBehaviour,IHoldable
     {
@@ -47,6 +47,19 @@ namespace DevStory.Gameplay.Puzzles
 
         #endregion
 
+
+        public bool IsValid()
+        {
+            foreach(var holder in paintHolders)
+            {
+                if (holder.HoldingPaint == selfPaintValue)
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
 
         private void OnSelfPaintChangeHandler(PuzzlePaint _paint)
         {
