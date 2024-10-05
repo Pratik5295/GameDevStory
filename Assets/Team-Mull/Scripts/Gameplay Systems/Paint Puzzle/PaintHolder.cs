@@ -13,11 +13,14 @@ namespace DevStory.Gameplay.Puzzles
     [RequireComponent(typeof(PaintTile))]
     public class PaintHolder : MonoBehaviour,IHoldable
     {
+        [Header("Self Paint Values")]
+        [SerializeField] private PaintTile self;
+        [SerializeField] private PuzzlePaint selfPaintValue;
+
+        [Space(5)]
+        [Header("Adjacent Paint Buckets")]
         [SerializeField]
         private List<PaintTile> paintHolders = new List<PaintTile>();
-
-        [SerializeField] private PaintTile self;
-        [SerializeField] private PuzzlePaint selfPaintValue;  
 
         private void Start()
         {

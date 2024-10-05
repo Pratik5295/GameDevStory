@@ -8,9 +8,9 @@ namespace DevStory.Gameplay.Puzzles
 {
     /// <summary>
     /// This script will attached on the paint holding pieces
-    /// 
-    /// 
     /// </summary>
+    
+
     public class PaintTile : MonoBehaviour,IColorChangeable
     {
         [SerializeField] private SpriteRenderer spriteRenderer;
