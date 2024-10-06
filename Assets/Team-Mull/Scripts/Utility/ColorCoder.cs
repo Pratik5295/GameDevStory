@@ -27,7 +27,7 @@ namespace DevStory.Utility
                     return Color.yellow;
 
                 case PuzzlePaint.ORANGE:
-                    return new Color(37,33,35);
+                    return GetColorFromHex("#ffA500");
 
 
                     
@@ -37,6 +37,13 @@ namespace DevStory.Utility
 
             }
 
+        }
+
+        private static Color GetColorFromHex(string hex)
+        {
+            ColorUtility.TryParseHtmlString(hex, out Color newColor);
+
+            return newColor;
         }
     }
 }

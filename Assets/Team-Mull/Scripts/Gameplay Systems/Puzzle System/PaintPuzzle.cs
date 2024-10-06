@@ -11,6 +11,7 @@ namespace DevStory.Gameplay.Puzzles
         [SerializeField]
         private Transform content;
 
+        #region Context Menu Functions
         [ContextMenu("Populate Holders")]
         public void FindPaintHolders()
         {
@@ -33,6 +34,10 @@ namespace DevStory.Gameplay.Puzzles
                 Debug.Log("Populating the paint holders via context menu");
             }
         }
+
+        #endregion
+
+
         public void SubmitPuzzleCheck()
         {
             Debug.Log($"Result is: {CheckPuzzleValidation()}");
