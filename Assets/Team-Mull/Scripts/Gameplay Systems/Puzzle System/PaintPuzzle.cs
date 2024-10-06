@@ -1,7 +1,7 @@
-using UnityEngine;
 using System.Collections.Generic;
-using UnityEngine.UI;
 using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
 
 namespace DevStory.Gameplay.Puzzles
 {
@@ -74,6 +74,17 @@ namespace DevStory.Gameplay.Puzzles
             }
 
             return true;
+        }
+
+        public void ResetPuzzle()
+        {
+            foreach (var holder in paintHolders)
+            {
+                holder.ResetTile();
+            }
+
+            var message = $"Puzzle Result is: Unsolved";
+            statusText.text = message;
         }
     }
 }

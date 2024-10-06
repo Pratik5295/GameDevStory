@@ -67,6 +67,11 @@ namespace DevStory.Gameplay.Puzzles
             selfPaintValue = _paint;
         }
 
+        public void ResetTile()
+        {
+            self.ChangeColor(PuzzlePaint.WHITE);
+        }
+
         public void PiecePlaced(Piece piece)
         {
             //Not implemented Yet, check later if required

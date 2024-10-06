@@ -1919,14 +1919,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 746415841294327985, guid: 839151f7e6d395c46922d46572987a5a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.12000036
-      objectReference: {fileID: 0}
-    - target: {fileID: 1697506979160966284, guid: 839151f7e6d395c46922d46572987a5a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.49
-      objectReference: {fileID: 0}
     - target: {fileID: 3326204864133249380, guid: 839151f7e6d395c46922d46572987a5a, type: 3}
       propertyPath: statusText
       value: 
@@ -1935,14 +1927,6 @@ PrefabInstance:
       propertyPath: submitButton
       value: 
       objectReference: {fileID: 53524248}
-    - target: {fileID: 5462756599799123540, guid: 839151f7e6d395c46922d46572987a5a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.04000044
-      objectReference: {fileID: 0}
-    - target: {fileID: 6791897359180480905, guid: 839151f7e6d395c46922d46572987a5a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.4899998
-      objectReference: {fileID: 0}
     - target: {fileID: 7630318996924989442, guid: 839151f7e6d395c46922d46572987a5a, type: 3}
       propertyPath: m_Name
       value: PaintPuzzle-Base
