@@ -6,5 +6,11 @@ namespace DevStory.UI
     /// </summary>
     public class PaintScreen : Screen
     {
+        private void OnEnable()
+        {
+            //Check for any puzzles available to display
+
+
+        }
     }
 }
