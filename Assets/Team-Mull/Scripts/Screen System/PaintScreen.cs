@@ -20,5 +20,10 @@ namespace DevStory.UI
         {
             content.SetActive(false);
         }
+
+        private void Start()
+        {
+            content.SetActive(false);
+        }
     }
 }

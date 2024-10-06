@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using TMPro;
 
 namespace DevStory.Gameplay.Puzzles
 {
@@ -14,6 +15,10 @@ namespace DevStory.Gameplay.Puzzles
 
         [SerializeField]
         private Button submitButton;
+
+        //Temporary text and variables
+        [SerializeField]
+        private TextMeshProUGUI statusText;
 
         #region Context Menu Functions
         [ContextMenu("Populate Holders")]
@@ -54,7 +59,11 @@ namespace DevStory.Gameplay.Puzzles
 
         public void SubmitPuzzleCheck()
         {
-            Debug.Log($"Result is: {CheckPuzzleValidation()}");
+            var res = CheckPuzzleValidation() ? "Solved" : "Unsolved";
+            var message = $"Puzzle Result is: {res}";
+
+            Debug.Log(message);
+            statusText.text = message;  
         }
 
         public bool CheckPuzzleValidation()
