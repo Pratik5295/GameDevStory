@@ -52,12 +52,15 @@ namespace DevStory.Gameplay.Puzzles
             }
         }
 
-        public void ValidityCheck()
+        public bool ValidityCheck()
         {
             if (solvedPuzzlePieces == puzzleHolders.Count)
             {
                 OnPuzzleSolvedEvent?.Invoke();
+                return true;
             }
+
+            return false;
         }
     }
 }

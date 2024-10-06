@@ -12,6 +12,8 @@ namespace DevStory.UI
 
         public ScreenState State { get { return screenState; } }
 
+        [SerializeField] private GameObject content;
+
         public bool isOpened => screenState == ScreenState.OPENED;
 
         public Action<ScreenState> OnStateChangeEvent;
@@ -32,6 +34,19 @@ namespace DevStory.UI
         {
             screenState = _state;
             OnStateChangeEvent?.Invoke(screenState);
+        }
+
+        private void OnEnable()
+        {
+            if (content == null) return;
+            //Check for any puzzles available to display
+            content.SetActive(true);
+        }
+
+        private void OnDisable()
+        {
+            if (content == null) return;
+            content.SetActive(false);
         }
     }
 }

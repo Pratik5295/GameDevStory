@@ -6,15 +6,15 @@ using UnityEngine.UI;
 namespace DevStory.UI
 {
     /// <summary>
-    /// This class extends the base screen class to build the 
-    /// paint screen where the paint puzzles will take place
+    /// This script extends the base class screen and
+    /// holds the functionality of all programming screen puzzles
     /// </summary>
-    public class PaintScreen : Screen
+    public class ProgrammingScreen : Screen
     {
-        [SerializeField] private PaintPuzzle puzzle;
+        [SerializeField] private Button submitButton;
 
-        [SerializeField]
-        private Button submitButton;
+        //Will later be improved to handle programming puzzles only
+        [SerializeField] private Puzzle puzzle;
 
         //Temporary text and variables
         [SerializeField]
@@ -22,7 +22,7 @@ namespace DevStory.UI
 
         private void Start()
         {
-            submitButton.onClick.AddListener(SubmitPuzzleCheck);
+            submitButton.onClick.AddListener(OnSubmitClicked);
         }
 
         private void OnDestroy()
@@ -30,15 +30,14 @@ namespace DevStory.UI
             submitButton.onClick.RemoveAllListeners();
         }
 
-        public void SubmitPuzzleCheck()
+        public void OnSubmitClicked()
         {
-            var res = puzzle.CheckPuzzleValidation() ? "Solved" : "Unsolved";
+           bool res = puzzle.ValidityCheck();
+
             var message = $"Puzzle Result is: {res}";
 
             Debug.Log(message);
             statusText.text = message;
         }
-
-
     }
 }

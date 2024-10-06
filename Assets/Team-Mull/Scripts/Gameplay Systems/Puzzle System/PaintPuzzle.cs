@@ -13,13 +13,6 @@ namespace DevStory.Gameplay.Puzzles
         [SerializeField]
         private Transform content;
 
-        [SerializeField]
-        private Button submitButton;
-
-        //Temporary text and variables
-        [SerializeField]
-        private TextMeshProUGUI statusText;
-
         #region Context Menu Functions
         [ContextMenu("Populate Holders")]
         public void FindPaintHolders()
@@ -47,25 +40,6 @@ namespace DevStory.Gameplay.Puzzles
         #endregion
 
 
-        private void Start()
-        {
-            submitButton.onClick.AddListener(SubmitPuzzleCheck);
-        }
-
-        private void OnDestroy()
-        {
-            submitButton.onClick.RemoveAllListeners();
-        }
-
-        public void SubmitPuzzleCheck()
-        {
-            var res = CheckPuzzleValidation() ? "Solved" : "Unsolved";
-            var message = $"Puzzle Result is: {res}";
-
-            Debug.Log(message);
-            statusText.text = message;  
-        }
-
         public bool CheckPuzzleValidation()
         {
             foreach (var holder in paintHolders)
@@ -82,9 +56,6 @@ namespace DevStory.Gameplay.Puzzles
             {
                 holder.ResetTile();
             }
-
-            var message = $"Puzzle Result is: Unsolved";
-            statusText.text = message;
         }
     }
 }
