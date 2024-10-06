@@ -52,10 +52,21 @@ namespace DevStory.Gameplay.Puzzles
             }
         }
 
+        protected virtual void OnTriggerStay2D(Collider2D collision)
+        {
+            if (collision.gameObject.tag == "Place")
+            {
+                collidedWith = collision;
+
+            }
+        }
+
         protected virtual void OnTriggerExit2D(Collider2D collision)
         {
             if(collision.gameObject.tag == "Place")
             {
+                if (collidedWith == null) return;
+
                 var holder =
                     collidedWith.gameObject.GetComponent<IHoldable>();
                 holder.PieceRemoved();
