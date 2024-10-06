@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 namespace DevStory.Gameplay.Puzzles
 {
@@ -10,6 +11,9 @@ namespace DevStory.Gameplay.Puzzles
 
         [SerializeField]
         private Transform content;
+
+        [SerializeField]
+        private Button submitButton;
 
         #region Context Menu Functions
         [ContextMenu("Populate Holders")]
@@ -37,6 +41,16 @@ namespace DevStory.Gameplay.Puzzles
 
         #endregion
 
+
+        private void Start()
+        {
+            submitButton.onClick.AddListener(SubmitPuzzleCheck);
+        }
+
+        private void OnDestroy()
+        {
+            submitButton.onClick.RemoveAllListeners();
+        }
 
         public void SubmitPuzzleCheck()
         {

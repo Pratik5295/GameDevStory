@@ -1,3 +1,5 @@
+using UnityEngine;
+
 namespace DevStory.UI
 {
     /// <summary>
@@ -6,11 +8,17 @@ namespace DevStory.UI
     /// </summary>
     public class PaintScreen : Screen
     {
+        [SerializeField] private GameObject content;
+
         private void OnEnable()
         {
             //Check for any puzzles available to display
+            content.SetActive(true);
+        }
 
-
+        private void OnDisable()
+        {
+            content.SetActive(false);
         }
     }
 }
