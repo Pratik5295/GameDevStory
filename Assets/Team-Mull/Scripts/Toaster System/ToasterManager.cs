@@ -1,3 +1,4 @@
+using DevStory.Data;
 using DevStory.Interfaces.UI;
 using DevStory.UI;
 using TMPro;
@@ -14,7 +15,7 @@ namespace DevStory.Toaster
     {
         public static ToasterManager Instance = null;
 
-        [SerializeField] private ToasterData data;
+        [SerializeField] private ScreenChangeData data;
         [SerializeField] private GameObject toasterDisplay;
 
         [Space(5)]
@@ -45,13 +46,16 @@ namespace DevStory.Toaster
             });
         }
 
-        public void PopulateToasterMessage(ToasterData _data)
+        public void PopulateToasterMessage(ScreenChangeData _data)
         {
             toasterText.text = _data.Message;
 
             ChangeScreenButton.onClick.AddListener(() =>
             {
                 ScreenManager.Instance.OnChangeActiveScreen(_data.OpenScreen);
+
+                //Close the toaster after the activity is opened
+                Close();
             });
 
             Open();
@@ -60,7 +64,7 @@ namespace DevStory.Toaster
         public void Open()
         {
             toasterDisplay.SetActive(true);
-            Debug.Log("Opening toaster");
+
         }
 
         public void Close()

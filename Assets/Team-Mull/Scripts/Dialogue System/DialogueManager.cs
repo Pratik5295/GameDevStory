@@ -1,7 +1,7 @@
 using DevStory.Interfaces.UI;
 using UnityEngine;
 
-namespace DevStory.Dialogue
+namespace DevStory.DialogueSystem
 {
     /// <summary>
     /// The dialogue manager will be a singleton responsible for 
@@ -13,7 +13,7 @@ namespace DevStory.Dialogue
 
         [SerializeField] private DialogueScreen dialogueScreen;
 
-        [SerializeField] private Dialogue currentDialogue;
+        [SerializeField] private GameEmail currentDialogue;
 
         private void Awake()
         {
@@ -27,7 +27,7 @@ namespace DevStory.Dialogue
             }
         }
 
-        public void SetActiveDialog(Dialogue _newDialogue)
+        public void SetActiveDialog(GameEmail _newDialogue)
         {
             currentDialogue = _newDialogue;
             dialogueScreen.SetActiveDialogue(currentDialogue);

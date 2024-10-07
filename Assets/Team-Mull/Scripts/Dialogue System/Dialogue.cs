@@ -1,7 +1,7 @@
 using UnityEngine;
 using static MetaConstants.EnumManager.EnumManager;
 
-namespace DevStory.Dialogue
+namespace DevStory.DialogueSystem
 {
     /// <summary>
     /// The front end handler of dialogue

@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace DevStory.Dialogue
+namespace DevStory.DialogueSystem
 {
 
     /// <summary>
@@ -10,7 +10,7 @@ namespace DevStory.Dialogue
     /// </summary>
     public class DialogueScreen: MonoBehaviour
     {
-        public Dialogue activeDialogue;
+        public GameEmail activeDialogue;
 
         [SerializeField] private TextMeshProUGUI speakerText;
         [SerializeField] private TextMeshProUGUI dialogueText;
@@ -32,7 +32,7 @@ namespace DevStory.Dialogue
         /// <summary>
         /// Move to manager afterwards
         /// </summary>
-        public void SetActiveDialogue(Dialogue _newDialogue)
+        public void SetActiveDialogue(GameEmail _newDialogue)
         {
             activeDialogue = _newDialogue;
 

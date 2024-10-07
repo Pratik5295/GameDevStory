@@ -1,9 +1,9 @@
 using UnityEngine;
 
-namespace DevStory.Toaster
+namespace DevStory.Data
 {
     [System.Serializable]
-    public struct ToasterData
+    public struct ScreenChangeData
     {
         //Message to be displayed
         public string Message;
@@ -12,3 +12,5 @@ namespace DevStory.Toaster
         public int OpenScreen;
     }
 }
+
+

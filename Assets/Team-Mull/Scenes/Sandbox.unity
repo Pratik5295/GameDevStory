@@ -3770,6 +3770,53 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &1738289587
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1738289588}
+  - component: {fileID: 1738289589}
+  m_Layer: 0
+  m_Name: GameEmail
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1738289588
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738289587}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1738289589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738289587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d230f7af7839a784f8aa10dff0b673ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentEmailIndex: 0
+  currentEmail: {fileID: 11400000, guid: 3ac63a1135058a944ad887e6f6a7fcf3, type: 2}
+  emailTitle: 
 --- !u!114 &1756279171 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3326204864133249380, guid: 839151f7e6d395c46922d46572987a5a, type: 3}
@@ -5102,6 +5149,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7022508239157866983, guid: b9fa0e925d4e0bb448875cec98dd8b97, type: 3}
+      propertyPath: activeEmail
+      value: 
+      objectReference: {fileID: 1738289589}
     - target: {fileID: 8125912344321275839, guid: b9fa0e925d4e0bb448875cec98dd8b97, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -5552,7 +5603,7 @@ PrefabInstance:
     - target: {fileID: 9160668568132983905, guid: d944bd7b8b604554981f6d183c4d82bd, type: 3}
       propertyPath: activeDialogue
       value: 
-      objectReference: {fileID: 590242436}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5571,3 +5622,4 @@ SceneRoots:
   - {fileID: 149980110}
   - {fileID: 756992801}
   - {fileID: 1818785895}
+  - {fileID: 1738289588}
