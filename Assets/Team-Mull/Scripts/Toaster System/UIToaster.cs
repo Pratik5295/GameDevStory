@@ -3,18 +3,10 @@ using UnityEngine;
 
 public class UIToaster : MonoBehaviour
 {
-    ToasterData data;
-    private void Start()
-    {
-        data = new ToasterData()
-        {
-            Message = "Testing toaster system",
-            OpenScreen = 1
-        };
-    }
+    [SerializeField] private ToasterDataSO toasterSO;
 
     public void OpenToasterTest()
     {
-        ToasterManager.Instance.PopulateToasterMessage(data);
+        ToasterManager.Instance.PopulateToasterMessage(toasterSO.data);
     }
 }
