@@ -28,6 +28,7 @@ namespace DevStory.UI
         [SerializeField]
         private ScreenChangeData buttonChangeData;
 
+        //Data to come from SO and hide if the email doesnt have task
         [SerializeField]
         private UIScreenButton taskButton;
 
