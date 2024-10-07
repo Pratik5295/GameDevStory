@@ -20,6 +20,7 @@ namespace DevStory.DialogueSystem
         //The one who is speaking 
         public string Speaker;
 
+        [TextArea(3,12)]
         public string Message;
 
         public DialogueOption[] Options;
