@@ -18,6 +18,32 @@ namespace MetaConstants.EnumManager
             ENDER = 1
         }
 
+        #region Game Task System Enums
+
+        public enum TaskPriority
+        {
+            DEFAULT = 0,
+            LOW = 1,
+            MEDIUM = 2,
+            HIGH = 3
+        }
+
+        public enum TaskType
+        {
+            DEFAULT = 0,
+            PAINT = 1
+        }
+
+        public enum TaskStatus
+        {
+            DEFAULT = 0,
+            TODO = 1,
+            INPROGRESS = 2,
+            COMPLETED = 3,  
+        }
+
+        #endregion
+
         #region Puzzle Handling Enums
 
         /// <summary>
@@ -60,6 +86,16 @@ namespace MetaConstants.EnumManager
             GREEN = 3,
             BLUE = 4,
             ORANGE = 5
+        }
+
+        #endregion
+
+        #region Character Enums
+
+        // Will turn this into a tool?
+        public enum Characters
+        {
+
         }
 
         #endregion
