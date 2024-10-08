@@ -6,17 +6,36 @@ namespace MetaConstants.EnumManager
     /// </summary>
     public static class EnumManager
     {
+        #region Screen Related Enums
         public enum ScreenState
         {
             CLOSED = 0,
             OPENED = 1
         }
 
+        //Unused at the moment
+        public enum GameScreens
+        {
+            MAIN = 0,
+            ENGINE = 1,
+            PAINT = 2,
+            EDITOR = 3,
+            EMAIL = 4,
+            TASK = 5
+
+        }
+
+        #endregion
+
+        #region Dialogue Related Enums
+
         public enum DialogMessageType
         {
             DEFAULT = 0,
             ENDER = 1
         }
+
+        #endregion
 
         #region Game Task System Enums
 

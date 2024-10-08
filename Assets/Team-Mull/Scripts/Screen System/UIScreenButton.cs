@@ -25,7 +25,7 @@ namespace DevStory.UI
 
         private void Start()
         {
-            PopulateDisplay(screenChangeData);
+            //PopulateDisplay(screenChangeData);
         }
 
         private void OnDestroy()

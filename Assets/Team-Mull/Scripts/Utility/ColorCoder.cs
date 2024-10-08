@@ -45,5 +45,31 @@ namespace DevStory.Utility
 
             return newColor;
         }
+
+
+        #region UI Color Getter
+
+        public static Color GetColorFromPriority(TaskPriority priority)
+        {
+            switch(priority)
+            {
+                case TaskPriority.DEFAULT:
+                    return Color.white;
+
+                case TaskPriority.LOW:
+                    return Color.green;
+
+                case TaskPriority.MEDIUM:
+                    return Color.yellow;
+
+                case TaskPriority.HIGH:
+                    return Color.red;
+
+                default:
+                    return Color.white;
+            }
+        }
+
+        #endregion
     }
 }

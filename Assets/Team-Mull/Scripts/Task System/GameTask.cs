@@ -14,5 +14,13 @@ namespace DevStory.TaskSystem
         [SerializeField]
         private TaskSO Data;
 
+
+        //Only for testing
+        [SerializeField] private UITaskCard taskCard;
+
+        private void Start()
+        {
+            taskCard.SetTaskData(Data.TaskData);
+        }
     }
 }

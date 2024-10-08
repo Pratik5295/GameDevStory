@@ -36,6 +36,15 @@ namespace DevStory.UI
             OnStateChangeEvent?.Invoke(screenState);
         }
 
+        /// <summary>
+        /// The task puzzles will set the content at runtime
+        /// </summary>
+        /// <param name="_content"></param>
+        public void SetContent(GameObject _content)
+        {
+            content = _content;
+        }
+
         private void OnEnable()
         {
             if (content == null) return;
