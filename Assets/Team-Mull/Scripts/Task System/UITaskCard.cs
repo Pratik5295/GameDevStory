@@ -16,6 +16,8 @@ namespace DevStory.TaskSystem
     {
         [SerializeField] private GameTaskData taskData;
 
+        [SerializeField] private GameTask gameTask;
+
         [Space(10)]
         [Header("Task Card UI References")]
         [SerializeField] private Image priorityImage;

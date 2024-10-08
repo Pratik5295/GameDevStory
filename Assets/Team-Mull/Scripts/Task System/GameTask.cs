@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 
@@ -14,6 +15,7 @@ namespace DevStory.TaskSystem
         [SerializeField]
         private TaskSO Data;
 
+        public Action OnTaskCompleted;
 
         //Only for testing
         [SerializeField] private UITaskCard taskCard;

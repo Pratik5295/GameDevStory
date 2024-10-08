@@ -11,6 +11,8 @@ namespace DevStory.Managers
         [SerializeField]
         private TaskDialog taskDialogScreen;
 
+        [SerializeField] private GameTask currentTask;
+
         public void Close()
         {
             taskDialogScreen.gameObject.SetActive(false);
@@ -37,6 +39,11 @@ namespace DevStory.Managers
             {
                 Destroy(gameObject);
             }
+        }
+
+        public void SetCurrentTask(GameTask _task)
+        {
+            currentTask = _task;
         }
     }
 }
