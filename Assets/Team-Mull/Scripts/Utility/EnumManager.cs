@@ -50,7 +50,8 @@ namespace MetaConstants.EnumManager
         public enum TaskType
         {
             DEFAULT = 0,
-            PAINT = 1
+            PAINT = 1,
+            PROGRAM = 2
         }
 
         public enum TaskStatus

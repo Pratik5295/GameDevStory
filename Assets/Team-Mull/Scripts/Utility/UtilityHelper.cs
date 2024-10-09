@@ -23,6 +23,9 @@ namespace DevStory.Utility
                 case TaskType.PAINT:
                     return 2;
 
+                case TaskType.PROGRAM:
+                    return 3;
+
             }
         }
 

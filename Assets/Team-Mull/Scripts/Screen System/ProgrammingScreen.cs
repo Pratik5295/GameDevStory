@@ -1,4 +1,6 @@
+using DevStory.Gameplay.GameTimer;
 using DevStory.Gameplay.Puzzles;
+using DevStory.Utility;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,32 +11,29 @@ namespace DevStory.UI
     /// This script extends the base class screen and
     /// holds the functionality of all programming screen puzzles
     /// </summary>
-    public class ProgrammingScreen : Screen
+    public class ProgrammingScreen : PuzzleScreen
     {
-        [SerializeField] private Button submitButton;
-
         //Will later be improved to handle programming puzzles only
         [SerializeField] private Puzzle puzzle;
 
-        //Temporary text and variables
-        [SerializeField]
-        private TextMeshProUGUI statusText;
-
-        private void Start()
+        public override void SubmitPuzzleCheck()
         {
-            submitButton.onClick.AddListener(OnSubmitClicked);
+            //Call the submit task interface 
+            SubmitTask(GameTimerManager.Instance.CurrentTime);
+
         }
 
-        private void OnDestroy()
+        public override void SubmitTask(float _currentTime)
         {
-            submitButton.onClick.RemoveAllListeners();
-        }
+            var currentTime = GameTimerManager.Instance.CurrentTime;
+            string formatCurrTime = UtilityHelper.ConvertTimeFormat(currentTime);
 
-        public void OnSubmitClicked()
-        {
-           bool res = puzzle.ValidityCheck();
+            var deadlineTime = gameTask.GetData.TaskData.Deadline;
+            string formatDeadline = UtilityHelper.ConvertTimeFormat(deadlineTime);
 
-            var message = $"Puzzle Result is: {res}";
+            var res = puzzle.ValidityCheck() ? "Solved" : "Unsolved";
+
+            var message = $"Submitting the task at {formatCurrTime} and Deadline: {formatDeadline} and result: {res}";
 
             Debug.Log(message);
             statusText.text = message;
