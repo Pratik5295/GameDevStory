@@ -11,28 +11,11 @@ namespace DevStory.UI
     /// This class extends the base screen class to build the 
     /// paint screen where the paint puzzles will take place
     /// </summary>
-    public class PaintScreen : Screen,ISubmitable
+    public class PaintScreen :PuzzleScreen
     {
         [SerializeField] private PaintPuzzle puzzle;
 
-        [SerializeField]
-        private Button submitButton;
-
-        //Temporary text and variables
-        [SerializeField]
-        private TextMeshProUGUI statusText;
-
-        private void Start()
-        {
-            submitButton.onClick.AddListener(SubmitPuzzleCheck);
-        }
-
-        private void OnDestroy()
-        {
-            submitButton.onClick.RemoveAllListeners();
-        }
-
-        public void SubmitPuzzleCheck()
+        public override void SubmitPuzzleCheck()
         {
             //Call the submit task interface 
             SubmitTask(GameTimerManager.Instance.CurrentTime);
@@ -44,7 +27,7 @@ namespace DevStory.UI
             statusText.text = message;
         }
 
-        public void SubmitTask(float _currentTime)
+        public override void SubmitTask(float _currentTime)
         {
             Debug.Log("Submitting the task");
         }

@@ -53,5 +53,10 @@ namespace DevStory.UI
             activeScreen.Open();
             
         }
+
+        public Screen GetScreen(int _value)
+        {
+            return gameScreens[_value];
+        }
     }
 }

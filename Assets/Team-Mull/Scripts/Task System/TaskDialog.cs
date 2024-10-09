@@ -94,6 +94,19 @@ namespace DevStory.TaskSystem
                 Quaternion.identity);
         }
 
+        public void SetTaskOnPuzzleScreen()
+        {
+            //On Start task button clicked
+            int screenValue
+                = UtilityHelper.GetScreenIntegerFromTaskType(currentTaskData.Type);
+            var screen = ScreenManager.Instance.GetScreen(screenValue);
+
+            if(screen.gameObject.TryGetComponent<PuzzleScreen>(out var puzzleScreen))
+            {
+                puzzleScreen.SetTaskOnScreen(selectedTaskObject);
+            }
+        }
+
     }
 }
 
