@@ -64,7 +64,7 @@ namespace DevStory.TaskSystem
             //Create new screen data change type
             ScreenChangeData screenChangeData = new ScreenChangeData()
             {
-                Message = "Go to Paint",
+                Message = "Go to Task",
                 OpenScreen = screenValue
             };
 

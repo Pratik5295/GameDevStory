@@ -25,7 +25,6 @@ namespace DevStory.UI
 
         private void Start()
         {
-            //PopulateDisplay(screenChangeData);
         }
 
         private void OnDestroy()
@@ -33,6 +32,11 @@ namespace DevStory.UI
             if (button == null) return;
 
             button.onClick.RemoveAllListeners();
+        }
+
+        private void OnEnable()
+        {
+            button_text.text = screenChangeData.Message;
         }
 
         public void PopulateDisplay(ScreenChangeData _newData)
@@ -45,7 +49,7 @@ namespace DevStory.UI
             button.onClick.AddListener(SwitchToNextScreen);
         }
 
-        private void SwitchToNextScreen()
+        public void SwitchToNextScreen()
         {
             ChangeScreen(screenChangeData);
         }
