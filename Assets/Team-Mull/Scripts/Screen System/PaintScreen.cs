@@ -1,6 +1,7 @@
 using DevStory.Gameplay.GameTimer;
 using DevStory.Gameplay.Puzzles;
 using DevStory.Interfaces;
+using DevStory.Utility;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -19,17 +20,23 @@ namespace DevStory.UI
         {
             //Call the submit task interface 
             SubmitTask(GameTimerManager.Instance.CurrentTime);
-
-            var res = puzzle.CheckPuzzleValidation() ? "Solved" : "Unsolved";
-            var message = $"Puzzle Result is: {res}";
-
-            Debug.Log(message);
-            statusText.text = message;
+           
         }
 
         public override void SubmitTask(float _currentTime)
         {
-            Debug.Log("Submitting the task");
+            var currentTime = GameTimerManager.Instance.CurrentTime;
+            string formatCurrTime = UtilityHelper.ConvertTimeFormat(currentTime);
+
+            var deadlineTime = gameTask.GetData.TaskData.Deadline;
+            string formatDeadline = UtilityHelper.ConvertTimeFormat(deadlineTime);
+
+            var res = puzzle.CheckPuzzleValidation() ? "Solved" : "Unsolved";
+
+            var message = $"Submitting the task at {formatCurrTime} and Deadline: {formatDeadline} and result: {res}";
+
+            Debug.Log(message);
+            statusText.text = message;
         }
     }
 }
