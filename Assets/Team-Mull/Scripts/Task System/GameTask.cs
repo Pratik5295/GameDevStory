@@ -15,6 +15,8 @@ namespace DevStory.TaskSystem
         [SerializeField]
         private TaskSO Data;
 
+        public TaskSO GetData => Data;  
+
         public Action OnTaskCompleted;
 
         //Only for testing
@@ -22,7 +24,7 @@ namespace DevStory.TaskSystem
 
         private void Start()
         {
-            taskCard.SetTaskData(Data.TaskData);
+            taskCard.SetTaskData(this);
         }
     }
 }

@@ -15,6 +15,7 @@ namespace DevStory.TaskSystem
     public class TaskDialog : MonoBehaviour
     {
         [SerializeField] private GameTaskData currentTaskData;
+        [SerializeField] private GameTask selectedTaskObject;
 
         [SerializeField] private TextMeshProUGUI taskTitle;
         [SerializeField] private Image taskHeaderImage;
@@ -26,10 +27,19 @@ namespace DevStory.TaskSystem
 
         [SerializeField] private UIScreenButton taskButton;
 
-        public void SetTaskData(GameTaskData _taskData)
+        [SerializeField] private TextMeshProUGUI completeByText;
+
+        public void SetTaskData(GameTask _taskObject)
         {
-            currentTaskData = _taskData;
+            selectedTaskObject = _taskObject;
+            currentTaskData = _taskObject.GetData.TaskData;
             PopulateDisplay();
+        }
+
+        public void ResetTaskData()
+        {
+            selectedTaskObject = null;
+            currentTaskData = default;
         }
 
         private void PopulateDisplay()
@@ -44,6 +54,9 @@ namespace DevStory.TaskSystem
             supervisorName.text = currentTaskData.SupervisorName;
 
             descriptionText.text = currentTaskData.Description;
+
+            completeByText.text
+                = $"Deadline: {UtilityHelper.ConvertTimeFormat(currentTaskData.Deadline)}";
 
             int screenValue
                 = UtilityHelper.GetScreenIntegerFromTaskType(currentTaskData.Type);
@@ -63,6 +76,8 @@ namespace DevStory.TaskSystem
         {
             //Close the dialog box
             TaskManager.Instance.Close();
+
+            ResetTaskData();
         }
 
         /// <summary>

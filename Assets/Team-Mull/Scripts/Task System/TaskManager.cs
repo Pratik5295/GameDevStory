@@ -23,9 +23,11 @@ namespace DevStory.Managers
             taskDialogScreen.gameObject.SetActive(true);
         }
 
-        public void OpenTaskDialogBox(GameTaskData _data)
+        public void OpenTaskDialogBox(GameTask _task)
         {
-            taskDialogScreen.SetTaskData(_data);
+            SetCurrentTask(_task);
+            taskDialogScreen.SetTaskData(_task);
+
             Open();
         }
 

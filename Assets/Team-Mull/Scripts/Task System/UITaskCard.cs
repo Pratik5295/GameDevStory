@@ -1,6 +1,7 @@
 using DevStory.Managers;
 using DevStory.Utility;
 using TMPro;
+using UnityEditor.U2D.Aseprite;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -23,9 +24,10 @@ namespace DevStory.TaskSystem
         [SerializeField] private Image priorityImage;
         [SerializeField] private TextMeshProUGUI taskTitle;
 
-        public void SetTaskData(GameTaskData _taskData)
+        public void SetTaskData(GameTask _gameTask)
         {
-            taskData = _taskData;
+            gameTask = _gameTask;
+            taskData = gameTask.GetData.TaskData;
 
             PopulateTaskData();
         }
@@ -39,7 +41,7 @@ namespace DevStory.TaskSystem
         public void OnTaskButtonClicked()
         {
             Debug.Log("Loading task on the dialog");
-            TaskManager.Instance.OpenTaskDialogBox(taskData);
+            TaskManager.Instance.OpenTaskDialogBox(gameTask);
         }
     }
 }

@@ -1,3 +1,4 @@
+using DevStory.Gameplay.GameTimer;
 using DevStory.Gameplay.Puzzles;
 using DevStory.Interfaces;
 using TMPro;
@@ -33,17 +34,17 @@ namespace DevStory.UI
 
         public void SubmitPuzzleCheck()
         {
+            //Call the submit task interface 
+            SubmitTask(GameTimerManager.Instance.CurrentTime);
+
             var res = puzzle.CheckPuzzleValidation() ? "Solved" : "Unsolved";
             var message = $"Puzzle Result is: {res}";
 
             Debug.Log(message);
             statusText.text = message;
-
-            //Call the submit task interface 
-            SubmitTask();
         }
 
-        public void SubmitTask()
+        public void SubmitTask(float _currentTime)
         {
             Debug.Log("Submitting the task");
         }

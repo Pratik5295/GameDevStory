@@ -23,6 +23,11 @@ namespace DevStory.TaskSystem
 
         //Can I add game object
         public GameObject TaskPrefab;   //Translates to the puzzle prefab
+
+        //The float deadline in float numbers where 0 is 9 am and 480 is 5pm
+        [Tooltip("Enter value between 0f to 480f for 9am to 5pm")]
+        [Range(0,480)]
+        public float Deadline;
     }
 
 

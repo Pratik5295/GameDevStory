@@ -6,6 +6,10 @@ namespace DevStory.Interfaces
     /// </summary>
     public interface ISubmitable 
     {
-        void SubmitTask();
+        /// <summary>
+        /// On submit button clicked, this interface function will be fired
+        /// </summary>
+        /// <param name="_currentTime">The current game time from Game Timer Manager</param>
+        void SubmitTask(float _currentTime);
     }
 }

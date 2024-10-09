@@ -168,6 +168,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6427469804933788926, guid: a2897aa12ab935f498919e2147ac5d8d, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6822624326899123917, guid: a2897aa12ab935f498919e2147ac5d8d, type: 3}
       propertyPath: m_Name
       value: Pressure-Slider
