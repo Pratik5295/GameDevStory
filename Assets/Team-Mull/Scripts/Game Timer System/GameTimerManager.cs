@@ -57,7 +57,7 @@ namespace DevStory.Gameplay.GameTimer
 
             currentTime += Time.deltaTime;
 
-            if (currentTime > maxDayTime)
+            if (currentTime > maxDayTime + 1)
             {
                 DayEnds();
             }
