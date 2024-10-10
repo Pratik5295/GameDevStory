@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace DevStory.GameEventSystem
 {
+    [System.Serializable]
     public struct GameEventData
     {
         [Range(0f,480f)]
