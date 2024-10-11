@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace DevStory.GameEventSystem
 {
-    [CreateAssetMenu(fileName = "Toaster Event SO", menuName = "Game Events/Create a New Toaster Event")]
+    [CreateAssetMenu(fileName = "Toaster Event SO", menuName = "Game Events/Toasters/Create a New Toaster Event")]
     public class ToasterEventSO : GameEventSO
     {
         public ToasterDataSO fireToasterData;
@@ -12,7 +12,7 @@ namespace DevStory.GameEventSystem
         {
             base.Execute();
 
-            GameObject go = new GameObject("Toaster Test");
+            GameObject go = new GameObject($"Toaster-{fireToasterData.name}");
             UIToaster toaster = go.AddComponent<UIToaster>();
             toaster.SetToasterData(fireToasterData);
         }

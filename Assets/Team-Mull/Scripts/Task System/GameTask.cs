@@ -1,3 +1,4 @@
+using DevStory.Managers;
 using System;
 using UnityEngine;
 
@@ -25,6 +26,12 @@ namespace DevStory.TaskSystem
         private void Start()
         {
             taskCard.SetTaskData(this);
+        }
+
+        public void AddTaskToManager(TaskSO _taskData)
+        {
+            Data = _taskData;
+            TaskManager.Instance.AddNewTask(this);
         }
     }
 }

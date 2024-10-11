@@ -1,5 +1,6 @@
 using DevStory.Interfaces.UI;
 using DevStory.TaskSystem;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace DevStory.Managers
@@ -12,6 +13,34 @@ namespace DevStory.Managers
         private TaskDialog taskDialogScreen;
 
         [SerializeField] private GameTask currentTask;
+
+        [SerializeField] private List<GameTask> currentTasks = new List<GameTask>(); 
+        
+        public void AddNewTask(GameTask _task)
+        {
+            if (!currentTasks.Contains(_task))
+            {
+                currentTasks.Add(_task);
+            }
+        }
+
+        public void RemoveTask(GameTask _task)
+        {
+            if (currentTasks.Contains(_task))
+            {
+                currentTasks.Remove(_task);
+            }
+        }
+
+        public void ClearAllTasks()
+        {
+            foreach (GameTask _task in currentTasks)
+            {
+                Destroy(_task.gameObject);
+            }
+            currentTasks.Clear();
+
+        }
 
         public void Close()
         {
