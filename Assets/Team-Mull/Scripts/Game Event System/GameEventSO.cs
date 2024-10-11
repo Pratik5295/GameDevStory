@@ -5,6 +5,8 @@ namespace DevStory.GameEventSystem
     [System.Serializable]
     public struct GameEventData
     {
+        public int eventCode;
+
         [Range(0f,480f)]
         public float eventFireTime;
 
