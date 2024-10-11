@@ -7,6 +7,8 @@ namespace DevStory.GameEventSystem
     {
         public int eventCode;
 
+        public string eventName;
+
         [Range(0f,480f)]
         public float eventFireTime;
 
@@ -14,8 +16,15 @@ namespace DevStory.GameEventSystem
     }
 
     [CreateAssetMenu(fileName = "Game Event SO", menuName = "Game Events/Create a New Event")]
-    public class GameEventSO : ScriptableObject
+    public class GameEventSO : ScriptableObject,IGameEvent
     {
         public GameEventData eventData;
+
+        public virtual void Execute()
+        {
+            //Fire execute on the game event
+            //Will create the Game Event in game
+            Debug.Log($"Firing event code:{eventData.eventName} and at{eventData.eventFireTime}");
+        }
     }
 }

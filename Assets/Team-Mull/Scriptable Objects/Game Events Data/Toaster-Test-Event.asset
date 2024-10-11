@@ -9,11 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b80f2b59ad2c984d90962b8f1e9b8e6, type: 3}
-  m_Name: TestEvent
+  m_Script: {fileID: 11500000, guid: 3d2faede16cc8134587cc976b67992bc, type: 3}
+  m_Name: Toaster-Test-Event
   m_EditorClassIdentifier: 
   eventData:
-    eventCode: 300
-    eventName: 300 Secon Fire
-    eventFireTime: 300
+    eventCode: 30
+    eventName: Fire Toaster Now
+    eventFireTime: 30
     prefab: {fileID: 0}
+  fireToasterData: {fileID: 11400000, guid: 8aea564c49c2bff47aacc7366b98c359, type: 2}

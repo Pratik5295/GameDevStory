@@ -14,32 +14,54 @@ namespace DevStory.GameEventSystem
         [SerializeField] private List<GameEventSO> gameEvents = new List<GameEventSO>();
 
         private GameTimerManager gameTimerManager;
+        private int nextEventIndex = 0;
         private void Awake()
         {
            if(Instance == null)
-            {
+           {
                 Instance = this;
-            }
-            else
-            {
+           }
+           else
+           {
                 Destroy(gameObject);
-            }
+           }
         }
         private void Start()
         {
             gameTimerManager  =  GameTimerManager.Instance;
-            SortEvents(gameEvents);
+
+            if(gameEvents.Count > 0)
+            {
+                SortEvents();
+            }
         }
 
         private void Update()
         {
-            
+            if (nextEventIndex < gameEvents.Count)
+            {
+                GameEventSO nextEvent = gameEvents[nextEventIndex];
+                if (gameTimerManager.CurrentTime >= nextEvent.eventData.eventFireTime)
+                {
+                    nextEvent.Execute();
+                    nextEventIndex++;
+                }
+            }
         }
 
-        public List<GameEventSO> SortEvents(List<GameEventSO> events)
+        public void SortEvents()
         {
-            events.OrderBy(evt => evt.eventData.eventFireTime);
-            return events;
+            gameEvents = gameEvents.OrderBy(evt => evt.eventData.eventFireTime).ToList();
+        }
+
+        private void PrintEvents()
+        {
+            int index = 0;
+            foreach (var evt in gameEvents)
+            {
+                Debug.Log($"Position:{index}, {evt.eventData.eventCode} and {evt.eventData.eventFireTime}");
+                index++;
+            }
         }
     }
 }

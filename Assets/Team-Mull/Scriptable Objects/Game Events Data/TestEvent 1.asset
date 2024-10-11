@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7b80f2b59ad2c984d90962b8f1e9b8e6, type: 3}
-  m_Name: TestEvent
+  m_Name: TestEvent 1
   m_EditorClassIdentifier: 
   eventData:
-    eventCode: 300
-    eventName: 300 Secon Fire
-    eventFireTime: 300
+    eventCode: 60
+    eventName: 1 hour event (Fired at 10AM)
+    eventFireTime: 60
     prefab: {fileID: 0}
