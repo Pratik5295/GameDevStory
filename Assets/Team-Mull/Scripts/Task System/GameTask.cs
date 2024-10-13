@@ -1,6 +1,7 @@
 using DevStory.Managers;
 using System;
 using UnityEngine;
+using static MetaConstants.EnumManager.EnumManager;
 
 
 namespace DevStory.TaskSystem
@@ -16,22 +17,25 @@ namespace DevStory.TaskSystem
         [SerializeField]
         private TaskSO Data;
 
+        public TaskStatus Status;
         public TaskSO GetData => Data;  
 
         public Action OnTaskCompleted;
 
-        //Only for testing
-        [SerializeField] private UITaskCard taskCard;
-
-        private void Start()
-        {
-            taskCard.SetTaskData(this);
-        }
 
         public void AddTaskToManager(TaskSO _taskData)
         {
             Data = _taskData;
             TaskManager.Instance.AddNewTask(this);
+
+            Status = TaskStatus.TODO;
+        }
+
+        public void TaskCompleted()
+        {
+            Status = TaskStatus.COMPLETED;
+
+            OnTaskCompleted?.Invoke();
         }
     }
 }

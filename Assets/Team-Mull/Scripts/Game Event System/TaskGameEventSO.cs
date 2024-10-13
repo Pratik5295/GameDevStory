@@ -5,7 +5,7 @@ namespace DevStory.GameEventSystem
 {
     //This event fires a new task on its own in the game
 
-    [CreateAssetMenu(fileName = "Task Game Event SO", menuName = "Game Events/Tasks/Create a New Task Event")]
+    [CreateAssetMenu(fileName = "Task Game Event SO", menuName = "Game Events/Game Tasks/Create a New Task Event")]
 
     public class TaskGameEventSO : GameEventSO
     {

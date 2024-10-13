@@ -1,5 +1,6 @@
 using DevStory.Interfaces.UI;
 using DevStory.TaskSystem;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,13 +15,18 @@ namespace DevStory.Managers
 
         [SerializeField] private GameTask currentTask;
 
-        [SerializeField] private List<GameTask> currentTasks = new List<GameTask>(); 
+        [SerializeField] private List<GameTask> currentTasks = new List<GameTask>();
+        [SerializeField] private List<GameTask> completedTasks = new List<GameTask>();
+
+        public Action<List<GameTask>> OnCurrentTasksUpdated;
         
         public void AddNewTask(GameTask _task)
         {
             if (!currentTasks.Contains(_task))
             {
                 currentTasks.Add(_task);
+                OnCurrentTasksUpdated?.Invoke(currentTasks);
+
             }
         }
 
@@ -29,6 +35,7 @@ namespace DevStory.Managers
             if (currentTasks.Contains(_task))
             {
                 currentTasks.Remove(_task);
+                OnCurrentTasksUpdated?.Invoke(currentTasks);
             }
         }
 
