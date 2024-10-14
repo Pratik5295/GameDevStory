@@ -40,11 +40,9 @@ namespace DevStory.UI
 
         public GameEmail activeEmail;
 
-        public void SetScreenChangeData(ScreenChangeData _newData)
-        {
-            buttonChangeData = _newData;
-            taskButton.PopulateDisplay(_newData);
-        }
+        [SerializeField] private GameObject emailPrefab;
+        [SerializeField] private Transform emailContent;
+
 
         private void Start()
         {
@@ -65,43 +63,17 @@ namespace DevStory.UI
         {
             var currentMessage = activeEmail.GetMessage();
 
+            var emailDisplay = CreateNewMessage();
+            emailDisplay.Populate(currentMessage);
 
-            Debug.Log($"Message:{currentMessage.Message} and Speaker: {currentMessage.Speaker}");
+        }
 
-            emailBody.text = currentMessage.Message;
-            emailSenderName.text = currentMessage.Speaker;
+        private EmailDisplay CreateNewMessage()
+        {
+            var created = Instantiate(emailPrefab);
+            created.transform.SetParent(emailContent.transform, false);
 
-            //Populate your options if any
-            if (currentMessage.Options != null && currentMessage.Options.Length > 0)
-            {
-                for (int i = 0; i < optionButtons.Length; i++)
-                {
-                    if (i < currentMessage.Options.Length)
-                    {
-                        optionButtons[i].gameObject.SetActive(true);
-                        optionButtons[i].GetComponent<UIDialogueOption>().SetOption(currentMessage.Options[i].optionMessage);
-                        int nextIndex = currentMessage.Options[i].nextMessageIndex;
-                        optionButtons[i].onClick.RemoveAllListeners();
-                        optionButtons[i].onClick.AddListener(() =>
-                        {
-                            activeEmail.TraverseMessageCounterTo(nextIndex);
-                            DisplayNextMessage();
-                        });
-                    }
-                    else
-                    {
-                        optionButtons[i].gameObject.SetActive(false);
-                    }
-                }
-            }
-            else
-            {
-                //Hide all your options
-                foreach (var option in optionButtons)
-                {
-                    option.gameObject.SetActive(false);
-                }
-            }
+            return created.GetComponent<EmailDisplay>();
         }
 
         public void ShowNextMessage()
