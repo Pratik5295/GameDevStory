@@ -1,4 +1,5 @@
 using UnityEngine;
+using static MetaConstants.EnumManager.EnumManager;
 
 
 namespace DevStory.UI.TaskBar
@@ -8,7 +9,7 @@ namespace DevStory.UI.TaskBar
     /// </summary>
     public class UITaskBarButton : MonoBehaviour
     {
-        [SerializeField] private int screenRef;
+        [SerializeField] private GameScreens screenRef;
 
         public void OnTaskBarButtonClicked()
         {

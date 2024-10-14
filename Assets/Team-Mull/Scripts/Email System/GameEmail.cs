@@ -1,3 +1,4 @@
+using DevStory.UI;
 using UnityEngine;
 using static MetaConstants.EnumManager.EnumManager;
 
@@ -14,27 +15,30 @@ namespace DevStory.DialogueSystem
         public int LastMessageIndex => lastEmailIndex;
         public int CurrentIndex => currentEmailIndex;
 
-        [SerializeField] private EmailSO currentEmail;
+        [SerializeField] private EmailSO data;
 
-        public DialogueMessageSO[] Messages => currentEmail.Messages;
+        public EmailSO Data => data;
+
+        public DialogueMessageSO[] Messages => data.Messages;
 
         [SerializeField] private string emailTitle;
 
         public string EmailTitle => emailTitle; 
 
-        private void Awake()
-        {
-            lastEmailIndex = currentEmail.Messages.Length;
-        }
 
-        private void Start()
+        public void SetEmailData(EmailSO _data)
         {
-            emailTitle = currentEmail.EmailTitle;
+            data = _data;
+            lastEmailIndex = data.Messages.Length;
+            emailTitle = data.EmailTitle;
+
+            //Notify manager of new Email Data added
+            EmailManager.Instance.AddEmail(this);
         }
 
         public bool LastMessageShown()
         {
-            var currentMessageShown = currentEmail.Messages[currentEmailIndex];
+            var currentMessageShown = data.Messages[currentEmailIndex];
 
             if (currentMessageShown.Type == DialogMessageType.ENDER)
             {
@@ -46,13 +50,13 @@ namespace DevStory.DialogueSystem
 
         public DialogueMessageSO GetMessage()
         {
-            return currentEmail.Messages[currentEmailIndex];
+            return data.Messages[currentEmailIndex];
         }
 
         public DialogueMessageSO GetNextMessage()
         {
             currentEmailIndex++;
-            return currentEmail.Messages[currentEmailIndex];
+            return data.Messages[currentEmailIndex];
         }
 
         public void TraverseMessageCounter()

@@ -58,7 +58,7 @@ namespace DevStory.TaskSystem
             completeByText.text
                 = $"Deadline: {UtilityHelper.ConvertTimeFormat(currentTaskData.Deadline)}";
 
-            int screenValue
+            var screenValue
                 = UtilityHelper.GetScreenIntegerFromTaskType(currentTaskData.Type);
 
             //Create new screen data change type
@@ -97,7 +97,7 @@ namespace DevStory.TaskSystem
         public void SetTaskOnPuzzleScreen()
         {
             //On Start task button clicked
-            int screenValue
+            var screenValue
                 = UtilityHelper.GetScreenIntegerFromTaskType(currentTaskData.Type);
             var screen = ScreenManager.Instance.GetScreen(screenValue);
 

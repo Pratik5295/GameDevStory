@@ -14,7 +14,7 @@ namespace DevStory.GameEventSystem
 
             GameObject go = new GameObject($"Toaster-{fireToasterData.name}");
             UIToaster toaster = go.AddComponent<UIToaster>();
-            toaster.SetToasterData(fireToasterData);
+            toaster.SetToasterData(fireToasterData,go);
         }
     }
 }

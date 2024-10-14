@@ -10,21 +10,21 @@ namespace DevStory.Utility
 
     public static class UtilityHelper
     {
-        public static int GetScreenIntegerFromTaskType(TaskType _taskType)
+        public static GameScreens GetScreenIntegerFromTaskType(TaskType _taskType)
         {
             switch(_taskType)
             {
                 default:
-                    return 0;
+                    return GameScreens.MAIN;
 
                 case TaskType.DEFAULT:
-                    return 0;
+                    return GameScreens.MAIN;
 
                 case TaskType.PAINT:
-                    return 2;
+                    return GameScreens.PAINT;
 
                 case TaskType.PROGRAM:
-                    return 3;
+                    return GameScreens.EDITOR;
 
             }
         }

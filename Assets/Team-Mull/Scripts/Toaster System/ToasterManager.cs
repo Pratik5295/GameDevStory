@@ -25,6 +25,8 @@ namespace DevStory.Toaster
         [SerializeField] private Button ChangeScreenButton;
         [SerializeField] private Button CloseButton;
 
+        public GameObject toasterObject;    //The toaster object that got created to populate this
+
         private void Awake()
         {
             if(Instance == null)
@@ -46,8 +48,9 @@ namespace DevStory.Toaster
             });
         }
 
-        public void PopulateToasterMessage(ScreenChangeData _data)
+        public void PopulateToasterMessage(ScreenChangeData _data,GameObject _object)
         {
+            toasterObject = _object;
             toasterText.text = _data.Message;
 
             ChangeScreenButton.onClick.AddListener(() =>
@@ -70,6 +73,11 @@ namespace DevStory.Toaster
         public void Close()
         {
             toasterDisplay.SetActive(false);
+
+            if(toasterObject != null)
+            {
+                Destroy(toasterObject);
+            }
         }
     }
 }

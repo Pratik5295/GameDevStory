@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using static MetaConstants.EnumManager.EnumManager;
 
 namespace DevStory.UI
 {
@@ -39,9 +40,10 @@ namespace DevStory.UI
             activeScreen.Open();
         }
 
-        public void OnChangeActiveScreen(int _value)
+        public void OnChangeActiveScreen(GameScreens _value)
         {
-            var screen = gameScreens[_value];
+            int screenValue = (int)_value;
+            var screen = gameScreens[screenValue];
 
             //Close open screen
             activeScreen.Close();
@@ -54,9 +56,11 @@ namespace DevStory.UI
             
         }
 
-        public Screen GetScreen(int _value)
+        public Screen GetScreen(GameScreens _value)
         {
-            return gameScreens[_value];
+            int screenValue = (int)_value;
+            var screen = gameScreens[screenValue];
+            return screen;
         }
     }
 }

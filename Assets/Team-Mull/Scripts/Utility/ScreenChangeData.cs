@@ -1,4 +1,5 @@
 using UnityEngine;
+using static MetaConstants.EnumManager.EnumManager;
 
 namespace DevStory.Data
 {
@@ -9,7 +10,7 @@ namespace DevStory.Data
         public string Message;
 
         //Will be switched to an enum soon
-        public int OpenScreen;
+        public GameScreens OpenScreen;
     }
 }
 

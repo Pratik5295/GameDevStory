@@ -1,6 +1,6 @@
-using DevStory.Data;
 using DevStory.DialogueSystem;
 using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -20,48 +20,66 @@ namespace DevStory.UI
         [SerializeField]
         private TextMeshProUGUI emailHeader;
 
-        [SerializeField]
-        private TextMeshProUGUI emailSenderName;
-
-        [SerializeField]
-        private TextMeshProUGUI emailBody;
-
-        [SerializeField]
-        private ScreenChangeData buttonChangeData;
-
-        //Data to come from SO and hide if the email doesnt have task
-        [SerializeField]
-        private UIScreenButton taskButton;
-
-        //UI for options
-        public Button[] optionButtons;
-
         [Space(10)]
-        [Header("Dialogue Variables")]
-
+        [Header("Email Display Variables")]
         public GameEmail activeEmail;
-
+        [SerializeField] private GameObject emailCardPrefab;
         [SerializeField] private GameObject emailPrefab;
+
+        [SerializeField] private Transform emailCardContent;
         [SerializeField] private Transform emailContent;
+        private Dictionary<EmailSO,GameObject> generatedEmails
+            = new Dictionary<EmailSO,GameObject>();
 
         [SerializeField]
         private ScrollRect threadScroll;
-        public float scrollSpeed = 1.0f;
+        private float scrollSpeed = 1.0f;
 
 
-        private void Start()
+        public void CreateEmailCard(GameEmail email)
         {
-            SetActiveDialogue(activeEmail); 
+            var card = Instantiate(emailCardPrefab);
+            card.transform.SetParent(emailCardContent,false);
+
+            var ui = card.GetComponent<UIEmailCard>();
+            ui.Populate(email);
+
+            //Add to dictionary
+            if (!generatedEmails.ContainsKey(email.Data))
+            {
+                generatedEmails.Add(email.Data, card);
+            }
+        }
+
+        public void RemoveEmailCard(EmailSO _data)
+        {
+            if (generatedEmails.ContainsKey(_data))
+            {
+                var obj = generatedEmails[_data];
+                generatedEmails.Remove(_data);
+
+                Destroy(obj);
+            }
         }
 
         /// <summary>
         /// Move to manager afterwards
         /// </summary>
-        public void SetActiveDialogue(GameEmail _newDialogue)
+        public void SetActiveEmail(GameEmail _newEmail)
         {
-            activeEmail = _newDialogue;
-            emailHeader.text = _newDialogue.EmailTitle;
+            activeEmail = _newEmail;
+            emailHeader.text = _newEmail.EmailTitle;
             DisplayNextMessage();
+        }
+
+        public void ClearThread()
+        {
+            if (emailContent.childCount == 0) return;
+
+            for(int i = 0; i< emailContent.childCount; i++)
+            {
+                Destroy(emailContent.GetChild(i).gameObject);
+            }
         }
 
         public void DisplayNextMessage()
@@ -71,11 +89,10 @@ namespace DevStory.UI
             var emailDisplay = CreateNewMessage();
             emailDisplay.Populate(currentMessage, activeEmail,this);
 
-            StartCoroutine(ScrollToEnd());
-
-            //ScrollDown();
-
-            //StartCoroutine(ScrollToBottomNextFrame());
+            if (gameObject.activeInHierarchy)
+            {
+                StartCoroutine(ScrollToEnd());
+            }
 
         }
 
@@ -91,7 +108,7 @@ namespace DevStory.UI
         {
             if (activeEmail.LastMessageShown())
             {
-                //DialogueManager.Instance.Close();
+                
             }
             else
             {
