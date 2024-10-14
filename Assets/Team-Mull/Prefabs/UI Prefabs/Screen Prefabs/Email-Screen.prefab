@@ -175,6 +175,8 @@ MonoBehaviour:
   activeEmail: {fileID: 0}
   emailPrefab: {fileID: 6845869347141082114, guid: e36760b3ece9eca4fb69dbea52dc5452, type: 3}
   emailContent: {fileID: 1476603863503791038}
+  threadScroll: {fileID: 8339126031098138372}
+  scrollSpeed: 1
 --- !u!1 &4881714442761993012
 GameObject:
   m_ObjectHideFlags: 0
@@ -1009,6 +1011,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6133265893000016172, guid: aeda75dfa70191842a47806ca99ea21e, type: 3}
   m_PrefabInstance: {fileID: 267931221211939770}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8339126031098138372 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8074220722794417342, guid: aeda75dfa70191842a47806ca99ea21e, type: 3}
+  m_PrefabInstance: {fileID: 267931221211939770}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &8988639240253489894 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9154109149345300828, guid: aeda75dfa70191842a47806ca99ea21e, type: 3}

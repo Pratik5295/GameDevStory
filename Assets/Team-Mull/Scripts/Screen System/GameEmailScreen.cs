@@ -1,5 +1,6 @@
 using DevStory.Data;
 using DevStory.DialogueSystem;
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -43,6 +44,10 @@ namespace DevStory.UI
         [SerializeField] private GameObject emailPrefab;
         [SerializeField] private Transform emailContent;
 
+        [SerializeField]
+        private ScrollRect threadScroll;
+        public float scrollSpeed = 1.0f;
+
 
         private void Start()
         {
@@ -65,6 +70,12 @@ namespace DevStory.UI
 
             var emailDisplay = CreateNewMessage();
             emailDisplay.Populate(currentMessage, activeEmail,this);
+
+            StartCoroutine(ScrollToEnd());
+
+            //ScrollDown();
+
+            //StartCoroutine(ScrollToBottomNextFrame());
 
         }
 
@@ -89,6 +100,17 @@ namespace DevStory.UI
             }
         }
 
+        private IEnumerator ScrollToEnd()
+        {
+            float time = 0f;
+            float targetPosition = 0f; // Scroll to the bottom
 
+            while (time < scrollSpeed)
+            {
+                time += Time.deltaTime;
+                threadScroll.verticalNormalizedPosition = Mathf.Lerp(threadScroll.verticalNormalizedPosition, targetPosition, time / scrollSpeed);
+                yield return null;
+            }
+        }
+      }
     }
-}
