@@ -60,6 +60,10 @@ namespace DevStory.DialogueSystem
             currentEmailIndex++;
         }
 
+        /// <summary>
+        /// This traversal message needs to populate the next email response based on new counter
+        /// </summary>
+        /// <param name="_newCounter"></param>
         public void TraverseMessageCounterTo(int _newCounter)
         {
             currentEmailIndex = _newCounter;

@@ -64,7 +64,7 @@ namespace DevStory.UI
             var currentMessage = activeEmail.GetMessage();
 
             var emailDisplay = CreateNewMessage();
-            emailDisplay.Populate(currentMessage);
+            emailDisplay.Populate(currentMessage, activeEmail,this);
 
         }
 

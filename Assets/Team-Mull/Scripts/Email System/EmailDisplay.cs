@@ -30,6 +30,8 @@ namespace DevStory.UI
         //UI for options
         public Button[] optionButtons;
 
+        public GameEmail activeEmail;
+
 
         public void SetScreenChangeData(ScreenChangeData _newData)
         {
@@ -38,8 +40,10 @@ namespace DevStory.UI
         }
 
 
-        public void Populate(DialogueMessageSO currentMessage)
+        public void Populate(DialogueMessageSO currentMessage, GameEmail currentEmail, GameEmailScreen _screen)
         {
+            activeEmail = currentEmail;
+
             emailBody.text = currentMessage.Message;
             emailSenderName.text = currentMessage.Speaker;
 
@@ -57,8 +61,12 @@ namespace DevStory.UI
                         {
 
                             //Make it create next message
-                            //activeEmail.TraverseMessageCounterTo(nextIndex);
-                            //DisplayNextMessage();
+                            activeEmail.TraverseMessageCounterTo(nextIndex);
+                            activeEmail.GetMessage();
+
+                            //Hide all options
+                            HideAllOptions();
+                            _screen.DisplayNextMessage();
                         });
                     }
                     else
@@ -74,6 +82,14 @@ namespace DevStory.UI
                 {
                     option.gameObject.SetActive(false);
                 }
+            }
+        }
+
+        public void HideAllOptions()
+        {
+            foreach(var option in optionButtons)
+            {
+                option.gameObject?.SetActive(false);
             }
         }
 
