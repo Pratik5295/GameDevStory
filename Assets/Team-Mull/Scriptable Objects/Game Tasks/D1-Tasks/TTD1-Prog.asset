@@ -13,10 +13,20 @@ MonoBehaviour:
   m_Name: TTD1-Prog
   m_EditorClassIdentifier: 
   TaskData:
-    TaskName: Test task Programming
+    TaskName: Fight the Bugs!
     Priority: 3
     Type: 2
-    Description: This is a standard description for the test task
+    Description: 'SOLDIER!
+
+
+      You must help our programmer! He had just finished
+      his script then he got attacked by a syntax bug, figure out what is wrong and
+      submit it on time.. otherwise it might be our demise.
+
+
+      Regards
+
+      Timmothy'
     SupervisorSprite: {fileID: 21300000, guid: 7c4189c88f5e2694694fd06bba7d4326, type: 3}
     SupervisorName: Lead Programmer
     TaskPrefab: {fileID: 0}
