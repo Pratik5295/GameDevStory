@@ -27,6 +27,9 @@ namespace DevStory.UI
         [SerializeField]
         private UIScreenButton taskButton;
 
+        [SerializeField]
+        private GameObject taskButtonParent;
+
         //UI for options
         public Button[] optionButtons;
 
@@ -82,6 +85,16 @@ namespace DevStory.UI
                 {
                     option.gameObject.SetActive(false);
                 }
+            }
+
+            //Check if the go to task needs to be populated
+            if (taskButton != null)
+            {
+                taskButtonParent.SetActive(currentMessage.hasTask);
+            }
+            else
+            {
+                Debug.LogError("Task button parent reference is missing");
             }
         }
 

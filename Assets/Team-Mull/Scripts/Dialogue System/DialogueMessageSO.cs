@@ -26,6 +26,8 @@ namespace DevStory.DialogueSystem
         public DialogueOption[] Options;
 
         public DialogMessageType Type;
+
+        public bool hasTask = false;
     }
 
 }
