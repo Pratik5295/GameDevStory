@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04d48516da680f04aa757b98deff11cc, type: 3}
+  m_Name: EHT01_M
+  m_EditorClassIdentifier: 
+  Speaker: Hrip Tawkins
+  Message: "Hope your first day is going well! We will be grabbing lunch at 12pm,
+    if you would like to join us? We will be able introduce the department to you!
+    \r\n\r\nRegards \r\nHrip Tawkins\r\n"
+  Options:
+  - optionMessage: Yes, that would be lovely!
+    nextMessageIndex: 0
+  - optionMessage: 'Thank you for the offer but I have plans for lunch, next time
+      for sure! '
+    nextMessageIndex: 1
+  - optionMessage: "No, I\u2019ll be busy with work"
+    nextMessageIndex: 2
+  Type: 0

@@ -10,14 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 86cc1d1677a5b4b428a5bff0904a9dde, type: 3}
-  m_Name: Task-Test-1
+  m_Name: TTD1-Paint
   m_EditorClassIdentifier: 
   TaskData:
-    TaskName: Test Task-High
-    Priority: 2
+    TaskName: A Wild Art Appears!
+    Priority: 1
     Type: 1
-    Description: This is a standard description for the test task
+    Description: 'Hello Young One!
+
+
+      This will be your first challenge! Don''t
+      worry, I shall make it very simple. Our concept artist has left you with a
+      beautiful outline of an abstract asset that we will be using. You will have
+      to drag and drop colours to fill the asset, use any colours you want! The only
+      constraint will be that you shouldn''t use the same colour next to each other!'
     SupervisorSprite: {fileID: 21300000, guid: 7c4189c88f5e2694694fd06bba7d4326, type: 3}
-    SupervisorName: Edward Newgate
+    SupervisorName: Leonardo Di Vinci
     TaskPrefab: {fileID: 0}
     Deadline: 420
