@@ -1,5 +1,6 @@
 using DevStory.Data;
 using DevStory.DialogueSystem;
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,6 +15,9 @@ namespace DevStory.UI
 
     public class EmailDisplay : MonoBehaviour
     {
+        [SerializeField]
+        private GameEmailScreen emailScreen;
+
         [SerializeField]
         private TextMeshProUGUI emailSenderName;
 
@@ -35,6 +39,8 @@ namespace DevStory.UI
 
         public GameEmail activeEmail;
 
+        private DialogueMessageSO currentMessage;
+
 
         public void SetScreenChangeData(ScreenChangeData _newData)
         {
@@ -43,22 +49,24 @@ namespace DevStory.UI
         }
 
 
-        public void Populate(DialogueMessageSO currentMessage, GameEmail currentEmail, GameEmailScreen _screen)
+        public void Populate(DialogueMessageSO _currentMessage, GameEmail currentEmail, GameEmailScreen _screen)
         {
+            emailScreen = _screen;
+            currentMessage = _currentMessage;
             activeEmail = currentEmail;
 
-            emailBody.text = currentMessage.Message;
-            emailSenderName.text = currentMessage.Speaker;
+            emailBody.text = _currentMessage.Message;
+            emailSenderName.text = _currentMessage.Speaker;
 
-            if (currentMessage.Options != null && currentMessage.Options.Length > 0)
+            if (_currentMessage.Options != null && _currentMessage.Options.Length > 0)
             {
                 for (int i = 0; i < optionButtons.Length; i++)
                 {
-                    if (i < currentMessage.Options.Length)
+                    if (i < _currentMessage.Options.Length)
                     {
                         optionButtons[i].gameObject.SetActive(true);
-                        optionButtons[i].GetComponent<UIDialogueOption>().SetOption(currentMessage.Options[i].optionMessage);
-                        int nextIndex = currentMessage.Options[i].nextMessageIndex;
+                        optionButtons[i].GetComponent<UIDialogueOption>().SetOption(_currentMessage.Options[i].optionMessage);
+                        int nextIndex = _currentMessage.Options[i].nextMessageIndex;
                         optionButtons[i].onClick.RemoveAllListeners();
                         optionButtons[i].onClick.AddListener(() =>
                         {
@@ -85,17 +93,33 @@ namespace DevStory.UI
                 {
                     option.gameObject.SetActive(false);
                 }
+
+                if (!activeEmail.LastMessageShown())
+                {
+                    //For mails without options, we add message by itself
+                    StartCoroutine(ShowNextMessage());
+                }
             }
 
             //Check if the go to task needs to be populated
             if (taskButton != null)
             {
-                taskButtonParent.SetActive(currentMessage.hasTask);
+                taskButtonParent.SetActive(_currentMessage.hasTask);
             }
             else
             {
                 Debug.LogError("Task button parent reference is missing");
             }
+        }
+
+        private IEnumerator ShowNextMessage()
+        {
+            yield return new WaitForSeconds(2f);
+
+            activeEmail.TraverseMessageCounterTo(currentMessage.nextIndex);
+            activeEmail.GetMessage();
+
+            emailScreen.DisplayNextMessage();
         }
 
         public void HideAllOptions()

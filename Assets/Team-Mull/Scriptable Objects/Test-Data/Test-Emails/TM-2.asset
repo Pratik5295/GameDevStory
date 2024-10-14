@@ -15,4 +15,6 @@ MonoBehaviour:
   Speaker: Batman
   Message: Yo! How are you?
   Options: []
-  Type: 1
+  Type: 0
+  hasTask: 0
+  nextIndex: 3

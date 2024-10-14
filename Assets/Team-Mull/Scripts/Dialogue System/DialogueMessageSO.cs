@@ -28,6 +28,9 @@ namespace DevStory.DialogueSystem
         public DialogMessageType Type;
 
         public bool hasTask = false;
+
+        [Tooltip("Only being used in the email system for now")]
+        public int nextIndex;
     }
 
 }
