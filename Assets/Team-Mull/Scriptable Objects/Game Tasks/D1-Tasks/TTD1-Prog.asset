@@ -10,14 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 86cc1d1677a5b4b428a5bff0904a9dde, type: 3}
-  m_Name: Task-Test-1
+  m_Name: TTD1-Prog
   m_EditorClassIdentifier: 
   TaskData:
-    TaskName: Test Task-High
-    Priority: 2
-    Type: 1
-    Description: This is a standard description for the test task
+    TaskName: Fight the Bugs!
+    Priority: 3
+    Type: 2
+    Description: 'SOLDIER!
+
+
+      You must help our programmer! He had just finished
+      his script then he got attacked by a syntax bug, figure out what is wrong and
+      submit it on time.. otherwise it might be our demise.
+
+
+      Regards
+
+      Timmothy'
     SupervisorSprite: {fileID: 21300000, guid: 7c4189c88f5e2694694fd06bba7d4326, type: 3}
-    SupervisorName: Edward Newgate
+    SupervisorName: Lead Programmer
     TaskPrefab: {fileID: 0}
-    Deadline: 420
+    Deadline: 240
