@@ -9,12 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e01c55845d3c09419e93b16e4aa4515, type: 3}
-  m_Name: EAUDD1_E 1
+  m_Script: {fileID: 11500000, guid: ddc8d93fa9dc14b4b87a5bab87f1ba73, type: 3}
+  m_Name: test
   m_EditorClassIdentifier: 
-  eventData:
-    eventCode: 0
-    eventName: Game Task Three
-    eventFireTime: 10
-    prefab: {fileID: 0}
-  gameTask: {fileID: 11400000, guid: b9ed13a2c3ed6224ab0d2e45c24bb02e, type: 2}
+  EmailTitle: 
+  Messages:
+  - {fileID: 11400000, guid: cdd6197c0c9b92d45b52adfcb738cd01, type: 2}
