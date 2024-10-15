@@ -13,11 +13,22 @@ MonoBehaviour:
   m_Name: TTD1-Audio
   m_EditorClassIdentifier: 
   TaskData:
-    TaskName: 
-    Priority: 0
-    Type: 0
-    Description: 
+    TaskName: Ride the Waves!
+    Priority: 3
+    Type: 2
+    Description: 'Hello!
+
+
+      We are composing some fantastic music for the game
+      but it seems as though the amplitude and waves are incorrect. We heard you
+      like Jazz, so please complete the incorrect files using the correct file as
+      a reference.
+
+
+      Kind regards
+
+      Modzart'
     SupervisorSprite: {fileID: 0}
-    SupervisorName: 
+    SupervisorName: Modzard Doggang
     TaskPrefab: {fileID: 0}
     Deadline: 0

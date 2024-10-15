@@ -5341,12 +5341,16 @@ PrefabInstance:
       objectReference: {fileID: 607595829}
     - target: {fileID: 1047723593726949805, guid: 7244a55c0fe89874ab2222fafc3704f5, type: 3}
       propertyPath: gameEvents.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1047723593726949805, guid: 7244a55c0fe89874ab2222fafc3704f5, type: 3}
       propertyPath: 'gameEvents.Array.data[3]'
       value: 
       objectReference: {fileID: 11400000, guid: d321e521e808b8e40821f6e9bbc6ad89, type: 2}
+    - target: {fileID: 1047723593726949805, guid: 7244a55c0fe89874ab2222fafc3704f5, type: 3}
+      propertyPath: 'gameEvents.Array.data[4]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 2fb9cb1998dc46b49ac54ff1d163b113, type: 2}
     - target: {fileID: 3130160777304007120, guid: 7244a55c0fe89874ab2222fafc3704f5, type: 3}
       propertyPath: 'gameScreens.Array.data[0]'
       value: 
