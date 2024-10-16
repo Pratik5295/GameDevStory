@@ -1,3 +1,4 @@
+using UnityEngine;
 using static MetaConstants.EnumManager.EnumManager;
 
 namespace DevStory.Utility
@@ -54,6 +55,15 @@ namespace DevStory.Utility
             }
 
             return string.Format($"{displayHours:D2}:{displayMinutes:D2} {period}");
+        }
+
+
+        public static Vector3 GetMousePos(Camera _camera, GameObject gameObject)
+        {
+            Vector3 mousePoint = Input.mousePosition;
+            mousePoint.z = _camera.WorldToScreenPoint(gameObject.transform.position).z;
+
+            return _camera.ScreenToWorldPoint(mousePoint);
         }
     }
 }
