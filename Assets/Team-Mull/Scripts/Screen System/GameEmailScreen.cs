@@ -75,8 +75,6 @@ namespace DevStory.UI
             //Check if the queue has any data in the local cache
             if (activeEmail.IsDirty)
             {
-                Debug.Log($"{activeEmail.name} was already shown before");
-
                 LoadEmailCache();
             }
             else
@@ -166,8 +164,6 @@ namespace DevStory.UI
             lastEmailDisplay.Populate(lastMessage, activeEmail, this);
 
             threadScroll.verticalNormalizedPosition = 0f;
-
-            Debug.Log("All messages for this email have been displayed");
         }
       }
     }
