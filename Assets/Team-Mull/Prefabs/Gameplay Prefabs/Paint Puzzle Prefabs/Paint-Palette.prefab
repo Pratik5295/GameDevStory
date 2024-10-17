@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 3801893165306182071}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.52, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -45,17 +45,41 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5803461421333420028}
     m_Modifications:
+    - target: {fileID: 237984781067376231, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 237984781067376231, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 259179745138985631, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d68563ba7fc31314dbb51c0740953606, type: 3}
+    - target: {fileID: 259179745138985631, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 259179745138985631, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 259179745138985631, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1449248732950660720, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_Name
-      value: Color-Piece-Mover
+      value: Color-Piece-Mover-Red
       objectReference: {fileID: 0}
     - target: {fileID: 8562064435162014775, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.72
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 8562064435162014775, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.28
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 8562064435162014775, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -108,20 +132,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 5803461421333420028}
     m_Modifications:
     - target: {fileID: 259179745138985631, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5d27e08485e362041a2ae2666df48f7c, type: 3}
+    - target: {fileID: 259179745138985631, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_Color.b
-      value: 0.8584906
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 259179745138985631, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_Color.g
-      value: 0.24876447
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 259179745138985631, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_Color.r
-      value: 0.11743506
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1449248732950660720, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_Name
-      value: Color-Piece-Mover (3)
+      value: Color-Piece-Mover-Blue
       objectReference: {fileID: 0}
     - target: {fileID: 7270990405951139949, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: Paint
@@ -129,11 +157,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8562064435162014775, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.74
+      value: -6.6
       objectReference: {fileID: 0}
     - target: {fileID: 8562064435162014775, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.28
+      value: 4.1
       objectReference: {fileID: 0}
     - target: {fileID: 8562064435162014775, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -186,12 +214,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 5803461421333420028}
     m_Modifications:
     - target: {fileID: 259179745138985631, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 753a75562263e58418d3ca0cf83c62ac, type: 3}
+    - target: {fileID: 259179745138985631, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_Color.b
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 259179745138985631, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_Color.g
-      value: 0.64705884
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 259179745138985631, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_Color.r
@@ -199,7 +231,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1449248732950660720, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_Name
-      value: Color-Piece-Mover (4)
+      value: Color-Piece-Mover-Orange
       objectReference: {fileID: 0}
     - target: {fileID: 7270990405951139949, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: Paint
@@ -207,11 +239,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8562064435162014775, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.024
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 8562064435162014775, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.912
+      value: 3.7
       objectReference: {fileID: 0}
     - target: {fileID: 8562064435162014775, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -285,11 +317,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8562064435162014775, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.72
+      value: -6.6
       objectReference: {fileID: 0}
     - target: {fileID: 8562064435162014775, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.919
+      value: 3.7
       objectReference: {fileID: 0}
     - target: {fileID: 8562064435162014775, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -342,20 +374,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 5803461421333420028}
     m_Modifications:
     - target: {fileID: 259179745138985631, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a37f8f345dc6b1a4bb6e61c990cd3fbb, type: 3}
+    - target: {fileID: 259179745138985631, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_Color.b
-      value: 0.12255252
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 259179745138985631, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_Color.g
-      value: 0.92493844
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 259179745138985631, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_Color.r
-      value: 0.9622642
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1449248732950660720, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_Name
-      value: Color-Piece-Mover (1)
+      value: Color-Piece-Mover-Yellow
       objectReference: {fileID: 0}
     - target: {fileID: 7270990405951139949, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: Paint
@@ -363,11 +399,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8562064435162014775, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.01
+      value: -6.6
       objectReference: {fileID: 0}
     - target: {fileID: 8562064435162014775, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.28
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 8562064435162014775, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -420,20 +456,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 5803461421333420028}
     m_Modifications:
     - target: {fileID: 259179745138985631, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bc7091253985e3e4aa70da67533b7beb, type: 3}
+    - target: {fileID: 259179745138985631, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_Color.b
-      value: 0.1549929
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 259179745138985631, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_Color.g
-      value: 0.764151
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 259179745138985631, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_Color.r
-      value: 0.31565693
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1449248732950660720, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_Name
-      value: Color-Piece-Mover (2)
+      value: Color-Piece-Mover-Green
       objectReference: {fileID: 0}
     - target: {fileID: 7270990405951139949, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: Paint
@@ -441,11 +481,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8562064435162014775, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.34
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 8562064435162014775, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.28
+      value: 4.1
       objectReference: {fileID: 0}
     - target: {fileID: 8562064435162014775, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_LocalPosition.z

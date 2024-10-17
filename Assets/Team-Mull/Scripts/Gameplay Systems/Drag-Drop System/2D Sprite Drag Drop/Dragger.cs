@@ -33,7 +33,7 @@ namespace DevStory.Gameplay.DragDrop
 
         private void OnMouseDown()
         {
-            offset = transform.position - GetMousePos();
+            offset = transform.position - UtilityHelper.GetMousePos(mainCamera,gameObject);
 
             PointManager.Instance.SelectSprite(this);
         }
@@ -41,7 +41,7 @@ namespace DevStory.Gameplay.DragDrop
         private void OnMouseDrag()
         {
             //Check screen limits
-            Vector3 newPos = GetMousePos() + offset;
+            Vector3 newPos = UtilityHelper.GetMousePos(mainCamera, gameObject) + offset;
 
 
             transform.position = newPos;
@@ -93,14 +93,6 @@ namespace DevStory.Gameplay.DragDrop
             }
 
             transform.position = clampedPosition;
-        }
-
-        private Vector3 GetMousePos()
-        {
-            Vector3 mousePoint = Input.mousePosition;
-            mousePoint.z = mainCamera.WorldToScreenPoint(gameObject.transform.position).z;
-
-            return mainCamera.ScreenToWorldPoint(mousePoint);
         }
 
         #endregion
