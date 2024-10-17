@@ -28,7 +28,6 @@ MonoBehaviour:
       Kind regards
 
       Modzart'
-    SupervisorSprite: {fileID: 0}
-    SupervisorName: Modzard Doggang
+    SupervisorData: {fileID: 11400000, guid: 00667eed19d844041aecac8ef050c2c6, type: 2}
     TaskPrefab: {fileID: 0}
     Deadline: 0

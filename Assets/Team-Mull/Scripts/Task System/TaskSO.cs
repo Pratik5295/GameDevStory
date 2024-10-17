@@ -17,9 +17,7 @@ namespace DevStory.TaskSystem
         [TextArea(3,12)]
         public string Description;
 
-        //Supervisor section, will be turned into a character tool with enum?
-        public Sprite SupervisorSprite;
-        public string SupervisorName;   
+        public CharacterDataSO SupervisorData; 
 
         //Can I add game object
         public GameObject TaskPrefab;   //Translates to the puzzle prefab

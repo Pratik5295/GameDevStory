@@ -24,7 +24,6 @@ MonoBehaviour:
       beautiful outline of an abstract asset that we will be using. You will have
       to drag and drop colours to fill the asset, use any colours you want! The only
       constraint will be that you shouldn''t use the same colour next to each other!'
-    SupervisorSprite: {fileID: 21300000, guid: 7c4189c88f5e2694694fd06bba7d4326, type: 3}
-    SupervisorName: Leonardo Di Vinci
+    SupervisorData: {fileID: 11400000, guid: 00667eed19d844041aecac8ef050c2c6, type: 2}
     TaskPrefab: {fileID: 0}
     Deadline: 420

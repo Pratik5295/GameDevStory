@@ -27,7 +27,6 @@ MonoBehaviour:
       Regards
 
       Timmothy'
-    SupervisorSprite: {fileID: 21300000, guid: 7c4189c88f5e2694694fd06bba7d4326, type: 3}
-    SupervisorName: Lead Programmer
+    SupervisorData: {fileID: 11400000, guid: 00667eed19d844041aecac8ef050c2c6, type: 2}
     TaskPrefab: {fileID: 0}
     Deadline: 240

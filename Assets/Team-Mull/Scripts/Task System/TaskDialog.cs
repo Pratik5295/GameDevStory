@@ -49,9 +49,9 @@ namespace DevStory.TaskSystem
             taskHeaderImage.color
                 = ColorCoder.GetColorFromPriority(currentTaskData.Priority);
 
-            supervisorFaceCard.sprite = currentTaskData.SupervisorSprite;
+            supervisorFaceCard.sprite = currentTaskData.SupervisorData.Data.CharacterSprite;
 
-            supervisorName.text = currentTaskData.SupervisorName;
+            supervisorName.text = currentTaskData.SupervisorData.Data.CharacterName;
 
             descriptionText.text = currentTaskData.Description;
 
