@@ -1,7 +1,9 @@
 using DevStory.DialogueSystem;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
+using UnityEditor.VersionControl;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -69,7 +71,19 @@ namespace DevStory.UI
         {
             activeEmail = _newEmail;
             emailHeader.text = _newEmail.EmailTitle;
-            DisplayNextMessage();
+
+            //Check if the queue has any data in the local cache
+            if (activeEmail.IsDirty)
+            {
+                Debug.Log($"{activeEmail.name} was already shown before");
+
+                LoadEmailCache();
+            }
+            else
+            {
+                //Display new message only if this conversation was never opened
+                DisplayNextMessage();
+            }
         }
 
         public void ClearThread()
@@ -128,6 +142,32 @@ namespace DevStory.UI
                 threadScroll.verticalNormalizedPosition = Mathf.Lerp(threadScroll.verticalNormalizedPosition, targetPosition, time / scrollSpeed);
                 yield return null;
             }
+        }
+
+        private void LoadEmailCache()
+        {
+            //Displaying all the messages except the last one
+
+            for(int i = 0; i < activeEmail.localQueue.Count - 1; i++)
+            {
+                var message = activeEmail.localQueue.ElementAt(i);
+                var emailDisplay = CreateNewMessage();
+                emailDisplay.PopulateWithoutTraverse(message, activeEmail, this);
+
+                //Scroll to the bottom
+                threadScroll.verticalNormalizedPosition = 0f;
+            }
+
+            //Getting the last message
+            var lastMessage = activeEmail.localQueue.Last();
+
+            //Displaying last message with options if it has options
+            var lastEmailDisplay = CreateNewMessage();
+            lastEmailDisplay.Populate(lastMessage, activeEmail, this);
+
+            threadScroll.verticalNormalizedPosition = 0f;
+
+            Debug.Log("All messages for this email have been displayed");
         }
       }
     }

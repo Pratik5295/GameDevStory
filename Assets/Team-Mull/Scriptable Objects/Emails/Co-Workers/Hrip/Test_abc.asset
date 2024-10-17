@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aeb27cee0db31b343a0cacf931609ec5, type: 3}
-  m_Name: EHT01_D
+  m_Script: {fileID: 11500000, guid: ddc8d93fa9dc14b4b87a5bab87f1ba73, type: 3}
+  m_Name: Test_abc
   m_EditorClassIdentifier: 
-  Messages:
-  - {fileID: 11400000, guid: cdd6197c0c9b92d45b52adfcb738cd01, type: 2}
-  - {fileID: 11400000, guid: e36bbe9ef11a95a4dbd4dfe6b9871f18, type: 2}
+  EmailTitle: 
+  Messages: []

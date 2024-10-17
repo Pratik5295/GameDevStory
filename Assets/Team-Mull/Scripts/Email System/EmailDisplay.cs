@@ -48,6 +48,22 @@ namespace DevStory.UI
             taskButton.PopulateDisplay(_newData);
         }
 
+        public void PopulateWithoutTraverse(DialogueMessageSO _currentMessage, GameEmail currentEmail, GameEmailScreen _screen)
+        {
+            emailScreen = _screen;
+            currentMessage = _currentMessage;
+            activeEmail = currentEmail;
+            
+            emailBody.text = _currentMessage.Message;
+            emailSenderName.text = _currentMessage.Speaker;
+
+            //Hide all your options
+            HideAllOptions();
+
+            //Show/Hide Task buttons
+            PopulateTaskButton();
+        }
+
 
         public void Populate(DialogueMessageSO _currentMessage, GameEmail currentEmail, GameEmailScreen _screen)
         {
@@ -101,15 +117,7 @@ namespace DevStory.UI
                 }
             }
 
-            //Check if the go to task needs to be populated
-            if (taskButton != null)
-            {
-                taskButtonParent.SetActive(_currentMessage.hasTask);
-            }
-            else
-            {
-                Debug.LogError("Task button parent reference is missing");
-            }
+            PopulateTaskButton();
         }
 
         private IEnumerator ShowNextMessage()
@@ -127,6 +135,23 @@ namespace DevStory.UI
             foreach(var option in optionButtons)
             {
                 option.gameObject?.SetActive(false);
+            }
+        }
+
+        /// <summary>
+        /// Helper function to populate task only if task exists on backend 
+        /// for the particular message
+        /// </summary>
+        private void PopulateTaskButton()
+        {
+            //Check if the go to task needs to be populated
+            if (taskButton != null)
+            {
+                taskButtonParent.SetActive(currentMessage.hasTask);
+            }
+            else
+            {
+                Debug.LogError("Task button parent reference is missing");
             }
         }
 

@@ -1,4 +1,5 @@
 using DevStory.UI;
+using System.Collections.Generic;
 using UnityEngine;
 using static MetaConstants.EnumManager.EnumManager;
 
@@ -23,7 +24,18 @@ namespace DevStory.DialogueSystem
 
         [SerializeField] private string emailTitle;
 
-        public string EmailTitle => emailTitle; 
+        public string EmailTitle => emailTitle;
+
+
+        //Local cache for messages
+
+        [Space(5)]
+        [Header("Local Cache Variables")]
+        [SerializeField] private bool dirty = false;
+
+        public bool IsDirty => dirty;
+
+        public Queue<DialogueMessageSO> localQueue = new Queue<DialogueMessageSO>();
 
 
         public void SetEmailData(EmailSO _data)
@@ -50,13 +62,25 @@ namespace DevStory.DialogueSystem
 
         public DialogueMessageSO GetMessage()
         {
-            return data.Messages[currentEmailIndex];
+            //First message was shown to the player
+            dirty = true;
+
+            var message = data.Messages[currentEmailIndex];
+
+            //Load the queue up
+            LoadQueue(message);
+            return message;
         }
 
         public DialogueMessageSO GetNextMessage()
         {
             currentEmailIndex++;
-            return data.Messages[currentEmailIndex];
+
+            var message = data.Messages[currentEmailIndex];
+
+            //Load the queue up
+            LoadQueue(message);
+            return message;
         }
 
         public void TraverseMessageCounter()
@@ -71,6 +95,15 @@ namespace DevStory.DialogueSystem
         public void TraverseMessageCounterTo(int _newCounter)
         {
             currentEmailIndex = _newCounter;
+        }
+
+        
+
+        private void LoadQueue(DialogueMessageSO _message)
+        {
+            if (localQueue.Contains(_message)) return;
+
+            localQueue.Enqueue(_message);
         }
     }
 }
