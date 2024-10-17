@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04d48516da680f04aa757b98deff11cc, type: 3}
+  m_Name: DMRM
+  m_EditorClassIdentifier: 
+  Speaker: DownloadMoreRam LTD
+  Message: 'ARE YOU RUNNING OUT OF TIME TO FINISH YOUR WORK?
+
+
+    WELL, WE HERE
+    AT DOWNLOADMORERAM LTD KNOW THE FIX!
+
+
+    JUST DOWNLOAD MORE RAM! IT''S SLOWING
+    YOUR PC DOWN, SIMPLY CLICK THE LINK BELOW TO GET A FREE 16 GIG UPGRADE.'
+  Options:
+  - optionMessage: CLICK
+    nextMessageIndex: 0
+  Type: 1
+  hasTask: 0
+  nextIndex: 0
