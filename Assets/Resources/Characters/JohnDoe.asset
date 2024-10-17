@@ -9,12 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04d48516da680f04aa757b98deff11cc, type: 3}
-  m_Name: TM-4
+  m_Script: {fileID: 11500000, guid: e093616bfbba60442a94a4ffad3f27b6, type: 3}
+  m_Name: JohnDoe
   m_EditorClassIdentifier: 
-  Speaker: {fileID: 11400000, guid: 00667eed19d844041aecac8ef050c2c6, type: 2}
-  Message: I am alive, but I wish I was asleep!
-  Options: []
-  Type: 1
-  hasTask: 0
-  nextIndex: 0
+  Data:
+    CharacterName: John Doe
+    CharacterDesignation: God
+    CharacterSprite: {fileID: 21300000, guid: 7c4189c88f5e2694694fd06bba7d4326, type: 3}

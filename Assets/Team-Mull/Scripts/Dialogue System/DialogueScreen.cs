@@ -47,7 +47,7 @@ namespace DevStory.DialogueSystem
             Debug.Log($"Message:{currentMessage.Message} and Speaker: {currentMessage.Speaker}");
 
             dialogueText.text = currentMessage.Message;
-            speakerText.text = currentMessage.Speaker;
+            speakerText.text = currentMessage.Speaker.Data.CharacterName;
 
             //Populate your options if any
             if (currentMessage.Options != null && currentMessage.Options.Length > 0)

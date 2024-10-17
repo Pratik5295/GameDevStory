@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04d48516da680f04aa757b98deff11cc, type: 3}
   m_Name: TM-3
   m_EditorClassIdentifier: 
-  Speaker: Batman
+  Speaker: {fileID: 11400000, guid: 00667eed19d844041aecac8ef050c2c6, type: 2}
   Message: Grrrrrrrrhhhhhhhhhh!
   Options: []
   Type: 0
