@@ -15,10 +15,3 @@ public class CharacterDataSO : ScriptableObject
 {
     public CharData Data;
 }
-
-public class TestingCharacter : PropertyAttribute
-{
-    public CharacterDataSO characterData;
-
-
-}

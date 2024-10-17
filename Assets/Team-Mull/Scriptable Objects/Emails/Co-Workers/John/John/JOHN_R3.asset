@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04d48516da680f04aa757b98deff11cc, type: 3}
   m_Name: JOHN_R3
   m_EditorClassIdentifier: 
-  Speaker: 
+  Speaker: {fileID: 11400000, guid: 00667eed19d844041aecac8ef050c2c6, type: 2}
   Message: 'Sorry, I''ll back to you, busy at the moment.
 
 '

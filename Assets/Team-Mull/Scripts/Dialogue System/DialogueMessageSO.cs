@@ -18,7 +18,7 @@ namespace DevStory.DialogueSystem
     public class DialogueMessageSO: ScriptableObject
     {
         //The one who is speaking 
-        public string Speaker;
+        public CharacterDataSO Speaker;
 
         [TextArea(3,12)]
         public string Message;

@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04d48516da680f04aa757b98deff11cc, type: 3}
   m_Name: TestDM4
   m_EditorClassIdentifier: 
-  Speaker: You
+  Speaker: {fileID: 11400000, guid: 00667eed19d844041aecac8ef050c2c6, type: 2}
   Message: I will not! I am tooo tired to code at the moment!
   Options: []
   Type: 1
+  hasTask: 0
+  nextIndex: 0

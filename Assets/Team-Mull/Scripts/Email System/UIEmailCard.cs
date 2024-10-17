@@ -23,7 +23,7 @@ namespace DevStory.UI
         public void Populate(GameEmail _email)
         {
             email = _email;
-            senderNameText.text = _email.Messages[0].Speaker;
+            senderNameText.text = _email.Messages[0].Speaker.Data.CharacterName;
             emailSubjectText.text = _email.EmailTitle;
             emailContentText.text = _email.Messages[0].Message;
         }

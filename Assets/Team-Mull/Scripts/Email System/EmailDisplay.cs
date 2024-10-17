@@ -55,7 +55,7 @@ namespace DevStory.UI
             activeEmail = currentEmail;
             
             emailBody.text = _currentMessage.Message;
-            emailSenderName.text = _currentMessage.Speaker;
+            emailSenderName.text = _currentMessage.Speaker.Data.CharacterName;
 
             //Hide all your options
             HideAllOptions();
@@ -72,7 +72,7 @@ namespace DevStory.UI
             activeEmail = currentEmail;
 
             emailBody.text = _currentMessage.Message;
-            emailSenderName.text = _currentMessage.Speaker;
+            emailSenderName.text = _currentMessage.Speaker.Data.CharacterName;
 
             if (_currentMessage.Options != null && _currentMessage.Options.Length > 0)
             {
