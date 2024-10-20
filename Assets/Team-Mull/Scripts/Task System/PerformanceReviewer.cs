@@ -15,12 +15,12 @@ namespace DevStory.TaskSystem
         public float Deadline;
         public float SubmissionTime;
 
-        public TaskResultSaver(float _deadline)
+        public TaskResultSaver(string _taskName, TaskStatus _status, float _deadline)
         {
-            TaskName = "TaskName";
-            Status = TaskStatus.DEFAULT;
+            TaskName = _taskName;
+            Status = _status;
             Deadline = _deadline;
-            SubmissionTime = -1;
+            SubmissionTime = -1;    //-1 reflects the task wasnt submitted yet
         }
     }
 

@@ -13,7 +13,7 @@ namespace DevStory.UI
     {
         [SerializeField] private PaintPuzzle puzzle;
 
-        public override void SubmitPuzzleCheck()
+        public override void OnSubmitButtonClicked()
         {
             //Call the submit task interface 
             SubmitTask(GameTimerManager.Instance.CurrentTime);

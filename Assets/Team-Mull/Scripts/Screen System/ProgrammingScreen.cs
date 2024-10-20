@@ -16,7 +16,7 @@ namespace DevStory.UI
         //Will later be improved to handle programming puzzles only
         [SerializeField] private Puzzle puzzle;
 
-        public override void SubmitPuzzleCheck()
+        public override void OnSubmitButtonClicked()
         {
             //Call the submit task interface 
             SubmitTask(GameTimerManager.Instance.CurrentTime);

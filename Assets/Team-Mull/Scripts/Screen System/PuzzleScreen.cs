@@ -28,7 +28,7 @@ namespace DevStory.UI
 
         private void Start()
         {
-            submitButton.onClick.AddListener(SubmitPuzzleCheck);
+            submitButton.onClick.AddListener(OnSubmitButtonClicked);
         }
 
         public void SetTaskOnScreen(GameTask _gameTask)
@@ -41,13 +41,13 @@ namespace DevStory.UI
             submitButton.onClick.RemoveAllListeners();
         }
 
-        public virtual void SubmitPuzzleCheck()
+        public virtual void OnSubmitButtonClicked()
         {
         }
 
         public virtual void SubmitTask(float _currentTime)
         {
-            
+            gameTask.TaskCompleted();
         }
     }
 }

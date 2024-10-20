@@ -1,3 +1,4 @@
+using DevStory.Gameplay.GameTimer;
 using DevStory.Managers;
 using System;
 using UnityEngine;
@@ -33,12 +34,16 @@ namespace DevStory.TaskSystem
 
             Status = TaskStatus.TODO;
 
-            CurrentResult = new TaskResultSaver(_taskData.TaskData.Deadline);
+            var data = Data.TaskData;
+            CurrentResult = new TaskResultSaver(data.TaskName, Status, data.Deadline);
         }
 
         public void TaskCompleted()
         {
             Status = TaskStatus.COMPLETED;
+
+            CurrentResult.Status = Status;
+            CurrentResult.SubmissionTime = GameTimerManager.Instance.CurrentTime;
 
             OnTaskCompleted?.Invoke();
         }
