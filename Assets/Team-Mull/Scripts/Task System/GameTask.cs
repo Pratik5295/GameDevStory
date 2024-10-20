@@ -30,12 +30,13 @@ namespace DevStory.TaskSystem
         public void AddTaskToManager(TaskSO _taskData)
         {
             Data = _taskData;
-            TaskManager.Instance.AddNewTask(this);
 
             Status = TaskStatus.TODO;
 
             var data = Data.TaskData;
             CurrentResult = new TaskResultSaver(data.TaskName, Status, data.Deadline);
+
+            TaskManager.Instance.AddNewTask(this, CurrentResult);
         }
 
         public void TaskCompleted()
@@ -46,6 +47,10 @@ namespace DevStory.TaskSystem
             CurrentResult.SubmissionTime = GameTimerManager.Instance.CurrentTime;
 
             OnTaskCompleted?.Invoke();
+
+            TaskManager.Instance.UpdateTaskResult(this,CurrentResult);
+
+
         }
     }
 }

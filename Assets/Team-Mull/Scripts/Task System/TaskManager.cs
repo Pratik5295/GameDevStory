@@ -25,13 +25,26 @@ namespace DevStory.Managers
         [SerializeField]
         private PerformanceReviewer performanceReviewer;
         
-        public void AddNewTask(GameTask _task)
+        public void AddNewTask(GameTask _task, TaskResultSaver _result)
         {
             if (!currentTasks.Contains(_task))
             {
                 currentTasks.Add(_task);
                 OnCurrentTasksUpdated?.Invoke(currentTasks);
 
+                performanceReviewer.UpdateResult(_task,_result);
+            }
+        }
+
+        public void UpdateTaskResult(GameTask _task,TaskResultSaver _result)
+        {
+            if (!currentTasks.Contains(_task))
+            {
+                Debug.LogWarning($"Task doesn't exist");
+            }
+            else
+            {
+                performanceReviewer.UpdateResult( _task,_result);
             }
         }
 

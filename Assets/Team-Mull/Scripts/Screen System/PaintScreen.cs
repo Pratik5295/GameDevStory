@@ -22,6 +22,8 @@ namespace DevStory.UI
 
         public override void SubmitTask(float _currentTime)
         {
+            base.SubmitTask(_currentTime);
+
             var currentTime = GameTimerManager.Instance.CurrentTime;
             string formatCurrTime = UtilityHelper.ConvertTimeFormat(currentTime);
 
