@@ -1,4 +1,7 @@
+using DevStory.Gameplay.GameTimer;
+using DevStory.Interfaces.UI;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using static MetaConstants.EnumManager.EnumManager;
 
@@ -25,9 +28,13 @@ namespace DevStory.TaskSystem
         }
     }
 
-    public class PerformanceReviewer : MonoBehaviour
+    [DefaultExecutionOrder(5)]
+    public class PerformanceReviewer : MonoBehaviour,IScreen
     {
         public Dictionary<GameTask,TaskResultSaver> taskResults = new Dictionary<GameTask,TaskResultSaver>();
+
+        [SerializeField]
+        private GameTimerManager gameTimerManager;
 
         #region Task Results Data Handling
         /// <summary>
@@ -41,6 +48,9 @@ namespace DevStory.TaskSystem
             if (!taskResults.ContainsKey(_task))
             {
                 taskResults.Add(_task, _saver);
+
+                //Create card on the content
+                CreateCard(_task);
             }
             else
             {
@@ -64,11 +74,49 @@ namespace DevStory.TaskSystem
         public void UpdateResultValue(GameTask _task, TaskResultSaver _saver)
         {
             taskResults[_task] = _saver;
+
+            //Update information on the card
+            UpdateInformation(_task);
         }
 
         #endregion
 
         #region Task Results Display Handling
+
+        [Space(10)]
+        [Header("Performance Display Variables")]
+
+        [SerializeField]
+        private GameObject systemParent;
+
+        [SerializeField]
+        private GameObject performanceCardPrefab;
+
+        [SerializeField]
+        private Transform cardsParent;
+
+        [SerializeField]
+        private Dictionary<GameTask,GameObject> cards = new Dictionary<GameTask,GameObject>();
+
+        private void Start()
+        {
+            gameTimerManager = GameTimerManager.Instance;
+
+            if(gameTimerManager != null)
+            {
+                gameTimerManager.OnDayEndedEvent += OnShowPerformanceReviewer;
+            }
+
+            Close();
+        }
+
+        private void OnDestroy()
+        {
+            if (gameTimerManager != null)
+            {
+                gameTimerManager.OnDayEndedEvent -= OnShowPerformanceReviewer;
+            }
+        }
 
         public void ShowAllTaskResults()
         {
@@ -76,6 +124,42 @@ namespace DevStory.TaskSystem
             {
                 Debug.Log($"{kvp.Value.TaskName}, {kvp.Value.Status} & {kvp.Value.SubmissionTime}");
             }
+
+            OnShowPerformanceReviewer();
+        }
+
+        public void Open()
+        {
+            systemParent.SetActive(true);
+        }
+
+        public void Close()
+        {
+            systemParent.SetActive(false);
+        }
+
+        private void OnShowPerformanceReviewer()
+        {
+            Open();
+        }
+
+        private void CreateCard(GameTask _task)
+        {
+            var go = Instantiate(performanceCardPrefab);
+            go.transform.SetParent(cardsParent);
+
+            go.GetComponent<UIPerformanceCard>().SetTaskResult(_task.GetResult);
+
+            cards.Add(_task, go);
+        }
+
+        private void UpdateInformation(GameTask _task)
+        {
+            //Get relevant card
+            var performanceCard = cards.First(card => card.Key == _task).Value;
+
+            //Update Performance information
+            performanceCard.GetComponent<UIPerformanceCard>().Populate(_task.GetResult);
         }
 
         #endregion

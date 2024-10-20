@@ -26,6 +26,8 @@ namespace DevStory.TaskSystem
         [SerializeField]
         private TaskResultSaver CurrentResult;
 
+        public TaskResultSaver GetResult => CurrentResult;
+
 
         public void AddTaskToManager(TaskSO _taskData)
         {
