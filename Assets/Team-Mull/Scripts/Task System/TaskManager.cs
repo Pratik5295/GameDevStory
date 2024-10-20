@@ -23,7 +23,7 @@ namespace DevStory.Managers
         [Header("Components")]
 
         [SerializeField]
-        private PerformannceReviewer performanceReviewer;
+        private PerformanceReviewer performanceReviewer;
         
         public void AddNewTask(GameTask _task)
         {

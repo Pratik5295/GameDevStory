@@ -22,6 +22,9 @@ namespace DevStory.TaskSystem
 
         public Action OnTaskCompleted;
 
+        [SerializeField]
+        private TaskResultSaver CurrentResult;
+
 
         public void AddTaskToManager(TaskSO _taskData)
         {
@@ -29,6 +32,8 @@ namespace DevStory.TaskSystem
             TaskManager.Instance.AddNewTask(this);
 
             Status = TaskStatus.TODO;
+
+            CurrentResult = new TaskResultSaver(_taskData.TaskData.Deadline);
         }
 
         public void TaskCompleted()
