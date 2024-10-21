@@ -19,6 +19,7 @@ namespace DevStory.TaskSystem
         private TaskSO Data;
 
         public TaskStatus Status;
+        public TaskPriority Priority;
         public TaskSO GetData => Data;  
 
         public Action OnTaskCompleted;
@@ -34,9 +35,12 @@ namespace DevStory.TaskSystem
             Data = _taskData;
 
             Status = TaskStatus.TODO;
+            Priority = Data.TaskData.Priority;
 
             var data = Data.TaskData;
-            CurrentResult = new TaskResultSaver(data.TaskName, Status, data.Deadline);
+            CurrentResult = 
+                new TaskResultSaver(data.TaskName, 
+                Status, Priority, data.Deadline);
 
             TaskManager.Instance.AddNewTask(this, CurrentResult);
         }

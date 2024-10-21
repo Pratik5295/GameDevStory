@@ -1,5 +1,6 @@
 using DevStory.Gameplay.GameTimer;
 using DevStory.Interfaces.UI;
+using DevStory.PressureSystem;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -16,15 +17,18 @@ namespace DevStory.TaskSystem
     {
         public string TaskName;
         public TaskStatus Status;
+        public TaskPriority Priority;
         public float Deadline;
         public float SubmissionTime;
         public int SubmissionDay;
 
         public TaskResultSaver(string _taskName, 
             TaskStatus _status, 
+            TaskPriority _priority,
             float _deadline)
         {
             TaskName = _taskName;
+            Priority = _priority;
             Status = _status;
             Deadline = _deadline;
             SubmissionTime = -1;    //-1 reflects the task wasnt submitted yet
@@ -52,13 +56,6 @@ namespace DevStory.TaskSystem
             if (!taskResults.ContainsKey(_task))
             {
                 taskResults.Add(_task, _saver);
-
-                //Create card on the content
-                CreateCard(_task);
-            }
-            else
-            {
-                UpdateResultValue(_task, _saver);
             }
         }
 
@@ -75,13 +72,6 @@ namespace DevStory.TaskSystem
             taskResults.Clear();
         }
 
-        public void UpdateResultValue(GameTask _task, TaskResultSaver _saver)
-        {
-            taskResults[_task] = _saver;
-
-            //Update information on the card
-            UpdateInformation(_task);
-        }
 
         #endregion
 
@@ -144,6 +134,13 @@ namespace DevStory.TaskSystem
 
             //Open the performance reviewer
             Open();
+
+            //Create and add all the cards based on the result stored in the dictionary
+            foreach(var res in taskResults)
+            {
+                CreateCard(res.Key);
+            }
+
         }
 
         private void CreateCard(GameTask _task)
@@ -151,9 +148,16 @@ namespace DevStory.TaskSystem
             var go = Instantiate(performanceCardPrefab);
             go.transform.SetParent(cardsParent);
 
-            go.GetComponent<UIPerformanceCard>().SetTaskResult(_task.GetResult);
+            TaskResultSaver result = _task.GetResult;
+
+            go.GetComponent<UIPerformanceCard>().SetTaskResult(result);
 
             cards.Add(_task, go);
+
+            //Apply pressure based on the task result
+            int pressurePoints = PressurePointCalculator.GetPressurePoints(result);
+
+            PressureManager.Instance.AddPresure(pressurePoints);
         }
 
         private void UpdateInformation(GameTask _task)
