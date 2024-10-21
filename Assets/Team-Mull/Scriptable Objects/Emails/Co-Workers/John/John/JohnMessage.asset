@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddc8d93fa9dc14b4b87a5bab87f1ba73, type: 3}
   m_Name: JohnMessage
   m_EditorClassIdentifier: 
-  EmailTitle: 
+  EmailTitle: Greetings!
   Messages:
   - {fileID: 11400000, guid: cdd6197c0c9b92d45b52adfcb738cd01, type: 2}
   - {fileID: 11400000, guid: b2b9f352bf837dd448bb977550b9fe8b, type: 2}

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04d48516da680f04aa757b98deff11cc, type: 3}
   m_Name: EDM_Welcome1
   m_EditorClassIdentifier: 
-  Speaker: {fileID: 11400000, guid: 00667eed19d844041aecac8ef050c2c6, type: 2}
+  Speaker: {fileID: 11400000, guid: 747a0dbdf8b53cb4bb0a50f4c2e40223, type: 2}
   Message: "Hello Kideo Hojima,\r\n\r\nWelcome to [Studio]! We are excited to have
     you onboard. I hope your induction went well and you\u2019re ready to begin your
     development journey! \r\n\r\nYou\u2019ll be given daily tasks that will be updated

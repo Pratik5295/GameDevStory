@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04d48516da680f04aa757b98deff11cc, type: 3}
   m_Name: JOHN_R3 3
   m_EditorClassIdentifier: 
-  Speaker: {fileID: 11400000, guid: 00667eed19d844041aecac8ef050c2c6, type: 2}
+  Speaker: {fileID: 11400000, guid: 3ce5ff58b774a7047937c54b2163201b, type: 2}
   Message: Sounds grand. I'm not used to eating cafeteria food, can we perhaps go
     a to a fine dining restaurant?
   Options: []
