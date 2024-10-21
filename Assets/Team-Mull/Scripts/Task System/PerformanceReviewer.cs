@@ -120,11 +120,6 @@ namespace DevStory.TaskSystem
 
         public void ShowAllTaskResults()
         {
-            foreach(var kvp in taskResults)
-            {
-                Debug.Log($"{kvp.Value.TaskName}, {kvp.Value.Status} & {kvp.Value.SubmissionTime}");
-            }
-
             OnShowPerformanceReviewer();
         }
 
