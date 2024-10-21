@@ -18,13 +18,17 @@ namespace DevStory.TaskSystem
         public TaskStatus Status;
         public float Deadline;
         public float SubmissionTime;
+        public int SubmissionDay;
 
-        public TaskResultSaver(string _taskName, TaskStatus _status, float _deadline)
+        public TaskResultSaver(string _taskName, 
+            TaskStatus _status, 
+            float _deadline)
         {
             TaskName = _taskName;
             Status = _status;
             Deadline = _deadline;
             SubmissionTime = -1;    //-1 reflects the task wasnt submitted yet
+            SubmissionDay = -1;     // -1 reflects the task wasnt submitted yet
         }
     }
 
@@ -104,7 +108,7 @@ namespace DevStory.TaskSystem
 
             if(gameTimerManager != null)
             {
-                gameTimerManager.OnDayEndedEvent += OnShowPerformanceReviewer;
+                gameTimerManager.OnDayStartedEvent += OnShowPerformanceReviewer;
             }
 
             Close();
@@ -114,7 +118,7 @@ namespace DevStory.TaskSystem
         {
             if (gameTimerManager != null)
             {
-                gameTimerManager.OnDayEndedEvent -= OnShowPerformanceReviewer;
+                gameTimerManager.OnDayStartedEvent -= OnShowPerformanceReviewer;
             }
         }
 
@@ -135,6 +139,10 @@ namespace DevStory.TaskSystem
 
         private void OnShowPerformanceReviewer()
         {
+            //Do not show the performance reviewer on the start of your first day
+            if (gameTimerManager.Day == 1) return;
+
+            //Open the performance reviewer
             Open();
         }
 

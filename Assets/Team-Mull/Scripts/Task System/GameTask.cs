@@ -47,6 +47,7 @@ namespace DevStory.TaskSystem
 
             CurrentResult.Status = Status;
             CurrentResult.SubmissionTime = GameTimerManager.Instance.CurrentTime;
+            CurrentResult.SubmissionDay = GameTimerManager.Instance.Day;
 
             OnTaskCompleted?.Invoke();
 
