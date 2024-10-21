@@ -8,14 +8,24 @@ namespace DevStory.Gameplay.GameTimer
     {
         public static GameTimerManager Instance = null;
 
+        [Header("Day details")]
+        [SerializeField]
+        private int day = 0;
+
+        public int Day => day;
+
+        [Space(3)]
+        [Header("Time of day details")]
         [SerializeField]
         private float currentTime = 0;
 
+
         public float CurrentTime => currentTime;
 
-        //Maximum number of seconds in a day
+
+        //Maximum number of seconds in a day 480f
         [SerializeField]
-        private float maxDayTime = 480f;
+        private float maxDayTime = 60f;
 
         [SerializeField]
         private bool isDayRunning = false;
@@ -35,11 +45,17 @@ namespace DevStory.Gameplay.GameTimer
             }
         }
 
+        /// <summary>
+        /// The button listener function to start the game day
+        /// Link this to the login button we would have in the game
+        /// </summary>
         public void StartDay()
         {
             currentTime = 0;
 
             isDayRunning = true;
+
+            day++;
 
             OnDayStartedEvent?.Invoke();
         }

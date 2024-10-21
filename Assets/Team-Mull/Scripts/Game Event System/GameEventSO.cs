@@ -9,6 +9,9 @@ namespace DevStory.GameEventSystem
 
         public string eventName;
 
+        [Tooltip("The day when this event be fired on")]
+        public int Day;
+
         [Range(0f,480f)]
         public float eventFireTime;
 
