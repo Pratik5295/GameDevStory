@@ -1,10 +1,7 @@
 using DevStory.Gameplay.GameTimer;
 using DevStory.Gameplay.Puzzles;
-using DevStory.Interfaces;
 using DevStory.Utility;
-using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace DevStory.UI
 {
@@ -16,7 +13,7 @@ namespace DevStory.UI
     {
         [SerializeField] private PaintPuzzle puzzle;
 
-        public override void SubmitPuzzleCheck()
+        public override void OnSubmitButtonClicked()
         {
             //Call the submit task interface 
             SubmitTask(GameTimerManager.Instance.CurrentTime);
@@ -25,6 +22,8 @@ namespace DevStory.UI
 
         public override void SubmitTask(float _currentTime)
         {
+            base.SubmitTask(_currentTime);
+
             var currentTime = GameTimerManager.Instance.CurrentTime;
             string formatCurrTime = UtilityHelper.ConvertTimeFormat(currentTime);
 

@@ -1,3 +1,4 @@
+using DevStory.Gameplay.GameTimer;
 using DevStory.Managers;
 using System;
 using UnityEngine;
@@ -22,20 +23,36 @@ namespace DevStory.TaskSystem
 
         public Action OnTaskCompleted;
 
+        [SerializeField]
+        private TaskResultSaver CurrentResult;
+
+        public TaskResultSaver GetResult => CurrentResult;
+
 
         public void AddTaskToManager(TaskSO _taskData)
         {
             Data = _taskData;
-            TaskManager.Instance.AddNewTask(this);
 
             Status = TaskStatus.TODO;
+
+            var data = Data.TaskData;
+            CurrentResult = new TaskResultSaver(data.TaskName, Status, data.Deadline);
+
+            TaskManager.Instance.AddNewTask(this, CurrentResult);
         }
 
         public void TaskCompleted()
         {
             Status = TaskStatus.COMPLETED;
 
+            CurrentResult.Status = Status;
+            CurrentResult.SubmissionTime = GameTimerManager.Instance.CurrentTime;
+
             OnTaskCompleted?.Invoke();
+
+            TaskManager.Instance.UpdateTaskResult(this,CurrentResult);
+
+
         }
     }
 }

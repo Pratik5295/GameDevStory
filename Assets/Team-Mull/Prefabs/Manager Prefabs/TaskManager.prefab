@@ -45,3 +45,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   taskDialogScreen: {fileID: 0}
+  currentTask: {fileID: 0}
+  currentTasks: []
+  performanceReviewer: {fileID: 0}

@@ -16,17 +16,35 @@ namespace DevStory.Managers
         [SerializeField] private GameTask currentTask;
 
         [SerializeField] private List<GameTask> currentTasks = new List<GameTask>();
-        [SerializeField] private List<GameTask> completedTasks = new List<GameTask>();
 
         public Action<List<GameTask>> OnCurrentTasksUpdated;
+
+        [Space(10)]
+        [Header("Components")]
+
+        [SerializeField]
+        private PerformanceReviewer performanceReviewer;
         
-        public void AddNewTask(GameTask _task)
+        public void AddNewTask(GameTask _task, TaskResultSaver _result)
         {
             if (!currentTasks.Contains(_task))
             {
                 currentTasks.Add(_task);
                 OnCurrentTasksUpdated?.Invoke(currentTasks);
 
+                performanceReviewer.UpdateResult(_task,_result);
+            }
+        }
+
+        public void UpdateTaskResult(GameTask _task,TaskResultSaver _result)
+        {
+            if (!currentTasks.Contains(_task))
+            {
+                Debug.LogWarning($"Task doesn't exist");
+            }
+            else
+            {
+                performanceReviewer.UpdateResult( _task,_result);
             }
         }
 
