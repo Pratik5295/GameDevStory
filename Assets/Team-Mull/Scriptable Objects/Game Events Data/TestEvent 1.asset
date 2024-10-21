@@ -15,5 +15,6 @@ MonoBehaviour:
   eventData:
     eventCode: 60
     eventName: 1 hour event (Fired at 10AM)
+    eventFireDay: 1
     eventFireTime: 60
     prefab: {fileID: 0}

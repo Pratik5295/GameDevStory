@@ -32,7 +32,14 @@ namespace DevStory.Managers
                 currentTasks.Add(_task);
                 OnCurrentTasksUpdated?.Invoke(currentTasks);
 
-                performanceReviewer.UpdateResult(_task,_result);
+                if (performanceReviewer != null)
+                {
+                    performanceReviewer.UpdateResult(_task, _result);
+                }
+                else
+                {
+                    Debug.LogError("Performance reviewer component is missing");
+                }
             }
         }
 
@@ -44,7 +51,14 @@ namespace DevStory.Managers
             }
             else
             {
-                performanceReviewer.UpdateResult( _task,_result);
+                if (performanceReviewer != null)
+                {
+                    performanceReviewer.UpdateResult(_task, _result);
+                }
+                else
+                {
+                    Debug.LogError("Performance reviewer component is missing");
+                }
             }
         }
 

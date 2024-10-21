@@ -15,5 +15,6 @@ MonoBehaviour:
   eventData:
     eventCode: 300
     eventName: 300 Secon Fire
-    eventFireTime: 300
+    eventFireDay: 2
+    eventFireTime: 10
     prefab: {fileID: 0}
