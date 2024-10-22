@@ -1,0 +1,1704 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &628876017446823907
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6339116080843618614}
+  m_Layer: 0
+  m_Name: Jacket-Holder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6339116080843618614
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628876017446823907}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5689996502600821729}
+  - {fileID: 2366922508881428021}
+  - {fileID: 7775526045162222608}
+  - {fileID: 1927525296391116973}
+  - {fileID: 7659927119099289950}
+  - {fileID: 3768161757291603489}
+  - {fileID: 8875415966079737588}
+  - {fileID: 6050126406150866378}
+  - {fileID: 6588605185430135415}
+  - {fileID: 5867897165231316737}
+  - {fileID: 7695496500166976365}
+  - {fileID: 5953486676771651841}
+  - {fileID: 8097569685201829569}
+  - {fileID: 6257364185994290195}
+  - {fileID: 6371759517453050349}
+  - {fileID: 6918093938928414517}
+  - {fileID: 3623042766557052045}
+  - {fileID: 583466703174733443}
+  - {fileID: 3020855028971617938}
+  - {fileID: 2507408614499437831}
+  - {fileID: 9209206712975260129}
+  - {fileID: 7969816196376349097}
+  m_Father: {fileID: 7020021104945008784}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1548814728169898681
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1193526275470325055}
+  m_Layer: 0
+  m_Name: Face-Holder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1193526275470325055
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548814728169898681}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8528336065748097726}
+  - {fileID: 3843440957788623644}
+  - {fileID: 7759828321483282290}
+  - {fileID: 5632574954325426294}
+  m_Father: {fileID: 7020021104945008784}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5800453683018872732
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7020021104945008784}
+  m_Layer: 0
+  m_Name: Paint-Holder-Jacket-Full
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7020021104945008784
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5800453683018872732}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6339116080843618614}
+  - {fileID: 1193526275470325055}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &18446375484422692
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1193526275470325055}
+    m_Modifications:
+    - target: {fileID: 5650722262310992466, guid: c629b52b5c4f22f4895b84c848175840, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.053999
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: c629b52b5c4f22f4895b84c848175840, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.139
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: c629b52b5c4f22f4895b84c848175840, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.08627981
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: c629b52b5c4f22f4895b84c848175840, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: c629b52b5c4f22f4895b84c848175840, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: c629b52b5c4f22f4895b84c848175840, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: c629b52b5c4f22f4895b84c848175840, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: c629b52b5c4f22f4895b84c848175840, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: c629b52b5c4f22f4895b84c848175840, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: c629b52b5c4f22f4895b84c848175840, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6366959951795236700, guid: c629b52b5c4f22f4895b84c848175840, type: 3}
+      propertyPath: m_Name
+      value: Paint-Holder-Face-Forehead
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c629b52b5c4f22f4895b84c848175840, type: 3}
+--- !u!4 &5632574954325426294 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5650722262310992466, guid: c629b52b5c4f22f4895b84c848175840, type: 3}
+  m_PrefabInstance: {fileID: 18446375484422692}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &44341488918499763
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6339116080843618614}
+    m_Modifications:
+    - target: {fileID: 5650722262310992466, guid: 769f49bca0fec794cbd340f5ad871d0e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 769f49bca0fec794cbd340f5ad871d0e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 769f49bca0fec794cbd340f5ad871d0e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 769f49bca0fec794cbd340f5ad871d0e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 769f49bca0fec794cbd340f5ad871d0e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 769f49bca0fec794cbd340f5ad871d0e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6366959951795236700, guid: 769f49bca0fec794cbd340f5ad871d0e, type: 3}
+      propertyPath: m_Name
+      value: Paint-Holder-Jacket-Left
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2207140168844136764, guid: 769f49bca0fec794cbd340f5ad871d0e, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 769f49bca0fec794cbd340f5ad871d0e, type: 3}
+--- !u!4 &5689996502600821729 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5650722262310992466, guid: 769f49bca0fec794cbd340f5ad871d0e, type: 3}
+  m_PrefabInstance: {fileID: 44341488918499763}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1514344683703900197
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6339116080843618614}
+    m_Modifications:
+    - target: {fileID: 5650722262310992466, guid: adf05d3d31de49641abc33a598e754c9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.549
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: adf05d3d31de49641abc33a598e754c9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.857
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: adf05d3d31de49641abc33a598e754c9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: adf05d3d31de49641abc33a598e754c9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9925355
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: adf05d3d31de49641abc33a598e754c9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: adf05d3d31de49641abc33a598e754c9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: adf05d3d31de49641abc33a598e754c9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.12195645
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: adf05d3d31de49641abc33a598e754c9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: adf05d3d31de49641abc33a598e754c9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: adf05d3d31de49641abc33a598e754c9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -14.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6366959951795236700, guid: adf05d3d31de49641abc33a598e754c9, type: 3}
+      propertyPath: m_Name
+      value: Paint-Holder-Jacket-Collar-IC-Left
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: adf05d3d31de49641abc33a598e754c9, type: 3}
+--- !u!4 &6588605185430135415 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5650722262310992466, guid: adf05d3d31de49641abc33a598e754c9, type: 3}
+  m_PrefabInstance: {fileID: 1514344683703900197}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1587075150634867647
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6339116080843618614}
+    m_Modifications:
+    - target: {fileID: 5650722262310992466, guid: d2f42b8c61839744d9128f83d0700481, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.42731285
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: d2f42b8c61839744d9128f83d0700481, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.8598323
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: d2f42b8c61839744d9128f83d0700481, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: d2f42b8c61839744d9128f83d0700481, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: d2f42b8c61839744d9128f83d0700481, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: d2f42b8c61839744d9128f83d0700481, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: d2f42b8c61839744d9128f83d0700481, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: d2f42b8c61839744d9128f83d0700481, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: d2f42b8c61839744d9128f83d0700481, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: d2f42b8c61839744d9128f83d0700481, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6366959951795236700, guid: d2f42b8c61839744d9128f83d0700481, type: 3}
+      propertyPath: m_Name
+      value: Paint-Holder-Jacket-Sh-Pike-L1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d2f42b8c61839744d9128f83d0700481, type: 3}
+--- !u!4 &6371759517453050349 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5650722262310992466, guid: d2f42b8c61839744d9128f83d0700481, type: 3}
+  m_PrefabInstance: {fileID: 1587075150634867647}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1782856345398074945
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6339116080843618614}
+    m_Modifications:
+    - target: {fileID: 5650722262310992466, guid: 0ce20782a3857434f9fbb92e9735d65b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.657999
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 0ce20782a3857434f9fbb92e9735d65b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.3860002
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 0ce20782a3857434f9fbb92e9735d65b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 0ce20782a3857434f9fbb92e9735d65b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9940952
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 0ce20782a3857434f9fbb92e9735d65b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 0ce20782a3857434f9fbb92e9735d65b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 0ce20782a3857434f9fbb92e9735d65b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.10851157
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 0ce20782a3857434f9fbb92e9735d65b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 0ce20782a3857434f9fbb92e9735d65b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 0ce20782a3857434f9fbb92e9735d65b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 12.459
+      objectReference: {fileID: 0}
+    - target: {fileID: 6366959951795236700, guid: 0ce20782a3857434f9fbb92e9735d65b, type: 3}
+      propertyPath: m_Name
+      value: Paint-Holder-Jacket-Sh-Right
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0ce20782a3857434f9fbb92e9735d65b, type: 3}
+--- !u!4 &6257364185994290195 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5650722262310992466, guid: 0ce20782a3857434f9fbb92e9735d65b, type: 3}
+  m_PrefabInstance: {fileID: 1782856345398074945}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2086412802008742739
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6339116080843618614}
+    m_Modifications:
+    - target: {fileID: 5650722262310992466, guid: a2b6e92a14f246748becee98f0689487, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.792
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: a2b6e92a14f246748becee98f0689487, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: a2b6e92a14f246748becee98f0689487, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: a2b6e92a14f246748becee98f0689487, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9837058
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: a2b6e92a14f246748becee98f0689487, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: a2b6e92a14f246748becee98f0689487, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: a2b6e92a14f246748becee98f0689487, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.17978609
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: a2b6e92a14f246748becee98f0689487, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: a2b6e92a14f246748becee98f0689487, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: a2b6e92a14f246748becee98f0689487, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 20.715
+      objectReference: {fileID: 0}
+    - target: {fileID: 6366959951795236700, guid: a2b6e92a14f246748becee98f0689487, type: 3}
+      propertyPath: m_Name
+      value: Paint-Holder-Jacket-Collar-OC-Right
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a2b6e92a14f246748becee98f0689487, type: 3}
+--- !u!4 &5953486676771651841 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5650722262310992466, guid: a2b6e92a14f246748becee98f0689487, type: 3}
+  m_PrefabInstance: {fileID: 2086412802008742739}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2133923491985325976
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6339116080843618614}
+    m_Modifications:
+    - target: {fileID: 5650722262310992466, guid: 6a7543a2ddcf24c48be0e901d2a964b1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.9989986
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 6a7543a2ddcf24c48be0e901d2a964b1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.875
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 6a7543a2ddcf24c48be0e901d2a964b1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 6a7543a2ddcf24c48be0e901d2a964b1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 6a7543a2ddcf24c48be0e901d2a964b1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 6a7543a2ddcf24c48be0e901d2a964b1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 6a7543a2ddcf24c48be0e901d2a964b1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 6a7543a2ddcf24c48be0e901d2a964b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 6a7543a2ddcf24c48be0e901d2a964b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 6a7543a2ddcf24c48be0e901d2a964b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6366959951795236700, guid: 6a7543a2ddcf24c48be0e901d2a964b1, type: 3}
+      propertyPath: m_Name
+      value: Paint-Holder-Jacket-Collar-US-Right
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a7543a2ddcf24c48be0e901d2a964b1, type: 3}
+--- !u!4 &6050126406150866378 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5650722262310992466, guid: 6a7543a2ddcf24c48be0e901d2a964b1, type: 3}
+  m_PrefabInstance: {fileID: 2133923491985325976}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2235351757826975059
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6339116080843618614}
+    m_Modifications:
+    - target: {fileID: 5650722262310992466, guid: 5f8ba8b540f429f47aa582e7b1652869, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.493
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 5f8ba8b540f429f47aa582e7b1652869, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.84599996
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 5f8ba8b540f429f47aa582e7b1652869, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 5f8ba8b540f429f47aa582e7b1652869, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99323636
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 5f8ba8b540f429f47aa582e7b1652869, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 5f8ba8b540f429f47aa582e7b1652869, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 5f8ba8b540f429f47aa582e7b1652869, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.116109885
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 5f8ba8b540f429f47aa582e7b1652869, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 5f8ba8b540f429f47aa582e7b1652869, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 5f8ba8b540f429f47aa582e7b1652869, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 13.335
+      objectReference: {fileID: 0}
+    - target: {fileID: 6366959951795236700, guid: 5f8ba8b540f429f47aa582e7b1652869, type: 3}
+      propertyPath: m_Name
+      value: Paint-Holder-Jacket-Collar-IC-Right
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f8ba8b540f429f47aa582e7b1652869, type: 3}
+--- !u!4 &5867897165231316737 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5650722262310992466, guid: 5f8ba8b540f429f47aa582e7b1652869, type: 3}
+  m_PrefabInstance: {fileID: 2235351757826975059}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2373709744878318587
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6339116080843618614}
+    m_Modifications:
+    - target: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.6350002
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.65199995
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6366959951795236700, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_Name
+      value: Paint-Holder-Jacket-Button (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cf042d543a41c234189c5abce807120e, type: 3}
+--- !u!4 &7969816196376349097 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+  m_PrefabInstance: {fileID: 2373709744878318587}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2605018834813016844
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6339116080843618614}
+    m_Modifications:
+    - target: {fileID: 5650722262310992466, guid: 1cdcca6460b409f4fa3100a82464c990, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.7339993
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 1cdcca6460b409f4fa3100a82464c990, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.30306745
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 1cdcca6460b409f4fa3100a82464c990, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 1cdcca6460b409f4fa3100a82464c990, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 1cdcca6460b409f4fa3100a82464c990, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 1cdcca6460b409f4fa3100a82464c990, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -4.357
+      objectReference: {fileID: 0}
+    - target: {fileID: 6366959951795236700, guid: 1cdcca6460b409f4fa3100a82464c990, type: 3}
+      propertyPath: m_Name
+      value: Paint-Holder-Jacket-Shirt-Left
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1cdcca6460b409f4fa3100a82464c990, type: 3}
+--- !u!4 &7659927119099289950 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5650722262310992466, guid: 1cdcca6460b409f4fa3100a82464c990, type: 3}
+  m_PrefabInstance: {fileID: 2605018834813016844}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2639250935972813119
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6339116080843618614}
+    m_Modifications:
+    - target: {fileID: 5650722262310992466, guid: 02e9f893419297743880101f082ff92e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.2749996
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 02e9f893419297743880101f082ff92e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.283
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 02e9f893419297743880101f082ff92e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 02e9f893419297743880101f082ff92e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9825641
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 02e9f893419297743880101f082ff92e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 02e9f893419297743880101f082ff92e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 02e9f893419297743880101f082ff92e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.18592468
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 02e9f893419297743880101f082ff92e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 02e9f893419297743880101f082ff92e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 02e9f893419297743880101f082ff92e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -21.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 6366959951795236700, guid: 02e9f893419297743880101f082ff92e, type: 3}
+      propertyPath: m_Name
+      value: Paint-Holder-Jacket-Collar-OC-Left
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 02e9f893419297743880101f082ff92e, type: 3}
+--- !u!4 &7695496500166976365 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5650722262310992466, guid: 02e9f893419297743880101f082ff92e, type: 3}
+  m_PrefabInstance: {fileID: 2639250935972813119}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2703094673341222466
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6339116080843618614}
+    m_Modifications:
+    - target: {fileID: 5650722262310992466, guid: 6884c2c4d79c35348b4b90a023e08103, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.0070019
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 6884c2c4d79c35348b4b90a023e08103, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.24399997
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 6884c2c4d79c35348b4b90a023e08103, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 6884c2c4d79c35348b4b90a023e08103, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 6884c2c4d79c35348b4b90a023e08103, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 6884c2c4d79c35348b4b90a023e08103, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 6884c2c4d79c35348b4b90a023e08103, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 6884c2c4d79c35348b4b90a023e08103, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 6884c2c4d79c35348b4b90a023e08103, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 6884c2c4d79c35348b4b90a023e08103, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6366959951795236700, guid: 6884c2c4d79c35348b4b90a023e08103, type: 3}
+      propertyPath: m_Name
+      value: Paint-Holder-Jacket-Tie-Bottom
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6884c2c4d79c35348b4b90a023e08103, type: 3}
+--- !u!4 &7775526045162222608 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5650722262310992466, guid: 6884c2c4d79c35348b4b90a023e08103, type: 3}
+  m_PrefabInstance: {fileID: 2703094673341222466}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2727799613640076576
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1193526275470325055}
+    m_Modifications:
+    - target: {fileID: 5650722262310992466, guid: e12ca08594364ff40a5c9e3a6094728f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.0489597
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: e12ca08594364ff40a5c9e3a6094728f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.9408458
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: e12ca08594364ff40a5c9e3a6094728f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.08627981
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: e12ca08594364ff40a5c9e3a6094728f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: e12ca08594364ff40a5c9e3a6094728f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: e12ca08594364ff40a5c9e3a6094728f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: e12ca08594364ff40a5c9e3a6094728f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: e12ca08594364ff40a5c9e3a6094728f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: e12ca08594364ff40a5c9e3a6094728f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: e12ca08594364ff40a5c9e3a6094728f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6366959951795236700, guid: e12ca08594364ff40a5c9e3a6094728f, type: 3}
+      propertyPath: m_Name
+      value: Paint-Holder-Face-Under-Nose
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e12ca08594364ff40a5c9e3a6094728f, type: 3}
+--- !u!4 &7759828321483282290 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5650722262310992466, guid: e12ca08594364ff40a5c9e3a6094728f, type: 3}
+  m_PrefabInstance: {fileID: 2727799613640076576}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3344314415111230823
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6339116080843618614}
+    m_Modifications:
+    - target: {fileID: 5650722262310992466, guid: d2f42b8c61839744d9128f83d0700481, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.6229992
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: d2f42b8c61839744d9128f83d0700481, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.09300004
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: d2f42b8c61839744d9128f83d0700481, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: d2f42b8c61839744d9128f83d0700481, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: d2f42b8c61839744d9128f83d0700481, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: d2f42b8c61839744d9128f83d0700481, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: d2f42b8c61839744d9128f83d0700481, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: d2f42b8c61839744d9128f83d0700481, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: d2f42b8c61839744d9128f83d0700481, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: d2f42b8c61839744d9128f83d0700481, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6366959951795236700, guid: d2f42b8c61839744d9128f83d0700481, type: 3}
+      propertyPath: m_Name
+      value: Paint-Holder-Jacket-Sh-Pike-L1 (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d2f42b8c61839744d9128f83d0700481, type: 3}
+--- !u!4 &6918093938928414517 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5650722262310992466, guid: d2f42b8c61839744d9128f83d0700481, type: 3}
+  m_PrefabInstance: {fileID: 3344314415111230823}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3577768247744283571
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6339116080843618614}
+    m_Modifications:
+    - target: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.4060001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.65199995
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6366959951795236700, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_Name
+      value: Paint-Holder-Jacket-Button (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cf042d543a41c234189c5abce807120e, type: 3}
+--- !u!4 &9209206712975260129 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+  m_PrefabInstance: {fileID: 3577768247744283571}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3837254046011581606
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6339116080843618614}
+    m_Modifications:
+    - target: {fileID: 5650722262310992466, guid: c04111abe31847b4982e4705afebbb05, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.0395145
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: c04111abe31847b4982e4705afebbb05, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.8640001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: c04111abe31847b4982e4705afebbb05, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: c04111abe31847b4982e4705afebbb05, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: c04111abe31847b4982e4705afebbb05, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: c04111abe31847b4982e4705afebbb05, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: c04111abe31847b4982e4705afebbb05, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: c04111abe31847b4982e4705afebbb05, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: c04111abe31847b4982e4705afebbb05, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: c04111abe31847b4982e4705afebbb05, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6366959951795236700, guid: c04111abe31847b4982e4705afebbb05, type: 3}
+      propertyPath: m_Name
+      value: Paint-Holder-Jacket-Collar-US-Left
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c04111abe31847b4982e4705afebbb05, type: 3}
+--- !u!4 &8875415966079737588 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5650722262310992466, guid: c04111abe31847b4982e4705afebbb05, type: 3}
+  m_PrefabInstance: {fileID: 3837254046011581606}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4049256692576248044
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1193526275470325055}
+    m_Modifications:
+    - target: {fileID: 5650722262310992466, guid: 6dfed7404c5e4e5439832282a0762438, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.0419998
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 6dfed7404c5e4e5439832282a0762438, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.206
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 6dfed7404c5e4e5439832282a0762438, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.08627981
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 6dfed7404c5e4e5439832282a0762438, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 6dfed7404c5e4e5439832282a0762438, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 6dfed7404c5e4e5439832282a0762438, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 6dfed7404c5e4e5439832282a0762438, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 6dfed7404c5e4e5439832282a0762438, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 6dfed7404c5e4e5439832282a0762438, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 6dfed7404c5e4e5439832282a0762438, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6366959951795236700, guid: 6dfed7404c5e4e5439832282a0762438, type: 3}
+      propertyPath: m_Name
+      value: Paint-Holder-Face-MO
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6dfed7404c5e4e5439832282a0762438, type: 3}
+--- !u!4 &8528336065748097726 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5650722262310992466, guid: 6dfed7404c5e4e5439832282a0762438, type: 3}
+  m_PrefabInstance: {fileID: 4049256692576248044}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4470734454525854867
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6339116080843618614}
+    m_Modifications:
+    - target: {fileID: 5650722262310992466, guid: 076cc9b719541404f8b9464e347dcd7f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.2880001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 076cc9b719541404f8b9464e347dcd7f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.3780003
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 076cc9b719541404f8b9464e347dcd7f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 076cc9b719541404f8b9464e347dcd7f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.98077583
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 076cc9b719541404f8b9464e347dcd7f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 076cc9b719541404f8b9464e347dcd7f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 076cc9b719541404f8b9464e347dcd7f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.19513813
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 076cc9b719541404f8b9464e347dcd7f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 076cc9b719541404f8b9464e347dcd7f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 076cc9b719541404f8b9464e347dcd7f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -22.506
+      objectReference: {fileID: 0}
+    - target: {fileID: 6366959951795236700, guid: 076cc9b719541404f8b9464e347dcd7f, type: 3}
+      propertyPath: m_Name
+      value: Paint-Holder-Jacket-Sh-Left
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 076cc9b719541404f8b9464e347dcd7f, type: 3}
+--- !u!4 &8097569685201829569 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5650722262310992466, guid: 076cc9b719541404f8b9464e347dcd7f, type: 3}
+  m_PrefabInstance: {fileID: 4470734454525854867}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5076548631835686097
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6339116080843618614}
+    m_Modifications:
+    - target: {fileID: 5650722262310992466, guid: b4be02a3688d7604290a131febf63dac, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.557001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: b4be02a3688d7604290a131febf63dac, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.16300009
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: b4be02a3688d7604290a131febf63dac, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: b4be02a3688d7604290a131febf63dac, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: b4be02a3688d7604290a131febf63dac, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: b4be02a3688d7604290a131febf63dac, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: b4be02a3688d7604290a131febf63dac, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: b4be02a3688d7604290a131febf63dac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: b4be02a3688d7604290a131febf63dac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: b4be02a3688d7604290a131febf63dac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6366959951795236700, guid: b4be02a3688d7604290a131febf63dac, type: 3}
+      propertyPath: m_Name
+      value: Paint-Holder-Jacket-Sh-Pike-R1 (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b4be02a3688d7604290a131febf63dac, type: 3}
+--- !u!4 &583466703174733443 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5650722262310992466, guid: b4be02a3688d7604290a131febf63dac, type: 3}
+  m_PrefabInstance: {fileID: 5076548631835686097}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6112677711888048895
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6339116080843618614}
+    m_Modifications:
+    - target: {fileID: 5650722262310992466, guid: a3f22082443b97f4bae6251a337e0ea4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.0129986
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: a3f22082443b97f4bae6251a337e0ea4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.4560001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: a3f22082443b97f4bae6251a337e0ea4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: a3f22082443b97f4bae6251a337e0ea4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: a3f22082443b97f4bae6251a337e0ea4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: a3f22082443b97f4bae6251a337e0ea4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: a3f22082443b97f4bae6251a337e0ea4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: a3f22082443b97f4bae6251a337e0ea4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: a3f22082443b97f4bae6251a337e0ea4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: a3f22082443b97f4bae6251a337e0ea4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6366959951795236700, guid: a3f22082443b97f4bae6251a337e0ea4, type: 3}
+      propertyPath: m_Name
+      value: Paint-Holder-Jacket-Tie-Top
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a3f22082443b97f4bae6251a337e0ea4, type: 3}
+--- !u!4 &1927525296391116973 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5650722262310992466, guid: a3f22082443b97f4bae6251a337e0ea4, type: 3}
+  m_PrefabInstance: {fileID: 6112677711888048895}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7460035012813784256
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6339116080843618614}
+    m_Modifications:
+    - target: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.5030003
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.1708758
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6366959951795236700, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_Name
+      value: Paint-Holder-Jacket-Button
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cf042d543a41c234189c5abce807120e, type: 3}
+--- !u!4 &3020855028971617938 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+  m_PrefabInstance: {fileID: 7460035012813784256}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7829366308130944853
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6339116080843618614}
+    m_Modifications:
+    - target: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.5389996
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.1708758
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6366959951795236700, guid: cf042d543a41c234189c5abce807120e, type: 3}
+      propertyPath: m_Name
+      value: Paint-Holder-Jacket-Button (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cf042d543a41c234189c5abce807120e, type: 3}
+--- !u!4 &2507408614499437831 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5650722262310992466, guid: cf042d543a41c234189c5abce807120e, type: 3}
+  m_PrefabInstance: {fileID: 7829366308130944853}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7976889300915635303
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6339116080843618614}
+    m_Modifications:
+    - target: {fileID: 5650722262310992466, guid: 68bd06d7b42677c4091e9292a755b56f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.039999
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 68bd06d7b42677c4091e9292a755b56f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.003
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 68bd06d7b42677c4091e9292a755b56f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 68bd06d7b42677c4091e9292a755b56f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 68bd06d7b42677c4091e9292a755b56f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 68bd06d7b42677c4091e9292a755b56f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 68bd06d7b42677c4091e9292a755b56f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 68bd06d7b42677c4091e9292a755b56f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 68bd06d7b42677c4091e9292a755b56f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 68bd06d7b42677c4091e9292a755b56f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6366959951795236700, guid: 68bd06d7b42677c4091e9292a755b56f, type: 3}
+      propertyPath: m_Name
+      value: Paint-Holder-Jacket-Right
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 68bd06d7b42677c4091e9292a755b56f, type: 3}
+--- !u!4 &2366922508881428021 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5650722262310992466, guid: 68bd06d7b42677c4091e9292a755b56f, type: 3}
+  m_PrefabInstance: {fileID: 7976889300915635303}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8800129132477537395
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6339116080843618614}
+    m_Modifications:
+    - target: {fileID: 5650722262310992466, guid: f4f31d45d0078314fa5fd1a9bb03d572, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.298708
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: f4f31d45d0078314fa5fd1a9bb03d572, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.29098344
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: f4f31d45d0078314fa5fd1a9bb03d572, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: f4f31d45d0078314fa5fd1a9bb03d572, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9994982
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: f4f31d45d0078314fa5fd1a9bb03d572, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: f4f31d45d0078314fa5fd1a9bb03d572, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: f4f31d45d0078314fa5fd1a9bb03d572, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.031677607
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: f4f31d45d0078314fa5fd1a9bb03d572, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: f4f31d45d0078314fa5fd1a9bb03d572, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: f4f31d45d0078314fa5fd1a9bb03d572, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 3.631
+      objectReference: {fileID: 0}
+    - target: {fileID: 6366959951795236700, guid: f4f31d45d0078314fa5fd1a9bb03d572, type: 3}
+      propertyPath: m_Name
+      value: Paint-Holder-Jacket-Shirt-Right
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f4f31d45d0078314fa5fd1a9bb03d572, type: 3}
+--- !u!4 &3768161757291603489 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5650722262310992466, guid: f4f31d45d0078314fa5fd1a9bb03d572, type: 3}
+  m_PrefabInstance: {fileID: 8800129132477537395}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8880465994688866638
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1193526275470325055}
+    m_Modifications:
+    - target: {fileID: 5650722262310992466, guid: 259babf72ceb93b449daf7b8e7b2204a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.0537357
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 259babf72ceb93b449daf7b8e7b2204a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4275527
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 259babf72ceb93b449daf7b8e7b2204a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.08627981
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 259babf72ceb93b449daf7b8e7b2204a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 259babf72ceb93b449daf7b8e7b2204a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 259babf72ceb93b449daf7b8e7b2204a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 259babf72ceb93b449daf7b8e7b2204a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 259babf72ceb93b449daf7b8e7b2204a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 259babf72ceb93b449daf7b8e7b2204a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: 259babf72ceb93b449daf7b8e7b2204a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6366959951795236700, guid: 259babf72ceb93b449daf7b8e7b2204a, type: 3}
+      propertyPath: m_Name
+      value: Paint-Holder-Face-Nose
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 259babf72ceb93b449daf7b8e7b2204a, type: 3}
+--- !u!4 &3843440957788623644 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5650722262310992466, guid: 259babf72ceb93b449daf7b8e7b2204a, type: 3}
+  m_PrefabInstance: {fileID: 8880465994688866638}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8947746213497554655
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6339116080843618614}
+    m_Modifications:
+    - target: {fileID: 5650722262310992466, guid: b4be02a3688d7604290a131febf63dac, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.5847607
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: b4be02a3688d7604290a131febf63dac, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.8041427
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: b4be02a3688d7604290a131febf63dac, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: b4be02a3688d7604290a131febf63dac, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: b4be02a3688d7604290a131febf63dac, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: b4be02a3688d7604290a131febf63dac, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: b4be02a3688d7604290a131febf63dac, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: b4be02a3688d7604290a131febf63dac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: b4be02a3688d7604290a131febf63dac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650722262310992466, guid: b4be02a3688d7604290a131febf63dac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6366959951795236700, guid: b4be02a3688d7604290a131febf63dac, type: 3}
+      propertyPath: m_Name
+      value: Paint-Holder-Jacket-Sh-Pike-R1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b4be02a3688d7604290a131febf63dac, type: 3}
+--- !u!4 &3623042766557052045 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5650722262310992466, guid: b4be02a3688d7604290a131febf63dac, type: 3}
+  m_PrefabInstance: {fileID: 8947746213497554655}
+  m_PrefabAsset: {fileID: 0}
