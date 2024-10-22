@@ -9,14 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: debd60e11200f504cb0d44c5ce3d049f, type: 3}
-  m_Name: PDE01
+  m_Script: {fileID: 11500000, guid: 5e01c55845d3c09419e93b16e4aa4515, type: 3}
+  m_Name: ARTE02
   m_EditorClassIdentifier: 
   eventData:
     eventCode: 0
-    eventName: Code tip!
+    eventName: Art02
     eventFireDay: 2
-    eventFireTime: 5
+    eventFireTime: 10
     prefab: {fileID: 0}
-  emailData: {fileID: 11400000, guid: 71f33c741ef572e4ba5a8568f012f7a3, type: 2}
-  emailToasterData: {fileID: 11400000, guid: f4bf1dabcbedaa648b9eec5f52917aa9, type: 2}
+  gameTask: {fileID: 11400000, guid: 4d5ecdb35901f644caf1b6887e88cc7c, type: 2}
