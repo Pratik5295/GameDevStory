@@ -24,6 +24,10 @@ namespace DevStory.Gameplay.Puzzles
 
         [SerializeField] private Vector3 originalPosition;
 
+        [SerializeField] private Transform rayFirePoint;
+
+        [SerializeField] private LayerMask layerToIgnore;
+
         private void Start()
         {
             dragger = GetComponent<Dragger>();
@@ -37,6 +41,11 @@ namespace DevStory.Gameplay.Puzzles
             dragger.OnElementDroppedEvent -= Drop;
         }
 
+        private void Update()
+        {
+            CheckForRaycastHit();
+        }
+
         public void ForceBackToOriginalPosition()
         {
             transform.position = originalPosition;
@@ -45,34 +54,34 @@ namespace DevStory.Gameplay.Puzzles
 
         protected virtual void OnTriggerEnter2D(Collider2D collision)
         {
-            if (collision.gameObject.tag == "Place")
-            {
-                collidedWith = collision;
+            //if (collision.gameObject.tag == "Place")
+            //{
+            //    collidedWith = collision;
                 
-            }
+            //}
         }
 
         protected virtual void OnTriggerStay2D(Collider2D collision)
         {
-            if (collision.gameObject.tag == "Place")
-            {
-                collidedWith = collision;
+            //if (collision.gameObject.tag == "Place")
+            //{
+            //    collidedWith = collision;
 
-            }
+            //}
         }
 
         protected virtual void OnTriggerExit2D(Collider2D collision)
         {
-            if(collision.gameObject.tag == "Place")
-            {
-                if (collidedWith == null) return;
+            //if(collision.gameObject.tag == "Place")
+            //{
+            //    if (collidedWith == null) return;
 
-                var holder =
-                    collidedWith.gameObject.GetComponent<IHoldable>();
-                holder.PieceRemoved();
+            //    var holder =
+            //        collidedWith.gameObject.GetComponent<IHoldable>();
+            //    holder.PieceRemoved();
 
-                collidedWith = null;
-            }
+            //    collidedWith = null;
+            //}
         }
 
 
@@ -85,6 +94,38 @@ namespace DevStory.Gameplay.Puzzles
                     collidedWith.gameObject.GetComponent<IHoldable>();
 
             holder.PiecePlaced(this);
+        }
+
+        private void CheckForRaycastHit()
+        {
+            // Cast a ray in forward direction
+            RaycastHit2D hit = 
+                Physics2D.Raycast(rayFirePoint.position,
+                Vector3.forward,20,~layerToIgnore);
+
+            if(hit)
+            {
+                if(hit.collider.gameObject.tag == "Place")
+                {
+                    collidedWith = hit.collider;
+                }
+                else
+                {
+                    collidedWith = null;
+                }
+            }
+            else
+            {
+                if(collidedWith != null)
+                {
+                    var holder =
+                   collidedWith.gameObject.GetComponent<IHoldable>();
+                    holder.PieceRemoved();
+
+                }
+
+                collidedWith = null;
+            }
         }
     }
 }

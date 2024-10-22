@@ -121,7 +121,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -197,6 +197,10 @@ MonoBehaviour:
   dragger: {fileID: 0}
   collidedWith: {fileID: 0}
   originalPosition: {x: 0, y: 0, z: 0}
+  rayFirePoint: {fileID: 8138200366110195202}
+  layerToIgnore:
+    serializedVersion: 2
+    m_Bits: 64
   Paint: 1
 --- !u!1 &2795719492553030774
 GameObject:
@@ -223,7 +227,7 @@ Transform:
   m_GameObject: {fileID: 2795719492553030774}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
