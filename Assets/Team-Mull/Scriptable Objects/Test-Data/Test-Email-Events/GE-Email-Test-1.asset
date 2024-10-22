@@ -15,6 +15,7 @@ MonoBehaviour:
   eventData:
     eventCode: 0
     eventName: Email-Test-1
+    eventFireDay: 1
     eventFireTime: 10
     prefab: {fileID: 0}
   emailData: {fileID: 11400000, guid: 8ab2cba94e4420245a97ab56737d6561, type: 2}

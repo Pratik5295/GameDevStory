@@ -15,7 +15,8 @@ MonoBehaviour:
   eventData:
     eventCode: 0
     eventName: Email-Test-2
-    eventFireTime: 20
+    eventFireDay: 3
+    eventFireTime: 10
     prefab: {fileID: 0}
   emailData: {fileID: 11400000, guid: 3ac63a1135058a944ad887e6f6a7fcf3, type: 2}
   emailToasterData: {fileID: 11400000, guid: f4bf1dabcbedaa648b9eec5f52917aa9, type: 2}
