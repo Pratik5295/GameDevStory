@@ -5047,6 +5047,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5046793290582495439, guid: bf8230e569d5c774eb3fc5b91b9a3a98, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 76
+      objectReference: {fileID: 0}
     - target: {fileID: 5621705719814419624, guid: bf8230e569d5c774eb3fc5b91b9a3a98, type: 3}
       propertyPath: data.OpenScreen
       value: 4
@@ -6322,7 +6326,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 3c91778078601044198c6a35ff7790d6, type: 2}
     - target: {fileID: 2321706793999343057, guid: 7244a55c0fe89874ab2222fafc3704f5, type: 3}
       propertyPath: maxDayTime
-      value: 30
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 3130160777304007120, guid: 7244a55c0fe89874ab2222fafc3704f5, type: 3}
       propertyPath: 'gameScreens.Array.data[0]'

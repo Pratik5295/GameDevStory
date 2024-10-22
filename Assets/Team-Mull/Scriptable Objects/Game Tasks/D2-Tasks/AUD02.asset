@@ -10,24 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 86cc1d1677a5b4b428a5bff0904a9dde, type: 3}
-  m_Name: TTD1-Audio
+  m_Name: AUD02
   m_EditorClassIdentifier: 
   TaskData:
-    TaskName: Ride the Waves!
-    Priority: 3
-    Type: 2
-    Description: 'Hello!
-
-
-      We are composing some fantastic music for the game
-      but it seems as though the amplitude and waves are incorrect. We heard you
-      like Jazz, so please complete the incorrect files using the correct file as
-      a reference.
-
-
-      Kind regards
-
-      Modzart'
+    TaskName: You can't tuna fish?
+    Priority: 2
+    Type: 0
+    Description: "Hello! \r\n\r\nYou did fantastic on your first day! The tuning
+      was perfect, so good that our designers want you to work on one more piece
+      from the soundtrack! \r\n\r\nI have updated your Bira so have a look! "
     SupervisorData: {fileID: 11400000, guid: d06afbe348b3b55418f2d853022a46c3, type: 2}
     TaskPrefab: {fileID: 0}
-    Deadline: 0
+    Deadline: 200

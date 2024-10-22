@@ -15,4 +15,4 @@ MonoBehaviour:
   Data:
     CharacterName: Kiyazaki
     CharacterDesignation: Concept Artist
-    CharacterSprite: {fileID: 0}
+    CharacterSprite: {fileID: 21300000, guid: 7c4189c88f5e2694694fd06bba7d4326, type: 3}

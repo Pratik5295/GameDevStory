@@ -15,4 +15,4 @@ MonoBehaviour:
   Data:
     CharacterName: DMR LTD
     CharacterDesignation: Private Limited Company
-    CharacterSprite: {fileID: 0}
+    CharacterSprite: {fileID: 21300000, guid: 9cef9d1863e27fb46a2f0744b2839b70, type: 3}

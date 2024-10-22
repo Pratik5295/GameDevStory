@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: debd60e11200f504cb0d44c5ce3d049f, type: 3}
-  m_Name: PDE01
+  m_Name: HTDE02
   m_EditorClassIdentifier: 
   eventData:
     eventCode: 0
-    eventName: Code tip!
+    eventName: Design Meeting
     eventFireDay: 2
-    eventFireTime: 12
+    eventFireTime: 5
     prefab: {fileID: 0}
-  emailData: {fileID: 11400000, guid: 71f33c741ef572e4ba5a8568f012f7a3, type: 2}
+  emailData: {fileID: 11400000, guid: 70ee79723060719469903683b0515c55, type: 2}
   emailToasterData: {fileID: 11400000, guid: f4bf1dabcbedaa648b9eec5f52917aa9, type: 2}
