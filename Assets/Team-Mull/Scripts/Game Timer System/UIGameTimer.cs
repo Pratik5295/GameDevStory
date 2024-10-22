@@ -61,7 +61,9 @@ namespace DevStory.Gameplay.GameTimer
 
             string timeString =
                 UtilityHelper.ConvertTimeFormat(gameTimerManager.CurrentTime);
-            timerText.text = timeString;
+
+
+            timerText.text = $"Day: {gameTimerManager.Day}, {timeString}";
         }
     }
 }

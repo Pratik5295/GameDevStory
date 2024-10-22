@@ -41,17 +41,24 @@ namespace DevStory.GameEventSystem
             if (nextEventIndex < gameEvents.Count)
             {
                 GameEventSO nextEvent = gameEvents[nextEventIndex];
-                if (gameTimerManager.CurrentTime >= nextEvent.eventData.eventFireTime)
+
+                if (gameTimerManager.Day >= nextEvent.eventData.eventFireDay)
                 {
-                    nextEvent.Execute();
-                    nextEventIndex++;
+                    if (gameTimerManager.CurrentTime >= nextEvent.eventData.eventFireTime)
+                    {
+                        nextEvent.Execute();
+                        nextEventIndex++;
+                    }
                 }
             }
         }
 
         public void SortEvents()
         {
-            gameEvents = gameEvents.OrderBy(evt => evt.eventData.eventFireTime).ToList();
+            gameEvents = gameEvents
+                .OrderBy(evt => evt.eventData.eventFireDay)
+                .ThenBy(evt => evt.eventData.eventFireTime)
+                .ToList();
         }
 
         private void PrintEvents()

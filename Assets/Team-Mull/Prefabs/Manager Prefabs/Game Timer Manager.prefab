@@ -45,5 +45,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentTime: 0
+  day: 0
   maxDayTime: 480
   isDayRunning: 0
