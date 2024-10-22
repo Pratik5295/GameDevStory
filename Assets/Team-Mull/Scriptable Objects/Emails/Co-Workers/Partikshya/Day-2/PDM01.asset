@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04d48516da680f04aa757b98deff11cc, type: 3}
+  m_Name: PDM01
+  m_EditorClassIdentifier: 
+  Speaker: {fileID: 11400000, guid: 7055ef123b2f18948ab1c49298e339f7, type: 2}
+  Message: 'Hope your first day went well. I saw the bug task you completed yesterday,
+    good job! I can offer a tip to make your life easier for future tasks if you
+    would like?
+
+'
+  Options:
+  - optionMessage: Helllo! Thank you for the offer but it's alright! I'm getting
+      the hang of it!
+    nextMessageIndex: 0
+  - optionMessage: Helllo! Thank you, I would love to hear it, it would be really
+      helpful!
+    nextMessageIndex: 1
+  Type: 0
+  hasTask: 0
+  nextIndex: 0
