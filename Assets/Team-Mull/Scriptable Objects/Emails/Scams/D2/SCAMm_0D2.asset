@@ -9,12 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04d48516da680f04aa757b98deff11cc, type: 3}
-  m_Name: JOHN_FR1
+  m_Script: {fileID: 11500000, guid: ddc8d93fa9dc14b4b87a5bab87f1ba73, type: 3}
+  m_Name: SCAMm_0D2
   m_EditorClassIdentifier: 
-  Speaker: {fileID: 11400000, guid: 3ce5ff58b774a7047937c54b2163201b, type: 2}
-  Message: That's alright, let me know when!
-  Options: []
-  Type: 1
-  hasTask: 0
-  nextIndex: 0
+  EmailTitle: 'Congratulations! '
+  Messages:
+  - {fileID: 11400000, guid: e3f4f928477047b44a13bbb8b121e433, type: 2}
