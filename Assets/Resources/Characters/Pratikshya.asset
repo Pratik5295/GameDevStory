@@ -15,4 +15,4 @@ MonoBehaviour:
   Data:
     CharacterName: Pratikshya
     CharacterDesignation: Programmer
-    CharacterSprite: {fileID: 0}
+    CharacterSprite: {fileID: 21300000, guid: 5f0f6b064271bdb4cb05546b76a01a62, type: 3}

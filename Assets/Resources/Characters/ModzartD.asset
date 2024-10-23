@@ -15,4 +15,4 @@ MonoBehaviour:
   Data:
     CharacterName: Modzart Doggang
     CharacterDesignation: Audio Designer
-    CharacterSprite: {fileID: 0}
+    CharacterSprite: {fileID: 21300000, guid: 070ce58ef26aca74288df0dc12b37934, type: 3}
