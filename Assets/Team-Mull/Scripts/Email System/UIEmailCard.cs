@@ -1,6 +1,7 @@
 using DevStory.DialogueSystem;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace DevStory.UI
 { 
@@ -20,12 +21,17 @@ namespace DevStory.UI
         [SerializeField]
         private TextMeshProUGUI emailContentText;
 
+        [SerializeField]
+        private Image senderSprite;
+
         public void Populate(GameEmail _email)
         {
             email = _email;
             senderNameText.text = _email.Messages[0].Speaker.Data.CharacterName;
             emailSubjectText.text = _email.EmailTitle;
             emailContentText.text = _email.Messages[0].Message;
+
+            senderSprite.sprite = _email.Messages[0].Speaker.Data.CharacterSprite;
         }
 
         public void OnButtonClicked()

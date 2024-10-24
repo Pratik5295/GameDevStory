@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04d48516da680f04aa757b98deff11cc, type: 3}
   m_Name: SCAMDM_0D2
   m_EditorClassIdentifier: 
-  Speaker: {fileID: 0}
+  Speaker: {fileID: 11400000, guid: 9b4bc280e35f22047a20bfbac949165a, type: 2}
   Message: "You won! \r\n\r\nYou have been selected for a lucky game drop with great
     benefits that will make you the best player! Grab it now! "
   Options: []

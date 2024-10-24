@@ -150,6 +150,7 @@ MonoBehaviour:
   senderNameText: {fileID: 8914812145031218294}
   emailSubjectText: {fileID: 6049297584461439996}
   emailContentText: {fileID: 7109918790803139305}
+  senderSprite: {fileID: 5718585801888693568}
 --- !u!1 &2136528514350556738
 GameObject:
   m_ObjectHideFlags: 0
@@ -409,7 +410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.77254903, g: 0.14117646, b: 0.5461574, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

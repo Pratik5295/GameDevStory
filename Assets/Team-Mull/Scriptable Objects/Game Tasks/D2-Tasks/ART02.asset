@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86cc1d1677a5b4b428a5bff0904a9dde, type: 3}
+  m_Name: ART02
+  m_EditorClassIdentifier: 
+  TaskData:
+    TaskName: You call this art?
+    Priority: 0
+    Type: 0
+    Description: Hmmm I must say you did well young Leonardo, I must task you with
+      another. Complete the pixel art that I've sent you, make sure it's how I referenced!
+    SupervisorData: {fileID: 11400000, guid: 034fde51064b7ff4eb3fcdde268dd900, type: 2}
+    TaskPrefab: {fileID: 0}
+    Deadline: 260
