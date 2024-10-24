@@ -35,6 +35,11 @@ public class MullTestingHelper : MonoBehaviour,IScreen
         isShowing = true;
     }
 
+    public void OnQuitGameButtonClicked()
+    {
+        Application.Quit();
+    }
+
     private void Toggle()
     {
         if (isShowing)

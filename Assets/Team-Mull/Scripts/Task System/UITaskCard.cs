@@ -1,7 +1,6 @@
 using DevStory.Managers;
 using DevStory.Utility;
 using TMPro;
-using UnityEditor.U2D.Aseprite;
 using UnityEngine;
 using UnityEngine.UI;
 
