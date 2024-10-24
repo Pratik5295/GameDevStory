@@ -57,7 +57,7 @@ namespace DevStory.Utility
                     return Color.white;
 
                 case TaskPriority.LOW:
-                    return Color.green;
+                    return GetColorFromHex("#4cd199");
 
                 case TaskPriority.MEDIUM:
                     return Color.yellow;
