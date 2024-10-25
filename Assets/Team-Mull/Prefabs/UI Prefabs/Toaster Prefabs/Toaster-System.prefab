@@ -120,6 +120,7 @@ MonoBehaviour:
   toasterText: {fileID: 8561836617443695006}
   ChangeScreenButton: {fileID: 8507472422577701224}
   CloseButton: {fileID: 255598999048160136}
+  toasterObject: {fileID: 0}
 --- !u!1 &2051707009615749947
 GameObject:
   m_ObjectHideFlags: 0
@@ -131,6 +132,7 @@ GameObject:
   - component: {fileID: 5046793290582495439}
   - component: {fileID: 7987119711368580949}
   - component: {fileID: 6834966272454506080}
+  - component: {fileID: 7696696419296300677}
   m_Layer: 5
   m_Name: BG
   m_TagString: Untagged
@@ -196,6 +198,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7696696419296300677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051707009615749947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.6862745}
+  m_EffectDistance: {x: -6, y: 6}
+  m_UseGraphicAlpha: 1
 --- !u!1 &2546202353256299720
 GameObject:
   m_ObjectHideFlags: 0

@@ -67,6 +67,15 @@ namespace DevStory.Gameplay.GameTimer
             OnDayEndedEvent?.Invoke();
         }
 
+        /// <summary>
+        /// Helper function to skip certain amount of time in the day
+        /// </summary>
+        /// <param name="_amount"></param>
+        public void SkipTimeBy(float _amount)
+        {
+            currentTime += _amount;
+        }
+
         private void Update()
         {
             if (!isDayRunning) return;

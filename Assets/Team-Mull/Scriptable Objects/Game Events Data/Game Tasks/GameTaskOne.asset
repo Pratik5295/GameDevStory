@@ -16,6 +16,6 @@ MonoBehaviour:
     eventCode: 0
     eventName: Game Task One
     eventFireDay: 1
-    eventFireTime: 45
+    eventFireTime: 10
     prefab: {fileID: 0}
   gameTask: {fileID: 11400000, guid: b2e53239ec113c94795733e5dec1f27e, type: 2}
