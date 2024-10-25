@@ -22,6 +22,8 @@ namespace DevStory.DialogueSystem
 
         public DialogueMessageSO[] Messages => data.Messages;
 
+        public int MessageCount => Messages.Length;
+
         [SerializeField] private string emailTitle;
 
         public string EmailTitle => emailTitle;
