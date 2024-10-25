@@ -41,6 +41,7 @@ namespace DevStory.UI
         {
             var card = Instantiate(emailCardPrefab);
             card.transform.SetParent(emailCardContent,false);
+            card.transform.SetAsFirstSibling();
 
             var ui = card.GetComponent<UIEmailCard>();
             ui.Populate(email);

@@ -11,7 +11,7 @@ namespace DevStory.UI
         [SerializeField] private GameEmailScreen screen;
 
         [SerializeField]
-        private List<GameEmail> emailList = new List<GameEmail>();
+        private Stack<GameEmail> emailList = new Stack<GameEmail>();
 
         [SerializeField] private GameEmail activeEmail;
 
@@ -31,7 +31,7 @@ namespace DevStory.UI
         {
             if (!emailList.Contains(email))
             {
-                emailList.Add(email);
+                emailList.Push(email);
 
                 if(activeEmail == null)
                 {
@@ -43,10 +43,7 @@ namespace DevStory.UI
         }
         public void RemoveEmail(GameEmail email)
         {
-            if (emailList.Contains(email))
-            {
-                emailList.Remove(email);
-            }
+            emailList.Pop();
 
             screen.RemoveEmailCard(email.Data);
         }
