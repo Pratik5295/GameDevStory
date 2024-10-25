@@ -36,6 +36,17 @@ namespace DevStory.UI
         private ScrollRect threadScroll;
         private float scrollSpeed = 1.0f;
 
+        [Space(5)]
+        [Header("Email Card Holder Content Reference")]
+        [SerializeField]
+        private GameObject emailHolderContent;
+
+        private void Start()
+        {
+            if (emailHolderContent == null) return;
+            emailHolderContent.SetActive(false);    
+        }
+
 
         public void CreateEmailCard(GameEmail email)
         {
@@ -71,6 +82,9 @@ namespace DevStory.UI
         {
             activeEmail = _newEmail;
             emailHeader.text = _newEmail.EmailTitle;
+
+            //Activate the email holder content
+            emailHolderContent.SetActive(activeEmail != null);
 
             //Check if the queue has any data in the local cache
             if (activeEmail.IsDirty)

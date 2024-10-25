@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 541843441651383079}
   - component: {fileID: 486622432313539878}
   m_Layer: 5
-  m_Name: Content
+  m_Name: Parent-Content
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -199,6 +199,7 @@ MonoBehaviour:
   emailCardContent: {fileID: 4760704882982686664}
   emailContent: {fileID: 1476603863503791038}
   threadScroll: {fileID: 8339126031098138372}
+  emailHolderContent: {fileID: 2244725005019483080}
 --- !u!1 &4881714442761993012
 GameObject:
   m_ObjectHideFlags: 0
@@ -1067,6 +1068,11 @@ PrefabInstance:
 --- !u!224 &1476603863503791038 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1714201734841098244, guid: aeda75dfa70191842a47806ca99ea21e, type: 3}
+  m_PrefabInstance: {fileID: 267931221211939770}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2244725005019483080 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2058496293844322418, guid: aeda75dfa70191842a47806ca99ea21e, type: 3}
   m_PrefabInstance: {fileID: 267931221211939770}
   m_PrefabAsset: {fileID: 0}
 --- !u!224 &6244908094201787030 stripped
