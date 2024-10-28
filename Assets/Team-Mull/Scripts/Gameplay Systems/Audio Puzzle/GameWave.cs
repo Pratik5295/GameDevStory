@@ -1,4 +1,5 @@
 using UnityEngine;
+using static MetaConstants.EnumManager.EnumManager;
 
 namespace DevStory.Gameplay.AudioPuzzle
 {
@@ -48,6 +49,20 @@ namespace DevStory.Gameplay.AudioPuzzle
         public void SetFrequency(float _frequency)
         {
             frequency = _frequency;
+        }
+
+        public void OnUpdateMeasurement(AudioMeasurements _type, float _amount)
+        {
+            switch(_type)
+            {
+                case AudioMeasurements.FREQUENCY:
+                    SetFrequency(_amount);
+                    break;
+
+                case AudioMeasurements.AMPLITUDE:
+                    SetAmplitude(_amount);
+                    break;
+            }
         }
     }
 }
