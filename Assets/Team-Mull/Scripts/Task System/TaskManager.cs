@@ -15,6 +15,8 @@ namespace DevStory.Managers
 
         [SerializeField] private GameTask currentTask;
 
+        public GameTask GetCurrentTask => currentTask;
+
         [SerializeField] private List<GameTask> currentTasks = new List<GameTask>();
 
         public Action<List<GameTask>> OnCurrentTasksUpdated;
