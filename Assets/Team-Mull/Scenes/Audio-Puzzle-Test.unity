@@ -1485,7 +1485,7 @@ GameObject:
   - component: {fileID: 1192880457}
   - component: {fileID: 1192880456}
   - component: {fileID: 1192880455}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Overlay-Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1902,7 +1902,7 @@ GameObject:
   - component: {fileID: 1979465816}
   - component: {fileID: 1979465815}
   - component: {fileID: 1979465817}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Overlay-Pressure-Effect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1942,7 +1942,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
