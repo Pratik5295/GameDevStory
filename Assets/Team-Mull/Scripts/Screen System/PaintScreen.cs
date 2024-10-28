@@ -30,7 +30,7 @@ namespace DevStory.UI
             var deadlineTime = gameTask.GetData.TaskData.Deadline;
             string formatDeadline = UtilityHelper.ConvertTimeFormat(deadlineTime);
 
-            var res = puzzle.CheckPuzzleValidation() ? "Solved" : "Unsolved";
+            var res = puzzle.ValidityCheck() ? "Solved" : "Unsolved";
 
             var message = $"Submitting the task at {formatCurrTime} and Deadline: {formatDeadline} and result: {res}";
 

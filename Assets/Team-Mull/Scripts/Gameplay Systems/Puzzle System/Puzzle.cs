@@ -52,7 +52,7 @@ namespace DevStory.Gameplay.Puzzles
             }
         }
 
-        public bool ValidityCheck()
+        public virtual bool ValidityCheck()
         {
             if (solvedPuzzlePieces == puzzleHolders.Count)
             {

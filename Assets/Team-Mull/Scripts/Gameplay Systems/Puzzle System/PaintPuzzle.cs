@@ -40,7 +40,7 @@ namespace DevStory.Gameplay.Puzzles
         #endregion
 
 
-        public bool CheckPuzzleValidation()
+        public bool ValidityCheck()
         {
             foreach (var holder in paintHolders)
             {

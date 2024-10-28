@@ -115,5 +115,12 @@ namespace DevStory.Managers
         {
             currentTask = _task;
         }
+
+        public void OnTaskSubmittedButtonClicked()
+        {
+            currentTask.TaskCompleted();
+
+            Debug.Log("Task has been completed, now close and discard this puzzle");
+        }
     }
 }

@@ -1,5 +1,6 @@
 using DevStory.Gameplay.GameTimer;
 using DevStory.Managers;
+using DevStory.UI;
 using System;
 using UnityEngine;
 using static MetaConstants.EnumManager.EnumManager;
@@ -28,6 +29,10 @@ namespace DevStory.TaskSystem
         private TaskResultSaver CurrentResult;
 
         public TaskResultSaver GetResult => CurrentResult;
+
+        //Reference to the active puzzle screen based on the task?
+        [SerializeField]
+        private PuzzleScreen puzzleScreen;
 
 
         public void AddTaskToManager(TaskSO _taskData)
