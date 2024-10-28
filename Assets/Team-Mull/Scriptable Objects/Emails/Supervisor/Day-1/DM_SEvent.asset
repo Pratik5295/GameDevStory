@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04d48516da680f04aa757b98deff11cc, type: 3}
+  m_Name: DM_SEvent
+  m_EditorClassIdentifier: 
+  Speaker: {fileID: 11400000, guid: 747a0dbdf8b53cb4bb0a50f4c2e40223, type: 2}
+  Message: "Yo!\n\nI hope you like debugging, because in Hell Games, bugs never actually
+    die. It\u2019s like whack-a-mole, but worse. Your task today? Keep \u2018em at
+    bay \u2013 just don\u2019t get attached, they\u2019ll be back soon..\n"
+  Options: []
+  Type: 1
+  hasTask: 1
+  nextIndex: 0
