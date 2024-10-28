@@ -466,7 +466,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   emailScreen: {fileID: 0}
-  emailSenderSprite: {fileID: 7609045842702198939}
+  emailSenderSprite: {fileID: 5239759603534310542}
   emailSenderName: {fileID: 546707383561690675}
   emailBody: {fileID: 1366573147286756004}
   buttonChangeData:
@@ -959,14 +959,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac17ead619caba644b5d6ba7a64e4420, type: 3}
---- !u!224 &7510884393901360703 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 7196999571519030407, guid: ac17ead619caba644b5d6ba7a64e4420, type: 3}
-  m_PrefabInstance: {fileID: 854810321217635000}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &7609045842702198939 stripped
+--- !u!114 &5239759603534310542 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7080828032611428899, guid: ac17ead619caba644b5d6ba7a64e4420, type: 3}
+  m_CorrespondingSourceObject: {fileID: 4858179948404895286, guid: ac17ead619caba644b5d6ba7a64e4420, type: 3}
   m_PrefabInstance: {fileID: 854810321217635000}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
@@ -975,6 +970,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!224 &7510884393901360703 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7196999571519030407, guid: ac17ead619caba644b5d6ba7a64e4420, type: 3}
+  m_PrefabInstance: {fileID: 854810321217635000}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4502536041906579948
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: HoddT
   m_EditorClassIdentifier: 
   Data:
-    CharacterName: Hodd Toward
+    CharacterName: Samauel
     CharacterDesignation: Team Lead
-    CharacterSprite: {fileID: 21300000, guid: 6e513ced640c6324a960235e8c3abb42, type: 3}
+    CharacterSprite: {fileID: 21300000, guid: 9c8861656facd5c4290aa49137cf09d3, type: 3}
