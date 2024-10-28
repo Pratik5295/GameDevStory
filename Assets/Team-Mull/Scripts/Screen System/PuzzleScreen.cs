@@ -28,7 +28,7 @@ namespace DevStory.UI
 
         //For puzzle screen we also showcase the submit button screen
         [SerializeField]
-        private GameObject submitScreen;
+        private Screen submitScreen;
 
         private void Start()
         {
@@ -71,7 +71,7 @@ namespace DevStory.UI
             content.SetActive(true);
 
             if (submitScreen == null) return;
-            submitScreen.SetActive(true);
+            submitScreen.Open();
         }
 
         private void OnDisable()
@@ -80,7 +80,7 @@ namespace DevStory.UI
             content.SetActive(false);
 
             if (submitScreen == null) return;
-            submitScreen.SetActive(false);
+            submitScreen.Close();
         }
     }
 }

@@ -12,8 +12,6 @@ namespace DevStory.UI
 
         public ScreenState State { get { return screenState; } }
 
-      
-
         public bool isOpened => screenState == ScreenState.OPENED;
 
         public Action<ScreenState> OnStateChangeEvent;
