@@ -438,10 +438,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   screenState: 0
-  content: {fileID: 0}
+  gameTask: {fileID: 0}
   submitButton: {fileID: 7829217915394582132}
-  puzzle: {fileID: 0}
   statusText: {fileID: 1733458033857050765}
+  content: {fileID: 0}
+  submitScreen: {fileID: 0}
+  puzzle: {fileID: 0}
 --- !u!1 &6996583390046697011
 GameObject:
   m_ObjectHideFlags: 0
@@ -510,6 +512,10 @@ PrefabInstance:
     - target: {fileID: 630788996147141635, guid: df82a388f15c67649ae1ec4e32bbed2b, type: 3}
       propertyPath: m_Name
       value: Submit-Section
+      objectReference: {fileID: 0}
+    - target: {fileID: 630788996147141635, guid: df82a388f15c67649ae1ec4e32bbed2b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1110854582300267220, guid: df82a388f15c67649ae1ec4e32bbed2b, type: 3}
       propertyPath: m_AnchorMax.y

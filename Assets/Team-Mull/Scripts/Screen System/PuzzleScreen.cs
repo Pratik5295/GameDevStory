@@ -1,5 +1,3 @@
-using DevStory.Gameplay.GameTimer;
-using DevStory.Gameplay.Puzzles;
 using DevStory.Interfaces;
 using DevStory.TaskSystem;
 using TMPro;
@@ -26,6 +24,12 @@ namespace DevStory.UI
         [SerializeField]
         protected TextMeshProUGUI statusText;
 
+        [SerializeField] private GameObject content;
+
+        //For puzzle screen we also showcase the submit button screen
+        [SerializeField]
+        private GameObject submitScreen;
+
         private void Start()
         {
             submitButton.onClick.AddListener(OnSubmitButtonClicked);
@@ -48,6 +52,35 @@ namespace DevStory.UI
         public virtual void SubmitTask(float _currentTime)
         {
             gameTask.TaskCompleted();
+        }
+
+
+        /// <summary>
+        /// The task puzzles will set the content at runtime
+        /// </summary>
+        /// <param name="_content"></param>
+        public void SetContent(GameObject _content)
+        {
+            content = _content;
+        }
+
+        private void OnEnable()
+        {
+            if (content == null) return;
+            //Check for any puzzles available to display
+            content.SetActive(true);
+
+            if (submitScreen == null) return;
+            submitScreen.SetActive(true);
+        }
+
+        private void OnDisable()
+        {
+            if (content == null) return;
+            content.SetActive(false);
+
+            if (submitScreen == null) return;
+            submitScreen.SetActive(false);
         }
     }
 }
