@@ -371,7 +371,7 @@ PrefabInstance:
     - target: {fileID: 2095162879320993467, guid: e75355f049762b8488abf47d361e6097, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 0f6ee8fc124709744875f11b4aa74899, type: 3}
+      objectReference: {fileID: 21300000, guid: 4d69b02d5d51e2740b5173339016f8b5, type: 3}
     - target: {fileID: 2095162879320993467, guid: e75355f049762b8488abf47d361e6097, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -904,6 +904,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 9012631509647987923}
     m_Modifications:
+    - target: {fileID: 2095162879320993467, guid: e75355f049762b8488abf47d361e6097, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: adcd41675282c66489705676730165cd, type: 3}
+    - target: {fileID: 2095162879320993467, guid: e75355f049762b8488abf47d361e6097, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2095162879320993467, guid: e75355f049762b8488abf47d361e6097, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2095162879320993467, guid: e75355f049762b8488abf47d361e6097, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4085583532651368651, guid: e75355f049762b8488abf47d361e6097, type: 3}
       propertyPath: m_Name
       value: UI-Task-Button-Task (1)
@@ -990,6 +1006,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5298766984468528869, guid: e75355f049762b8488abf47d361e6097, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5861368631153896105, guid: e75355f049762b8488abf47d361e6097, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7411218452150193001, guid: e75355f049762b8488abf47d361e6097, type: 3}

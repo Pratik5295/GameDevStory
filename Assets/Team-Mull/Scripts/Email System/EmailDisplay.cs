@@ -18,6 +18,11 @@ namespace DevStory.UI
         [SerializeField]
         private GameEmailScreen emailScreen;
 
+        [Space(5)]
+        [Header("Email Sender Details")]
+        [SerializeField] 
+        private Image emailSenderSprite;
+
         [SerializeField]
         private TextMeshProUGUI emailSenderName;
 
@@ -27,6 +32,8 @@ namespace DevStory.UI
         [SerializeField]
         private ScreenChangeData buttonChangeData;
 
+        [Space(5)]
+        [Header("Task Variables")]
         //Data to come from SO and hide if the email doesnt have task
         [SerializeField]
         private UIScreenButton taskButton;
@@ -40,6 +47,7 @@ namespace DevStory.UI
         public GameEmail activeEmail;
 
         private DialogueMessageSO currentMessage;
+
 
 
         public void SetScreenChangeData(ScreenChangeData _newData)
@@ -71,6 +79,7 @@ namespace DevStory.UI
             currentMessage = _currentMessage;
             activeEmail = currentEmail;
 
+            emailSenderSprite.sprite = _currentMessage.Speaker.Data.CharacterSprite;
             emailBody.text = _currentMessage.Message;
             emailSenderName.text = _currentMessage.Speaker.Data.CharacterName;
 
