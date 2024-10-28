@@ -15,6 +15,9 @@ namespace DevStory.Gameplay.AudioPuzzle
 
         public GameWave GameWave => gameWave;
 
+        [SerializeField]
+        private float valueMuliplier;
+
         public void SetGameWave(GameWave _wave)
         {
             gameWave = _wave;
@@ -25,7 +28,9 @@ namespace DevStory.Gameplay.AudioPuzzle
         {
             if (gameWave == null) return;
 
-            gameWave.OnUpdateMeasurement(type, _amount);
+            var value = (_amount / 100) * valueMuliplier;
+
+            gameWave.OnUpdateMeasurement(type, value);
         }
 
 
