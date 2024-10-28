@@ -108,6 +108,18 @@ namespace MetaConstants.EnumManager
             ORANGE = 5
         }
 
+        /// <summary>
+        /// Enum handler to determine what kind of float value you changing
+        /// This will be used on the audio puzzle
+        /// </summary>
+        /// 
+
+        public enum AudioMeasurements
+        {
+            FREQUENCY = 0,
+            AMPLITUDE = 1
+        }
+
         #endregion
 
         #region Character Enums

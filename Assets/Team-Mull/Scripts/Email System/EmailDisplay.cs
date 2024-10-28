@@ -1,5 +1,6 @@
 using DevStory.Data;
 using DevStory.DialogueSystem;
+using DevStory.Utility;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -156,6 +157,23 @@ namespace DevStory.UI
             //Check if the go to task needs to be populated
             if (taskButton != null)
             {
+                if(currentMessage.hasTask)
+                {
+                    var screenValue = 
+                        UtilityHelper.GetScreenIntegerFromTaskType(currentMessage.taskType);
+                    
+                    //Create new screen data change type
+                    ScreenChangeData screenChangeData = new ScreenChangeData()
+                    {
+                        Message = "Go to Task",
+                        OpenScreen = screenValue
+                    };
+
+
+                    SetScreenChangeData(screenChangeData);
+                }
+               
+
                 taskButtonParent.SetActive(currentMessage.hasTask);
             }
             else
