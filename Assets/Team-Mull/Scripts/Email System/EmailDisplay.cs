@@ -5,6 +5,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using static MetaConstants.EnumManager.EnumManager;
 
 
 namespace DevStory.UI
@@ -159,14 +160,11 @@ namespace DevStory.UI
             {
                 if(currentMessage.hasTask)
                 {
-                    var screenValue = 
-                        UtilityHelper.GetScreenIntegerFromTaskType(currentMessage.taskType);
-                    
                     //Create new screen data change type
                     ScreenChangeData screenChangeData = new ScreenChangeData()
                     {
                         Message = "Go to Task",
-                        OpenScreen = screenValue
+                        OpenScreen = GameScreens.TASK
                     };
 
 
