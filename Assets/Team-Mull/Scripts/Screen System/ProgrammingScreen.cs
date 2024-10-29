@@ -13,30 +13,7 @@ namespace DevStory.UI
     /// </summary>
     public class ProgrammingScreen : PuzzleScreen
     {
-        //Will later be improved to handle programming puzzles only
-        [SerializeField] private Puzzle puzzle;
 
-        public override void OnSubmitButtonClicked()
-        {
-            //Call the submit task interface 
-            SubmitTask(GameTimerManager.Instance.CurrentTime);
 
-        }
-
-        public override void SubmitTask(float _currentTime)
-        {
-            var currentTime = GameTimerManager.Instance.CurrentTime;
-            string formatCurrTime = UtilityHelper.ConvertTimeFormat(currentTime);
-
-            var deadlineTime = gameTask.GetData.TaskData.Deadline;
-            string formatDeadline = UtilityHelper.ConvertTimeFormat(deadlineTime);
-
-            var res = puzzle.ValidityCheck() ? "Solved" : "Unsolved";
-
-            var message = $"Submitting the task at {formatCurrTime} and Deadline: {formatDeadline} and result: {res}";
-
-            Debug.Log(message);
-            statusText.text = message;
-        }
     }
 }
