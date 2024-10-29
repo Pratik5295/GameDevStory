@@ -13,9 +13,9 @@ namespace DevStory.Managers
         [SerializeField]
         private TaskDialog taskDialogScreen;
 
-        [SerializeField] private GameTask currentTask;
+        [SerializeField] private GameTask activeTask;
 
-        public GameTask GetCurrentTask => currentTask;
+        public GameTask GetCurrentTask => activeTask;
 
         [SerializeField] private Dictionary<GameTask,GameObject> currentTasks = new Dictionary<GameTask,GameObject>();
 
@@ -84,6 +84,14 @@ namespace DevStory.Managers
 
         }
 
+        public void DeactivateAllTasks()
+        {
+            foreach (var _task in currentTasks)
+            {
+                _task.Value.gameObject.SetActive(false);
+            }
+        }
+
         public void Close()
         {
             taskDialogScreen.gameObject.SetActive(false);
@@ -116,12 +124,16 @@ namespace DevStory.Managers
 
         public void SetCurrentTask(GameTask _task)
         {
-            currentTask = _task;
+            DeactivateAllTasks();
+
+            activeTask = _task;
+
+            currentTasks[activeTask].gameObject.SetActive(true);
         }
 
         public void OnTaskSubmittedButtonClicked()
         {
-            currentTask.TaskCompleted();
+            activeTask.TaskCompleted();
 
             Debug.Log("Task has been completed, now close and discard this puzzle");
         }

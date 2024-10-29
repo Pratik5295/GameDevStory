@@ -4,7 +4,7 @@ using static MetaConstants.EnumManager.EnumManager;
 
 namespace DevStory.Managers
 {
-
+    //Can move everything to task manager
     public class PuzzleManager : MonoBehaviour
     {
         public static PuzzleManager Instance = null;
