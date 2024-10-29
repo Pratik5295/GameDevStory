@@ -1,3 +1,4 @@
+using DevStory.Managers;
 using DevStory.TaskSystem;
 using UnityEngine;
 
@@ -37,6 +38,8 @@ namespace DevStory.GameEventSystem
                 Instantiate(gameTask.TaskData.TaskPrefab,
                 Vector3.zero,
                 Quaternion.identity);
+
+            go.transform.SetParent(PuzzleManager.Instance.GetParentReference(gameTask.TaskData));
 
             return go;
         }

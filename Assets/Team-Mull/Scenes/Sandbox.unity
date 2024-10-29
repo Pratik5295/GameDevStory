@@ -6149,7 +6149,7 @@ PrefabInstance:
       objectReference: {fileID: 607595829}
     - target: {fileID: 1047723593726949805, guid: 7244a55c0fe89874ab2222fafc3704f5, type: 3}
       propertyPath: gameEvents.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1047723593726949805, guid: 7244a55c0fe89874ab2222fafc3704f5, type: 3}
       propertyPath: 'gameEvents.Array.data[0]'
@@ -6158,7 +6158,7 @@ PrefabInstance:
     - target: {fileID: 1047723593726949805, guid: 7244a55c0fe89874ab2222fafc3704f5, type: 3}
       propertyPath: 'gameEvents.Array.data[1]'
       value: 
-      objectReference: {fileID: 11400000, guid: 3c91778078601044198c6a35ff7790d6, type: 2}
+      objectReference: {fileID: 11400000, guid: df80a488fcb86db469025cbfa6b1321e, type: 2}
     - target: {fileID: 1047723593726949805, guid: 7244a55c0fe89874ab2222fafc3704f5, type: 3}
       propertyPath: 'gameEvents.Array.data[2]'
       value: 
@@ -6251,6 +6251,14 @@ PrefabInstance:
       propertyPath: performanceReviewer
       value: 
       objectReference: {fileID: 2655764251673504367}
+    - target: {fileID: 5792224999338182097, guid: 7244a55c0fe89874ab2222fafc3704f5, type: 3}
+      propertyPath: paintParent
+      value: 
+      objectReference: {fileID: 756992800}
+    - target: {fileID: 5792224999338182097, guid: 7244a55c0fe89874ab2222fafc3704f5, type: 3}
+      propertyPath: programmingParent
+      value: 
+      objectReference: {fileID: 1818785894}
     - target: {fileID: 6544250493764139653, guid: 7244a55c0fe89874ab2222fafc3704f5, type: 3}
       propertyPath: screen
       value: 
