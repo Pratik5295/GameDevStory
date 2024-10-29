@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5e01c55845d3c09419e93b16e4aa4515, type: 3}
-  m_Name: GameTaskOne
+  m_Name: GameTaskTwo
   m_EditorClassIdentifier: 
   eventData:
     eventCode: 0
-    eventName: Game Task One
+    eventName: Game Task Two
     eventFireDay: 1
-    eventFireTime: 10
-    prefab: {fileID: 7630318996924989442, guid: 5f496f7658da1204e8fd73075fcc40e3, type: 3}
-  gameTask: {fileID: 11400000, guid: b2e53239ec113c94795733e5dec1f27e, type: 2}
+    eventFireTime: 20
+  gameTask: {fileID: 11400000, guid: 53882d03bfb0d60498566c9b056d30de, type: 2}

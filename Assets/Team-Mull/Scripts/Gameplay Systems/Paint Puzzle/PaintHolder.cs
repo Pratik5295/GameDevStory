@@ -22,7 +22,7 @@ namespace DevStory.Gameplay.Puzzles
         [SerializeField]
         private List<PaintTile> paintHolders = new List<PaintTile>();
 
-        private void Start()
+        private void Awake()
         {
             self = GetComponent<PaintTile>();
 

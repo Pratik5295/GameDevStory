@@ -1,5 +1,7 @@
 using DevStory.Gameplay.GameTimer;
+using DevStory.Gameplay.Puzzles;
 using DevStory.Managers;
+using DevStory.UI;
 using System;
 using UnityEngine;
 using static MetaConstants.EnumManager.EnumManager;
@@ -29,8 +31,19 @@ namespace DevStory.TaskSystem
 
         public TaskResultSaver GetResult => CurrentResult;
 
+        //Reference to the active puzzle screen based on the task?
+        [SerializeField]
+        private PuzzleScreen puzzleScreen;
 
-        public void AddTaskToManager(TaskSO _taskData)
+        //Local reference for each of the task object
+        [SerializeField]
+        private GameObject puzzleObject;
+
+        //Public reference to be used for Puzzle Object
+        public Puzzle Puzzle => puzzleObject.GetComponent<Puzzle>();
+
+
+        public void AddTaskToManager(TaskSO _taskData,GameObject _taskObject)
         {
             Data = _taskData;
 
@@ -42,7 +55,10 @@ namespace DevStory.TaskSystem
                 new TaskResultSaver(data.TaskName, 
                 Status, Priority, data.Deadline);
 
-            TaskManager.Instance.AddNewTask(this, CurrentResult);
+            //Setting local reference for the task object
+            puzzleObject = _taskObject;
+
+            TaskManager.Instance.AddNewTask(this, _taskObject, CurrentResult);
         }
 
         public void TaskCompleted()

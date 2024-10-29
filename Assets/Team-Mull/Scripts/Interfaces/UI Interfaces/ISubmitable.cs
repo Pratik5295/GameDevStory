@@ -9,7 +9,6 @@ namespace DevStory.Interfaces
         /// <summary>
         /// On submit button clicked, this interface function will be fired
         /// </summary>
-        /// <param name="_currentTime">The current game time from Game Timer Manager</param>
-        void SubmitTask(float _currentTime);
+          void SubmitTask();
     }
 }

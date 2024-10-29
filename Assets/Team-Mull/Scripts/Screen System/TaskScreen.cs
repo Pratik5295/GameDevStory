@@ -36,12 +36,12 @@ namespace DevStory.UI
             taskManager.OnCurrentTasksUpdated -= OnTaskListUpdatedHandler;
         }
 
-        private void OnTaskListUpdatedHandler(List<GameTask> taskList)
+        private void OnTaskListUpdatedHandler(Dictionary<GameTask,GameObject> taskList)
         {
             toDoColumn.ClearColumn();
-            foreach (GameTask task in taskList)
+            foreach (var task in taskList)
             {
-                toDoColumn.CreateNewTask(task);
+                toDoColumn.CreateNewTask(task.Key);
             }
         }
     }

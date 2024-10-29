@@ -1,11 +1,9 @@
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace DevStory.Gameplay.Puzzles
 {
-    public class PaintPuzzle : MonoBehaviour
+    public class PaintPuzzle : Puzzle
     {
         [SerializeField]
         private List<PaintHolder> paintHolders = new List<PaintHolder>();
@@ -40,7 +38,7 @@ namespace DevStory.Gameplay.Puzzles
         #endregion
 
 
-        public bool CheckPuzzleValidation()
+        public override bool ValidityCheck()
         {
             foreach (var holder in paintHolders)
             {

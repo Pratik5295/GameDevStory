@@ -5,6 +5,7 @@ using DevStory.Utility;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using static MetaConstants.EnumManager.EnumManager;
 
 namespace DevStory.TaskSystem
 {
@@ -70,6 +71,9 @@ namespace DevStory.TaskSystem
 
             taskButton.PopulateDisplay(screenChangeData);
 
+            //Set reference to puzzle screen 
+            SetTaskOnPuzzleScreen(screenValue);
+
         }
 
         public void OnCloseButtonClicked()
@@ -80,28 +84,14 @@ namespace DevStory.TaskSystem
             ResetTaskData();
         }
 
-        /// <summary>
-        /// Have the game load your puzzle at runtime and assign it with 
-        /// the relevant screen manager
-        /// </summary>
-        public void LoadActivity()
-        {
-            if (currentTaskData.TaskPrefab == null) return;
-
-            GameObject go =
-                Instantiate(currentTaskData.TaskPrefab,
-                Vector3.zero,
-                Quaternion.identity);
-        }
+        
 
         /// <summary>
-        /// 
+        /// Sets reference to the local task object on puzzle screen
         /// </summary>
-        public void SetTaskOnPuzzleScreen()
+        public void SetTaskOnPuzzleScreen(GameScreens screenValue)
         {
             //On Start task button clicked
-            var screenValue
-                = UtilityHelper.GetScreenIntegerFromTaskType(currentTaskData.Type);
             var screen = ScreenManager.Instance.GetScreen(screenValue);
 
             if(screen.gameObject.TryGetComponent<PuzzleScreen>(out var puzzleScreen))
