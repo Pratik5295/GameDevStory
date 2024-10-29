@@ -15,8 +15,6 @@ namespace DevStory.GameEventSystem
 
         [Range(0f,480f)]
         public float eventFireTime;
-
-        public GameObject prefab;
     }
 
     [CreateAssetMenu(fileName = "Game Event SO", menuName = "Game Events/Create a New Event")]

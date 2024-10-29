@@ -18,8 +18,27 @@ namespace DevStory.GameEventSystem
             GameObject go = new GameObject($"Task-{gameTask.TaskData.TaskName}");
             GameTask gameTaskObj = go.AddComponent<GameTask>();
 
-            gameTaskObj.AddTaskToManager(gameTask);
+            //Spawns task prefab activity
+            GameObject puzzleObject = LoadActivity();
 
+            gameTaskObj.AddTaskToManager(gameTask, puzzleObject);
+
+        }
+
+        /// <summary>
+        /// Have the game load your puzzle at runtime and assign it with 
+        /// the relevant screen manager
+        /// </summary>
+        public GameObject LoadActivity()
+        {
+            if (gameTask.TaskData.TaskPrefab == null) return null;
+
+            GameObject go =
+                Instantiate(gameTask.TaskData.TaskPrefab,
+                Vector3.zero,
+                Quaternion.identity);
+
+            return go;
         }
     }
 }

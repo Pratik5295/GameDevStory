@@ -17,9 +17,9 @@ namespace DevStory.Managers
 
         public GameTask GetCurrentTask => currentTask;
 
-        [SerializeField] private List<GameTask> currentTasks = new List<GameTask>();
+        [SerializeField] private Dictionary<GameTask,GameObject> currentTasks = new Dictionary<GameTask,GameObject>();
 
-        public Action<List<GameTask>> OnCurrentTasksUpdated;
+        public Action<Dictionary<GameTask,GameObject>> OnCurrentTasksUpdated;
 
         [Space(10)]
         [Header("Components")]
@@ -27,11 +27,11 @@ namespace DevStory.Managers
         [SerializeField]
         private PerformanceReviewer performanceReviewer;
         
-        public void AddNewTask(GameTask _task, TaskResultSaver _result)
+        public void AddNewTask(GameTask _task, GameObject _puzzleObject,TaskResultSaver _result)
         {
-            if (!currentTasks.Contains(_task))
+            if (!currentTasks.ContainsKey(_task))
             {
-                currentTasks.Add(_task);
+                currentTasks.Add(_task, _puzzleObject);
                 OnCurrentTasksUpdated?.Invoke(currentTasks);
 
                 if (performanceReviewer != null)
@@ -47,7 +47,7 @@ namespace DevStory.Managers
 
         public void UpdateTaskResult(GameTask _task,TaskResultSaver _result)
         {
-            if (!currentTasks.Contains(_task))
+            if (!currentTasks.ContainsKey(_task))
             {
                 Debug.LogWarning($"Task doesn't exist");
             }
@@ -66,7 +66,7 @@ namespace DevStory.Managers
 
         public void RemoveTask(GameTask _task)
         {
-            if (currentTasks.Contains(_task))
+            if (currentTasks.ContainsKey(_task))
             {
                 currentTasks.Remove(_task);
                 OnCurrentTasksUpdated?.Invoke(currentTasks);
@@ -75,9 +75,10 @@ namespace DevStory.Managers
 
         public void ClearAllTasks()
         {
-            foreach (GameTask _task in currentTasks)
+            foreach (var _task in currentTasks)
             {
-                Destroy(_task.gameObject);
+                Destroy(_task.Key.gameObject);
+                Destroy(_task.Value.gameObject);
             }
             currentTasks.Clear();
 

@@ -34,6 +34,7 @@ namespace DevStory.UI
         public void SetTaskOnScreen(GameTask _gameTask)
         {
             gameTask = _gameTask;
+            puzzle = _gameTask.Puzzle;
         }
 
         /// <summary>
