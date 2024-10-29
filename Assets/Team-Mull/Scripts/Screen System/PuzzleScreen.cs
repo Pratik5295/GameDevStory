@@ -58,6 +58,7 @@ namespace DevStory.UI
             //Check for empty state
             if(emptyState == null) return;
             NullCheckValidation();
+
         }
 
         private void OnDisable()
@@ -67,6 +68,7 @@ namespace DevStory.UI
 
             if (submitScreen == null) return;
             submitScreen.Close();
+
         }
 
         public void OnTaskSubmitted()
