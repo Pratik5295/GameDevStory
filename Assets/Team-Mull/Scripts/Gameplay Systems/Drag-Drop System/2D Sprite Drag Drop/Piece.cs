@@ -28,7 +28,7 @@ namespace DevStory.Gameplay.Puzzles
 
         [SerializeField] private LayerMask layerToIgnore;
 
-        private void Start()
+        private void Awake()
         {
             dragger = GetComponent<Dragger>();
             dragger.OnElementDroppedEvent += Drop;
