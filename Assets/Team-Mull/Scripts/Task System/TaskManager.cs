@@ -1,8 +1,10 @@
 using DevStory.Interfaces.UI;
 using DevStory.TaskSystem;
+using DevStory.UI;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using static MetaConstants.EnumManager.EnumManager;
 
 namespace DevStory.Managers
 {
@@ -136,6 +138,13 @@ namespace DevStory.Managers
             activeTask.TaskCompleted();
 
             Debug.Log("Task has been completed, now close and discard this puzzle");
+
+            //Remove active task from the list
+            RemoveTask(activeTask);
+
+            //Change screen to task screen
+            ScreenManager.Instance.ScreenChange(GameScreens.TASK);
+        
         }
     }
 }

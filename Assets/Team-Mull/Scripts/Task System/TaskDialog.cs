@@ -71,6 +71,8 @@ namespace DevStory.TaskSystem
 
             taskButton.PopulateDisplay(screenChangeData);
 
+            taskButton.OnSwitchScreenEventFired += OnTaskScreenButtonClicked;
+
             //Set reference to puzzle screen 
             SetTaskOnPuzzleScreen(screenValue);
 
@@ -82,6 +84,12 @@ namespace DevStory.TaskSystem
             TaskManager.Instance.Close();
 
             ResetTaskData();
+        }
+
+        private void OnTaskScreenButtonClicked()
+        {
+            OnCloseButtonClicked();
+            taskButton.OnSwitchScreenEventFired -= OnTaskScreenButtonClicked;
         }
 
         

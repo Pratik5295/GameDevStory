@@ -55,7 +55,7 @@ namespace DevStory.Toaster
 
             ChangeScreenButton.onClick.AddListener(() =>
             {
-                ScreenManager.Instance.OnChangeActiveScreen(_data.OpenScreen);
+                ScreenManager.Instance.ScreenChange(_data.OpenScreen);
 
                 //Close the toaster after the activity is opened
                 Close();

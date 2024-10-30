@@ -1,5 +1,6 @@
 using DevStory.Data;
 using DevStory.Interfaces;
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -22,6 +23,8 @@ namespace DevStory.UI
 
         [SerializeField]
         private Button button;
+
+        public Action OnSwitchScreenEventFired;
 
         private void Start()
         {
@@ -52,11 +55,13 @@ namespace DevStory.UI
         public void SwitchToNextScreen()
         {
             ChangeScreen(screenChangeData);
+
+            OnSwitchScreenEventFired?.Invoke();
         }
 
         public void ChangeScreen(ScreenChangeData screenData)
         {
-            ScreenManager.Instance.OnChangeActiveScreen(screenData.OpenScreen);
+            ScreenManager.Instance.ScreenChange(screenData.OpenScreen);
         }
     }
 }

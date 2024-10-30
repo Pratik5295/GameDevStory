@@ -24,7 +24,6 @@ namespace DevStory.UI
             if(puzzle.gameObject.TryGetComponent<AudioPuzzle>(out var audioPuzzle))
             {
                 SetUpSliders(audioPuzzle.Wave);
-                Debug.Log("Audio puzzle sliders are set");
             }
 
         }
