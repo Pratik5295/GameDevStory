@@ -16,6 +16,8 @@ namespace DevStory.Gameplay.Puzzles
         [SerializeField]
         private GameWave puzzleWave;
 
+        public GameWave Wave => puzzleWave;
+
 
         [Space(10)]
         [Header("Puzzle Solving Ranges")]
@@ -26,7 +28,7 @@ namespace DevStory.Gameplay.Puzzles
         private RangeLimits frequencyLimits;
 
 
-        protected override void Start()
+        private void Awake()
         {
             puzzleWave = transform.GetChild(0).GetComponent<GameWave>();
 
