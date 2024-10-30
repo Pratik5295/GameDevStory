@@ -8,13 +8,20 @@ namespace DevStory.Gameplay.AudioPuzzle
     public class GameWave : MonoBehaviour
     {
         public int pointsCount = 100;
-        public float amplitude = 1f;
-        public float frequency = 1f;
+        [SerializeField] private float amplitude = 1f;
+        [SerializeField] private float frequency = 1f;
         public float waveLength = 1f;
 
         private LineRenderer lineRenderer;
 
         [SerializeField] private Vector3 startPosition;
+
+        public float Amplitude => amplitude;
+        public float Frequency => frequency;
+
+        [SerializeField]
+        [Tooltip("Check this if its going to be an answer/reference wave")]
+        private bool isReference = false;
 
         void Start()
         {
@@ -28,6 +35,10 @@ namespace DevStory.Gameplay.AudioPuzzle
 
         void Update()
         {
+            //Do not spam update if its a reference wave
+            if (isReference) return;
+
+
             DrawSineWave();
         }
 

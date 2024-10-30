@@ -27,6 +27,9 @@ namespace DevStory.Utility
                 case TaskType.PROGRAM:
                     return GameScreens.EDITOR;
 
+                case TaskType.AUDIO:
+                    return GameScreens.AUDIO;
+
             }
         }
 
