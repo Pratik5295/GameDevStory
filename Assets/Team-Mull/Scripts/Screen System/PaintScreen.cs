@@ -1,8 +1,3 @@
-using DevStory.Gameplay.GameTimer;
-using DevStory.Gameplay.Puzzles;
-using DevStory.Utility;
-using UnityEngine;
-
 namespace DevStory.UI
 {
     /// <summary>

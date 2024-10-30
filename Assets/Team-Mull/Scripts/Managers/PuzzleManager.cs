@@ -17,6 +17,10 @@ namespace DevStory.Managers
         [SerializeField]
         private GameObject programmingParent;
 
+        [SerializeField]
+        private GameObject audioParent;
+
+
         private void Awake()
         {
             if(Instance == null)
@@ -38,6 +42,9 @@ namespace DevStory.Managers
 
                 case TaskType.PROGRAM:
                     return programmingParent.transform;
+
+                case TaskType.AUDIO:
+                    return audioParent.transform;
             }
 
             return null;

@@ -40,7 +40,7 @@ namespace DevStory.UI
             activeScreen.Open();
         }
 
-        public void OnChangeActiveScreen(GameScreens _value)
+        public void ScreenChange(GameScreens _value)
         {
             int screenValue = (int)_value;
             var screen = gameScreens[screenValue];

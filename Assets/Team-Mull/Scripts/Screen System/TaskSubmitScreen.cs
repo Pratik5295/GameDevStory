@@ -1,5 +1,6 @@
 using DevStory.Interfaces;
 using DevStory.Managers;
+using DevStory.Utility;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,6 +13,9 @@ namespace DevStory.UI
 
         [SerializeField]
         private PuzzleScreen activePuzzleScreen;
+
+        [SerializeField]
+        private ToggleHandler submitToggle;
 
 
         private void Start()
@@ -38,6 +42,8 @@ namespace DevStory.UI
             //Fire Validity check on active puzzle screen
             activePuzzleScreen.OnTaskSubmitted();
 
+            Close();
+
             //Submit task through the task manager
             TaskManager.Instance.OnTaskSubmittedButtonClicked();
         }
@@ -47,6 +53,8 @@ namespace DevStory.UI
             activePuzzleScreen = puzzleScreen;
 
             Open();
+
+            submitToggle.SetInActive();
         }
 
         public override void Close()

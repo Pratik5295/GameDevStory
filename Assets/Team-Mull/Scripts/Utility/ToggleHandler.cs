@@ -16,5 +16,21 @@ namespace DevStory.Utility
                 target.SetActive(!target.activeSelf);
             }
         }
+
+        public void SetInActive()
+        {
+            if (target != null)
+            {
+                target.SetActive(false);
+            }
+        }
+
+        public void SetActive()
+        {
+            if (target != null)
+            {
+                target.SetActive(true);
+            }
+        }
     }
 }

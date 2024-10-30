@@ -13,7 +13,7 @@ namespace DevStory.UI.TaskBar
 
         public void OnTaskBarButtonClicked()
         {
-            ScreenManager.Instance.OnChangeActiveScreen(screenRef);
+            ScreenManager.Instance.ScreenChange(screenRef);
         }
     }
 }

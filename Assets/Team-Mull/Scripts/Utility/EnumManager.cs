@@ -17,7 +17,7 @@ namespace MetaConstants.EnumManager
         public enum GameScreens
         {
             MAIN = 0,
-            ENGINE = 1,
+            AUDIO = 1,
             PAINT = 2,
             EDITOR = 3,
             EMAIL = 4,
@@ -51,7 +51,8 @@ namespace MetaConstants.EnumManager
         {
             DEFAULT = 0,
             PAINT = 1,
-            PROGRAM = 2
+            PROGRAM = 2,
+            AUDIO = 3
         }
 
         public enum TaskStatus

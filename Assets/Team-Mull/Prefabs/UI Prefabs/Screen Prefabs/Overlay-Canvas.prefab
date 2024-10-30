@@ -288,6 +288,7 @@ MonoBehaviour:
   screenState: 0
   submitButton: {fileID: 2944827616145969125}
   activePuzzleScreen: {fileID: 0}
+  submitToggle: {fileID: 6841775708010563026}
 --- !u!1 &6074259149944691399
 GameObject:
   m_ObjectHideFlags: 0
