@@ -18,5 +18,5 @@ MonoBehaviour:
     Type: 1
     Description: Helper task for testing!
     SupervisorData: {fileID: 11400000, guid: 034fde51064b7ff4eb3fcdde268dd900, type: 2}
-    TaskPrefab: {fileID: 7630318996924989442, guid: 839151f7e6d395c46922d46572987a5a, type: 3}
+    TaskPrefab: {fileID: 7630318996924989442, guid: 689d3fdbb268244459cb6ed4960cd5ba, type: 3}
     Deadline: 420
