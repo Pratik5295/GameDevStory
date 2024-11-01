@@ -3,12 +3,17 @@ using UnityEngine;
 
 namespace DevStory.Gameplay.DragDrop
 {
-    public class Clicker : MonoBehaviour
+    public class Clicker : MonoBehaviour,IChangeable
     {
+        public virtual void IterateValue()
+        {
+         
+        }
 
         private void OnMouseDown()
         {
-            Debug.Log($"Selected item is: {gameObject.name} & {gameObject.tag}");
+            Debug.Log($"Click detected on: {gameObject.name}");
+            IterateValue();
         }
     }
 }
