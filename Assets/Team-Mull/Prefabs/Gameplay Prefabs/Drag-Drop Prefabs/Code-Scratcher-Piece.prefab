@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 794918271191575028}
   - component: {fileID: 5917601810674584111}
   - component: {fileID: 4349314544020199486}
-  - component: {fileID: 1344800179370620459}
+  - component: {fileID: 617397990834562382}
   m_Layer: 6
   m_Name: Code-Scratcher-Piece
   m_TagString: Mover
@@ -183,7 +183,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &1344800179370620459
+--- !u!114 &617397990834562382
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -192,10 +192,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 74231296169665764}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 353883c844109184d812c27c1a68a119, type: 3}
+  m_Script: {fileID: 11500000, guid: b2241d04e574ca64eb3801767653c2d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PieceValue: 1
+  PieceValue: 0
   dragger: {fileID: 0}
   collidedWith: {fileID: 0}
   originalPosition: {x: 0, y: 0, z: 0}
@@ -203,6 +203,8 @@ MonoBehaviour:
   layerToIgnore:
     serializedVersion: 2
     m_Bits: 64
+  iterators:
+  - {fileID: 2195972954256595104}
 --- !u!1 &440780068703847944
 GameObject:
   m_ObjectHideFlags: 0
@@ -410,6 +412,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentValue: 0
   maxValue: 0
+  CorrectResponseInteger: 0
   CurrentSprite: {fileID: 0}
   allValues:
   - {fileID: 21300000, guid: d68563ba7fc31314dbb51c0740953606, type: 3}

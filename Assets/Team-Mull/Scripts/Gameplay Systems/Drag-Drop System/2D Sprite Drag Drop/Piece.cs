@@ -73,10 +73,10 @@ namespace DevStory.Gameplay.Puzzles
         {
             if (collidedWith == null) return;
 
-            var holder =
+            localHolder =
                     collidedWith.gameObject.GetComponent<IHoldable>();
 
-            holder.PiecePlaced(this);
+            localHolder.PiecePlaced(this);
         }
 
         private void CheckForRaycastHit()

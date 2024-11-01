@@ -1,14 +1,62 @@
-using DevStory.Gameplay.DragDrop;
-using System.Collections.Generic;
-using UnityEngine;
+using static MetaConstants.EnumManager.EnumManager;
 
 namespace DevStory.Gameplay.Puzzles
 {
 
     public class IteratorHolder : Holder
     {
-        [SerializeField]
-        private List<IteratorClicker> iterator = new List<IteratorClicker>();
+      
 
+        public override void CheckResponse()
+        {
+           if(heldPiece == null)
+           {
+                response = PuzzlePieceResponse.FAIL;
+           }
+            else
+            {
+               if(heldPiece.gameObject.TryGetComponent<IteratorPiece>(out var iteratorPiece))
+               {
+                    if(heldPiece.Value == CorrectValue && iteratorPiece.HasIteratorsBeenSolved())
+                    {
+                        //Correct piece placed
+                        response = PuzzlePieceResponse.SUCCESS;
+                    }
+                    else
+                    {
+                        response = PuzzlePieceResponse.FAIL;
+                    }
+                }
+                else
+                {
+                    //Remove this condition if we are going for only Iterators for the puzzle
+                    if (heldPiece.Value == CorrectValue)
+                    {
+                        response = PuzzlePieceResponse.SUCCESS;
+                    }
+                    else
+                    {
+                        response = PuzzlePieceResponse.FAIL;
+                    }
+                }
+            }
+
+            //Checking if the response received is any different from the one already saved
+            if (previousResponse != PuzzlePieceResponse.DEFAULT)
+            {
+                //Response was changed from default
+
+                if (response != previousResponse)
+                {
+                    OnResponseChangedEvent?.Invoke(response);
+                }
+            }
+            else
+            {
+                OnResponseChangedEvent?.Invoke(response);
+            }
+
+            previousResponse = response;
+        }
     }
 }

@@ -13,7 +13,7 @@ namespace DevStory.Gameplay.DragDrop
         private int maxValue;
 
         public int CurrentValue => currentValue;
-        public Action<int> OnClickerValueUpdated;
+        public Action<IteratorClicker,bool> OnClickerValueUpdated;
 
         [SerializeField]
         private int CorrectResponseInteger;
@@ -41,9 +41,9 @@ namespace DevStory.Gameplay.DragDrop
             {
                 currentValue = 0;
             }
-
-            OnClickerValueUpdated?.Invoke(currentValue);
             UpdateSprite();
+
+            OnClickerValueUpdated?.Invoke(this,HasCorrectResponse);
 
         }
 
