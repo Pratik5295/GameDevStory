@@ -5,8 +5,6 @@ namespace DevStory.Gameplay.Puzzles
 
     public class IteratorHolder : Holder
     {
-      
-
         public override void CheckResponse()
         {
            if(heldPiece == null)
