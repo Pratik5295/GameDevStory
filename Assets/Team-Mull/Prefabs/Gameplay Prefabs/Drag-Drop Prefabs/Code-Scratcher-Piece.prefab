@@ -156,6 +156,7 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0}
   spriteSize: {x: 0, y: 0}
   spriteHalfSize: {x: 0, y: 0}
+  lockMovement: 0
 --- !u!50 &4349314544020199486
 Rigidbody2D:
   serializedVersion: 4
@@ -250,7 +251,7 @@ GameObject:
   - component: {fileID: 5822652177808110391}
   - component: {fileID: 3907841704053082558}
   - component: {fileID: 2195972954256595104}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Clicker
   m_TagString: Clicker
   m_Icon: {fileID: 0}
@@ -419,6 +420,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d68563ba7fc31314dbb51c0740953606, type: 3}
   - {fileID: 21300000, guid: 5d27e08485e362041a2ae2666df48f7c, type: 3}
   - {fileID: 21300000, guid: a37f8f345dc6b1a4bb6e61c990cd3fbb, type: 3}
+  OnRevealingResponseEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &4290043775728427314
 GameObject:
   m_ObjectHideFlags: 0

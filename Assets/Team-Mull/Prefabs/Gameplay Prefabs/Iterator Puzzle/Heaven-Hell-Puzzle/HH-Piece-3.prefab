@@ -156,6 +156,7 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0}
   spriteSize: {x: 0, y: 0}
   spriteHalfSize: {x: 0, y: 0}
+  lockMovement: 0
 --- !u!50 &4349314544020199486
 Rigidbody2D:
   serializedVersion: 4
@@ -203,8 +204,7 @@ MonoBehaviour:
   layerToIgnore:
     serializedVersion: 2
     m_Bits: 64
-  iterators:
-  - {fileID: 2195972954256595104}
+  iterators: []
   iteratorsSolved: 0
 --- !u!1 &440780068703847944
 GameObject:

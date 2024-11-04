@@ -65,5 +65,7 @@ namespace DevStory.Gameplay.Puzzles
             //Check response of the piece that is placed
             CheckResponse();
         }
+
+
     }
 }

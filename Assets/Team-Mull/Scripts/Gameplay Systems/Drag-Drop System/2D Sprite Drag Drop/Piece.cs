@@ -55,19 +55,6 @@ namespace DevStory.Gameplay.Puzzles
         }
 
 
-        protected virtual void OnTriggerEnter2D(Collider2D collision)
-        {
-        }
-
-        protected virtual void OnTriggerStay2D(Collider2D collision)
-        {
-        }
-
-        protected virtual void OnTriggerExit2D(Collider2D collision)
-        {
-        }
-
-
         //Droppable interface handling method
         public virtual void Drop()
         {
