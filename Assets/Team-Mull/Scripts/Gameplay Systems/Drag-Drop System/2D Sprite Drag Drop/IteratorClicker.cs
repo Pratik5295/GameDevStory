@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace DevStory.Gameplay.DragDrop
 {
@@ -25,6 +26,8 @@ namespace DevStory.Gameplay.DragDrop
 
         public List<Sprite> allValues = new List<Sprite>();
 
+        public UnityEvent OnRevealingResponseEvent;
+
         private void Start()
         {
             CurrentSprite = GetComponent<SpriteRenderer>();
@@ -41,6 +44,12 @@ namespace DevStory.Gameplay.DragDrop
             {
                 currentValue = 0;
             }
+
+            if (currentValue == CorrectResponseInteger)
+            {
+                OnRevealingResponseEvent?.Invoke();
+            }
+
             UpdateSprite();
 
             OnClickerValueUpdated?.Invoke(this,HasCorrectResponse);

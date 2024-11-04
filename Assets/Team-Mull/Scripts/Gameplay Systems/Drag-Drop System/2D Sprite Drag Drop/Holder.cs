@@ -59,7 +59,7 @@ namespace DevStory.Gameplay.Puzzles
         }
 
         #region IHoldable interface handling
-        public void PiecePlaced(Piece _piece)
+        public virtual void PiecePlaced(Piece _piece)
         {
             if (heldPiece != null)
             {
