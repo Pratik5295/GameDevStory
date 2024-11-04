@@ -21,4 +21,4 @@ MonoBehaviour:
       from the soundtrack! \r\n\r\nI have updated your Bira so have a look! "
     SupervisorData: {fileID: 11400000, guid: d06afbe348b3b55418f2d853022a46c3, type: 2}
     TaskPrefab: {fileID: 2825199655270412869, guid: 544de06c59de91841bfbdf3373c92f40, type: 3}
-    Deadline: 200
+    Deadline: 480

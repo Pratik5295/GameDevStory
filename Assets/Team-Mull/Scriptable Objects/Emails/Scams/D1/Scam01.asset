@@ -16,7 +16,6 @@ MonoBehaviour:
     eventCode: 0
     eventName: Scam01
     eventFireDay: 1
-    eventFireTime: 45
-    prefab: {fileID: 0}
+    eventFireTime: 130
   emailData: {fileID: 11400000, guid: a4fc7ea1583abe541b64edfabb619ad5, type: 2}
   emailToasterData: {fileID: 11400000, guid: f4bf1dabcbedaa648b9eec5f52917aa9, type: 2}

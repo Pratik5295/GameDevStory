@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TaskData:
     TaskName: Fight the Bugs!
-    Priority: 3
+    Priority: 1
     Type: 2
     Description: 'SOLDIER!
 
@@ -29,4 +29,4 @@ MonoBehaviour:
       Timmothy'
     SupervisorData: {fileID: 11400000, guid: 7055ef123b2f18948ab1c49298e339f7, type: 2}
     TaskPrefab: {fileID: 748483040824175455, guid: ae53f7f69e9e892478e04a8170d4741f, type: 3}
-    Deadline: 240
+    Deadline: 480
