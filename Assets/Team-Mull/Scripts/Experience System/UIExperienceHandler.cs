@@ -21,6 +21,8 @@ namespace DevStory.Experience
 
         private void Start()
         {
+            slider = GetComponent<Slider>();
+
             taskManager = TaskManager.Instance;
 
             if(taskManager != null)
