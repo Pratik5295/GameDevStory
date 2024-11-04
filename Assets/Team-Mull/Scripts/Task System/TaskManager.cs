@@ -58,6 +58,7 @@ namespace DevStory.Managers
             }
             else
             {
+                //Update the performance reviewer with result
                 if (performanceReviewer != null)
                 {
                     performanceReviewer.UpdateResult(_task, _result);
@@ -66,6 +67,9 @@ namespace DevStory.Managers
                 {
                     Debug.LogError("Performance reviewer component is missing");
                 }
+
+                //Update the experience system with result
+                AddExperience(_result.ExperienceGained);
             }
         }
 
