@@ -22,6 +22,9 @@ namespace DevStory.Gameplay.Puzzles
 
         [SerializeField] protected Collider2D collidedWith;
 
+        [SerializeField]
+        protected IHoldable localHolder;
+
         [SerializeField] private Vector3 originalPosition;
 
         [SerializeField] private Transform rayFirePoint;
@@ -52,48 +55,15 @@ namespace DevStory.Gameplay.Puzzles
         }
 
 
-        protected virtual void OnTriggerEnter2D(Collider2D collision)
-        {
-            //if (collision.gameObject.tag == "Place")
-            //{
-            //    collidedWith = collision;
-                
-            //}
-        }
-
-        protected virtual void OnTriggerStay2D(Collider2D collision)
-        {
-            //if (collision.gameObject.tag == "Place")
-            //{
-            //    collidedWith = collision;
-
-            //}
-        }
-
-        protected virtual void OnTriggerExit2D(Collider2D collision)
-        {
-            //if(collision.gameObject.tag == "Place")
-            //{
-            //    if (collidedWith == null) return;
-
-            //    var holder =
-            //        collidedWith.gameObject.GetComponent<IHoldable>();
-            //    holder.PieceRemoved();
-
-            //    collidedWith = null;
-            //}
-        }
-
-
         //Droppable interface handling method
         public virtual void Drop()
         {
             if (collidedWith == null) return;
 
-            var holder =
+            localHolder =
                     collidedWith.gameObject.GetComponent<IHoldable>();
 
-            holder.PiecePlaced(this);
+            localHolder.PiecePlaced(this);
         }
 
         private void CheckForRaycastHit()
@@ -112,19 +82,19 @@ namespace DevStory.Gameplay.Puzzles
                 else
                 {
                     collidedWith = null;
+                    localHolder = null;
                 }
             }
             else
             {
                 if(collidedWith != null)
                 {
-                    var holder =
-                   collidedWith.gameObject.GetComponent<IHoldable>();
-                    holder.PieceRemoved();
-
+                    localHolder = collidedWith.gameObject.GetComponent<IHoldable>();
+                    localHolder.PieceRemoved();
                 }
 
                 collidedWith = null;
+                localHolder = null;
             }
         }
     }

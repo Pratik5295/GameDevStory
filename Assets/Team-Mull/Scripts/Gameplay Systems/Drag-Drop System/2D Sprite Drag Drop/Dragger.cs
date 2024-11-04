@@ -20,6 +20,10 @@ namespace DevStory.Gameplay.DragDrop
         [SerializeField] private Vector2 spriteSize;
         [SerializeField] private Vector2 spriteHalfSize;
 
+        //Check flag if you dont want the piece to be dragged
+        [Tooltip("Check flag if you want the piece to not move")]
+        public bool lockMovement = false;
+
         public Action OnElementDroppedEvent;
 
         private void Start()
@@ -33,6 +37,8 @@ namespace DevStory.Gameplay.DragDrop
 
         private void OnMouseDown()
         {
+            if (lockMovement) return;
+
             offset = transform.position - UtilityHelper.GetMousePos(mainCamera,gameObject);
 
             PointManager.Instance.SelectSprite(this);
@@ -40,6 +46,8 @@ namespace DevStory.Gameplay.DragDrop
 
         private void OnMouseDrag()
         {
+            if (lockMovement) return;
+
             //Check screen limits
             Vector3 newPos = UtilityHelper.GetMousePos(mainCamera, gameObject) + offset;
 
@@ -49,6 +57,8 @@ namespace DevStory.Gameplay.DragDrop
 
         private void OnMouseUp()
         {
+            if (lockMovement) return;
+
             PointManager.Instance.ResetSelected();
 
             OnElementDroppedEvent?.Invoke();
@@ -56,6 +66,8 @@ namespace DevStory.Gameplay.DragDrop
 
         private void LateUpdate()
         {
+            if (lockMovement) return;
+
             LateMovementUpdater();
         }
 

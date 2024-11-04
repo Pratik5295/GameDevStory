@@ -7,12 +7,12 @@ namespace DevStory.Gameplay.Puzzles
 {
     public class Holder : MonoBehaviour,IHoldable
     {
-        [SerializeField] private PuzzlePieceVal CorrectValue;
+        [SerializeField] protected PuzzlePieceVal CorrectValue;
 
-        [SerializeField] private Piece heldPiece;
+        [SerializeField] protected Piece heldPiece;
 
-        [SerializeField] private PuzzlePieceResponse response;
-        private PuzzlePieceResponse previousResponse = PuzzlePieceResponse.DEFAULT;
+        [SerializeField] protected PuzzlePieceResponse response;
+        protected PuzzlePieceResponse previousResponse = PuzzlePieceResponse.DEFAULT;
 
         public PuzzlePieceResponse Response => response;
 
@@ -21,7 +21,7 @@ namespace DevStory.Gameplay.Puzzles
         /// <summary>
         /// Holder logic to validate response
         /// </summary>
-        protected virtual void CheckResponse()
+        public virtual void CheckResponse()
         {
             if (heldPiece == null)
             {
@@ -59,7 +59,7 @@ namespace DevStory.Gameplay.Puzzles
         }
 
         #region IHoldable interface handling
-        public void PiecePlaced(Piece _piece)
+        public virtual void PiecePlaced(Piece _piece)
         {
             if (heldPiece != null)
             {
