@@ -31,6 +31,9 @@ namespace DevStory.Managers
 
         [SerializeField]
         private ExperienceSystem experienceSystem;
+
+        //Experience System Getter
+        public ExperienceSystem GetExperienceSystem => experienceSystem;
         
         public void AddNewTask(GameTask _task, GameObject _puzzleObject,TaskResultSaver _result)
         {
