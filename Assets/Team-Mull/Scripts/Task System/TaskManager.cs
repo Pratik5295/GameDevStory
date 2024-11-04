@@ -28,6 +28,9 @@ namespace DevStory.Managers
 
         [SerializeField]
         private PerformanceReviewer performanceReviewer;
+
+        [SerializeField]
+        private ExperienceSystem experienceSystem;
         
         public void AddNewTask(GameTask _task, GameObject _puzzleObject,TaskResultSaver _result)
         {
@@ -145,6 +148,17 @@ namespace DevStory.Managers
             //Change screen to task screen
             ScreenManager.Instance.ScreenChange(GameScreens.TASK);
         
+        }
+
+        public void AddExperience(int _xp)
+        {
+            if(experienceSystem == null)
+            {
+                Debug.LogWarning("Experience system is currently missing");
+                return;
+            }
+
+            experienceSystem.AddExp(_xp);
         }
     }
 }

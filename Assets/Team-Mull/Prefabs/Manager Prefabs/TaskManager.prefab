@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 446689776180246760}
   - component: {fileID: 491890854977601557}
+  - component: {fileID: 6093128526747349604}
   m_Layer: 0
   m_Name: TaskManager
   m_TagString: Untagged
@@ -45,6 +46,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   taskDialogScreen: {fileID: 0}
-  currentTask: {fileID: 0}
-  currentTasks: []
+  activeTask: {fileID: 0}
   performanceReviewer: {fileID: 0}
+  experienceSystem: {fileID: 6093128526747349604}
+--- !u!114 &6093128526747349604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1612664103101848285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ea5d6de70c5d034d9a04110ff7be6d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentXp: 0
