@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04d48516da680f04aa757b98deff11cc, type: 3}
+  m_Name: M_ItDept01
+  m_EditorClassIdentifier: 
+  Speaker: {fileID: 11400000, guid: e55720a68b4e048409ed39f94b2a14e1, type: 2}
+  Message: "Hey [Player],\n\r\nWelcome to the team! Just a heads up: if your computer
+    starts acting \u201Cpossessed,\u201D it\u2019s perfectly normal here. Please
+    don\u2019t try to \u201Cclose all tabs\u201D to fix it \u2013 we lost an intern
+    that way last month.\r\nOh, and if you see files labeled DO NOT OPEN\u2026 yeah,
+    maybe listen to that one.\n\r\nEnjoy your tech\r\n"
+  Options: []
+  Type: 1
+  hasTask: 0
+  nextIndex: 0
