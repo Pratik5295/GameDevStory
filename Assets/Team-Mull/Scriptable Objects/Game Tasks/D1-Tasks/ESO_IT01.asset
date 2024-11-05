@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5e01c55845d3c09419e93b16e4aa4515, type: 3}
-  m_Name: EPROD1_E
+  m_Name: ESO_IT01
   m_EditorClassIdentifier: 
   eventData:
     eventCode: 0
-    eventName: Game Task Two
+    eventName: 
     eventFireDay: 1
-    eventFireTime: 150
-  gameTask: {fileID: 11400000, guid: 53882d03bfb0d60498566c9b056d30de, type: 2}
+    eventFireTime: 260
+  gameTask: {fileID: 11400000, guid: 51701a74d2541aa48aab0d8f72135774, type: 2}

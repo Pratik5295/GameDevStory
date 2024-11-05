@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86cc1d1677a5b4b428a5bff0904a9dde, type: 3}
+  m_Name: TSO_IP01
+  m_EditorClassIdentifier: 
+  TaskData:
+    TaskName: Karma
+    Priority: 2
+    Type: 2
+    Description: 'Actions we take, good or bad,
+
+      Tip the scale, happy or sad.
+
+      If
+      virtue outweighs the wrong,
+
+      They''ll rise to where it belongs.'
+    SupervisorData: {fileID: 11400000, guid: 7055ef123b2f18948ab1c49298e339f7, type: 2}
+    TaskPrefab: {fileID: 4123558712314381990, guid: 2f40bd5667137ac4ca0a91b2accee9ed, type: 3}
+    Deadline: 350
