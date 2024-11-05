@@ -27,11 +27,21 @@ namespace DevStory.UI
         public void Populate(GameEmail _email)
         {
             email = _email;
-            senderNameText.text = _email.Messages[0].Speaker.Data.CharacterName;
+
+            if (email.Messages[0].Speaker != null)
+            {
+                senderNameText.text = _email.Messages[0].Speaker.Data.CharacterName;
+                senderSprite.sprite = _email.Messages[0].Speaker.Data.CharacterSprite;
+            }
+            else
+            {
+                Debug.LogWarning("Missing Sender info on the email!", gameObject);
+            }
+
             emailSubjectText.text = _email.EmailTitle;
             emailContentText.text = _email.Messages[0].Message;
 
-            senderSprite.sprite = _email.Messages[0].Speaker.Data.CharacterSprite;
+          
         }
 
         public void OnButtonClicked()

@@ -81,9 +81,17 @@ namespace DevStory.UI
             currentMessage = _currentMessage;
             activeEmail = currentEmail;
 
-            emailSenderSprite.sprite = _currentMessage.Speaker.Data.CharacterSprite;
+            if (_currentMessage.Speaker != null)
+            {
+                emailSenderSprite.sprite = _currentMessage.Speaker.Data.CharacterSprite;
+              
+                emailSenderName.text = _currentMessage.Speaker.Data.CharacterName;
+            }
+            else
+            {
+                Debug.LogWarning("Missing Sender info on the email!",gameObject);
+            }
             emailBody.text = _currentMessage.Message;
-            emailSenderName.text = _currentMessage.Speaker.Data.CharacterName;
 
             if (_currentMessage.Options != null && _currentMessage.Options.Length > 0)
             {
