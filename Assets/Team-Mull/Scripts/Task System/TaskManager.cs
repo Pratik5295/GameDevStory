@@ -1,3 +1,4 @@
+using DevStory.Gameplay.GameTimer;
 using DevStory.Interfaces.UI;
 using DevStory.TaskSystem;
 using DevStory.UI;
@@ -8,6 +9,7 @@ using static MetaConstants.EnumManager.EnumManager;
 
 namespace DevStory.Managers
 {
+    [DefaultExecutionOrder(1)]
     public class TaskManager : MonoBehaviour, IScreen
     {
         public static TaskManager Instance = null;
@@ -34,7 +36,32 @@ namespace DevStory.Managers
 
         //Experience System Getter
         public ExperienceSystem GetExperienceSystem => experienceSystem;
-        
+
+        [SerializeField]
+        private GameTimerManager gameTimerManager;
+
+        private void Start()
+        {
+            gameTimerManager = GameTimerManager.Instance;
+
+            if(gameTimerManager != null)
+            {
+                gameTimerManager.OnDayEndedEvent += OnDayEndedHandler;
+            }
+            else
+            {
+                Debug.LogError("Missing Game Timer Manager",gameObject);
+            }
+        }
+
+        private void OnDestroy()
+        {
+            if(gameTimerManager != null)
+            {
+                gameTimerManager.OnDayEndedEvent -= OnDayEndedHandler;
+            }
+        }
+
         public void AddNewTask(GameTask _task, GameObject _puzzleObject,TaskResultSaver _result)
         {
             if (!currentTasks.ContainsKey(_task))
@@ -143,6 +170,15 @@ namespace DevStory.Managers
             currentTasks[activeTask].gameObject.SetActive(true);
         }
 
+        public void ResetCurrentTask()
+        {
+            DeactivateAllTasks();
+
+            currentTasks[activeTask].gameObject.SetActive(false);
+
+            activeTask = null;
+        }
+
         public void OnTaskSubmittedButtonClicked()
         {
             activeTask.TaskCompleted();
@@ -166,6 +202,15 @@ namespace DevStory.Managers
             }
 
             experienceSystem.AddExp(_xp);
+        }
+
+
+        private void OnDayEndedHandler()
+        {
+            //Everything related to day end will be fired
+
+            //Reset current task to null
+            ResetCurrentTask();
         }
     }
 }
