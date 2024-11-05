@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: debd60e11200f504cb0d44c5ce3d049f, type: 3}
-  m_Name: Scam01
+  m_Name: E_ITDept01
   m_EditorClassIdentifier: 
   eventData:
     eventCode: 0
-    eventName: Scam01
+    eventName: Tech Tips
     eventFireDay: 1
-    eventFireTime: 130
-  emailData: {fileID: 11400000, guid: a4fc7ea1583abe541b64edfabb619ad5, type: 2}
+    eventFireTime: 60
+  emailData: {fileID: 11400000, guid: da3335789a6ba964aa2475b5e375bd71, type: 2}
   emailToasterData: {fileID: 11400000, guid: f4bf1dabcbedaa648b9eec5f52917aa9, type: 2}
