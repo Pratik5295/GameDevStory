@@ -47,7 +47,7 @@ namespace DevStory.Gameplay.AudioPuzzle
             for (int i = 0; i < pointsCount; i++)
             {
                 float x = startPosition.x + i * waveLength / pointsCount;
-                float y = amplitude * Mathf.Sin(frequency * x);
+                float y = startPosition.y + amplitude * Mathf.Sin(frequency * x);
                 lineRenderer.SetPosition(i, new Vector3(x, y, 0));
             }
         }
