@@ -1,3 +1,4 @@
+using DevStory.Experience;
 using DevStory.Gameplay.GameTimer;
 using DevStory.Gameplay.Puzzles;
 using DevStory.Managers;
@@ -68,6 +69,8 @@ namespace DevStory.TaskSystem
             CurrentResult.Status = Status;
             CurrentResult.SubmissionTime = GameTimerManager.Instance.CurrentTime;
             CurrentResult.SubmissionDay = GameTimerManager.Instance.Day;
+            CurrentResult.ExperienceGained = ExperiencePointCalculator.GetExperience(CurrentResult);
+
 
             OnTaskCompleted?.Invoke();
 

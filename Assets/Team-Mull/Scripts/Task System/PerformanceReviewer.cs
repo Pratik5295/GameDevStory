@@ -21,6 +21,7 @@ namespace DevStory.TaskSystem
         public float Deadline;
         public float SubmissionTime;
         public int SubmissionDay;
+        public int ExperienceGained;
 
         public TaskResultSaver(string _taskName, 
             TaskStatus _status, 
@@ -33,6 +34,7 @@ namespace DevStory.TaskSystem
             Deadline = _deadline;
             SubmissionTime = -1;    //-1 reflects the task wasnt submitted yet
             SubmissionDay = -1;     // -1 reflects the task wasnt submitted yet
+            ExperienceGained = 0;   // Initial experience gained will be 0
         }
     }
 
