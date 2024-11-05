@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace DevStory.Gameplay.GameTimer
 {
-
+    [DefaultExecutionOrder(-1)]
     public class GameTimerManager : MonoBehaviour
     {
         public static GameTimerManager Instance = null;
