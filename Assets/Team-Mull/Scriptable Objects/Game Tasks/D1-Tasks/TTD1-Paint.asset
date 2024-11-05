@@ -25,5 +25,5 @@ MonoBehaviour:
       to drag and drop colours to fill the asset, use any colours you want! The only
       constraint will be that you shouldn''t use the same colour next to each other!'
     SupervisorData: {fileID: 11400000, guid: 034fde51064b7ff4eb3fcdde268dd900, type: 2}
-    TaskPrefab: {fileID: 7630318996924989442, guid: 5f496f7658da1204e8fd73075fcc40e3, type: 3}
+    TaskPrefab: {fileID: 7630318996924989442, guid: 839151f7e6d395c46922d46572987a5a, type: 3}
     Deadline: 420
