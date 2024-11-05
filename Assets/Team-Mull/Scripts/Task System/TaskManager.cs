@@ -28,6 +28,12 @@ namespace DevStory.Managers
 
         [SerializeField]
         private PerformanceReviewer performanceReviewer;
+
+        [SerializeField]
+        private ExperienceSystem experienceSystem;
+
+        //Experience System Getter
+        public ExperienceSystem GetExperienceSystem => experienceSystem;
         
         public void AddNewTask(GameTask _task, GameObject _puzzleObject,TaskResultSaver _result)
         {
@@ -55,6 +61,7 @@ namespace DevStory.Managers
             }
             else
             {
+                //Update the performance reviewer with result
                 if (performanceReviewer != null)
                 {
                     performanceReviewer.UpdateResult(_task, _result);
@@ -63,6 +70,9 @@ namespace DevStory.Managers
                 {
                     Debug.LogError("Performance reviewer component is missing");
                 }
+
+                //Update the experience system with result
+                AddExperience(_result.ExperienceGained);
             }
         }
 
@@ -145,6 +155,17 @@ namespace DevStory.Managers
             //Change screen to task screen
             ScreenManager.Instance.ScreenChange(GameScreens.TASK);
         
+        }
+
+        public void AddExperience(int _xp)
+        {
+            if(experienceSystem == null)
+            {
+                Debug.LogWarning("Experience system is currently missing");
+                return;
+            }
+
+            experienceSystem.AddExp(_xp);
         }
     }
 }
