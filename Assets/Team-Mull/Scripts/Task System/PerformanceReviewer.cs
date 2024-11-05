@@ -147,19 +147,48 @@ namespace DevStory.TaskSystem
 
         private void CreateCard(GameTask _task)
         {
-            var go = Instantiate(performanceCardPrefab);
-            go.transform.SetParent(cardsParent);
+            if (cards.ContainsKey(_task))
+            {
 
-            TaskResultSaver result = _task.GetResult;
+                var go = Instantiate(performanceCardPrefab);
+                go.transform.SetParent(cardsParent);
 
-            go.GetComponent<UIPerformanceCard>().SetTaskResult(result);
+                TaskResultSaver result = _task.GetResult;
 
-            cards.Add(_task, go);
+                go.GetComponent<UIPerformanceCard>().SetTaskResult(result);
 
-            //Apply pressure based on the task result
-            int pressurePoints = PressurePointCalculator.GetPressurePoints(result);
+                cards.Add(_task, go);
 
-            PressureManager.Instance.AddPresure(pressurePoints);
+                //Apply pressure based on the task result
+                int pressurePoints = PressurePointCalculator.GetPressurePoints(result);
+
+                PressureManager.Instance.AddPresure(pressurePoints);
+            }
+            else
+            {
+                //The task is from previous day, add pressure only if it wasnt completed
+
+                TaskResultSaver result = _task.GetResult;
+
+                if(result.Status != TaskStatus.COMPLETED)
+                {
+                    GameObject go = cards[_task];
+
+                    go.GetComponent<UIPerformanceCard>().SetTaskResult(result);
+
+                    //Apply pressure based on the task result
+                    int pressurePoints = PressurePointCalculator.GetPressurePoints(result);
+
+                    PressureManager.Instance.AddPresure(pressurePoints);
+                }
+                else
+                {
+                    //This will fire if a previous task was completed
+                    //For now it will also fire for already completed tasks, as 
+                    //we are not removing the object when task is completed and pressure is acted upon
+                }
+            }
+            
         }
 
         private void UpdateInformation(GameTask _task)
