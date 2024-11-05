@@ -147,7 +147,7 @@ namespace DevStory.TaskSystem
 
         private void CreateCard(GameTask _task)
         {
-            if (cards.ContainsKey(_task))
+            if (!cards.ContainsKey(_task))
             {
 
                 var go = Instantiate(performanceCardPrefab);
@@ -172,7 +172,7 @@ namespace DevStory.TaskSystem
 
                 if(result.Status != TaskStatus.COMPLETED)
                 {
-                    GameObject go = cards[_task];
+                    cards.TryGetValue(_task,out var go);
 
                     go.GetComponent<UIPerformanceCard>().SetTaskResult(result);
 
