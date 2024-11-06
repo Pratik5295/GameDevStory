@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: debd60e11200f504cb0d44c5ce3d049f, type: 3}
-  m_Name: John_D1
+  m_Name: EESO_TL202
   m_EditorClassIdentifier: 
   eventData:
     eventCode: 0
-    eventName: 
-    eventFireDay: 1
+    eventName: What we expect.
+    eventFireDay: 2
     eventFireTime: 100
-  emailData: {fileID: 11400000, guid: 12de916cab16d224bae104598dacb9b0, type: 2}
+  emailData: {fileID: 11400000, guid: 90f6e426300d65f4381e0a50e5754c5c, type: 2}
   emailToasterData: {fileID: 11400000, guid: f4bf1dabcbedaa648b9eec5f52917aa9, type: 2}

@@ -9,14 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86cc1d1677a5b4b428a5bff0904a9dde, type: 3}
-  m_Name: PROG02
+  m_Script: {fileID: 11500000, guid: 5e01c55845d3c09419e93b16e4aa4515, type: 3}
+  m_Name: TESO_PAINT201
   m_EditorClassIdentifier: 
-  TaskData:
-    TaskName: 
-    Priority: 0
-    Type: 0
-    Description: 
-    SupervisorData: {fileID: 0}
-    TaskPrefab: {fileID: 0}
-    Deadline: 0
+  eventData:
+    eventCode: 0
+    eventName: Devlish charms..
+    eventFireDay: 2
+    eventFireTime: 5
+  gameTask: {fileID: 11400000, guid: fcc344cdbfb23ca4f928da8f8dbddea4, type: 2}

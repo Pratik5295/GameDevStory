@@ -15,6 +15,6 @@ MonoBehaviour:
   eventData:
     eventCode: 0
     eventName: 
-    eventFireDay: 1
+    eventFireDay: 2
     eventFireTime: 100
   gameTask: {fileID: 11400000, guid: 51701a74d2541aa48aab0d8f72135774, type: 2}

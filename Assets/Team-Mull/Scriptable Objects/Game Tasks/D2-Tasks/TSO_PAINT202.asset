@@ -10,20 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 86cc1d1677a5b4b428a5bff0904a9dde, type: 3}
-  m_Name: TTD1-Paint 1
+  m_Name: TSO_PAINT202
   m_EditorClassIdentifier: 
   TaskData:
-    TaskName: A Wild Art Appears!
-    Priority: 1
+    TaskName: Forgotten Piece
+    Priority: 3
     Type: 1
-    Description: 'Hello Young One!
+    Description: 'Youngin!
 
 
-      This will be your first challenge! Don''t
-      worry, I shall make it very simple. Our concept artist has left you with a
-      beautiful outline of an abstract asset that we will be using. You will have
-      to drag and drop colours to fill the asset, use any colours you want! The only
-      constraint will be that you shouldn''t use the same colour next to each other!'
+      It''s time for you to have more responsibility.
+      Paint with passion! It could be more than it seems, a reflection of past choices
+      twisted and perhaps, <color=#590404>forgotten</color>.
+
+
+      Paint wisely,
+      and know that every stroke might reveal more than you intended. '
     SupervisorData: {fileID: 11400000, guid: 034fde51064b7ff4eb3fcdde268dd900, type: 2}
     TaskPrefab: {fileID: 7630318996924989442, guid: 5f496f7658da1204e8fd73075fcc40e3, type: 3}
     Deadline: 240
