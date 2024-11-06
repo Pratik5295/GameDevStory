@@ -1,6 +1,7 @@
 using DevStory.Gameplay.GameTimer;
 using DevStory.Interfaces.UI;
 using DevStory.PressureSystem;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -142,12 +143,20 @@ namespace DevStory.TaskSystem
             Open();
 
             //Create and add all the cards based on the result stored in the dictionary
-            foreach(var res in taskResults)
+
+            StartCoroutine(CardCreation());
+        }
+
+        private IEnumerator CardCreation()
+        {
+            foreach (var res in taskResults)
             {
                 CreateCard(res.Key);
-            }
 
+                yield return new WaitForSeconds(2f);
+            }
         }
+
 
         private void CreateCard(GameTask _task)
         {
