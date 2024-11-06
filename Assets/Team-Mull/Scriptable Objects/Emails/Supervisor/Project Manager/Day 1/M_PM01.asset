@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04d48516da680f04aa757b98deff11cc, type: 3}
   m_Name: M_PM01
   m_EditorClassIdentifier: 
-  Speaker: {fileID: 11400000, guid: 186dfd7638336f741812d5abd4eb6fc2, type: 2}
+  Speaker: {fileID: 11400000, guid: 998c6de99dbd4cb48b1c819bb3717324, type: 2}
   Message: "Hi [Player]!\n\r\nAs your project manager, I\u2019m here to inspire productivity.
     If you find the deadlines getting intense, just remember that quitting isn\u2019t
     an option. Not allowed, I mean. Haha! Just a little joke. Kind of.\n\r\nYou\u2019re

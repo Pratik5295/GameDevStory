@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TaskData:
     TaskName: You call this art?
-    Priority: 0
-    Type: 0
+    Priority: 1
+    Type: 1
     Description: Hmmm I must say you did well young Leonardo, I must task you with
       another. Complete the pixel art that I've sent you, make sure it's how I referenced!
     SupervisorData: {fileID: 11400000, guid: 034fde51064b7ff4eb3fcdde268dd900, type: 2}
-    TaskPrefab: {fileID: 0}
+    TaskPrefab: {fileID: 7630318996924989442, guid: 689d3fdbb268244459cb6ed4960cd5ba, type: 3}
     Deadline: 240
