@@ -174,9 +174,13 @@ namespace DevStory.Managers
         {
             DeactivateAllTasks();
 
-            currentTasks[activeTask].gameObject.SetActive(false);
+            if (activeTask != null)
+            {
+                //Reset task only if a task was selected
+                currentTasks[activeTask].gameObject.SetActive(false);
 
-            activeTask = null;
+                activeTask = null;
+            }
         }
 
         public void OnTaskSubmittedButtonClicked()

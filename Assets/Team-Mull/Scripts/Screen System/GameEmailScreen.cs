@@ -121,7 +121,6 @@ namespace DevStory.UI
             {
                 int currentMessageShown = activeEmail.CurrentIndex;
 
-                Debug.Log($"Pratik count: {currentMessageShown}");
                 if (currentMessageShown > 0)
                 {
                     StartCoroutine(ScrollToEnd());

@@ -122,11 +122,15 @@ namespace DevStory.TaskSystem
         public void Open()
         {
             systemParent.SetActive(true);
+
+            GameTimerManager.Instance.PauseGame();
         }
 
         public void Close()
         {
             systemParent.SetActive(false);
+
+            GameTimerManager.Instance.ResumeGame();
         }
 
         private void OnShowPerformanceReviewer()

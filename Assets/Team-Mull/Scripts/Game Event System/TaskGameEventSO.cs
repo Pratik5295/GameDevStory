@@ -21,8 +21,16 @@ namespace DevStory.GameEventSystem
 
             //Spawns task prefab activity
             GameObject puzzleObject = LoadActivity();
-
-            gameTaskObj.AddTaskToManager(gameTask, puzzleObject);
+            
+            if (puzzleObject != null)
+            {
+                //Dont add the task if the puzzle object is not found
+                gameTaskObj.AddTaskToManager(gameTask, puzzleObject);
+            }
+            else
+            {
+                Debug.LogError($"Missing Puzzle Object on {name} SO");
+            }
 
         }
 
@@ -40,6 +48,8 @@ namespace DevStory.GameEventSystem
                 Quaternion.identity);
 
             go.transform.SetParent(PuzzleManager.Instance.GetParentReference(gameTask.TaskData));
+
+            go.SetActive(false);
 
             return go;
         }

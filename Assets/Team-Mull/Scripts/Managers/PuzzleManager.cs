@@ -45,6 +45,10 @@ namespace DevStory.Managers
 
                 case TaskType.AUDIO:
                     return audioParent.transform;
+
+                case TaskType.DEFAULT:
+                    Debug.LogError("Default type set for Puzzle Task");
+                    return null;
             }
 
             return null;
