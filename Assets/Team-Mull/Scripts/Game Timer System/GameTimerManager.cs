@@ -23,6 +23,9 @@ namespace DevStory.Gameplay.GameTimer
 
         public float CurrentTime => currentTime;
 
+        [SerializeField]
+        private bool PauseTime = false;
+
 
         //Maximum number of seconds in a day 480f
         [SerializeField]
@@ -84,12 +87,24 @@ namespace DevStory.Gameplay.GameTimer
         {
             if (!isDayRunning) return;
 
+            if (PauseTime) return;
+
             currentTime += Time.deltaTime;
 
             if (currentTime > maxDayTime + 1)
             {
                 DayEnds();
             }
+        }
+
+        public void PauseGame()
+        {
+            PauseTime = true;
+        }
+
+        public void ResumeGame()
+        {
+            PauseTime = false;
         }
     }
 }
