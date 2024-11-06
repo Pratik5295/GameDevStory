@@ -26,4 +26,4 @@ MonoBehaviour:
       They''ll rise to where it belongs.'
     SupervisorData: {fileID: 11400000, guid: 7055ef123b2f18948ab1c49298e339f7, type: 2}
     TaskPrefab: {fileID: 4123558712314381990, guid: 2f40bd5667137ac4ca0a91b2accee9ed, type: 3}
-    Deadline: 350
+    Deadline: 240

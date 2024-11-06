@@ -16,5 +16,5 @@ MonoBehaviour:
     eventCode: 0
     eventName: Art02
     eventFireDay: 1
-    eventFireTime: 300
+    eventFireTime: 30
   gameTask: {fileID: 11400000, guid: 4d5ecdb35901f644caf1b6887e88cc7c, type: 2}

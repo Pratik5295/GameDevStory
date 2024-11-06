@@ -20,4 +20,4 @@ MonoBehaviour:
       another. Complete the pixel art that I've sent you, make sure it's how I referenced!
     SupervisorData: {fileID: 11400000, guid: 034fde51064b7ff4eb3fcdde268dd900, type: 2}
     TaskPrefab: {fileID: 0}
-    Deadline: 260
+    Deadline: 240

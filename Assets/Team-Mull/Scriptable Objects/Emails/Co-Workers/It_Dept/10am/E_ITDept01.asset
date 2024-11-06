@@ -16,6 +16,6 @@ MonoBehaviour:
     eventCode: 0
     eventName: Tech Tips
     eventFireDay: 1
-    eventFireTime: 60
+    eventFireTime: 100
   emailData: {fileID: 11400000, guid: da3335789a6ba964aa2475b5e375bd71, type: 2}
   emailToasterData: {fileID: 11400000, guid: f4bf1dabcbedaa648b9eec5f52917aa9, type: 2}
