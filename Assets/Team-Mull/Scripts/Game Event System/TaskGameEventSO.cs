@@ -21,7 +21,7 @@ namespace DevStory.GameEventSystem
 
             //Spawns task prefab activity
             GameObject puzzleObject = LoadActivity();
-
+            
             if (puzzleObject != null)
             {
                 //Dont add the task if the puzzle object is not found
@@ -49,6 +49,7 @@ namespace DevStory.GameEventSystem
 
             go.transform.SetParent(PuzzleManager.Instance.GetParentReference(gameTask.TaskData));
 
+            go.SetActive(false);
 
             return go;
         }
