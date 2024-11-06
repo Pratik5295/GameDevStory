@@ -110,7 +110,7 @@ namespace DevStory.Managers
                 currentTasks.Remove(_task);
                 OnCurrentTasksUpdated?.Invoke(currentTasks);
 
-                activeTask = null;
+                ResetCurrentTask();
             }
         }
 
