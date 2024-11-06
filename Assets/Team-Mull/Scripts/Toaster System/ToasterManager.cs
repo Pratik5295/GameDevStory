@@ -1,3 +1,4 @@
+using DG.Tweening;
 using DevStory.Data;
 using DevStory.Interfaces.UI;
 using DevStory.UI;
@@ -24,6 +25,13 @@ namespace DevStory.Toaster
 
         [SerializeField] private Button ChangeScreenButton;
         [SerializeField] private Button CloseButton;
+
+
+        [SerializeField]
+        private float hideY;
+
+        [SerializeField]
+        private float showY;
 
         public GameObject toasterObject;    //The toaster object that got created to populate this
 
@@ -67,17 +75,30 @@ namespace DevStory.Toaster
         public void Open()
         {
             toasterDisplay.SetActive(true);
+            Show();
 
         }
 
         public void Close()
         {
-            toasterDisplay.SetActive(false);
+            Hide();
 
             if(toasterObject != null)
             {
                 Destroy(toasterObject);
             }
+        }
+
+
+        //For Do Tweening
+        private void Hide()
+        {
+            transform.DOMoveY(hideY, 0.5f, false);
+        }
+
+        private void Show()
+        {
+            transform.DOMoveY(showY, 0.5f, false);
         }
     }
 }

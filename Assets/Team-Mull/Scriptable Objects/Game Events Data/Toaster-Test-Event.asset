@@ -15,7 +15,6 @@ MonoBehaviour:
   eventData:
     eventCode: 30
     eventName: Fire Toaster Now
-    eventFireDay: 2
-    eventFireTime: 15
-    prefab: {fileID: 0}
+    eventFireDay: 1
+    eventFireTime: 3
   fireToasterData: {fileID: 11400000, guid: 8aea564c49c2bff47aacc7366b98c359, type: 2}
