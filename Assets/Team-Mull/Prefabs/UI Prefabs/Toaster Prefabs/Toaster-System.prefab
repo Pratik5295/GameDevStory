@@ -98,7 +98,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -250, y: 150}
+  m_AnchoredPosition: {x: -250, y: -175}
   m_SizeDelta: {x: 500, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5621705719814419624
@@ -120,6 +120,8 @@ MonoBehaviour:
   toasterText: {fileID: 8561836617443695006}
   ChangeScreenButton: {fileID: 8507472422577701224}
   CloseButton: {fileID: 255598999048160136}
+  hideY: -175
+  showY: 150
   toasterObject: {fileID: 0}
 --- !u!1 &2051707009615749947
 GameObject:

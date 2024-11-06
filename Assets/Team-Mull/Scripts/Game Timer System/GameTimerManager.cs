@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System;
 using UnityEngine;
 
@@ -43,6 +44,9 @@ namespace DevStory.Gameplay.GameTimer
             {
                 Destroy(gameObject);
             }
+
+            //Initializing Do Tween
+            DOTween.Init();
         }
 
         /// <summary>
