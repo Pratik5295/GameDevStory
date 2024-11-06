@@ -107,10 +107,15 @@ namespace DevStory.Managers
         {
             if (currentTasks.ContainsKey(_task))
             {
+                if (_task == activeTask)
+                {
+                    ResetCurrentTask();
+                }
+
                 currentTasks.Remove(_task);
                 OnCurrentTasksUpdated?.Invoke(currentTasks);
 
-                ResetCurrentTask();
+                
             }
         }
 
