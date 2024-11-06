@@ -32,10 +32,6 @@ namespace DevStory.TaskSystem
 
         public TaskResultSaver GetResult => CurrentResult;
 
-        //Reference to the active puzzle screen based on the task?
-        [SerializeField]
-        private PuzzleScreen puzzleScreen;
-
         //Local reference for each of the task object
         [SerializeField]
         private GameObject puzzleObject;
@@ -76,7 +72,14 @@ namespace DevStory.TaskSystem
 
             TaskManager.Instance.UpdateTaskResult(this,CurrentResult);
 
+            //Destroy the puzzle object after submission
+            RemovePuzzleObject();
+        }
 
+        private void RemovePuzzleObject()
+        {
+            Destroy(puzzleObject);
+            puzzleObject = null;
         }
     }
 }

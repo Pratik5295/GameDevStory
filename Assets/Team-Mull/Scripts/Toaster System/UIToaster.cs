@@ -6,6 +6,7 @@ public class UIToaster : MonoBehaviour
     [SerializeField] private ToasterDataSO toasterSO;
     [SerializeField] private GameObject associatedObject;
 
+
     public void SetToasterData(ToasterDataSO _data,GameObject _object)
     {
         toasterSO = _data;
