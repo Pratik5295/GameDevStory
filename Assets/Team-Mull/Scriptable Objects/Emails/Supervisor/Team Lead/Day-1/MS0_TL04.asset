@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04d48516da680f04aa757b98deff11cc, type: 3}
+  m_Name: MS0_TL04
+  m_EditorClassIdentifier: 
+  Speaker: {fileID: 11400000, guid: 747a0dbdf8b53cb4bb0a50f4c2e40223, type: 2}
+  Message: "Hello, [Player].\n\r\nCongratulations on making it through your first
+    day! Around here, we believe in \u201Cfeedback\u201D and \u201Ccontinuous improvement.\u201D
+    Expect both \u2013 in generous amounts.\n\r\nAs you wrap up, remember this wisdom
+    from our founder: \u201CTrue success is working yourself to the bone \u2013 even
+    if you no longer have bones.\u201D Words to live by.\n\r\nWe\u2019ll see you
+    bright and early tomorrow\r\n"
+  Options: []
+  Type: 1
+  hasTask: 0
+  nextIndex: 0

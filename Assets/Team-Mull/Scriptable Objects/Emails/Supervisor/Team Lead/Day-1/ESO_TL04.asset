@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: debd60e11200f504cb0d44c5ce3d049f, type: 3}
-  m_Name: PDE01
+  m_Name: ESO_TL04
   m_EditorClassIdentifier: 
   eventData:
     eventCode: 0
-    eventName: Code tip!
-    eventFireDay: 2
-    eventFireTime: 60
-  emailData: {fileID: 11400000, guid: 71f33c741ef572e4ba5a8568f012f7a3, type: 2}
+    eventName: End of Day Motivation
+    eventFireDay: 1
+    eventFireTime: 200
+  emailData: {fileID: 11400000, guid: a10b83a7c27a89b49b49698bbd2e40fa, type: 2}
   emailToasterData: {fileID: 11400000, guid: f4bf1dabcbedaa648b9eec5f52917aa9, type: 2}

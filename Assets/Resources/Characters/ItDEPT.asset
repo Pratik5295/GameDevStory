@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e093616bfbba60442a94a4ffad3f27b6, type: 3}
-  m_Name: HoddT
+  m_Name: ItDEPT
   m_EditorClassIdentifier: 
   Data:
-    CharacterName: Sam Lumen
-    CharacterDesignation: Team Lead
-    CharacterSprite: {fileID: 21300000, guid: 0c4e0da51078fac48a61bde867b9031c, type: 3}
+    CharacterName: IT Department
+    CharacterDesignation: Control
+    CharacterSprite: {fileID: 21300000, guid: 8a7ba149b295a4e4b91734ccfde4a3f8, type: 3}

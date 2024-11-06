@@ -1388,7 +1388,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5300390326313757361, guid: 3f8b8a7cdfb97c54e8843691a5fb4c04, type: 3}
       propertyPath: gameEvents.Array.size
-      value: 14
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 5300390326313757361, guid: 3f8b8a7cdfb97c54e8843691a5fb4c04, type: 3}
       propertyPath: 'gameEvents.Array.data[0]'
@@ -1442,6 +1442,26 @@ PrefabInstance:
       propertyPath: 'gameEvents.Array.data[13]'
       value: 
       objectReference: {fileID: 11400000, guid: b94f4651c06acf643b3784358530784c, type: 2}
+    - target: {fileID: 5300390326313757361, guid: 3f8b8a7cdfb97c54e8843691a5fb4c04, type: 3}
+      propertyPath: 'gameEvents.Array.data[14]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 5f24267282f65d449aff99abe4a3bc6f, type: 2}
+    - target: {fileID: 5300390326313757361, guid: 3f8b8a7cdfb97c54e8843691a5fb4c04, type: 3}
+      propertyPath: 'gameEvents.Array.data[15]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 500c19e023c235040a5b438e2b5d699f, type: 2}
+    - target: {fileID: 5300390326313757361, guid: 3f8b8a7cdfb97c54e8843691a5fb4c04, type: 3}
+      propertyPath: 'gameEvents.Array.data[16]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 99ac223369d466442beb61f364a622b7, type: 2}
+    - target: {fileID: 5300390326313757361, guid: 3f8b8a7cdfb97c54e8843691a5fb4c04, type: 3}
+      propertyPath: 'gameEvents.Array.data[17]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 296dffe7991d21b4ca1fd087eebd734d, type: 2}
+    - target: {fileID: 5300390326313757361, guid: 3f8b8a7cdfb97c54e8843691a5fb4c04, type: 3}
+      propertyPath: 'gameEvents.Array.data[18]'
+      value: 
+      objectReference: {fileID: 11400000, guid: a0bddcbf9398f644c9ddc71fdf21553a, type: 2}
     - target: {fileID: 8407431494732567214, guid: 3f8b8a7cdfb97c54e8843691a5fb4c04, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

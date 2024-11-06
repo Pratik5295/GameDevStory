@@ -16,7 +16,6 @@ MonoBehaviour:
     eventCode: 0
     eventName: Design Meeting
     eventFireDay: 2
-    eventFireTime: 5
-    prefab: {fileID: 0}
+    eventFireTime: 160
   emailData: {fileID: 11400000, guid: 70ee79723060719469903683b0515c55, type: 2}
   emailToasterData: {fileID: 11400000, guid: f4bf1dabcbedaa648b9eec5f52917aa9, type: 2}

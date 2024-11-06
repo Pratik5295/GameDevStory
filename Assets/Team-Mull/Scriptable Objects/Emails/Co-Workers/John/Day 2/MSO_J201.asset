@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04d48516da680f04aa757b98deff11cc, type: 3}
+  m_Name: MSO_J201
+  m_EditorClassIdentifier: 
+  Speaker: {fileID: 11400000, guid: 3ce5ff58b774a7047937c54b2163201b, type: 2}
+  Message: "Hey, [Player]!\n\r\nHow\u2019s Day 2 treating you? Hope you\u2019re not
+    too wiped out from yesterday! It only gets more fun from here, trust me. If you
+    need any tips, just ask. I survived this long, so I might have a trick or two.\n\r\nBy
+    the way, the break room coffee is\u2026 let\u2019s call it experimental. Stick
+    with water if you value your sanity.\r\n"
+  Options: []
+  Type: 1
+  hasTask: 0
+  nextIndex: 0

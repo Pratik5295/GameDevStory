@@ -94,11 +94,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7051004259073641943, guid: 11272d798ae48344d9677ff6a1880993, type: 3}
       propertyPath: amplitude
-      value: 4
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 7051004259073641943, guid: 11272d798ae48344d9677ff6a1880993, type: 3}
       propertyPath: frequency
-      value: 5
+      value: 2.1
       objectReference: {fileID: 0}
     - target: {fileID: 8753439099479835004, guid: 11272d798ae48344d9677ff6a1880993, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
