@@ -1294,6 +1294,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1341851266}
     m_Modifications:
+    - target: {fileID: 3405635028993322357, guid: 74df319a47a858c4f840b178b6668692, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f05c576ed5e57fa41ba603075b5fed66, type: 3}
     - target: {fileID: 3429309951656409752, guid: 74df319a47a858c4f840b178b6668692, type: 3}
       propertyPath: m_Name
       value: Main-Screen
@@ -4780,6 +4784,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8968589110789942206, guid: 60250c7966eef4141b732ed08cb4b839, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4de6efea2dee9284da03b34e11745149, type: 3}
     - target: {fileID: 9012631509647987923, guid: 60250c7966eef4141b732ed08cb4b839, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
