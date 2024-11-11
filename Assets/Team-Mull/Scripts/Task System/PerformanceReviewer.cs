@@ -1,6 +1,7 @@
 using DevStory.Gameplay.GameTimer;
 using DevStory.Interfaces.UI;
 using DevStory.PressureSystem;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -18,6 +19,7 @@ namespace DevStory.TaskSystem
         public string TaskName;
         public TaskStatus Status;
         public TaskPriority Priority;
+        public TaskResult Result;   //This reflects the actual result of the task submission
         public float Deadline;
         public float SubmissionTime;
         public int SubmissionDay;
@@ -31,6 +33,7 @@ namespace DevStory.TaskSystem
             TaskName = _taskName;
             Priority = _priority;
             Status = _status;
+            Result = TaskResult.FAILURE;
             Deadline = _deadline;
             SubmissionTime = -1;    //-1 reflects the task wasnt submitted yet
             SubmissionDay = -1;     // -1 reflects the task wasnt submitted yet
@@ -142,12 +145,20 @@ namespace DevStory.TaskSystem
             Open();
 
             //Create and add all the cards based on the result stored in the dictionary
-            foreach(var res in taskResults)
+
+            StartCoroutine(CardCreation());
+        }
+
+        private IEnumerator CardCreation()
+        {
+            foreach (var res in taskResults)
             {
                 CreateCard(res.Key);
-            }
 
+                yield return new WaitForSeconds(2f);
+            }
         }
+
 
         private void CreateCard(GameTask _task)
         {

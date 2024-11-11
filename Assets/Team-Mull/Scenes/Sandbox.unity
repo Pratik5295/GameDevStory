@@ -6289,7 +6289,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 5bc87b5da1e2500428ea3babec7c57d5, type: 2}
     - target: {fileID: 2321706793999343057, guid: 7244a55c0fe89874ab2222fafc3704f5, type: 3}
       propertyPath: maxDayTime
-      value: 60
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 3130160777304007120, guid: 7244a55c0fe89874ab2222fafc3704f5, type: 3}
       propertyPath: 'gameScreens.Array.data[0]'

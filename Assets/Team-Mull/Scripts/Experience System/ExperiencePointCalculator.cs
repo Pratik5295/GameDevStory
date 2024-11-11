@@ -7,25 +7,49 @@ namespace DevStory.Experience
     {
         public static int GetExperience(TaskResultSaver _result)
         {
-            int exp = 0;
+            int priorityFactor = GetTaskMuliplyFactor(_result.Priority);
 
-            switch (_result.Priority)
+            int taskResultFactor = GetTaskResultFactor(_result.Result);
+
+            return priorityFactor * taskResultFactor;
+        }
+
+        private static int GetTaskMuliplyFactor(TaskPriority _priority)
+        {
+            switch (_priority)
             {
                 case TaskPriority.DEFAULT:
-                    exp = 1;
-                    break;
+                    return 1;
+
                 case TaskPriority.HIGH:
-                    exp = 12;
-                    break;
+                    return 4;
+
                 case TaskPriority.MEDIUM:
-                    exp = 8;
-                    break;
+                    return 3;
+
                 case TaskPriority.LOW:
-                    exp = 4;
-                    break;
+                    return 2;
             }
 
-            return exp;
+            return 0;
+        }
+
+
+        private static int GetTaskResultFactor(TaskResult _result)
+        {
+            switch(_result)
+            {
+                case TaskResult.FAILURE:
+                    return 0;
+
+                case TaskResult.COMPLETED_PAST_DEADLINE:
+                    return 2;
+
+                case TaskResult.COMPLETED:
+                    return 3;
+            }
+
+            return 0;
         }
     }
 }
