@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TaskData:
     TaskName: Ride the Waves!
-    Priority: 3
+    Priority: 1
     Type: 3
     Description: 'Hello!
 

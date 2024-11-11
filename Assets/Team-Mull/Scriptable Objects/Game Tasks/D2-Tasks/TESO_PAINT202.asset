@@ -15,6 +15,6 @@ MonoBehaviour:
   eventData:
     eventCode: 0
     eventName: 'Forgotten Asset '
-    eventFireDay: 2
-    eventFireTime: 100
+    eventFireDay: 3
+    eventFireTime: 5
   gameTask: {fileID: 11400000, guid: aafa97b0bf013764f90497d0095fe22b, type: 2}
