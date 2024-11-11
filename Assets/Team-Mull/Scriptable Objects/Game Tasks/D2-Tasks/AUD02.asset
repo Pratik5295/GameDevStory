@@ -15,7 +15,7 @@ MonoBehaviour:
   TaskData:
     TaskName: You can't tuna fish?
     Priority: 2
-    Type: 2
+    Type: 3
     Description: "Hello! \r\n\r\nYou did fantastic on your first day! The tuning
       was perfect, so good that our designers want you to work on one more piece
       from the soundtrack! \r\n\r\nI have updated your Bira so have a look! "

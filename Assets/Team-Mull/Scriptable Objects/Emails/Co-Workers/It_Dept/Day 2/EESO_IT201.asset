@@ -16,6 +16,6 @@ MonoBehaviour:
     eventCode: 0
     eventName: Do Not Pet the Office Creature
     eventFireDay: 2
-    eventFireTime: 100
+    eventFireTime: 200
   emailData: {fileID: 11400000, guid: 501b4195e6123484c89ab9b3bc1938f9, type: 2}
   emailToasterData: {fileID: 11400000, guid: f4bf1dabcbedaa648b9eec5f52917aa9, type: 2}
