@@ -1297,7 +1297,7 @@ PrefabInstance:
     - target: {fileID: 3405635028993322357, guid: 74df319a47a858c4f840b178b6668692, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: baf9c14413809b344a677ccbe884dad0, type: 3}
+      objectReference: {fileID: 21300000, guid: 8b0ec752394f0b945a6eab37144dce11, type: 3}
     - target: {fileID: 3429309951656409752, guid: 74df319a47a858c4f840b178b6668692, type: 3}
       propertyPath: m_Name
       value: Main-Screen
@@ -1392,7 +1392,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5300390326313757361, guid: 3f8b8a7cdfb97c54e8843691a5fb4c04, type: 3}
       propertyPath: gameEvents.Array.size
-      value: 22
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 5300390326313757361, guid: 3f8b8a7cdfb97c54e8843691a5fb4c04, type: 3}
       propertyPath: 'gameEvents.Array.data[0]'
@@ -1478,6 +1478,10 @@ PrefabInstance:
       propertyPath: 'gameEvents.Array.data[21]'
       value: 
       objectReference: {fileID: 11400000, guid: 2d7f90f537e569a46b930cc4ede13f9e, type: 2}
+    - target: {fileID: 5300390326313757361, guid: 3f8b8a7cdfb97c54e8843691a5fb4c04, type: 3}
+      propertyPath: 'gameEvents.Array.data[22]'
+      value: 
+      objectReference: {fileID: 11400000, guid: ca21a86caac4a67468c039e78206fe62, type: 2}
     - target: {fileID: 8407431494732567214, guid: 3f8b8a7cdfb97c54e8843691a5fb4c04, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -4553,7 +4557,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8683968762461967633, guid: bf8230e569d5c774eb3fc5b91b9a3a98, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 209
+      value: 285
       objectReference: {fileID: 0}
     - target: {fileID: 8683968762461967633, guid: bf8230e569d5c774eb3fc5b91b9a3a98, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4580,6 +4584,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2027803333}
     m_Modifications:
+    - target: {fileID: 420859922234678724, guid: 60250c7966eef4141b732ed08cb4b839, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 44c731ea73b22d841b80bb6718ee8f0b, type: 3}
     - target: {fileID: 1304254365305142053, guid: 60250c7966eef4141b732ed08cb4b839, type: 3}
       propertyPath: m_IsActive
       value: 0
