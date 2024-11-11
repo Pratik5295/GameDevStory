@@ -26,7 +26,7 @@ namespace DevStory.TaskSystem
         public void Populate(TaskResultSaver _result)
         {
             taskTitle.text = _result.TaskName;
-            taskStatus.text = _result.Status.ToString();
+            taskStatus.text = _result.Result.ToString();
             taskDeadline.text = _result.Deadline.ToString();
         }
 
