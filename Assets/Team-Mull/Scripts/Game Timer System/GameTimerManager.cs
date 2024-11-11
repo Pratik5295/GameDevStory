@@ -108,5 +108,10 @@ namespace DevStory.Gameplay.GameTimer
         {
             PauseTime = false;
         }
+
+        public void ForceDayEnd()
+        {
+            currentTime = maxDayTime;
+        }
     }
 }
