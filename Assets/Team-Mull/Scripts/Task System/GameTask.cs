@@ -2,7 +2,6 @@ using DevStory.Experience;
 using DevStory.Gameplay.GameTimer;
 using DevStory.Gameplay.Puzzles;
 using DevStory.Managers;
-using DevStory.UI;
 using System;
 using UnityEngine;
 using static MetaConstants.EnumManager.EnumManager;

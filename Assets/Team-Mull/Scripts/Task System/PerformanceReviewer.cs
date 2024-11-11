@@ -19,6 +19,7 @@ namespace DevStory.TaskSystem
         public string TaskName;
         public TaskStatus Status;
         public TaskPriority Priority;
+        public TaskResult Result;   //This reflects the actual result of the task submission
         public float Deadline;
         public float SubmissionTime;
         public int SubmissionDay;
@@ -32,6 +33,7 @@ namespace DevStory.TaskSystem
             TaskName = _taskName;
             Priority = _priority;
             Status = _status;
+            Result = TaskResult.FAILURE;
             Deadline = _deadline;
             SubmissionTime = -1;    //-1 reflects the task wasnt submitted yet
             SubmissionDay = -1;     // -1 reflects the task wasnt submitted yet

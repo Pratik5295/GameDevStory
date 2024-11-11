@@ -134,13 +134,15 @@ namespace MetaConstants.EnumManager
 
         #endregion
 
-        #region Character Enums
+        #region Task Enums
 
-        // Will turn this into a tool?
-        public enum Characters
+        public enum TaskResult
         {
-
+            FAILURE = 0,
+            COMPLETED_PAST_DEADLINE = 1,
+            COMPLETED = 2
         }
+
 
         #endregion
     }
