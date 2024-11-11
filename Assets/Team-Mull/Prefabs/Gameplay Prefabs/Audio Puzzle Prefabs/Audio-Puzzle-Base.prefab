@@ -51,11 +51,11 @@ MonoBehaviour:
       m_Calls: []
   puzzleWave: {fileID: 0}
   amplitudeLimits:
-    min: 0
-    max: 0
+    min: 1.5
+    max: 2.5
   frequencyLimits:
-    min: 0
-    max: 0
+    min: 2
+    max: 3
 --- !u!1001 &4830631535013243941
 PrefabInstance:
   m_ObjectHideFlags: 0
