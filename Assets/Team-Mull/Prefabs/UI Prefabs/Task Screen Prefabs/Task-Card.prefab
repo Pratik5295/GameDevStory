@@ -100,6 +100,7 @@ GameObject:
   - component: {fileID: 6942025525512548136}
   - component: {fileID: 2568923655570158876}
   - component: {fileID: 9047900742386088811}
+  - component: {fileID: 2478663653894801}
   m_Layer: 5
   m_Name: Task-Card
   m_TagString: Untagged
@@ -279,6 +280,20 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5882353}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+--- !u!114 &2478663653894801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878907604715716636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fd3166164381d8459f07ad08b0b10cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offsetX: 30
+  duration: 1
 --- !u!1 &3102072270446077353
 GameObject:
   m_ObjectHideFlags: 0
