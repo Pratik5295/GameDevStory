@@ -25,7 +25,7 @@ namespace DevStory.GameEventSystem
             if (puzzleObject != null)
             {
                 //Dont add the task if the puzzle object is not found
-                gameTaskObj.AddTaskToManager(gameTask, puzzleObject);
+                gameTaskObj.AddTaskToManager(gameTask, puzzleObject, eventData.eventFireDay);
             }
             else
             {

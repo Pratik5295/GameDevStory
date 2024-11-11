@@ -11,41 +11,50 @@ namespace DevStory.PressureSystem
     {
         public static int GetPressurePoints(TaskResultSaver _result)
         {
-            int pressure = 0;
+            int priorityFactor = GetTaskPriorityFactor(_result.Priority);
 
-            //If the pressure is to be reduced, then the factor would be -1
-            int pressureFactor = 1; 
-           
-            //Check status if the task is completed (submitted)
-            if(_result.Status == TaskStatus.COMPLETED)
-            {
-                //Task was completed, award pressure
-                pressureFactor = -1;
-            }
-            else
-            {
-                pressureFactor = 1;
-            }
-
-            //Check the task priority to adjust the pressure
-            switch(_result.Priority)
-            {
-                case TaskPriority.DEFAULT:
-                    pressure = 1;
-                    break;
-                case TaskPriority.HIGH:
-                    pressure = 10;
-                    break;
-                case TaskPriority.MEDIUM:
-                    pressure = 6;
-                    break;
-                case TaskPriority.LOW:
-                    pressure = 4;
-                    break;
-            }
+            int resultFactor = GetTaskResultFactor(_result.Result);
 
             //Multiply by pressure factor before returning the pressure
-            return (pressureFactor * pressure);    
+            return (priorityFactor * resultFactor);    
+        }
+
+        private static int GetTaskPriorityFactor(TaskPriority _priority)
+        {
+            switch(_priority)
+            {
+                case TaskPriority.DEFAULT:
+                    return 0;
+
+                case TaskPriority.HIGH:
+                    return 5;
+
+                case TaskPriority.MEDIUM: 
+                    return 2;
+
+                case TaskPriority.LOW:
+                    return 1;
+            }
+
+            return 0;
+        }
+
+
+        private static int GetTaskResultFactor(TaskResult _result)
+        {
+            switch (_result)
+            {
+                case TaskResult.FAILURE:
+                    return 10;
+
+                case TaskResult.COMPLETED_PAST_DEADLINE:
+                    return 5;
+
+                case TaskResult.COMPLETED:
+                    return -5;
+            }
+
+            return 0;
         }
     }
 }

@@ -2,7 +2,6 @@ using DevStory.Experience;
 using DevStory.Gameplay.GameTimer;
 using DevStory.Gameplay.Puzzles;
 using DevStory.Managers;
-using DevStory.UI;
 using System;
 using UnityEngine;
 using static MetaConstants.EnumManager.EnumManager;
@@ -28,6 +27,9 @@ namespace DevStory.TaskSystem
         public Action OnTaskCompleted;
 
         [SerializeField]
+        private int EventFireDay;
+
+        [SerializeField]
         private TaskResultSaver CurrentResult;
 
         public TaskResultSaver GetResult => CurrentResult;
@@ -40,8 +42,10 @@ namespace DevStory.TaskSystem
         public Puzzle Puzzle => puzzleObject.GetComponent<Puzzle>();
 
 
-        public void AddTaskToManager(TaskSO _taskData,GameObject _taskObject)
+        public void AddTaskToManager(TaskSO _taskData,GameObject _taskObject, int eventFireDay)
         {
+            EventFireDay = eventFireDay;
+
             Data = _taskData;
 
             Status = TaskStatus.TODO;
@@ -62,9 +66,20 @@ namespace DevStory.TaskSystem
         {
             Status = TaskStatus.COMPLETED;
 
+            bool Solved = Puzzle.ValidityCheck();
+
+            float Deadline = Data.TaskData.Deadline;
+
+            int Today = GameTimerManager.Instance.Day;
+            float SubmissionTime = GameTimerManager.Instance.CurrentTime;
+
+            //Calculate Puzzle Task result and update
+            TaskResult result = TaskResultCalculator.GetTaskResult(Solved, EventFireDay, Deadline, Today, SubmissionTime);
+
             CurrentResult.Status = Status;
             CurrentResult.SubmissionTime = GameTimerManager.Instance.CurrentTime;
             CurrentResult.SubmissionDay = GameTimerManager.Instance.Day;
+            CurrentResult.Result = result;
             CurrentResult.ExperienceGained = ExperiencePointCalculator.GetExperience(CurrentResult);
 
 
