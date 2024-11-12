@@ -22,7 +22,6 @@ namespace DevStory.TaskSystem
         [SerializeField] private Image taskHeaderImage;
 
         [SerializeField] private Image supervisorFaceCard;
-        [SerializeField] private TextMeshProUGUI supervisorName;
 
         [SerializeField] private TextMeshProUGUI descriptionText;
 
@@ -51,8 +50,6 @@ namespace DevStory.TaskSystem
                 = ColorCoder.GetColorFromPriority(currentTaskData.Priority);
 
             supervisorFaceCard.sprite = currentTaskData.SupervisorData.Data.CharacterSprite;
-
-            supervisorName.text = currentTaskData.SupervisorData.Data.CharacterName;
 
             descriptionText.text = currentTaskData.Description;
 
