@@ -86,7 +86,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8725060958433273488}
   - component: {fileID: 5958919837137345024}
-  - component: {fileID: 4898254028595908401}
   m_Layer: 5
   m_Name: Task-Dialog
   m_TagString: Untagged
@@ -136,31 +135,10 @@ MonoBehaviour:
     Deadline: 0
   selectedTaskObject: {fileID: 0}
   taskTitle: {fileID: 4212587410982149892}
-  taskHeaderImage: {fileID: 0}
   supervisorFaceCard: {fileID: 4145771781732075060}
   descriptionText: {fileID: 8601910015451827053}
   taskButton: {fileID: 5669768861764606735}
   completeByText: {fileID: 8414648988719554277}
---- !u!114 &4898254028595908401
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 555089204838295631}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreLayout: 0
-  m_MinWidth: -1
-  m_MinHeight: -1
-  m_PreferredWidth: 1093
-  m_PreferredHeight: -1
-  m_FlexibleWidth: -1
-  m_FlexibleHeight: -1
-  m_LayoutPriority: 1
 --- !u!1 &1711718208338272372
 GameObject:
   m_ObjectHideFlags: 0

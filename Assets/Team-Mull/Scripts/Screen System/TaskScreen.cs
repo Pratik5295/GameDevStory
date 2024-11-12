@@ -19,6 +19,11 @@ namespace DevStory.UI
 
         [SerializeField] private TaskManager taskManager;
 
+
+        [SerializeField]
+        private GameObject noTaskScreen;
+
+
         private void Awake()
         {
             taskManager = TaskManager.Instance;
@@ -29,6 +34,20 @@ namespace DevStory.UI
         {
             //Force it active so the listeners are active
             Close();
+        }
+
+        private void Update()
+        {
+            if (noTaskScreen == null) return;
+
+            if(taskManager.GetCurrentTask == null)
+            {
+                noTaskScreen.SetActive(true);
+            }
+            else
+            {
+                noTaskScreen.SetActive(false);
+            }
         }
 
         private void OnDestroy()
