@@ -198,7 +198,7 @@ namespace DevStory.Managers
             RemoveTask(activeTask);
 
             //Change screen to task screen
-            ScreenManager.Instance.ScreenChange(GameScreens.TASK);
+            ScreenManager.Instance.ScreenChange(GameScreens.MAIN);
         
         }
 

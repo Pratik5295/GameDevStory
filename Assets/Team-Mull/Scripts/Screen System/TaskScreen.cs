@@ -12,7 +12,7 @@ namespace DevStory.UI
     /// </summary>
     
     [DefaultExecutionOrder(3)]
-    public class TaskScreen : Screen
+    public class TaskScreen : MonoBehaviour
     {
         [SerializeField]
         private TaskColumn toDoColumn;
@@ -33,7 +33,7 @@ namespace DevStory.UI
         private void Start()
         {
             //Force it active so the listeners are active
-            Close();
+            //Close();
         }
 
         private void Update()
