@@ -1,3 +1,4 @@
+using DevStory.Gameplay.GameTimer;
 using UnityEngine;
 using static MetaConstants.EnumManager.EnumManager;
 
@@ -11,6 +12,7 @@ namespace DevStory.Utility
 
     public static class UtilityHelper
     {
+
         public static GameScreens GetScreenIntegerFromTaskType(TaskType _taskType)
         {
             switch(_taskType)
@@ -33,10 +35,16 @@ namespace DevStory.Utility
             }
         }
 
+        #region Time Convertor Region
+
+        public static float MaxGameTimer = GameTimerManager.Instance.MaxDayTime;
+        public static float PerSecondFactor = MaxGameTimer / 8;
 
         public static string ConvertTimeFormat(float timer)
         {
-            float minutesPassed = timer / 60f;
+            
+
+            float minutesPassed = timer / PerSecondFactor;
             int hours = (int)minutesPassed;
             int minutes = (int)((minutesPassed - hours) * 60f);
 
@@ -59,6 +67,8 @@ namespace DevStory.Utility
 
             return string.Format($"{displayHours:D2}:{displayMinutes:D2} {period}");
         }
+
+        #endregion
 
 
         public static Vector3 GetMousePos(Camera _camera, GameObject gameObject)

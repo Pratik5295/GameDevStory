@@ -140,12 +140,10 @@ namespace DevStory.Managers
 
         public void Close()
         {
-            taskDialogScreen.gameObject.SetActive(false);
         }
 
         public void Open()
         {
-            taskDialogScreen.gameObject.SetActive(true);
         }
 
         public void OpenTaskDialogBox(GameTask _task)
@@ -200,7 +198,7 @@ namespace DevStory.Managers
             RemoveTask(activeTask);
 
             //Change screen to task screen
-            ScreenManager.Instance.ScreenChange(GameScreens.TASK);
+            ScreenManager.Instance.ScreenChange(GameScreens.MAIN);
         
         }
 

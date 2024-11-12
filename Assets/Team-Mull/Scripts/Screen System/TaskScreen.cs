@@ -12,12 +12,17 @@ namespace DevStory.UI
     /// </summary>
     
     [DefaultExecutionOrder(3)]
-    public class TaskScreen : Screen
+    public class TaskScreen : MonoBehaviour
     {
         [SerializeField]
         private TaskColumn toDoColumn;
 
         [SerializeField] private TaskManager taskManager;
+
+
+        [SerializeField]
+        private GameObject noTaskScreen;
+
 
         private void Awake()
         {
@@ -28,7 +33,21 @@ namespace DevStory.UI
         private void Start()
         {
             //Force it active so the listeners are active
-            Close();
+            //Close();
+        }
+
+        private void Update()
+        {
+            if (noTaskScreen == null) return;
+
+            if(taskManager.GetCurrentTask == null)
+            {
+                noTaskScreen.SetActive(true);
+            }
+            else
+            {
+                noTaskScreen.SetActive(false);
+            }
         }
 
         private void OnDestroy()
