@@ -31,6 +31,8 @@ namespace DevStory.Gameplay.GameTimer
         [SerializeField]
         private float maxDayTime = 60f;
 
+        public float MaxDayTime => maxDayTime;  
+
         [SerializeField]
         private bool isDayRunning = false;
 
@@ -105,6 +107,11 @@ namespace DevStory.Gameplay.GameTimer
         public void ResumeGame()
         {
             PauseTime = false;
+        }
+
+        public void ForceDayEnd()
+        {
+            currentTime = maxDayTime;
         }
     }
 }

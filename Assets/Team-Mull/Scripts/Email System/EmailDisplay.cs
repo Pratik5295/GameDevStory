@@ -172,7 +172,7 @@ namespace DevStory.UI
                     ScreenChangeData screenChangeData = new ScreenChangeData()
                     {
                         Message = "Go to Task",
-                        OpenScreen = GameScreens.TASK
+                        OpenScreen = GameScreens.MAIN
                     };
 
 
