@@ -16,6 +16,6 @@ MonoBehaviour:
     eventCode: 0
     eventName: Settling In
     eventFireDay: 2
-    eventFireTime: 1
+    eventFireTime: 0
   emailData: {fileID: 11400000, guid: 55e1cea980aa7f144aed1c7d57556b6e, type: 2}
   emailToasterData: {fileID: 11400000, guid: f4bf1dabcbedaa648b9eec5f52917aa9, type: 2}

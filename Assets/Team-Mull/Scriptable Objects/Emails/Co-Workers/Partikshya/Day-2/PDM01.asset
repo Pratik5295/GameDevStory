@@ -25,6 +25,6 @@ MonoBehaviour:
   - optionMessage: Helllo! Thank you, I would love to hear it, it would be really
       helpful!
     nextMessageIndex: 1
-  Type: 0
+  Type: 1
   hasTask: 0
   nextIndex: 0

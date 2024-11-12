@@ -16,6 +16,6 @@ MonoBehaviour:
     eventCode: 0
     eventName: Welcome to EB!
     eventFireDay: 1
-    eventFireTime: 1
+    eventFireTime: 0
   emailData: {fileID: 11400000, guid: 3ac63a1135058a944ad887e6f6a7fcf3, type: 2}
   emailToasterData: {fileID: 11400000, guid: f4bf1dabcbedaa648b9eec5f52917aa9, type: 2}

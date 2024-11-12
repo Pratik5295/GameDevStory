@@ -29,6 +29,6 @@ MonoBehaviour:
     nextMessageIndex: 0
   - optionMessage: Don't attend
     nextMessageIndex: 0
-  Type: 0
+  Type: 1
   hasTask: 0
   nextIndex: 0
