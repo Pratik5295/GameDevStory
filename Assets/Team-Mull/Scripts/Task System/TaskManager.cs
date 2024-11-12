@@ -140,12 +140,10 @@ namespace DevStory.Managers
 
         public void Close()
         {
-            taskDialogScreen.gameObject.SetActive(false);
         }
 
         public void Open()
         {
-            taskDialogScreen.gameObject.SetActive(true);
         }
 
         public void OpenTaskDialogBox(GameTask _task)

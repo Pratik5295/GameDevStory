@@ -19,7 +19,6 @@ namespace DevStory.TaskSystem
         [SerializeField] private GameTask selectedTaskObject;
 
         [SerializeField] private TextMeshProUGUI taskTitle;
-        [SerializeField] private Image taskHeaderImage;
 
         [SerializeField] private Image supervisorFaceCard;
 
@@ -46,8 +45,6 @@ namespace DevStory.TaskSystem
         {
             taskTitle.text = currentTaskData.TaskName;
 
-            taskHeaderImage.color
-                = ColorCoder.GetColorFromPriority(currentTaskData.Priority);
 
             supervisorFaceCard.sprite = currentTaskData.SupervisorData.Data.CharacterSprite;
 
