@@ -5,8 +5,11 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Team-Mull/Scenes/Sandbox.unity
     guid: 05d64c3110f272f4db404f9a1a77b464
+  - enabled: 1
+    path: Assets/Team-Mull/Scenes/DTest3.unity
+    guid: 8e766165e1a269546be2835a4ab46c7a
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

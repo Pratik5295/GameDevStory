@@ -15,10 +15,10 @@ MonoBehaviour:
   TaskData:
     TaskName: You can't tuna fish?
     Priority: 2
-    Type: 0
+    Type: 3
     Description: "Hello! \r\n\r\nYou did fantastic on your first day! The tuning
       was perfect, so good that our designers want you to work on one more piece
       from the soundtrack! \r\n\r\nI have updated your Bira so have a look! "
     SupervisorData: {fileID: 11400000, guid: d06afbe348b3b55418f2d853022a46c3, type: 2}
-    TaskPrefab: {fileID: 0}
+    TaskPrefab: {fileID: 2825199655270412869, guid: 32da9764d50da1d4dae0df8037f207d8, type: 3}
     Deadline: 200

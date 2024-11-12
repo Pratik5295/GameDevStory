@@ -16,7 +16,6 @@ MonoBehaviour:
     eventCode: 0
     eventName: Code tip!
     eventFireDay: 2
-    eventFireTime: 5
-    prefab: {fileID: 0}
+    eventFireTime: 60
   emailData: {fileID: 11400000, guid: 71f33c741ef572e4ba5a8568f012f7a3, type: 2}
   emailToasterData: {fileID: 11400000, guid: f4bf1dabcbedaa648b9eec5f52917aa9, type: 2}

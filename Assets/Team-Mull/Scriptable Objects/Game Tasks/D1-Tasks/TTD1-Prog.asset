@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TaskData:
     TaskName: Fight the Bugs!
-    Priority: 3
+    Priority: 2
     Type: 2
     Description: 'SOLDIER!
 

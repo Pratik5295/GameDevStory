@@ -20,10 +20,10 @@ MonoBehaviour:
 
 
 
-    This is a required
-    attendance so please make sure to attend
+    <color=#FFA500>This
+    is a required attendance so please make sure to attend
 
-    on time.'
+    on time./color>'
   Options:
   - optionMessage: Attend
     nextMessageIndex: 0

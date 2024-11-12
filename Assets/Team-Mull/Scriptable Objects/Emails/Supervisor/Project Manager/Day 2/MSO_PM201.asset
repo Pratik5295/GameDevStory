@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04d48516da680f04aa757b98deff11cc, type: 3}
+  m_Name: MSO_PM201
+  m_EditorClassIdentifier: 
+  Speaker: {fileID: 11400000, guid: 998c6de99dbd4cb48b1c819bb3717324, type: 2}
+  Message: "Hey [Player]\n\nJust wanted to check in \u2013 remember to pace yourself
+    today. Breaks are technically allowed, but, you know, we strongly discourage
+    them during core work hours. I\u2019ll leave it to your judgment. \U0001F60A\n\r\nAnd
+    by the way, our unofficial intern motto is: \u201CPain is just productivity you
+    haven\u2019t harnessed yet!\u201D\r\n"
+  Options: []
+  Type: 1
+  hasTask: 0
+  nextIndex: 0

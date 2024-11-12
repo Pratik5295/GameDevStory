@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TaskData:
     TaskName: Ride the Waves!
-    Priority: 3
+    Priority: 1
     Type: 3
     Description: 'Hello!
 
 
       We are composing some fantastic music for the game
       but it seems as though the amplitude and waves are incorrect. We heard you
-      like Jazz, so please complete the incorrect files using the correct file as
-      a reference.
+      like Jazz, so please complete the incorrect files <color=#FFA500>using the
+      correct file as a reference</color>.
 
 
       Kind regards
@@ -30,4 +30,4 @@ MonoBehaviour:
       Modzart'
     SupervisorData: {fileID: 11400000, guid: d06afbe348b3b55418f2d853022a46c3, type: 2}
     TaskPrefab: {fileID: 2825199655270412869, guid: 544de06c59de91841bfbdf3373c92f40, type: 3}
-    Deadline: 0
+    Deadline: 240

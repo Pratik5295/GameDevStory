@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: EDM_Welcome1
   m_EditorClassIdentifier: 
   Speaker: {fileID: 11400000, guid: 747a0dbdf8b53cb4bb0a50f4c2e40223, type: 2}
-  Message: "Hello Kideo Hojima,\r\n\r\nWelcome to Hell Studios! \n\nI\u2019m Luci,
-    the Lead Producer. Around here, deadlines are... eternal, but don\u2019t worry
+  Message: "Hello [Player],\n\nWelcome to <color=red>Hell Studios!</color>\n\nI\u2019m
+    Sam, the Team Lead. Around here, deadlines are... eternal, but don\u2019t worry
     \u2013 you\u2019ll get used to the heat..\n\nYou\u2019ll be given daily tasks
     that will be updated at the start of each day, you can click the link below to
     be taken to the tasks tab.\r\n\r\nBest of luck and expecting good things from
-    you!\r\n\r\nRegards \r\nSamael Lumen\r\n"
+    you!\r\n\r\nRegards \r\nSam Lumen\r\n"
   Options: []
   Type: 1
   hasTask: 1

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86cc1d1677a5b4b428a5bff0904a9dde, type: 3}
+  m_Name: AUDTSO_301
+  m_EditorClassIdentifier: 
+  TaskData:
+    TaskName: Seismic Noise
+    Priority: 1
+    Type: 3
+    Description: 'We had to travel to Gaia so we could record these sounds, but our
+      old intern interfered with the rythmn.
+
+
+      Since you''ve taken his place,
+      fix it.'
+    SupervisorData: {fileID: 11400000, guid: d06afbe348b3b55418f2d853022a46c3, type: 2}
+    TaskPrefab: {fileID: 2825199655270412869, guid: 6c8da54e80dd944408731cc67a7014b4, type: 3}
+    Deadline: 240

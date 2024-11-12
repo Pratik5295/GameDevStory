@@ -16,6 +16,5 @@ MonoBehaviour:
     eventCode: 0
     eventName: Art
     eventFireDay: 2
-    eventFireTime: 20
-    prefab: {fileID: 0}
+    eventFireTime: 30
   gameTask: {fileID: 11400000, guid: 6fff69f8403e44f46bb5adb136047fb9, type: 2}
