@@ -9,12 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e01c55845d3c09419e93b16e4aa4515, type: 3}
-  m_Name: GameTaskOne
+  m_Script: {fileID: 11500000, guid: debd60e11200f504cb0d44c5ce3d049f, type: 3}
+  m_Name: EESO_SCAM102
   m_EditorClassIdentifier: 
   eventData:
     eventCode: 0
-    eventName: Game Task One
+    eventName: Feeling tired?
     eventFireDay: 1
-    eventFireTime: 5
-  gameTask: {fileID: 11400000, guid: b2e53239ec113c94795733e5dec1f27e, type: 2}
+    eventFireTime: 180
+  emailData: {fileID: 11400000, guid: bfb7c8e01b4fb434c95354f56d8372e5, type: 2}
+  emailToasterData: {fileID: 11400000, guid: f4bf1dabcbedaa648b9eec5f52917aa9, type: 2}

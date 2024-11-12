@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04d48516da680f04aa757b98deff11cc, type: 3}
+  m_Name: MSO_SCAM102
+  m_EditorClassIdentifier: 
+  Speaker: {fileID: 11400000, guid: 9b4bc280e35f22047a20bfbac949165a, type: 2}
+  Message: "Tired? Feeling burnt out? Take a quick break and try our exclusive productivity
+    serum! For a \u201Clow\u201D price, you\u2019ll receive a vial that guarantees
+    to add an extra spring to your step. Why spend eternity moving slowly?\n\r\nJust
+    click the link below to place your order. No refund policy applies.\r\n"
+  Options: []
+  Type: 1
+  hasTask: 0
+  nextIndex: 0

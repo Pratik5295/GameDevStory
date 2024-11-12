@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: debd60e11200f504cb0d44c5ce3d049f, type: 3}
-  m_Name: EESO_TL201
+  m_Name: EESOTL_301
   m_EditorClassIdentifier: 
   eventData:
     eventCode: 0
-    eventName: Settling In
-    eventFireDay: 2
+    eventName: Kind Reminder to Employees
+    eventFireDay: 3
     eventFireTime: 1
-  emailData: {fileID: 11400000, guid: 55e1cea980aa7f144aed1c7d57556b6e, type: 2}
+  emailData: {fileID: 11400000, guid: 6c4c565f007112248835ecf2f28c3fbc, type: 2}
   emailToasterData: {fileID: 11400000, guid: f4bf1dabcbedaa648b9eec5f52917aa9, type: 2}

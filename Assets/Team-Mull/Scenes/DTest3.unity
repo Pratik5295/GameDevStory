@@ -1408,7 +1408,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5300390326313757361, guid: 3f8b8a7cdfb97c54e8843691a5fb4c04, type: 3}
       propertyPath: gameEvents.Array.size
-      value: 23
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 5300390326313757361, guid: 3f8b8a7cdfb97c54e8843691a5fb4c04, type: 3}
       propertyPath: 'gameEvents.Array.data[0]'
@@ -1498,6 +1498,18 @@ PrefabInstance:
       propertyPath: 'gameEvents.Array.data[22]'
       value: 
       objectReference: {fileID: 11400000, guid: ca21a86caac4a67468c039e78206fe62, type: 2}
+    - target: {fileID: 5300390326313757361, guid: 3f8b8a7cdfb97c54e8843691a5fb4c04, type: 3}
+      propertyPath: 'gameEvents.Array.data[23]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 6ef5eb9d27c82c445ae18e15b5e0adde, type: 2}
+    - target: {fileID: 5300390326313757361, guid: 3f8b8a7cdfb97c54e8843691a5fb4c04, type: 3}
+      propertyPath: 'gameEvents.Array.data[24]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 2a85f6f08d22ac84396b443bf9ef566a, type: 2}
+    - target: {fileID: 5300390326313757361, guid: 3f8b8a7cdfb97c54e8843691a5fb4c04, type: 3}
+      propertyPath: 'gameEvents.Array.data[25]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 2112bae797bcc274b80f7c25b417de6d, type: 2}
     - target: {fileID: 8407431494732567214, guid: 3f8b8a7cdfb97c54e8843691a5fb4c04, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

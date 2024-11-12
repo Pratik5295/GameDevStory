@@ -9,12 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e01c55845d3c09419e93b16e4aa4515, type: 3}
-  m_Name: GameTaskOne
+  m_Script: {fileID: 11500000, guid: ddc8d93fa9dc14b4b87a5bab87f1ba73, type: 3}
+  m_Name: ESO_SCAM102
   m_EditorClassIdentifier: 
-  eventData:
-    eventCode: 0
-    eventName: Game Task One
-    eventFireDay: 1
-    eventFireTime: 5
-  gameTask: {fileID: 11400000, guid: b2e53239ec113c94795733e5dec1f27e, type: 2}
+  EmailTitle: Feeling burnt out?
+  Messages:
+  - {fileID: 11400000, guid: 8dbb924ecd2d2554f893d933664d35f7, type: 2}
