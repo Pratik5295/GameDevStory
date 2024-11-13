@@ -121,20 +121,7 @@ MonoBehaviour:
   OnPuzzleSolvedEvent:
     m_PersistentCalls:
       m_Calls: []
-  paintHolders:
-  - {fileID: 6784397439502843988}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  paintHolders: []
   content: {fileID: 5182812625397186719}
 --- !u!1001 &166066769808595811
 PrefabInstance:
@@ -5799,17 +5786,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b39ad9c3fa60ece4b8e99e7f225758e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &6784397439502843988 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 559187327011913354, guid: a71a429d9dadfb043b0a4aba9b4642dc, type: 3}
-  m_PrefabInstance: {fileID: 6477764439479353054}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 125634838500102530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66290cc4e0e04304ca6b182235c8dec2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &6478446521004783984
