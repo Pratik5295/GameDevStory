@@ -58,6 +58,7 @@ namespace DevStory.Gameplay.Puzzles
 
         private void OnClickerValueUpdatedHandler(IteratorClicker _iterator,bool _result)
         {
+            Debug.Log($"Iterator clicker value updated:",gameObject);
             ForceValidityCheck();
         }
 
@@ -66,20 +67,12 @@ namespace DevStory.Gameplay.Puzzles
             //Check if iterators are correct
             iteratorsSolved = HasIteratorsBeenSolved();
 
-            //If solved, then force local piece holder
-            if (iteratorsSolved)
+            if(collidedWith != null)
             {
-                if (localHolder != null)
-                {
-                    localHolder.PiecePlaced(this);
-                }
-            }
-            else
-            {
-                if (localHolder != null)
-                {
-                    localHolder.PiecePlaced(this);
-                }
+                var holderRef =
+                    collidedWith.gameObject.GetComponent<IHoldable>();
+
+                holderRef.PiecePlaced(this);
             }
         }
 

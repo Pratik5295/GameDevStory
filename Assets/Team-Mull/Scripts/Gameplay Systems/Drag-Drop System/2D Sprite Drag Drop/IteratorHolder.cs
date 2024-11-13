@@ -57,5 +57,30 @@ namespace DevStory.Gameplay.Puzzles
             previousResponse = response;
         }
 
+        public override void PiecePlaced(Piece _piece)
+        {
+            if (heldPiece != null)
+            {
+                //Return the piece to its original position
+                //We cant have more than one piece to be held
+                if (heldPiece == _piece)
+                {
+                    CheckResponse();
+                    return;
+                }
+                else
+                {
+                    _piece.ForceBackToOriginalPosition();
+                    CheckResponse();
+                    return;
+                }
+            }
+
+
+            heldPiece = _piece;
+
+            //Check response of the piece that is placed
+            CheckResponse();
+        }
     }
 }
