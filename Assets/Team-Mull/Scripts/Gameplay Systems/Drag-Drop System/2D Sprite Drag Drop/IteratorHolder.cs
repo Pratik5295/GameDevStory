@@ -57,15 +57,5 @@ namespace DevStory.Gameplay.Puzzles
             previousResponse = response;
         }
 
-        public override void PiecePlaced(Piece _piece)
-        {
-            //Overriding this class to not allow the piece to go back to its original position
-            heldPiece = _piece;
-
-            //Check response of the piece that is placed
-            CheckResponse();
-        }
-
-
     }
 }

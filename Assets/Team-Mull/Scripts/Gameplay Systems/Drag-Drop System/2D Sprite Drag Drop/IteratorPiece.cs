@@ -46,6 +46,8 @@ namespace DevStory.Gameplay.Puzzles
 
         public override void Drop()
         {
+            CheckForRaycastHit();
+
             if (collidedWith == null) return;
 
             localHolder =

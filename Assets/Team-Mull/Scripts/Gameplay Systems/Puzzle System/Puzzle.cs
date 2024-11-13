@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.Events;
-using static MetaConstants.EnumManager.EnumManager;
 
 namespace DevStory.Gameplay.Puzzles
 {

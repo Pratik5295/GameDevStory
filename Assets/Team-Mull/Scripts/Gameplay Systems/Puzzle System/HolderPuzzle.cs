@@ -54,8 +54,13 @@ namespace DevStory.Gameplay.Puzzles
         {
             if (solvedPuzzlePieces == puzzleHolders.Count)
             {
+                currentPuzzleStatus = PuzzleStatus.SOLVED;
                 OnPuzzleSolvedEvent?.Invoke();
                 return true;
+            }
+            else
+            {
+                currentPuzzleStatus = PuzzleStatus.UNSOLVED;
             }
 
             return false;
