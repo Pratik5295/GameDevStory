@@ -20,7 +20,6 @@ namespace DevStory.Gameplay.Puzzles
 
         [SerializeField] private Dragger dragger;
 
-        [SerializeField] protected Collider2D previousCollider;
         [SerializeField] protected Collider2D collidedWith = null;
 
         [SerializeField]
@@ -35,6 +34,7 @@ namespace DevStory.Gameplay.Puzzles
         private void Awake()
         {
             dragger = GetComponent<Dragger>();
+            dragger.OnElementPickedEvent += PickedEventHandler;
             dragger.OnElementDroppedEvent += Drop;
 
             originalPosition = transform.position;
@@ -43,6 +43,7 @@ namespace DevStory.Gameplay.Puzzles
         private void OnDestroy()
         {
             dragger.OnElementDroppedEvent -= Drop;
+            dragger.OnElementPickedEvent -= PickedEventHandler;
         }
 
         private void Update()
@@ -69,6 +70,21 @@ namespace DevStory.Gameplay.Puzzles
                     collidedWith.gameObject.GetComponent<IHoldable>();
 
             localHolder.PiecePlaced(this);
+        }
+
+        public virtual void PickedEventHandler()
+        {
+            if(collidedWith != null)
+            {
+                //Notify the holder too that piece was picked up
+                var holderRef =
+                    collidedWith.gameObject.GetComponent<IHoldable>();
+
+                holderRef.PieceRemoved(this);
+            }
+
+
+            collidedWith = null;
         }
 
         protected void CheckForRaycastHit()

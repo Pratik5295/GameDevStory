@@ -65,10 +65,16 @@ namespace DevStory.Gameplay.Puzzles
             {
                 //Return the piece to its original position
                 //We cant have more than one piece to be held
-
-                _piece.ForceBackToOriginalPosition();
-                CheckResponse();
-                return;
+                if (heldPiece == _piece)
+                {
+                    return;
+                }
+                else
+                {
+                    _piece.ForceBackToOriginalPosition();
+                    CheckResponse();
+                    return;
+                }
             }
 
 

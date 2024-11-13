@@ -24,6 +24,7 @@ namespace DevStory.Gameplay.DragDrop
         [Tooltip("Check flag if you want the piece to not move")]
         public bool lockMovement = false;
 
+        public Action OnElementPickedEvent;
         public Action OnElementDroppedEvent;
 
         private void Start()
@@ -42,6 +43,7 @@ namespace DevStory.Gameplay.DragDrop
             offset = transform.position - UtilityHelper.GetMousePos(mainCamera,gameObject);
 
             PointManager.Instance.SelectSprite(this);
+            OnElementPickedEvent?.Invoke();
         }
 
         private void OnMouseDrag()
