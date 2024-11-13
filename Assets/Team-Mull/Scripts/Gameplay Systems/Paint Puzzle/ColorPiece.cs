@@ -17,6 +17,7 @@ namespace DevStory.Gameplay.Puzzles
         {
             //Force back to original position in 0.2f
             //Invoke("ForceBackToOriginalPosition",0.2f);
+            CheckForRaycastHit();
 
             ForceBackToOriginalPosition();
 

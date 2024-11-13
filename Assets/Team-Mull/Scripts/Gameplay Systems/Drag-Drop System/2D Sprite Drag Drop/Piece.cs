@@ -71,7 +71,7 @@ namespace DevStory.Gameplay.Puzzles
             localHolder.PiecePlaced(this);
         }
 
-        private void CheckForRaycastHit()
+        protected void CheckForRaycastHit()
         {
             // Cast a ray in forward direction
             RaycastHit2D hit = 
