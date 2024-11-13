@@ -20,7 +20,8 @@ namespace DevStory.Gameplay.Puzzles
 
         [SerializeField] private Dragger dragger;
 
-        [SerializeField] protected Collider2D collidedWith;
+        [SerializeField] protected Collider2D previousCollider;
+        [SerializeField] protected Collider2D collidedWith = null;
 
         [SerializeField]
         protected IHoldable localHolder;
@@ -46,7 +47,7 @@ namespace DevStory.Gameplay.Puzzles
 
         private void Update()
         {
-            CheckForRaycastHit();
+            //CheckForRaycastHit();
         }
 
         public void ForceBackToOriginalPosition()
@@ -58,6 +59,10 @@ namespace DevStory.Gameplay.Puzzles
         //Droppable interface handling method
         public virtual void Drop()
         {
+            Debug.Log("Dropping piece", gameObject);
+
+            CheckForRaycastHit();
+
             if (collidedWith == null) return;
 
             localHolder =
@@ -78,6 +83,7 @@ namespace DevStory.Gameplay.Puzzles
                 if(hit.collider.gameObject.tag == "Place")
                 {
                     collidedWith = hit.collider;
+                    
                 }
                 else
                 {
@@ -90,7 +96,7 @@ namespace DevStory.Gameplay.Puzzles
                 if(collidedWith != null)
                 {
                     localHolder = collidedWith.gameObject.GetComponent<IHoldable>();
-                    localHolder.PieceRemoved();
+                    localHolder.PieceRemoved(this);
                 }
 
                 collidedWith = null;

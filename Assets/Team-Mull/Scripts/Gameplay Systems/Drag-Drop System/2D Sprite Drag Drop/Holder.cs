@@ -67,6 +67,7 @@ namespace DevStory.Gameplay.Puzzles
                 //We cant have more than one piece to be held
 
                 _piece.ForceBackToOriginalPosition();
+                CheckResponse();
                 return;
             }
 
@@ -77,9 +78,13 @@ namespace DevStory.Gameplay.Puzzles
             CheckResponse();
         }
 
-        public void PieceRemoved()
+        public void PieceRemoved(Piece piece)
         {
-            heldPiece = null;
+            if(heldPiece == piece)
+            {
+                //Removed the piece we were holding 
+                heldPiece = null;
+            }
 
             CheckResponse();
         }
