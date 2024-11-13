@@ -20,6 +20,6 @@ namespace DevStory.Interfaces
         /// <summary>
         /// Method will be fired when a piece has been removed from the placer
         /// </summary>
-        void PieceRemoved();
+        void PieceRemoved(Piece piece);
     }
 }

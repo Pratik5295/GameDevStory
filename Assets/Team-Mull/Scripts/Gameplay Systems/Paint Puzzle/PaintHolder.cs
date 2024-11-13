@@ -77,7 +77,7 @@ namespace DevStory.Gameplay.Puzzles
             //Not implemented Yet, check later if required
         }
 
-        public void PieceRemoved()
+        public void PieceRemoved(Piece piece)
         {
             //Not implemented Yet
         }

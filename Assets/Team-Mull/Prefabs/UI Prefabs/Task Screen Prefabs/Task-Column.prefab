@@ -384,7 +384,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: -40}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &8557401073447088503
 CanvasRenderer:
@@ -476,6 +476,7 @@ GameObject:
   - component: {fileID: 3531230590209085972}
   - component: {fileID: 814502756038540142}
   - component: {fileID: 4716665294516234961}
+  - component: {fileID: 3760754957686204551}
   m_Layer: 5
   m_Name: Scroll View
   m_TagString: Untagged
@@ -591,6 +592,22 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!114 &3760754957686204551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7236044928729186980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e1f3c689d334da4c8a40be8db2e4e1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollRect: {fileID: 814502756038540142}
+  scrollSpeed: 25
+  smoothFactor: 5
+  isSelected: 0
 --- !u!1 &7880472621481509892
 GameObject:
   m_ObjectHideFlags: 0
