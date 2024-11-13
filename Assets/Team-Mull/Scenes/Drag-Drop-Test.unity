@@ -1811,6 +1811,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Paint-Palette
       objectReference: {fileID: 0}
+    - target: {fileID: 3801893165306182071, guid: b83f889357055c448af1fe6d119e30d1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5803461421333420028, guid: b83f889357055c448af1fe6d119e30d1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.52
@@ -1945,7 +1949,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 748483040824175455, guid: ae53f7f69e9e892478e04a8170d4741f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5038452246188720243, guid: ae53f7f69e9e892478e04a8170d4741f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2067,7 +2071,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7630318996924989442, guid: 839151f7e6d395c46922d46572987a5a, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
