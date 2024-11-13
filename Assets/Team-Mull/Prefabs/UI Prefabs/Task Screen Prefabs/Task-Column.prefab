@@ -605,7 +605,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrollRect: {fileID: 814502756038540142}
-  scrollSpeed: 1
+  scrollSpeed: 25
+  smoothFactor: 5
   isSelected: 0
 --- !u!1 &7880472621481509892
 GameObject:
