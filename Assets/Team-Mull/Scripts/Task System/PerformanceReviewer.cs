@@ -225,19 +225,10 @@ namespace DevStory.TaskSystem
 
         private void ClearCompletedTasks()
         {
-            //Only delete the task that are completed
-
-            //var completedList = 
-            //    cards.Where(card => card.Key.GetResult.Result != TaskResult.FAILURE).ToList();
-
-            //foreach(var card in completedList)
-            //{
-            //    //Removes the task from the saved results
-            //    taskResults.Remove(card.Key);
-            //}
+            //Only delete the task that are completed and are submmitted
 
             //Complete clear all created performance cards
-            foreach(var card in cards)
+            foreach (var card in cards)
             {
                 GameObject go = card.Value.gameObject;
                 Destroy(go);
@@ -245,9 +236,18 @@ namespace DevStory.TaskSystem
 
             cards.Clear();
 
-            //Clears all the task results and add them afterwards
-            //Currently the more days you take to complete a task will impact your pressure
+            //Tasks that have not been submitted would not be removed from the taskResults 
+            var unSubmittedList =
+                taskResults.Where(res => res.Key.GetResult.Status == TaskStatus.TODO).ToList();
+
+            //Empty the task result dict
             taskResults.Clear();
+
+            //Add back all the unsubmitted tasks
+            foreach (var res in unSubmittedList)
+            {
+                taskResults.Add(res.Key, res.Value);    
+            }
         }
     }
 }
