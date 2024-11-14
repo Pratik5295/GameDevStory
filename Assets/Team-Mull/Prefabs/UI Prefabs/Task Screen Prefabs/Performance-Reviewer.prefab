@@ -53,6 +53,7 @@ MonoBehaviour:
   systemParent: {fileID: 8779975176845357966}
   performanceCardPrefab: {fileID: 2343275739841699074, guid: 49210b2bc42f17c4d97c18fe2fd8bd2f, type: 3}
   cardsParent: {fileID: 7927740815240468592}
+  closeButton: {fileID: 2566348566178814827}
 --- !u!1 &2090700034963991237
 GameObject:
   m_ObjectHideFlags: 0
@@ -884,6 +885,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08f92b485218d934ba4cebeaa6ea513d, type: 3}
+--- !u!1 &2566348566178814827 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1217886361210794951, guid: 08f92b485218d934ba4cebeaa6ea513d, type: 3}
+  m_PrefabInstance: {fileID: 3709643783657810092}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &7654813933951034032 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6431159967473224220, guid: 08f92b485218d934ba4cebeaa6ea513d, type: 3}

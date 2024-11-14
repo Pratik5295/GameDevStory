@@ -60,7 +60,7 @@ namespace MetaConstants.EnumManager
             DEFAULT = 0,
             TODO = 1,
             INPROGRESS = 2,
-            COMPLETED = 3,  
+            SUBMITTED = 3,  
         }
 
         #endregion

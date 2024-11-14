@@ -4532,20 +4532,20 @@ PrefabInstance:
       objectReference: {fileID: 607595829}
     - target: {fileID: 1047723593726949805, guid: 7244a55c0fe89874ab2222fafc3704f5, type: 3}
       propertyPath: gameEvents.Array.size
-      value: 14
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1047723593726949805, guid: 7244a55c0fe89874ab2222fafc3704f5, type: 3}
       propertyPath: 'gameEvents.Array.data[0]'
       value: 
-      objectReference: {fileID: 11400000, guid: 2fb9cb1998dc46b49ac54ff1d163b113, type: 2}
+      objectReference: {fileID: 11400000, guid: d321e521e808b8e40821f6e9bbc6ad89, type: 2}
     - target: {fileID: 1047723593726949805, guid: 7244a55c0fe89874ab2222fafc3704f5, type: 3}
       propertyPath: 'gameEvents.Array.data[1]'
       value: 
-      objectReference: {fileID: 11400000, guid: d321e521e808b8e40821f6e9bbc6ad89, type: 2}
+      objectReference: {fileID: 11400000, guid: da2a6710b640eb3498fe17b802cddfb2, type: 2}
     - target: {fileID: 1047723593726949805, guid: 7244a55c0fe89874ab2222fafc3704f5, type: 3}
       propertyPath: 'gameEvents.Array.data[2]'
       value: 
-      objectReference: {fileID: 11400000, guid: da2a6710b640eb3498fe17b802cddfb2, type: 2}
+      objectReference: {fileID: 11400000, guid: 59b5afeeea4ddae4081915911eafd4f0, type: 2}
     - target: {fileID: 1047723593726949805, guid: 7244a55c0fe89874ab2222fafc3704f5, type: 3}
       propertyPath: 'gameEvents.Array.data[3]'
       value: 
@@ -4592,7 +4592,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: b94f4651c06acf643b3784358530784c, type: 2}
     - target: {fileID: 2321706793999343057, guid: 7244a55c0fe89874ab2222fafc3704f5, type: 3}
       propertyPath: maxDayTime
-      value: 240
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 3130160777304007120, guid: 7244a55c0fe89874ab2222fafc3704f5, type: 3}
       propertyPath: gameScreens.Array.size

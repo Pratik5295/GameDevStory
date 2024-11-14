@@ -97,6 +97,9 @@ namespace DevStory.TaskSystem
         [SerializeField]
         private Dictionary<GameTask,GameObject> cards = new Dictionary<GameTask,GameObject>();
 
+        [SerializeField]
+        private GameObject closeButton;
+
         private void Start()
         {
             gameTimerManager = GameTimerManager.Instance;
@@ -107,6 +110,8 @@ namespace DevStory.TaskSystem
             }
 
             Close();
+
+            closeButton.SetActive(false);
         }
 
         private void OnDestroy()
@@ -133,7 +138,12 @@ namespace DevStory.TaskSystem
         {
             systemParent.SetActive(false);
 
+            closeButton.SetActive(false);
+
             GameTimerManager.Instance.ResumeGame();
+
+            //Clear all the completed tasks after closing the PR
+            ClearCompletedTasks();
         }
 
         private void OnShowPerformanceReviewer()
@@ -157,6 +167,8 @@ namespace DevStory.TaskSystem
 
                 yield return new WaitForSeconds(2f);
             }
+
+            closeButton.SetActive(true);
         }
 
 
@@ -185,7 +197,7 @@ namespace DevStory.TaskSystem
 
                 TaskResultSaver result = _task.GetResult;
 
-                if(result.Status != TaskStatus.COMPLETED)
+                if(result.Result != TaskResult.COMPLETED)
                 {
                     cards.TryGetValue(_task,out var go);
 
@@ -195,12 +207,6 @@ namespace DevStory.TaskSystem
                     int pressurePoints = PressurePointCalculator.GetPressurePoints(result);
 
                     PressureManager.Instance.AddPresure(pressurePoints);
-                }
-                else
-                {
-                    //This will fire if a previous task was completed
-                    //For now it will also fire for already completed tasks, as 
-                    //we are not removing the object when task is completed and pressure is acted upon
                 }
             }
             
@@ -216,5 +222,32 @@ namespace DevStory.TaskSystem
         }
 
         #endregion
+
+        private void ClearCompletedTasks()
+        {
+            //Only delete the task that are completed
+
+            //var completedList = 
+            //    cards.Where(card => card.Key.GetResult.Result != TaskResult.FAILURE).ToList();
+
+            //foreach(var card in completedList)
+            //{
+            //    //Removes the task from the saved results
+            //    taskResults.Remove(card.Key);
+            //}
+
+            //Complete clear all created performance cards
+            foreach(var card in cards)
+            {
+                GameObject go = card.Value.gameObject;
+                Destroy(go);
+            }
+
+            cards.Clear();
+
+            //Clears all the task results and add them afterwards
+            //Currently the more days you take to complete a task will impact your pressure
+            taskResults.Clear();
+        }
     }
 }
