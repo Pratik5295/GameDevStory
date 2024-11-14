@@ -64,7 +64,7 @@ namespace DevStory.TaskSystem
 
         public void TaskCompleted()
         {
-            Status = TaskStatus.COMPLETED;
+            Status = TaskStatus.SUBMITTED;
 
             bool Solved = Puzzle.ValidityCheck();
 
