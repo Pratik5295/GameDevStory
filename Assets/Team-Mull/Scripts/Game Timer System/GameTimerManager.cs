@@ -1,3 +1,4 @@
+using DevStory.Managers;
 using DG.Tweening;
 using System;
 using UnityEngine;
@@ -13,7 +14,11 @@ namespace DevStory.Gameplay.GameTimer
         [SerializeField]
         private int day = 0;
 
+        [SerializeField] private int finalDayInt;
+
         public int Day => day;
+
+        public int FinalDay => finalDayInt + 1;
 
         [Space(3)]
         [Header("Time of day details")]
@@ -52,6 +57,11 @@ namespace DevStory.Gameplay.GameTimer
 
             //Initializing Do Tween
             DOTween.Init();
+        }
+
+        public void SetFinalDayData(int _day)
+        {
+            finalDayInt = _day;
         }
 
         /// <summary>
@@ -112,6 +122,17 @@ namespace DevStory.Gameplay.GameTimer
         public void ForceDayEnd()
         {
             currentTime = maxDayTime;
+        }
+
+        public void GameOverHandling()
+        {
+            if(day == FinalDay)
+            {
+                isDayRunning = false;
+                PauseGame();
+
+                GameManager.Instance.GameCompletedCheck();
+            }
         }
     }
 }
