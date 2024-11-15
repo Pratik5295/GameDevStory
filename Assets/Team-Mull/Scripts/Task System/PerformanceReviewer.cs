@@ -131,7 +131,7 @@ namespace DevStory.TaskSystem
         {
             systemParent.SetActive(true);
 
-            GameTimerManager.Instance.PauseGame();
+            gameTimerManager.PauseGame();
         }
 
         public void Close()
@@ -140,10 +140,13 @@ namespace DevStory.TaskSystem
 
             closeButton.SetActive(false);
 
-            GameTimerManager.Instance.ResumeGame();
+            gameTimerManager.ResumeGame();
 
             //Clear all the completed tasks after closing the PR
             ClearCompletedTasks();
+
+            //Check if you are starting final day + 1
+            gameTimerManager.GameOverHandling();
         }
 
         private void OnShowPerformanceReviewer()
