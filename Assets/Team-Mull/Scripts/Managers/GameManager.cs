@@ -1,3 +1,4 @@
+using DevStory.Gameplay.GameTimer;
 using DevStory.PressureSystem;
 using DevStory.TaskSystem;
 using UnityEngine;
@@ -30,6 +31,9 @@ namespace DevStory.Managers
         [Header("Game Settings Data - Local Cache")]
         [SerializeField]
         private WinConditionsData WinConditionsData;
+
+        [SerializeField]
+        private int finalDay;
 
         private void Awake()
         {
@@ -74,6 +78,9 @@ namespace DevStory.Managers
             else
             {
                 WinConditionsData = gameSettingsData.WinConditions;
+
+                finalDay = gameSettingsData.FinalDay;
+                GameTimerManager.Instance.SetFinalDayData(finalDay);
             }
         }
 

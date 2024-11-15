@@ -59,6 +59,11 @@ namespace DevStory.Gameplay.GameTimer
             DOTween.Init();
         }
 
+        public void SetFinalDayData(int _day)
+        {
+            finalDayInt = _day;
+        }
+
         /// <summary>
         /// The button listener function to start the game day
         /// Link this to the login button we would have in the game
