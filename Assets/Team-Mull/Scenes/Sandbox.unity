@@ -4647,7 +4647,7 @@ PrefabInstance:
       objectReference: {fileID: 607595829}
     - target: {fileID: 1047723593726949805, guid: 7244a55c0fe89874ab2222fafc3704f5, type: 3}
       propertyPath: gameEvents.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1047723593726949805, guid: 7244a55c0fe89874ab2222fafc3704f5, type: 3}
       propertyPath: 'gameEvents.Array.data[0]'
@@ -4664,7 +4664,7 @@ PrefabInstance:
     - target: {fileID: 1047723593726949805, guid: 7244a55c0fe89874ab2222fafc3704f5, type: 3}
       propertyPath: 'gameEvents.Array.data[3]'
       value: 
-      objectReference: {fileID: 11400000, guid: e98852a9e9462b24ab5fcddfd45a97d5, type: 2}
+      objectReference: {fileID: 11400000, guid: 949fc5b8a47e27c4cb128f83f9c27fe3, type: 2}
     - target: {fileID: 1047723593726949805, guid: 7244a55c0fe89874ab2222fafc3704f5, type: 3}
       propertyPath: 'gameEvents.Array.data[4]'
       value: 

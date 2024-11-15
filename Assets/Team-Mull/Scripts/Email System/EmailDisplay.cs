@@ -1,5 +1,6 @@
 using DevStory.Data;
 using DevStory.DialogueSystem;
+using DevStory.Gameplay.GameTimer;
 using DevStory.Utility;
 using System.Collections;
 using TMPro;
@@ -105,14 +106,23 @@ namespace DevStory.UI
                         optionButtons[i].onClick.RemoveAllListeners();
                         optionButtons[i].onClick.AddListener(() =>
                         {
+                            if (nextIndex == 100)
+                            {
+                                //Hide all options
+                                HideAllOptions();
 
-                            //Make it create next message
-                            activeEmail.TraverseMessageCounterTo(nextIndex);
-                            activeEmail.GetMessage();
+                                GameTimerManager.Instance.SkipTimeBy(60);
+                            }
+                            else
+                            {
+                                //Make it create next message
+                                activeEmail.TraverseMessageCounterTo(nextIndex);
+                                activeEmail.GetMessage();
 
-                            //Hide all options
-                            HideAllOptions();
-                            _screen.DisplayNextMessage();
+                                //Hide all options
+                                HideAllOptions();
+                                _screen.DisplayNextMessage();
+                            }
                         });
                     }
                     else
