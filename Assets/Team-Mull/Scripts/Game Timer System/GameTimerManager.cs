@@ -43,6 +43,7 @@ namespace DevStory.Gameplay.GameTimer
 
         public Action OnDayStartedEvent;
         public Action OnDayEndedEvent;
+        public Action OnTimeSkipEvent;
 
         private void Awake()
         {
@@ -93,6 +94,9 @@ namespace DevStory.Gameplay.GameTimer
         public void SkipTimeBy(float _amount)
         {
             currentTime += _amount;
+
+            //Notifier to other UI classes to populate changes in visualization
+            OnTimeSkipEvent?.Invoke();
         }
 
         private void Update()
