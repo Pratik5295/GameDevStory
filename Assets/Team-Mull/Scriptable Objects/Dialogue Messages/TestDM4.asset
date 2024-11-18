@@ -15,6 +15,7 @@ MonoBehaviour:
   Speaker: {fileID: 11400000, guid: 00667eed19d844041aecac8ef050c2c6, type: 2}
   Message: I will not! I am tooo tired to code at the moment!
   Options: []
-  Type: 1
+  Type: 2
   hasTask: 0
   nextIndex: 0
+  skipTime: 0
