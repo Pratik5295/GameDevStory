@@ -149,6 +149,7 @@ GameObject:
   - component: {fileID: 2205350892530194130}
   - component: {fileID: 5822816372260245201}
   - component: {fileID: 42665069330398146}
+  - component: {fileID: 8024920255968846777}
   m_Layer: 5
   m_Name: Change-Screen-Button
   m_TagString: Untagged
@@ -257,7 +258,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2205350892530194130}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8024920255968846777}
+        m_TargetAssemblyTypeName: DevStory.Audio.UIAudioPlayer, Assembly-CSharp
+        m_MethodName: PlaySfx
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &42665069330398146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -275,3 +288,16 @@ MonoBehaviour:
     OpenScreen: 0
   button_text: {fileID: 7130089337201694828}
   button: {fileID: 0}
+--- !u!114 &8024920255968846777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8560072146340686939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c644d932a8157a47b161010a58a12bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 57558707f5859c045b18c38ff664b9a2, type: 3}
