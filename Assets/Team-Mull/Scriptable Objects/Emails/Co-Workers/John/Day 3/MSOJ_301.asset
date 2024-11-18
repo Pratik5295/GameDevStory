@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04d48516da680f04aa757b98deff11cc, type: 3}
+  m_Name: MSOJ_301
+  m_EditorClassIdentifier: 
+  Speaker: {fileID: 11400000, guid: 3ce5ff58b774a7047937c54b2163201b, type: 2}
+  Message: "Hey! I have some good news for you, do you remember the other intern
+    that came with you? He got terminated! Mannnnn I disliked him soo much, he acted
+    like a know-it-all, he supported pay-to-play model when my battlepass design
+    was perfect. Happy he\u2019s gone.\n\nLunch as 12? I made takoyaki."
+  Options:
+  - optionMessage: 'Sure, I would love to! '
+    nextMessageIndex: 0
+  - optionMessage: I would love to but I'll be busy with my tasks..
+    nextMessageIndex: 0
+  Type: 0
+  hasTask: 0
+  nextIndex: 0
+  skipTime: 0
