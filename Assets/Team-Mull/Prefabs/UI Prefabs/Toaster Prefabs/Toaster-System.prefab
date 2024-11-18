@@ -123,6 +123,8 @@ MonoBehaviour:
   hideY: -175
   showY: 150
   toasterObject: {fileID: 0}
+  toasterSfx: {fileID: 8300000, guid: d7380f69a83b10242826cfc06e343141, type: 3}
+  buttonClickSfx: {fileID: 8300000, guid: 57558707f5859c045b18c38ff664b9a2, type: 3}
 --- !u!1 &2051707009615749947
 GameObject:
   m_ObjectHideFlags: 0
@@ -675,7 +677,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3955143235344503117, guid: 08f92b485218d934ba4cebeaa6ea513d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3955143235344503117, guid: 08f92b485218d934ba4cebeaa6ea513d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode

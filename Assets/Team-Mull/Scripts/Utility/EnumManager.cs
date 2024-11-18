@@ -21,7 +21,7 @@ namespace MetaConstants.EnumManager
             PAINT = 2,
             EDITOR = 3,
             EMAIL = 4,
-            TASK = 5
+            LOGIN = 5
 
         }
 

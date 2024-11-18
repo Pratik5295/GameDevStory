@@ -187,6 +187,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameTimerManager: {fileID: 0}
   content: {fileID: 6039810816618175595}
+  onLoginSfx: {fileID: 8300000, guid: a1807ce1f14b68b4db35f0c7e6bddd35, type: 3}
 --- !u!1 &4833304704163484393
 GameObject:
   m_ObjectHideFlags: 0

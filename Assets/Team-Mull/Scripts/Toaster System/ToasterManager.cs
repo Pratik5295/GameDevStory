@@ -5,6 +5,7 @@ using DevStory.UI;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using DevStory.Managers;
 
 namespace DevStory.Toaster
 {
@@ -35,6 +36,13 @@ namespace DevStory.Toaster
 
         public GameObject toasterObject;    //The toaster object that got created to populate this
 
+
+        [SerializeField]
+        private AudioClip toasterSfx;
+
+        [SerializeField]
+        private AudioClip buttonClickSfx;
+
         private void Awake()
         {
             if(Instance == null)
@@ -53,6 +61,7 @@ namespace DevStory.Toaster
             CloseButton.onClick.AddListener(() =>
             {
                 Close();
+                PlaySfx(buttonClickSfx);
             });
         }
 
@@ -67,6 +76,7 @@ namespace DevStory.Toaster
 
                 //Close the toaster after the activity is opened
                 Close();
+                PlaySfx(buttonClickSfx);
             });
 
             Open();
@@ -99,6 +109,13 @@ namespace DevStory.Toaster
         private void Show()
         {
             transform.DOMoveY(showY, 0.5f, false);
+            PlaySfx(toasterSfx);
+        }
+
+        private void PlaySfx(AudioClip _clip)
+        {
+            if(_clip != null)
+                AudioManager.Instance.PlaySFX(_clip);
         }
     }
 }

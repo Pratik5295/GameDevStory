@@ -1,55 +1,87 @@
 using DevStory.Gameplay.GameTimer;
+using DevStory.Managers;
 using UnityEngine;
 
-[DefaultExecutionOrder(5)]
-public class LoginScreen : MonoBehaviour
+namespace DevStory.UI
 {
-    [SerializeField]
-    private GameTimerManager gameTimerManager;
-
-    [SerializeField]
-    private GameObject content;
-
-
-    private void Awake()
+    [DefaultExecutionOrder(5)]
+    public class LoginScreen : Screen
     {
-        gameTimerManager = GameTimerManager.Instance;
+        [SerializeField]
+        private GameTimerManager gameTimerManager;
 
-        if(gameTimerManager != null)
+        [SerializeField]
+        private GameObject content;
+
+        [Header("Audio Section")]
+        [SerializeField]
+        private AudioClip onLoginSfx;
+
+
+        private void Awake()
         {
-            gameTimerManager.OnDayStartedEvent += OnDayStartedEventHandler;
+            gameTimerManager = GameTimerManager.Instance;
 
-            gameTimerManager.OnDayEndedEvent += OnDayEndedEventHandler;
+            if (gameTimerManager != null)
+            {
+                gameTimerManager.OnDayStartedEvent += OnDayStartedEventHandler;
+
+                gameTimerManager.OnDayEndedEvent += OnDayEndedEventHandler;
+            }
         }
-    }
 
-    private void OnDestroy()
-    {
-        if (gameTimerManager != null)
+        private void OnDestroy()
         {
-            gameTimerManager.OnDayStartedEvent -= OnDayStartedEventHandler;
+            if (gameTimerManager != null)
+            {
+                gameTimerManager.OnDayStartedEvent -= OnDayStartedEventHandler;
 
-            gameTimerManager.OnDayEndedEvent -= OnDayEndedEventHandler;
+                gameTimerManager.OnDayEndedEvent -= OnDayEndedEventHandler;
+            }
         }
-    }
 
-    private void OnDayStartedEventHandler()
-    {
-        content.SetActive(false);
-    }
+        private void OnDayStartedEventHandler()
+        {
+            Close();
+        }
 
-    private void OnDayEndedEventHandler()
-    {
-        content.SetActive(true);
-    }
+        private void OnDayEndedEventHandler()
+        {
+            Open();
+            PlayBackgroundAudio();
+        }
 
-    public void OnLoginButtonClicked()
-    {
-        GameTimerManager.Instance.StartDay();
-    }
+        public void OnLoginButtonClicked()
+        {
+            GameTimerManager.Instance.StartDay();
 
-    public void OnQuitGameButtonClicked()
-    {
-        Application.Quit();
+            ScreenManager.Instance.ScreenChange(MetaConstants.EnumManager.EnumManager.GameScreens.MAIN);
+        }
+
+        public void OnQuitGameButtonClicked()
+        {
+            Application.Quit();
+        }
+
+        private void PlayBackgroundAudio()
+        {
+            if (onLoginSfx != null)
+            {
+                AudioManager.Instance.PlayBackgroundMusic(onLoginSfx);
+            }
+        }
+
+        public override void Open()
+        {
+            base.Open();
+            content.SetActive(true);
+            PlayBackgroundAudio();
+        }
+
+        public override void Close()
+        {
+            base.Close();
+            content.SetActive(false);
+        }
     }
 }

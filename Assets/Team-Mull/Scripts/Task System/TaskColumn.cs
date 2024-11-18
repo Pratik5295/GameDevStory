@@ -1,3 +1,4 @@
+using DevStory.Managers;
 using DevStory.TaskSystem;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,6 +13,10 @@ namespace DevStory.UI
 
         [SerializeField] private List<GameTask> tasksAdded = new List<GameTask>();
 
+        [Header("Audio Section")]
+        [SerializeField]
+        private AudioClip taskCardSfx;
+
         public void CreateNewTask(GameTask _gameTask)
         {
             //No need to create a new task again
@@ -19,6 +24,8 @@ namespace DevStory.UI
 
             var go = Instantiate(taskCardPrefab);
             go.transform.SetParent(content.transform, false);
+
+            PlaySfx();
 
             var ui = go.GetComponent<UITaskCard>();
             ui.SetTaskData(_gameTask);
@@ -34,6 +41,12 @@ namespace DevStory.UI
             {
                 Destroy(content.GetChild(i).gameObject);
             }
+        }
+
+        private void PlaySfx()
+        {
+            if (taskCardSfx != null)
+                AudioManager.Instance.PlaySFX(taskCardSfx);
         }
     }
 }

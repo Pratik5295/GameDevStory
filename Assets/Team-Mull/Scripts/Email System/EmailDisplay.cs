@@ -1,6 +1,7 @@
 using DevStory.Data;
 using DevStory.DialogueSystem;
 using DevStory.Gameplay.GameTimer;
+using DevStory.Managers;
 using DevStory.Utility;
 using System.Collections;
 using TMPro;
@@ -50,6 +51,11 @@ namespace DevStory.UI
         public GameEmail activeEmail;
 
         private DialogueMessageSO currentMessage;
+
+        [Space(5)]
+        [Header("Audio References")]
+        [SerializeField]
+        private AudioClip emailSfx;
 
 
 
@@ -149,6 +155,13 @@ namespace DevStory.UI
             }
 
             PopulateTaskButton();
+
+            //Ping Audio
+
+            if(emailSfx != null)
+            {
+                AudioManager.Instance.PlaySFX(emailSfx);    
+            }
         }
 
         private IEnumerator ShowNextMessage()
