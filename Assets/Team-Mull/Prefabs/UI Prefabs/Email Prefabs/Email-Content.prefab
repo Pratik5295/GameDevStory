@@ -479,6 +479,7 @@ MonoBehaviour:
   - {fileID: 6803082649904729751}
   - {fileID: 7371198615906360890}
   activeEmail: {fileID: 0}
+  emailSfx: {fileID: 8300000, guid: 2333761e5f9e17447922d162869e6d73, type: 3}
 --- !u!222 &3408812482412400686
 CanvasRenderer:
   m_ObjectHideFlags: 0

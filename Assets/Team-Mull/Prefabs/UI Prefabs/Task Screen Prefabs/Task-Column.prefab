@@ -251,6 +251,7 @@ MonoBehaviour:
   content: {fileID: 6050961629129763803}
   taskCardPrefab: {fileID: 1878907604715716636, guid: c916944a7bb7c184cba294b996537fef, type: 3}
   tasksAdded: []
+  taskCardSfx: {fileID: 8300000, guid: d4c4cde98c22cce45b50f056ad19090d, type: 3}
 --- !u!114 &9172394837729701788
 MonoBehaviour:
   m_ObjectHideFlags: 0

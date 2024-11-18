@@ -40,6 +40,9 @@ namespace DevStory.Toaster
         [SerializeField]
         private AudioClip toasterSfx;
 
+        [SerializeField]
+        private AudioClip buttonClickSfx;
+
         private void Awake()
         {
             if(Instance == null)
@@ -58,6 +61,7 @@ namespace DevStory.Toaster
             CloseButton.onClick.AddListener(() =>
             {
                 Close();
+                PlaySfx(buttonClickSfx);
             });
         }
 
@@ -72,6 +76,7 @@ namespace DevStory.Toaster
 
                 //Close the toaster after the activity is opened
                 Close();
+                PlaySfx(buttonClickSfx);
             });
 
             Open();
@@ -104,13 +109,13 @@ namespace DevStory.Toaster
         private void Show()
         {
             transform.DOMoveY(showY, 0.5f, false);
-            PlaySfx();
+            PlaySfx(toasterSfx);
         }
 
-        private void PlaySfx()
+        private void PlaySfx(AudioClip _clip)
         {
-            if(toasterSfx != null)
-                AudioManager.Instance.PlaySFX(toasterSfx);
+            if(_clip != null)
+                AudioManager.Instance.PlaySFX(_clip);
         }
     }
 }
