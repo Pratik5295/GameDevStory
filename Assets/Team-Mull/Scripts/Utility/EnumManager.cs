@@ -32,7 +32,8 @@ namespace MetaConstants.EnumManager
         public enum DialogMessageType
         {
             DEFAULT = 0,
-            ENDER = 1
+            ENDER = 1,
+            SCAM = 2
         }
 
         #endregion
