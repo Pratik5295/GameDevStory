@@ -5,6 +5,7 @@ using DevStory.UI;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using DevStory.Managers;
 
 namespace DevStory.Toaster
 {
@@ -34,6 +35,10 @@ namespace DevStory.Toaster
         private float showY;
 
         public GameObject toasterObject;    //The toaster object that got created to populate this
+
+
+        [SerializeField]
+        private AudioClip toasterSfx;
 
         private void Awake()
         {
@@ -99,6 +104,13 @@ namespace DevStory.Toaster
         private void Show()
         {
             transform.DOMoveY(showY, 0.5f, false);
+            PlaySfx();
+        }
+
+        private void PlaySfx()
+        {
+            if(toasterSfx != null)
+                AudioManager.Instance.PlaySFX(toasterSfx);
         }
     }
 }

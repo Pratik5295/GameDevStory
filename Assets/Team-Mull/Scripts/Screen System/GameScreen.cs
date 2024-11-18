@@ -1,3 +1,5 @@
+using DevStory.Managers;
+using UnityEngine;
 
 namespace DevStory.UI
 {
@@ -9,6 +11,22 @@ namespace DevStory.UI
     /// </summary>
     public class GameScreen : Screen
     {
+        [SerializeField]
+        private AudioClip onGameScreenSfx;
+
+        public override void Open()
+        {
+            base.Open();
+            PlayBackgroundSFX();
+        }
+
+        private void PlayBackgroundSFX()
+        {
+            if (onGameScreenSfx != null)
+            {
+                AudioManager.Instance.PlayBackgroundMusic(onGameScreenSfx);
+            }
+        }
     }
 }
 

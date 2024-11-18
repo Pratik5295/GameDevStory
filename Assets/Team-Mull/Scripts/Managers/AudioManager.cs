@@ -59,6 +59,21 @@ namespace DevStory.Managers
         // Play the background music with an option to stop it first
         public void PlayBackgroundMusic(AudioClip newClip, bool restart = false)
         {
+            if(newClip == backgroundAudioSource.clip)
+            {
+                //Same clip is already being played
+                if (!restart)
+                {
+                    //Do not restart the clip
+                    return;
+                }
+                else
+                {
+                    backgroundAudioSource.clip = newClip;
+                    backgroundAudioSource.Play();
+                }
+            }
+
             if (newClip != null)
             {
                 backgroundAudioSource.clip = newClip;

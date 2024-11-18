@@ -40,7 +40,7 @@ namespace DevStory.UI
         {
             if (gameScreens.Count == 0) return;
 
-            activeScreen = gameScreens[0];
+            activeScreen = GetScreen(GameScreens.LOGIN);
             activeScreen.Open();
 
             gameTimerManager = GameTimerManager.Instance;
@@ -91,7 +91,7 @@ namespace DevStory.UI
         private void OnDayEndedHandler()
         {
             //Once day has ended, you are navigated to the main screen
-            ScreenChange(GameScreens.MAIN);
+            ScreenChange(GameScreens.LOGIN);
         }
     }
 }
