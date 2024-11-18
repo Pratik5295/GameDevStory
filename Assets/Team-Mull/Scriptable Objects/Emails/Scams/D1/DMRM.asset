@@ -24,7 +24,8 @@ MonoBehaviour:
     YOUR PC DOWN, SIMPLY CLICK THE LINK BELOW TO GET A FREE 16 GIG UPGRADE.'
   Options:
   - optionMessage: CLICK
-    nextMessageIndex: 100
-  Type: 1
+    nextMessageIndex: 0
+  Type: 2
   hasTask: 0
   nextIndex: 0
+  skipTime: 20

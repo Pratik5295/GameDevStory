@@ -106,12 +106,14 @@ namespace DevStory.UI
                         optionButtons[i].onClick.RemoveAllListeners();
                         optionButtons[i].onClick.AddListener(() =>
                         {
-                            if (nextIndex == 100)
+                            //Check with type
+
+                            if(_currentMessage.Type == DialogMessageType.SCAM)
                             {
                                 //Hide all options
                                 HideAllOptions();
 
-                                GameTimerManager.Instance.SkipTimeBy(60);
+                                GameTimerManager.Instance.SkipTimeBy(_currentMessage.skipTime);
                             }
                             else
                             {
