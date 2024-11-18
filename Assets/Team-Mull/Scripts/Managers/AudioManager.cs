@@ -86,6 +86,33 @@ namespace DevStory.Managers
             }
         }
 
+        public void PlaySFX(AudioClip clip)
+        {
+            var source = GetAvailableAudioSource();
+
+            if(source != null)
+            {
+                source.clip = clip;
+                source.Play();
+            }
+        }
+
+        // Helper function to return the first available AudioSource
+        private AudioSource GetAvailableAudioSource()
+        {
+            foreach (AudioSource audioSource in foregroundAudioSources)
+            {
+                // Check if the audio source is not currently playing
+                if (!audioSource.isPlaying)
+                {
+                    return audioSource; // Return the first available (inactive) audio source
+                }
+            }
+
+            // If no available AudioSource is found, return null
+            return null;
+        }
+
         // Stop a specific foreground sound by index
         public void StopForegroundSound(int index)
         {
