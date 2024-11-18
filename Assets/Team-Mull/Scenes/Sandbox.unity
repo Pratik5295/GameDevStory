@@ -416,6 +416,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5180749553369433729, guid: 55fc2f2aa00dac84eb8fab668a86f6b4, type: 3}
   m_PrefabInstance: {fileID: 5403887484490537787}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &238248297 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9211666366984162601, guid: 55fc2f2aa00dac84eb8fab668a86f6b4, type: 3}
+  m_PrefabInstance: {fileID: 5403887484490537787}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7b59b751b2387c46b1cce982c299c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &301964471 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5301992418726885268, guid: d77cbdfe5910d7a41bf5d5ddb9885594, type: 3}
@@ -4707,11 +4718,11 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: b94f4651c06acf643b3784358530784c, type: 2}
     - target: {fileID: 2321706793999343057, guid: 7244a55c0fe89874ab2222fafc3704f5, type: 3}
       propertyPath: maxDayTime
-      value: 240
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 3130160777304007120, guid: 7244a55c0fe89874ab2222fafc3704f5, type: 3}
       propertyPath: gameScreens.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3130160777304007120, guid: 7244a55c0fe89874ab2222fafc3704f5, type: 3}
       propertyPath: 'gameScreens.Array.data[0]'
@@ -4736,7 +4747,7 @@ PrefabInstance:
     - target: {fileID: 3130160777304007120, guid: 7244a55c0fe89874ab2222fafc3704f5, type: 3}
       propertyPath: 'gameScreens.Array.data[5]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 238248297}
     - target: {fileID: 3629380341754258490, guid: 7244a55c0fe89874ab2222fafc3704f5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

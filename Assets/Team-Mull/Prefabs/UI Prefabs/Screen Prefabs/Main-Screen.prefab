@@ -129,6 +129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   screenState: 0
+  onGameScreenSfx: {fileID: 8300000, guid: 540b6ada59b22ca498eb7fe9eec06c35, type: 3}
 --- !u!1 &7766529153689036023
 GameObject:
   m_ObjectHideFlags: 0
