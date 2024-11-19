@@ -58,7 +58,7 @@ MonoBehaviour:
   m_PreferredWidth: -1
   m_PreferredHeight: 120
   m_FlexibleWidth: -1
-  m_FlexibleHeight: -1
+  m_FlexibleHeight: 0
   m_LayoutPriority: 1
 --- !u!114 &2767892997498583774
 MonoBehaviour:
@@ -318,7 +318,7 @@ MonoBehaviour:
   m_PreferredWidth: -1
   m_PreferredHeight: 80
   m_FlexibleWidth: -1
-  m_FlexibleHeight: -1
+  m_FlexibleHeight: 0
   m_LayoutPriority: 1
 --- !u!114 &6275443861649394135
 MonoBehaviour:
@@ -616,7 +616,7 @@ MonoBehaviour:
   m_PreferredWidth: -1
   m_PreferredHeight: 120
   m_FlexibleWidth: -1
-  m_FlexibleHeight: -1
+  m_FlexibleHeight: 0
   m_LayoutPriority: 1
 --- !u!114 &6172044196009654197
 MonoBehaviour:
@@ -638,9 +638,9 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_Spacing: 20
   m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 1
+  m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 1
-  m_ChildControlHeight: 1
+  m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
@@ -743,7 +743,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 128.1875}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4688930624542566568
 CanvasRenderer:
@@ -938,7 +938,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7196999571519030407, guid: ac17ead619caba644b5d6ba7a64e4420, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 132
       objectReference: {fileID: 0}
     - target: {fileID: 7196999571519030407, guid: ac17ead619caba644b5d6ba7a64e4420, type: 3}
       propertyPath: m_LocalPosition.x
