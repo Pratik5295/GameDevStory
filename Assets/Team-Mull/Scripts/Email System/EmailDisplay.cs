@@ -77,6 +77,13 @@ namespace DevStory.UI
             emailBody.text = _currentMessage.Message;
             //emailSenderName.text = _currentMessage.Speaker.Data.CharacterName;
 
+            if (_currentMessage.Speaker != null)
+            {
+                emailSenderSprite.sprite = _currentMessage.Speaker.Data.CharacterSprite;
+
+                //emailSenderName.text = _currentMessage.Speaker.Data.CharacterName;
+            }
+
             //Hide all your options
             HideAllOptions();
 
