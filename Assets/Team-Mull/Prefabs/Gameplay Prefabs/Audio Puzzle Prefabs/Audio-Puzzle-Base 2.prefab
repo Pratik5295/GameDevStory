@@ -51,8 +51,8 @@ MonoBehaviour:
       m_Calls: []
   puzzleWave: {fileID: 0}
   amplitudeLimits:
-    min: 0
-    max: 0
+    min: 1.2
+    max: 1.9
   frequencyLimits:
     min: 0
     max: 0

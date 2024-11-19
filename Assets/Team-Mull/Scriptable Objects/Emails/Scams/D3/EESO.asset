@@ -9,12 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e01c55845d3c09419e93b16e4aa4515, type: 3}
-  m_Name: ESO_IT01
+  m_Script: {fileID: 11500000, guid: debd60e11200f504cb0d44c5ce3d049f, type: 3}
+  m_Name: EESO
   m_EditorClassIdentifier: 
   eventData:
     eventCode: 0
     eventName: 
-    eventFireDay: 3
-    eventFireTime: 100
-  gameTask: {fileID: 11400000, guid: 51701a74d2541aa48aab0d8f72135774, type: 2}
+    eventFireDay: 1
+    eventFireTime: 0
+  emailData: {fileID: 0}
+  emailToasterData: {fileID: 0}
