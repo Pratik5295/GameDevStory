@@ -167,6 +167,7 @@ GameObject:
   - component: {fileID: 9160319443836624216}
   - component: {fileID: 8074220722794417342}
   - component: {fileID: 7218498107828848264}
+  - component: {fileID: 9153757820553460556}
   m_Layer: 5
   m_Name: Email-Thread
   m_TagString: Untagged
@@ -282,6 +283,22 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!114 &9153757820553460556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6343827584606209847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e1f3c689d334da4c8a40be8db2e4e1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollRect: {fileID: 8074220722794417342}
+  scrollSpeed: 25
+  smoothFactor: 5
+  isSelected: 0
 --- !u!1 &6571393472822882313
 GameObject:
   m_ObjectHideFlags: 0
@@ -430,7 +447,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6852680301045495971, guid: 06a4f2fab2268894f97c2ceb44290d28, type: 3}
       propertyPath: m_fontSize
-      value: 20.3
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7581472714929118190, guid: 06a4f2fab2268894f97c2ceb44290d28, type: 3}
       propertyPath: m_AnchorMax.x
