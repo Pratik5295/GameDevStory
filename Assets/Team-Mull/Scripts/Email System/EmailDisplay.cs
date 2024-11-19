@@ -72,7 +72,7 @@ namespace DevStory.UI
             activeEmail = currentEmail;
             
             emailBody.text = _currentMessage.Message;
-            emailSenderName.text = _currentMessage.Speaker.Data.CharacterName;
+            //emailSenderName.text = _currentMessage.Speaker.Data.CharacterName;
 
             //Hide all your options
             HideAllOptions();
@@ -92,7 +92,7 @@ namespace DevStory.UI
             {
                 emailSenderSprite.sprite = _currentMessage.Speaker.Data.CharacterSprite;
               
-                emailSenderName.text = _currentMessage.Speaker.Data.CharacterName;
+                //emailSenderName.text = _currentMessage.Speaker.Data.CharacterName;
             }
             else
             {

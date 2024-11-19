@@ -1,4 +1,5 @@
 using DevStory.UI;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using static MetaConstants.EnumManager.EnumManager;
@@ -37,6 +38,8 @@ namespace DevStory.DialogueSystem
 
         public bool IsDirty => dirty;
 
+        public Action OnEmailOpenedEvent;
+
         public Queue<DialogueMessageSO> localQueue = new Queue<DialogueMessageSO>();
 
 
@@ -66,6 +69,7 @@ namespace DevStory.DialogueSystem
         {
             //First message was shown to the player
             dirty = true;
+            OnEmailOpenedEvent?.Invoke();
 
             var message = data.Messages[currentEmailIndex];
 

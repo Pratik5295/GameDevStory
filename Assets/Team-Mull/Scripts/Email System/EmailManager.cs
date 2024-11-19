@@ -34,12 +34,12 @@ namespace DevStory.UI
             {
                 emailList.Push(email);
 
-                if(activeEmail == null)
+                screen.CreateEmailCard(email);
+
+                if (activeEmail == null)
                 {
                     SetActiveEmail(email);
                 }
-
-                screen.CreateEmailCard(email);
             }
         }
         public void RemoveEmail(GameEmail email)
