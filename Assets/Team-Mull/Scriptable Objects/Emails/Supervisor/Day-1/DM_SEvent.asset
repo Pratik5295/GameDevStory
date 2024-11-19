@@ -18,5 +18,6 @@ MonoBehaviour:
     bay \u2013 just don\u2019t get attached, they\u2019ll be back soon..\n"
   Options: []
   Type: 1
-  hasTask: 1
+  hasTask: 0
   nextIndex: 0
+  skipTime: 0
