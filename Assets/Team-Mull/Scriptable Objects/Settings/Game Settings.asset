@@ -15,5 +15,5 @@ MonoBehaviour:
   FinalDay: 3
   WinConditions:
     MaximumExperienceInGame: 100
-    ExperienceRequiredThreshold: 85
+    ExperienceRequiredThreshold: 50
     StressThreshold: 50
