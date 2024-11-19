@@ -23,7 +23,7 @@ MonoBehaviour:
     <color=#FFA500>This
     is a required attendance so please make sure to attend
 
-    on time./color>'
+    on time.</color>'
   Options:
   - optionMessage: Attend
     nextMessageIndex: 0
@@ -32,3 +32,4 @@ MonoBehaviour:
   Type: 0
   hasTask: 0
   nextIndex: 0
+  skipTime: 0
