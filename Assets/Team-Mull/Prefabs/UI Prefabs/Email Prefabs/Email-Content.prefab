@@ -630,8 +630,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 0
-    m_Right: 0
+    m_Left: 40
+    m_Right: 40
     m_Top: 2
     m_Bottom: 2
   m_ChildAlignment: 0
@@ -858,7 +858,7 @@ MonoBehaviour:
   m_IgnoreLayout: 0
   m_MinWidth: 500
   m_MinHeight: 100
-  m_PreferredWidth: 880
+  m_PreferredWidth: 800
   m_PreferredHeight: 50
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
@@ -916,14 +916,6 @@ PrefabInstance:
       value: 132
       objectReference: {fileID: 0}
     - target: {fileID: 7196999571519030407, guid: ac17ead619caba644b5d6ba7a64e4420, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7196999571519030407, guid: ac17ead619caba644b5d6ba7a64e4420, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7196999571519030407, guid: ac17ead619caba644b5d6ba7a64e4420, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
@@ -953,26 +945,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7196999571519030407, guid: ac17ead619caba644b5d6ba7a64e4420, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7196999571519030407, guid: ac17ead619caba644b5d6ba7a64e4420, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7196999571519030407, guid: ac17ead619caba644b5d6ba7a64e4420, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7196999571519030407, guid: ac17ead619caba644b5d6ba7a64e4420, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7196999571519030407, guid: ac17ead619caba644b5d6ba7a64e4420, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7196999571519030407, guid: ac17ead619caba644b5d6ba7a64e4420, type: 3}
-      propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7196999571519030407, guid: ac17ead619caba644b5d6ba7a64e4420, type: 3}
