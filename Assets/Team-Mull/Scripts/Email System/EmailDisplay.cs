@@ -45,6 +45,9 @@ namespace DevStory.UI
         [SerializeField]
         private GameObject taskButtonParent;
 
+        [SerializeField]
+        private GameObject optionButtonParent;
+
         //UI for options
         public Button[] optionButtons;
 
@@ -102,6 +105,7 @@ namespace DevStory.UI
 
             if (_currentMessage.Options != null && _currentMessage.Options.Length > 0)
             {
+                optionButtonParent.SetActive(true);
                 for (int i = 0; i < optionButtons.Length; i++)
                 {
                     if (i < _currentMessage.Options.Length)
@@ -152,6 +156,8 @@ namespace DevStory.UI
                     //For mails without options, we add message by itself
                     StartCoroutine(ShowNextMessage());
                 }
+
+                optionButtonParent.SetActive(false);
             }
 
             PopulateTaskButton();
@@ -180,6 +186,8 @@ namespace DevStory.UI
             {
                 option.gameObject?.SetActive(false);
             }
+
+            optionButtonParent.SetActive(false);
         }
 
         /// <summary>
