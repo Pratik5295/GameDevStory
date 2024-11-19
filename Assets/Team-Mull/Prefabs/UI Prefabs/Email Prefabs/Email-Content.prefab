@@ -81,7 +81,7 @@ MonoBehaviour:
   m_Spacing: 23
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 1
+  m_ChildControlWidth: 0
   m_ChildControlHeight: 1
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
@@ -474,6 +474,7 @@ MonoBehaviour:
     OpenScreen: 0
   taskButton: {fileID: 4574205603259418383}
   taskButtonParent: {fileID: 5722037629303219222}
+  optionButtonParent: {fileID: 988738597366848380}
   optionButtons:
   - {fileID: 621291679126894753}
   - {fileID: 6803082649904729751}
@@ -1050,7 +1051,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6431159967473224220, guid: 08f92b485218d934ba4cebeaa6ea513d, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 305
       objectReference: {fileID: 0}
     - target: {fileID: 6431159967473224220, guid: 08f92b485218d934ba4cebeaa6ea513d, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1290,6 +1291,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1217886361210794951, guid: 08f92b485218d934ba4cebeaa6ea513d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6003764654172085172, guid: 08f92b485218d934ba4cebeaa6ea513d, type: 3}
       propertyPath: m_SizeDelta.x
       value: -40
@@ -1332,7 +1337,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6431159967473224220, guid: 08f92b485218d934ba4cebeaa6ea513d, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 305
       objectReference: {fileID: 0}
     - target: {fileID: 6431159967473224220, guid: 08f92b485218d934ba4cebeaa6ea513d, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1459,6 +1464,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1217886361210794951, guid: 08f92b485218d934ba4cebeaa6ea513d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6003764654172085172, guid: 08f92b485218d934ba4cebeaa6ea513d, type: 3}
       propertyPath: m_SizeDelta.x
       value: -40
@@ -1501,7 +1510,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6431159967473224220, guid: 08f92b485218d934ba4cebeaa6ea513d, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 305
       objectReference: {fileID: 0}
     - target: {fileID: 6431159967473224220, guid: 08f92b485218d934ba4cebeaa6ea513d, type: 3}
       propertyPath: m_SizeDelta.y
