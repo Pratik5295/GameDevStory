@@ -24,7 +24,7 @@ namespace DevStory.TaskSystem
             else
             {
                 //Submitted on the same day
-                if(eventFireDay <= eventSubmitDay)
+                if(eventFireDay >= eventSubmitDay)
                 {
                     //Check for submitted within time
                     if(eventDeadline >= eventSubmitTime)
