@@ -21,6 +21,15 @@ namespace DevStory.Gameplay.GameTimer
         [SerializeField]
         private bool updateTimer = false;
 
+        [SerializeField]
+        private float animationDuration;
+
+        [SerializeField]
+        private bool isAnimating = false;
+
+        private float timer = 0f;
+        private float storedTime;
+
         private void Start()
         {
             gameTimerManager = GameTimerManager.Instance;
@@ -29,6 +38,7 @@ namespace DevStory.Gameplay.GameTimer
             {
                 gameTimerManager.OnDayStartedEvent += OnGameDayStartedHandler;
                 gameTimerManager.OnDayEndedEvent += OnGameDayEndedHandler;
+                gameTimerManager.OnTimeSkipEvent += OnTimerSkipAnimation;
             }
             else
             {
@@ -42,6 +52,7 @@ namespace DevStory.Gameplay.GameTimer
             {
                 gameTimerManager.OnDayStartedEvent -= OnGameDayStartedHandler;
                 gameTimerManager.OnDayEndedEvent -= OnGameDayEndedHandler;
+                gameTimerManager.OnTimeSkipEvent -= OnTimerSkipAnimation;
             }
         }
 
@@ -59,11 +70,46 @@ namespace DevStory.Gameplay.GameTimer
         {
             if (!updateTimer) return;
 
-            string timeString =
-                UtilityHelper.ConvertTimeFormat(gameTimerManager.CurrentTime);
+            if (!isAnimating)
+            {
+
+                string timeString =
+                    UtilityHelper.ConvertTimeFormat(gameTimerManager.CurrentTime);
 
 
-            timerText.text = $"Day: {gameTimerManager.Day}, {timeString}";
+                timerText.text = $"Day: {gameTimerManager.Day}, {timeString}";
+            }
+            else
+            {
+                timer += Time.deltaTime;
+                if (timer >= animationDuration)
+                {
+                    timer = animationDuration;  // Clamp timer to avoid going beyond the animation duration
+                    isAnimating = false; // Stop the animation once finished
+                }
+
+            }
+        }
+
+        private void OnTimerSkipAnimation()
+        {
+            isAnimating = true;
+            storedTime = gameTimerManager.CurrentTime;
+        }
+
+        private void UpdateTimerText(float timeInSeconds)
+        {
+
+            int hours = Mathf.FloorToInt(timeInSeconds / 3600f);
+            int minutes = Mathf.FloorToInt((timeInSeconds % 3600) / 60f);
+            string ampm = hours >= 12 ? "PM" : "AM";
+
+            // Convert to 12-hour format
+            hours = hours % 12;
+            if (hours == 0) hours = 12;  // Convert 0 hour to 12 for AM/PM format
+
+            // Format time string (e.g., "02:30 PM")
+            string timeString = string.Format("{0:D2}:{1:D2} {2}", hours, minutes, ampm);
         }
     }
 }
