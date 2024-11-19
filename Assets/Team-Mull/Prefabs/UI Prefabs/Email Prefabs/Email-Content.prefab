@@ -54,7 +54,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_IgnoreLayout: 0
   m_MinWidth: -1
-  m_MinHeight: 60
+  m_MinHeight: -1
   m_PreferredWidth: -1
   m_PreferredHeight: 80
   m_FlexibleWidth: -1
@@ -314,7 +314,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_IgnoreLayout: 0
   m_MinWidth: -1
-  m_MinHeight: 60
+  m_MinHeight: -1
   m_PreferredWidth: -1
   m_PreferredHeight: 80
   m_FlexibleWidth: -1
@@ -1055,7 +1055,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6431159967473224220, guid: 08f92b485218d934ba4cebeaa6ea513d, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 102.1875
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 6431159967473224220, guid: 08f92b485218d934ba4cebeaa6ea513d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1341,7 +1341,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6431159967473224220, guid: 08f92b485218d934ba4cebeaa6ea513d, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 102.1875
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 6431159967473224220, guid: 08f92b485218d934ba4cebeaa6ea513d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1514,7 +1514,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6431159967473224220, guid: 08f92b485218d934ba4cebeaa6ea513d, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 102.1875
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 6431159967473224220, guid: 08f92b485218d934ba4cebeaa6ea513d, type: 3}
       propertyPath: m_LocalPosition.x
