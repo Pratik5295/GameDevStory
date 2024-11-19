@@ -1,4 +1,5 @@
 using DevStory.UI;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using static MetaConstants.EnumManager.EnumManager;
@@ -36,6 +37,8 @@ namespace DevStory.DialogueSystem
         [SerializeField] private bool dirty = false;
 
         public bool IsDirty => dirty;
+
+        public Action OnEmailOpenedEvent;
 
         public Queue<DialogueMessageSO> localQueue = new Queue<DialogueMessageSO>();
 

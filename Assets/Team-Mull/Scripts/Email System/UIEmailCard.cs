@@ -24,6 +24,9 @@ namespace DevStory.UI
         [SerializeField]
         private Image senderSprite;
 
+        [SerializeField]
+        private GameObject newNotifierObject;   //This will be turned off when email is read
+
         public void Populate(GameEmail _email)
         {
             email = _email;
@@ -41,7 +44,26 @@ namespace DevStory.UI
             emailSubjectText.text = _email.EmailTitle;
             emailContentText.text = _email.Messages[0].Message;
 
-          
+
+            //Set a listener for dirty state
+            email.OnEmailOpenedEvent += OnEmailOpenedHandler;
+
+
+        }
+
+        private void OnDestroy() 
+        {
+            if (email != null)
+            {
+                email.OnEmailOpenedEvent -= OnEmailOpenedHandler;
+            }
+        }
+
+        private void OnEmailOpenedHandler()
+        {
+            newNotifierObject.SetActive(false);
+
+            Debug.Log("Email has been opened",gameObject);
         }
 
         public void OnButtonClicked()

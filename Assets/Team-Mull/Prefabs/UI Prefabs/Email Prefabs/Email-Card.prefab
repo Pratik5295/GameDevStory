@@ -151,6 +151,7 @@ MonoBehaviour:
   emailSubjectText: {fileID: 6049297584461439996}
   emailContentText: {fileID: 7109918790803139305}
   senderSprite: {fileID: 5718585801888693568}
+  newNotifierObject: {fileID: 5232071682906682278}
 --- !u!1 &2136528514350556738
 GameObject:
   m_ObjectHideFlags: 0
