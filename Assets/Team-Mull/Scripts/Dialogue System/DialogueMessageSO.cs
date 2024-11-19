@@ -30,10 +30,10 @@ namespace DevStory.DialogueSystem
         public bool hasTask = false;
 
         [Tooltip("Only being used in the email system for now")]
-        [ShowIf("Type",DialogMessageType.DEFAULT)]
+        //[ShowIf("Type",DialogMessageType.DEFAULT)]
         public int nextIndex;
 
-        [ShowIf("Type",DialogMessageType.SCAM)]
+        //[ShowIf("Type",DialogMessageType.SCAM)]
         public int skipTime;
     }
 
