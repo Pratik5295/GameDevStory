@@ -59,6 +59,14 @@ namespace DevStory.UI
             }
         }
 
+        /// <summary>
+        /// Method to forcefully handle email opened for the first email
+        /// </summary>
+        public void ForceEmailOpened()
+        {
+            OnEmailOpenedHandler();
+        }
+
         private void OnEmailOpenedHandler()
         {
             newNotifierObject.SetActive(false);

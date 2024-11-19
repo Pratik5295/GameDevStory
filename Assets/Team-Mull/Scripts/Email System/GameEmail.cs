@@ -69,6 +69,7 @@ namespace DevStory.DialogueSystem
         {
             //First message was shown to the player
             dirty = true;
+            OnEmailOpenedEvent?.Invoke();
 
             var message = data.Messages[currentEmailIndex];
 
