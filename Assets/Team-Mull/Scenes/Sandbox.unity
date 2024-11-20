@@ -2983,6 +2983,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 53.333496
       objectReference: {fileID: 0}
+    - target: {fileID: 7778317749325090663, guid: 60250c7966eef4141b732ed08cb4b839, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7839884920017985166, guid: 60250c7966eef4141b732ed08cb4b839, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -4718,7 +4722,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: b94f4651c06acf643b3784358530784c, type: 2}
     - target: {fileID: 2321706793999343057, guid: 7244a55c0fe89874ab2222fafc3704f5, type: 3}
       propertyPath: maxDayTime
-      value: 60
+      value: 240
       objectReference: {fileID: 0}
     - target: {fileID: 3130160777304007120, guid: 7244a55c0fe89874ab2222fafc3704f5, type: 3}
       propertyPath: gameScreens.Array.size

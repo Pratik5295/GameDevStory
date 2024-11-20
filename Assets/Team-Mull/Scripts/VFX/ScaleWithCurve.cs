@@ -32,7 +32,7 @@ namespace DevStory.VFX
             
         }
 
-        public void ScaleTween()
+        public virtual void ScaleTween()
         {
             scaleTween = DOTween.To(
                 () => transform.localScale,
@@ -40,7 +40,7 @@ namespace DevStory.VFX
                 targetScale, duration).SetEase(curve).SetLoops(-1, LoopType.Yoyo);
         }
 
-        public void ResetScale()
+        public virtual void ResetScale()
         {
             if(scaleTween != null)
             {
@@ -57,12 +57,12 @@ namespace DevStory.VFX
             resetSequence.OnKill(() => transform.localScale = originalScale);
         }
 
-        public void OnPointerEnter(PointerEventData eventData)
+        public virtual void OnPointerEnter(PointerEventData eventData)
         {
             ScaleTween();
         }
 
-        public void OnPointerExit(PointerEventData eventData)
+        public virtual void OnPointerExit(PointerEventData eventData)
         {
             ResetScale();
         }

@@ -42,8 +42,6 @@ namespace DevStory.Utility
 
         public static string ConvertTimeFormat(float timer)
         {
-            
-
             float minutesPassed = timer / PerSecondFactor;
             int hours = (int)minutesPassed;
             int minutes = (int)((minutesPassed - hours) * 60f);
@@ -66,6 +64,22 @@ namespace DevStory.Utility
             }
 
             return string.Format($"{displayHours:D2}:{displayMinutes:D2} {period}");
+        }
+
+        public static int GetMinutes(float timer)
+        {
+            float minutesPassed = timer / PerSecondFactor;
+            int hours = (int)minutesPassed;
+            int minutes = (int)((minutesPassed - hours) * 60f);
+            return minutes;
+        }
+
+        public static int GetHours(float timer)
+        {
+            float minutesPassed = timer / PerSecondFactor;
+            int hours = (int)minutesPassed;
+
+            return hours;
         }
 
         #endregion

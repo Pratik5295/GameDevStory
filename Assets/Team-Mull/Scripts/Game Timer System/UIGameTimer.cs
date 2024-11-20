@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using DevStory.Utility;
+using DevStory.VFX;
 
 namespace DevStory.Gameplay.GameTimer
 {
@@ -21,6 +22,18 @@ namespace DevStory.Gameplay.GameTimer
         [SerializeField]
         private bool updateTimer = false;
 
+        [SerializeField]
+        private float animationDuration;
+
+        [SerializeField]
+        private bool isAnimating = false;
+
+        private float timer = 0f;
+        private float storedTime;
+
+        [SerializeField]
+        private ScaleWithColorChange scalingVfx;
+
         private void Start()
         {
             gameTimerManager = GameTimerManager.Instance;
@@ -29,6 +42,7 @@ namespace DevStory.Gameplay.GameTimer
             {
                 gameTimerManager.OnDayStartedEvent += OnGameDayStartedHandler;
                 gameTimerManager.OnDayEndedEvent += OnGameDayEndedHandler;
+                gameTimerManager.OnTimeSkipEvent += OnTimerSkipAnimation;
             }
             else
             {
@@ -42,6 +56,7 @@ namespace DevStory.Gameplay.GameTimer
             {
                 gameTimerManager.OnDayStartedEvent -= OnGameDayStartedHandler;
                 gameTimerManager.OnDayEndedEvent -= OnGameDayEndedHandler;
+                gameTimerManager.OnTimeSkipEvent -= OnTimerSkipAnimation;
             }
         }
 
@@ -60,10 +75,16 @@ namespace DevStory.Gameplay.GameTimer
             if (!updateTimer) return;
 
             string timeString =
-                UtilityHelper.ConvertTimeFormat(gameTimerManager.CurrentTime);
+                               UtilityHelper.ConvertTimeFormat(gameTimerManager.CurrentTime);
 
 
             timerText.text = $"Day: {gameTimerManager.Day}, {timeString}";
+
+        }
+
+        private void OnTimerSkipAnimation()
+        {
+            scalingVfx.ScaleTween();
         }
     }
 }
