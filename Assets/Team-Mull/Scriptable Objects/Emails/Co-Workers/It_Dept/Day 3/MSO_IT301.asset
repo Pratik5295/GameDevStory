@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04d48516da680f04aa757b98deff11cc, type: 3}
+  m_Name: MSO_IT301
+  m_EditorClassIdentifier: 
+  Speaker: {fileID: 11400000, guid: dfe2616719e079846b3fe87af1cd3c97, type: 2}
+  Message: "Dear employees,\r\n\nAs mentioned on Monday, there was a creature residing
+    in the server room. Well, there is good news and bad news; good news is the creature
+    is no longer in the server room, the bad news is that.. we don\u2019t know where
+    it has gone.\r\n\r\nPlease take care while you move around the studio"
+  Options: []
+  Type: 0
+  hasTask: 0
+  nextIndex: 0
+  skipTime: 0

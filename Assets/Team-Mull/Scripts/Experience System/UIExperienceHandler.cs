@@ -42,7 +42,7 @@ namespace DevStory.Experience
 
         }
 
-        private void OnExperienceGainedHandler(int _addedXp,int _totalXp)
+        private void OnExperienceGainedHandler(float _addedXp,float _totalXp)
         {
             slider.value += _addedXp;
         }

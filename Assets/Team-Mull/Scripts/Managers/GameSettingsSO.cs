@@ -5,7 +5,7 @@ namespace DevStory.Managers
     [System.Serializable]
     public struct WinConditionsData
     {
-        public int MaximumExperienceInGame;
+        public float MaximumExperienceInGame;
 
         public float ExperienceRequiredThreshold;
 
