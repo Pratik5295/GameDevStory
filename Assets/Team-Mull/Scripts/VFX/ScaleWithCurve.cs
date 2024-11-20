@@ -57,12 +57,12 @@ namespace DevStory.VFX
             resetSequence.OnKill(() => transform.localScale = originalScale);
         }
 
-        public void OnPointerEnter(PointerEventData eventData)
+        public virtual void OnPointerEnter(PointerEventData eventData)
         {
             ScaleTween();
         }
 
-        public void OnPointerExit(PointerEventData eventData)
+        public virtual void OnPointerExit(PointerEventData eventData)
         {
             ResetScale();
         }

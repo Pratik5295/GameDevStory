@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using DevStory.Utility;
+using DevStory.VFX;
 
 namespace DevStory.Gameplay.GameTimer
 {
@@ -29,6 +30,9 @@ namespace DevStory.Gameplay.GameTimer
 
         private float timer = 0f;
         private float storedTime;
+
+        [SerializeField]
+        private ScaleWithColorChange scalingVfx;
 
         private void Start()
         {
@@ -70,46 +74,17 @@ namespace DevStory.Gameplay.GameTimer
         {
             if (!updateTimer) return;
 
-            if (!isAnimating)
-            {
-
-                string timeString =
-                    UtilityHelper.ConvertTimeFormat(gameTimerManager.CurrentTime);
+            string timeString =
+                               UtilityHelper.ConvertTimeFormat(gameTimerManager.CurrentTime);
 
 
-                timerText.text = $"Day: {gameTimerManager.Day}, {timeString}";
-            }
-            else
-            {
-                timer += Time.deltaTime;
-                if (timer >= animationDuration)
-                {
-                    timer = animationDuration;  // Clamp timer to avoid going beyond the animation duration
-                    isAnimating = false; // Stop the animation once finished
-                }
+            timerText.text = $"Day: {gameTimerManager.Day}, {timeString}";
 
-            }
         }
 
         private void OnTimerSkipAnimation()
         {
-            isAnimating = true;
-            storedTime = gameTimerManager.CurrentTime;
-        }
-
-        private void UpdateTimerText(float timeInSeconds)
-        {
-
-            int hours = Mathf.FloorToInt(timeInSeconds / 3600f);
-            int minutes = Mathf.FloorToInt((timeInSeconds % 3600) / 60f);
-            string ampm = hours >= 12 ? "PM" : "AM";
-
-            // Convert to 12-hour format
-            hours = hours % 12;
-            if (hours == 0) hours = 12;  // Convert 0 hour to 12 for AM/PM format
-
-            // Format time string (e.g., "02:30 PM")
-            string timeString = string.Format("{0:D2}:{1:D2} {2}", hours, minutes, ampm);
+            scalingVfx.ScaleTween();
         }
     }
 }
