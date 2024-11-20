@@ -6,13 +6,13 @@ namespace DevStory.TaskSystem
     public class ExperienceSystem : MonoBehaviour
     {
         [SerializeField]
-        private int currentXp = 0;
+        private float currentXp = 0;
 
-        public int CurrentXP => currentXp;
+        public float CurrentXP => currentXp;
 
-        public Action<int, int> OnExperienceGainedEvent;
+        public Action<float, float> OnExperienceGainedEvent;
 
-        public void AddExp(int _xp)
+        public void AddExp(float _xp)
         {
             currentXp += _xp;
 

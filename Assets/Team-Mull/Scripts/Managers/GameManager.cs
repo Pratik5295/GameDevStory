@@ -97,15 +97,19 @@ namespace DevStory.Managers
             if(PressureManager.Instance.GetCurrentPressure <= WinConditionsData.StressThreshold)
             {
                 //Check if experience is greater than 85%
-                float passingExp = (TaskManager.Instance.GetExperienceSystem.CurrentXP / WinConditionsData.MaximumExperienceInGame) * 100;
+                float passingExp = (float)(TaskManager.Instance.GetExperienceSystem.CurrentXP / WinConditionsData.MaximumExperienceInGame);
 
-                if(passingExp >= WinConditionsData.ExperienceRequiredThreshold)
+                float newXp = passingExp * 100f;
+                
+                if(newXp >= WinConditionsData.ExperienceRequiredThreshold)
                 {
                     WinCondition();
+                    Debug.Log("CASE RESULT WON");
                 }
                 else
                 {
                     LoseCondition();
+                    Debug.Log("CASE RESULT LOSE");
                 }
 
 
@@ -113,6 +117,7 @@ namespace DevStory.Managers
             else
             {
                 LoseCondition();
+                Debug.Log("CASE 3 RESULT LOSE");
             }
 
         }
