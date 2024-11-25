@@ -1610,10 +1610,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7923047246910201450, guid: 74df319a47a858c4f840b178b6668692, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 3.119812
-      objectReference: {fileID: 0}
     - target: {fileID: 8265723973539437460, guid: 74df319a47a858c4f840b178b6668692, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
