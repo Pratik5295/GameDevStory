@@ -611,9 +611,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6841775708010563026}
-        m_TargetAssemblyTypeName: DevStory.Utility.ToggleHandler, Assembly-CSharp
-        m_MethodName: ToggleActive
+      - m_Target: {fileID: 5301992418726885268}
+        m_TargetAssemblyTypeName: DevStory.UI.TaskSubmitScreen, Assembly-CSharp
+        m_MethodName: OnSubmitButtonClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
