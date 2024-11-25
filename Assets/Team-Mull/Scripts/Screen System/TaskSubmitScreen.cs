@@ -42,7 +42,7 @@ namespace DevStory.UI
             //Fire Validity check on active puzzle screen
             activePuzzleScreen.OnTaskSubmitted();
 
-            Close();
+            //Close();
 
             //Submit task through the task manager
             TaskManager.Instance.OnTaskSubmittedButtonClicked();
