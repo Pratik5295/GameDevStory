@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1795477367935250912}
   - component: {fileID: 1148468106237008}
   - component: {fileID: 6858855437078606106}
+  - component: {fileID: 8973952919203021047}
   m_Layer: 5
   m_Name: BG
   m_TagString: Untagged
@@ -66,7 +67,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: af0fbe694388c3f4abacb9c820ef9005, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 677a657fdcf048440a13e8485d5a1a08, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -76,6 +77,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8973952919203021047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285882607339376465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5882353}
+  m_EffectDistance: {x: 6, y: -6}
+  m_UseGraphicAlpha: 1
 --- !u!1 &555089204838295631
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,6 +122,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1795477367935250912}
+  - {fileID: 8438028877556002612}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -232,7 +249,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
+  m_fontSize: 36.65
   m_fontSizeBase: 120
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -389,7 +406,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
+  m_fontSize: 60
   m_fontSizeBase: 120
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -634,7 +651,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
+  m_fontSize: 32
   m_fontSizeBase: 120
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1389,6 +1406,52 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7795115651827633259, guid: 3aa75a3d02f1f7a4397fd27b80e1fc9d, type: 3}
   m_PrefabInstance: {fileID: 517761741211289065}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1479702651579832411
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8725060958433273488}
+    m_Modifications:
+    - target: {fileID: 913299960607418668, guid: cba65f43579b9f541a937350037782fd, type: 3}
+      propertyPath: m_Name
+      value: No-Task-Screen
+      objectReference: {fileID: 0}
+    - target: {fileID: 7030421617891620719, guid: cba65f43579b9f541a937350037782fd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7030421617891620719, guid: cba65f43579b9f541a937350037782fd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7030421617891620719, guid: cba65f43579b9f541a937350037782fd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7030421617891620719, guid: cba65f43579b9f541a937350037782fd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7030421617891620719, guid: cba65f43579b9f541a937350037782fd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7030421617891620719, guid: cba65f43579b9f541a937350037782fd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cba65f43579b9f541a937350037782fd, type: 3}
+--- !u!224 &8438028877556002612 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7030421617891620719, guid: cba65f43579b9f541a937350037782fd, type: 3}
+  m_PrefabInstance: {fileID: 1479702651579832411}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5636399085537566925
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1511,7 +1574,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7130089337201694828, guid: f9f2fa8d7ee632c4a851a5739e4aae73, type: 3}
       propertyPath: m_fontSize
-      value: 18
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8560072146340686939, guid: f9f2fa8d7ee632c4a851a5739e4aae73, type: 3}
       propertyPath: m_Name
