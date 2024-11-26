@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5803461421333420028}
+  - component: {fileID: 2519939769115884824}
   m_Layer: 0
   m_Name: Paint-Palette
   m_TagString: Untagged
@@ -37,6 +38,19 @@ Transform:
   - {fileID: 5413723142551859427}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2519939769115884824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3801893165306182071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1de8391c82e2d5242ac5f2eb8b29926e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowImage: {fileID: 0}
 --- !u!1001 &3034137130752518228
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -73,6 +87,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Color-Piece-Mover-Red
       objectReference: {fileID: 0}
+    - target: {fileID: 7270990405951139949, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
+      propertyPath: Palette
+      value: 
+      objectReference: {fileID: 2519939769115884824}
     - target: {fileID: 8562064435162014775, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7
@@ -155,6 +173,10 @@ PrefabInstance:
       propertyPath: Paint
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 7270990405951139949, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
+      propertyPath: Palette
+      value: 
+      objectReference: {fileID: 2519939769115884824}
     - target: {fileID: 8562064435162014775, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.6
@@ -237,6 +259,10 @@ PrefabInstance:
       propertyPath: Paint
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 7270990405951139949, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
+      propertyPath: Palette
+      value: 
+      objectReference: {fileID: 2519939769115884824}
     - target: {fileID: 8562064435162014775, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7
@@ -315,6 +341,10 @@ PrefabInstance:
       propertyPath: Paint
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7270990405951139949, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
+      propertyPath: Palette
+      value: 
+      objectReference: {fileID: 2519939769115884824}
     - target: {fileID: 8562064435162014775, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.6
@@ -397,6 +427,10 @@ PrefabInstance:
       propertyPath: Paint
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7270990405951139949, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
+      propertyPath: Palette
+      value: 
+      objectReference: {fileID: 2519939769115884824}
     - target: {fileID: 8562064435162014775, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.6
@@ -479,6 +513,10 @@ PrefabInstance:
       propertyPath: Paint
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7270990405951139949, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
+      propertyPath: Palette
+      value: 
+      objectReference: {fileID: 2519939769115884824}
     - target: {fileID: 8562064435162014775, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7

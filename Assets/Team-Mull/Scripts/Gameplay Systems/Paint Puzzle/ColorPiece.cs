@@ -12,6 +12,9 @@ namespace DevStory.Gameplay.Puzzles
     {
         [SerializeField] private PuzzlePaint Paint;
 
+        [SerializeField]
+        private PaintPalette Palette;
+
 
         public override void Drop()
         {
@@ -33,6 +36,8 @@ namespace DevStory.Gameplay.Puzzles
         {
             //Fire which color has been picked
             Debug.Log($"New picked color: {Paint.ToString()}");
+
+            Palette.SetGlowColor(Paint);
         }
     }
 }
