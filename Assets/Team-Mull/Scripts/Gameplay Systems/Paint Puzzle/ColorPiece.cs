@@ -28,5 +28,11 @@ namespace DevStory.Gameplay.Puzzles
 
             paintHolder.ChangeColor(Paint);
         }
+
+        public void OnPaintColorSelected()
+        {
+            //Fire which color has been picked
+            Debug.Log($"New picked color: {Paint.ToString()}");
+        }
     }
 }
