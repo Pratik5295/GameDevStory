@@ -335,11 +335,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1449248732950660720, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: m_Name
-      value: Color-Piece-Mover (5)
+      value: Color-Piece-Mover-Purple
       objectReference: {fileID: 0}
     - target: {fileID: 7270990405951139949, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: Paint
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7270990405951139949, guid: b45421a62e2c8824f8e8ba6ee07fb7f6, type: 3}
       propertyPath: Palette
