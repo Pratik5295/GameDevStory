@@ -3,6 +3,8 @@ using DevStory.Utility;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
+using static MetaConstants.EnumManager.EnumManager;
 
 namespace DevStory.TaskSystem
 {
@@ -20,8 +22,10 @@ namespace DevStory.TaskSystem
 
         [Space(10)]
         [Header("Task Card UI References")]
-        [SerializeField] private Image priorityImage;
         [SerializeField] private TextMeshProUGUI taskTitle;
+
+        [SerializeField]
+        private List<GameObject> priorityIndicators;
 
         public void SetTaskData(GameTask _gameTask)
         {
@@ -33,14 +37,57 @@ namespace DevStory.TaskSystem
 
         private void PopulateTaskData()
         {
+            //Hide all indicators
+            HideAllIndicators();
+
             taskTitle.text = taskData.TaskName;
-            priorityImage.color = ColorCoder.GetColorFromPriority(taskData.Priority);
+
+            //Get how many to show based on priority
+            int indicatorsToShow = GetCountFromPriority(taskData.Priority);
+
+            ShowIndicators(indicatorsToShow);
         }
 
         public void OnTaskButtonClicked()
         {
             Debug.Log("Loading task on the dialog");
             TaskManager.Instance.OpenTaskDialogBox(gameTask);
+        }
+
+        private void HideAllIndicators()
+        {
+            foreach (GameObject indicator in priorityIndicators)
+            {
+                indicator.SetActive(false);
+            }
+        }
+
+        private void ShowIndicators(int count)
+        {
+            for(int i = 0; i< count; i++)
+            {
+                priorityIndicators[i].SetActive(true);
+            }
+        }
+
+        private int GetCountFromPriority(TaskPriority taskPriority)
+        {
+            switch (taskPriority)
+            {
+                case TaskPriority.DEFAULT:
+                    return 1;
+
+                case TaskPriority.LOW:
+                    return 1;
+
+                case TaskPriority.MEDIUM:
+                    return 2;
+
+                case TaskPriority.HIGH:
+                    return 3;
+            }
+
+            return 1;
         }
     }
 }
