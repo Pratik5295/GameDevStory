@@ -329,6 +329,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5182812625397186719}
     m_Modifications:
+    - target: {fileID: 559187327011913354, guid: 71c4d1575c6bb5a4db3e8a9227fe17bf, type: 3}
+      propertyPath: paintHolders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 559187327011913354, guid: 71c4d1575c6bb5a4db3e8a9227fe17bf, type: 3}
+      propertyPath: 'paintHolders.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8799910141189597500}
     - target: {fileID: 5650722262310992466, guid: 71c4d1575c6bb5a4db3e8a9227fe17bf, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7906357
@@ -425,6 +433,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5182812625397186719}
     m_Modifications:
+    - target: {fileID: 559187327011913354, guid: b0a47f0b808f9b8408532584005a95b5, type: 3}
+      propertyPath: paintHolders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 559187327011913354, guid: b0a47f0b808f9b8408532584005a95b5, type: 3}
+      propertyPath: 'paintHolders.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8799910141189597500}
     - target: {fileID: 5650722262310992466, guid: b0a47f0b808f9b8408532584005a95b5, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7906357
@@ -661,6 +677,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5182812625397186719}
     m_Modifications:
+    - target: {fileID: 559187327011913354, guid: 71c4d1575c6bb5a4db3e8a9227fe17bf, type: 3}
+      propertyPath: paintHolders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 559187327011913354, guid: 71c4d1575c6bb5a4db3e8a9227fe17bf, type: 3}
+      propertyPath: 'paintHolders.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8799910141189597500}
     - target: {fileID: 5650722262310992466, guid: 71c4d1575c6bb5a4db3e8a9227fe17bf, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7906357
@@ -1242,6 +1266,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5182812625397186719}
     m_Modifications:
+    - target: {fileID: 559187327011913354, guid: b0a47f0b808f9b8408532584005a95b5, type: 3}
+      propertyPath: paintHolders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 559187327011913354, guid: b0a47f0b808f9b8408532584005a95b5, type: 3}
+      propertyPath: 'paintHolders.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8799910141189597500}
     - target: {fileID: 5650722262310992466, guid: b0a47f0b808f9b8408532584005a95b5, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7906357
@@ -1338,6 +1370,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5182812625397186719}
     m_Modifications:
+    - target: {fileID: 559187327011913354, guid: 12db3dd08586af7409c60f504cbbe14a, type: 3}
+      propertyPath: paintHolders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 559187327011913354, guid: 12db3dd08586af7409c60f504cbbe14a, type: 3}
+      propertyPath: 'paintHolders.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8799910141189597500}
     - target: {fileID: 5650722262310992466, guid: 12db3dd08586af7409c60f504cbbe14a, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7906357
@@ -1434,6 +1474,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5182812625397186719}
     m_Modifications:
+    - target: {fileID: 559187327011913354, guid: abbaee38402a87741ac23dfd30bea1b6, type: 3}
+      propertyPath: paintHolders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 559187327011913354, guid: abbaee38402a87741ac23dfd30bea1b6, type: 3}
+      propertyPath: 'paintHolders.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8799910141189597500}
     - target: {fileID: 5650722262310992466, guid: abbaee38402a87741ac23dfd30bea1b6, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7906357
@@ -2226,6 +2274,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5182812625397186719}
     m_Modifications:
+    - target: {fileID: 559187327011913354, guid: 60fe0b0d927a9504b977d20cffe21e33, type: 3}
+      propertyPath: paintHolders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 559187327011913354, guid: 60fe0b0d927a9504b977d20cffe21e33, type: 3}
+      propertyPath: 'paintHolders.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8799910141189597500}
     - target: {fileID: 5650722262310992466, guid: 60fe0b0d927a9504b977d20cffe21e33, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7906357
@@ -2322,6 +2378,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5182812625397186719}
     m_Modifications:
+    - target: {fileID: 559187327011913354, guid: 60fe0b0d927a9504b977d20cffe21e33, type: 3}
+      propertyPath: paintHolders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 559187327011913354, guid: 60fe0b0d927a9504b977d20cffe21e33, type: 3}
+      propertyPath: 'paintHolders.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8799910141189597500}
     - target: {fileID: 5650722262310992466, guid: 60fe0b0d927a9504b977d20cffe21e33, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7906357
@@ -2558,6 +2622,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5182812625397186719}
     m_Modifications:
+    - target: {fileID: 559187327011913354, guid: 2bb2edf99b6270f4e8892f9b16b1275f, type: 3}
+      propertyPath: paintHolders.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 559187327011913354, guid: 2bb2edf99b6270f4e8892f9b16b1275f, type: 3}
+      propertyPath: 'paintHolders.Array.data[0]'
+      value: 
+      objectReference: {fileID: 111977993807445230}
+    - target: {fileID: 559187327011913354, guid: 2bb2edf99b6270f4e8892f9b16b1275f, type: 3}
+      propertyPath: 'paintHolders.Array.data[1]'
+      value: 
+      objectReference: {fileID: 4573642163617350263}
+    - target: {fileID: 559187327011913354, guid: 2bb2edf99b6270f4e8892f9b16b1275f, type: 3}
+      propertyPath: 'paintHolders.Array.data[2]'
+      value: 
+      objectReference: {fileID: 3071670395323277807}
+    - target: {fileID: 559187327011913354, guid: 2bb2edf99b6270f4e8892f9b16b1275f, type: 3}
+      propertyPath: 'paintHolders.Array.data[3]'
+      value: 
+      objectReference: {fileID: 1326811742443598178}
     - target: {fileID: 5650722262310992466, guid: 2bb2edf99b6270f4e8892f9b16b1275f, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7906357
@@ -2654,6 +2738,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5182812625397186719}
     m_Modifications:
+    - target: {fileID: 559187327011913354, guid: 12db3dd08586af7409c60f504cbbe14a, type: 3}
+      propertyPath: paintHolders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 559187327011913354, guid: 12db3dd08586af7409c60f504cbbe14a, type: 3}
+      propertyPath: 'paintHolders.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8799910141189597500}
     - target: {fileID: 5650722262310992466, guid: 12db3dd08586af7409c60f504cbbe14a, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7906357
@@ -3082,6 +3174,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5182812625397186719}
     m_Modifications:
+    - target: {fileID: 559187327011913354, guid: 24d6034ebf1018042a1a84b07e23b348, type: 3}
+      propertyPath: paintHolders.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 559187327011913354, guid: 24d6034ebf1018042a1a84b07e23b348, type: 3}
+      propertyPath: 'paintHolders.Array.data[0]'
+      value: 
+      objectReference: {fileID: 4528528667075690180}
+    - target: {fileID: 559187327011913354, guid: 24d6034ebf1018042a1a84b07e23b348, type: 3}
+      propertyPath: 'paintHolders.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1326811742443598178}
+    - target: {fileID: 559187327011913354, guid: 24d6034ebf1018042a1a84b07e23b348, type: 3}
+      propertyPath: 'paintHolders.Array.data[2]'
+      value: 
+      objectReference: {fileID: 680049665262914737}
+    - target: {fileID: 559187327011913354, guid: 24d6034ebf1018042a1a84b07e23b348, type: 3}
+      propertyPath: 'paintHolders.Array.data[3]'
+      value: 
+      objectReference: {fileID: 4419863248942901057}
     - target: {fileID: 5650722262310992466, guid: 24d6034ebf1018042a1a84b07e23b348, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7906357
@@ -3152,6 +3264,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66290cc4e0e04304ca6b182235c8dec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4745802006621360733 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8580909549425755615, guid: 24d6034ebf1018042a1a84b07e23b348, type: 3}
+  m_PrefabInstance: {fileID: 3947961436411991938}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39ad9c3fa60ece4b8e99e7f225758e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &8692686114742808016 stripped
@@ -3271,6 +3394,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5182812625397186719}
     m_Modifications:
+    - target: {fileID: 559187327011913354, guid: 71c4d1575c6bb5a4db3e8a9227fe17bf, type: 3}
+      propertyPath: paintHolders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 559187327011913354, guid: 71c4d1575c6bb5a4db3e8a9227fe17bf, type: 3}
+      propertyPath: 'paintHolders.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8799910141189597500}
     - target: {fileID: 5650722262310992466, guid: 71c4d1575c6bb5a4db3e8a9227fe17bf, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7906357
@@ -3483,6 +3614,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5182812625397186719}
     m_Modifications:
+    - target: {fileID: 559187327011913354, guid: abbaee38402a87741ac23dfd30bea1b6, type: 3}
+      propertyPath: paintHolders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 559187327011913354, guid: abbaee38402a87741ac23dfd30bea1b6, type: 3}
+      propertyPath: 'paintHolders.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8799910141189597500}
     - target: {fileID: 5650722262310992466, guid: abbaee38402a87741ac23dfd30bea1b6, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7906357
@@ -4007,6 +4146,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5182812625397186719}
     m_Modifications:
+    - target: {fileID: 559187327011913354, guid: a4697472e9046764da40f86a3cb72f7a, type: 3}
+      propertyPath: paintHolders.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 559187327011913354, guid: a4697472e9046764da40f86a3cb72f7a, type: 3}
+      propertyPath: 'paintHolders.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8799910141189597500}
+    - target: {fileID: 559187327011913354, guid: a4697472e9046764da40f86a3cb72f7a, type: 3}
+      propertyPath: 'paintHolders.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8195175600268150013}
+    - target: {fileID: 559187327011913354, guid: a4697472e9046764da40f86a3cb72f7a, type: 3}
+      propertyPath: 'paintHolders.Array.data[2]'
+      value: 
+      objectReference: {fileID: 3260009642469365028}
+    - target: {fileID: 559187327011913354, guid: a4697472e9046764da40f86a3cb72f7a, type: 3}
+      propertyPath: 'paintHolders.Array.data[3]'
+      value: 
+      objectReference: {fileID: 4745802006621360733}
+    - target: {fileID: 559187327011913354, guid: a4697472e9046764da40f86a3cb72f7a, type: 3}
+      propertyPath: 'paintHolders.Array.data[4]'
+      value: 
+      objectReference: {fileID: 1326811742443598178}
+    - target: {fileID: 559187327011913354, guid: a4697472e9046764da40f86a3cb72f7a, type: 3}
+      propertyPath: 'paintHolders.Array.data[5]'
+      value: 
+      objectReference: {fileID: 4419863248942901057}
     - target: {fileID: 5650722262310992466, guid: a4697472e9046764da40f86a3cb72f7a, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7906357
@@ -4103,6 +4270,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5182812625397186719}
     m_Modifications:
+    - target: {fileID: 559187327011913354, guid: 0e895359d65cc4e449fe255735e59d22, type: 3}
+      propertyPath: paintHolders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 559187327011913354, guid: 0e895359d65cc4e449fe255735e59d22, type: 3}
+      propertyPath: 'paintHolders.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8799910141189597500}
     - target: {fileID: 5650722262310992466, guid: 0e895359d65cc4e449fe255735e59d22, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7906357
@@ -4199,6 +4374,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5182812625397186719}
     m_Modifications:
+    - target: {fileID: 559187327011913354, guid: e2b391b76a52e2c4d84dea9211e94efc, type: 3}
+      propertyPath: paintHolders.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 559187327011913354, guid: e2b391b76a52e2c4d84dea9211e94efc, type: 3}
+      propertyPath: 'paintHolders.Array.data[0]'
+      value: 
+      objectReference: {fileID: 4786084688304751152}
+    - target: {fileID: 559187327011913354, guid: e2b391b76a52e2c4d84dea9211e94efc, type: 3}
+      propertyPath: 'paintHolders.Array.data[1]'
+      value: 
+      objectReference: {fileID: 7525075781678237741}
+    - target: {fileID: 559187327011913354, guid: e2b391b76a52e2c4d84dea9211e94efc, type: 3}
+      propertyPath: 'paintHolders.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8799910141189597500}
+    - target: {fileID: 559187327011913354, guid: e2b391b76a52e2c4d84dea9211e94efc, type: 3}
+      propertyPath: 'paintHolders.Array.data[3]'
+      value: 
+      objectReference: {fileID: 4745802006621360733}
+    - target: {fileID: 559187327011913354, guid: e2b391b76a52e2c4d84dea9211e94efc, type: 3}
+      propertyPath: 'paintHolders.Array.data[4]'
+      value: 
+      objectReference: {fileID: 4528528667075690180}
     - target: {fileID: 5650722262310992466, guid: e2b391b76a52e2c4d84dea9211e94efc, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7906357
@@ -4295,6 +4494,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5182812625397186719}
     m_Modifications:
+    - target: {fileID: 559187327011913354, guid: 0e895359d65cc4e449fe255735e59d22, type: 3}
+      propertyPath: paintHolders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 559187327011913354, guid: 0e895359d65cc4e449fe255735e59d22, type: 3}
+      propertyPath: 'paintHolders.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8799910141189597500}
     - target: {fileID: 5650722262310992466, guid: 0e895359d65cc4e449fe255735e59d22, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.12638
@@ -4619,6 +4826,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5182812625397186719}
     m_Modifications:
+    - target: {fileID: 559187327011913354, guid: abbaee38402a87741ac23dfd30bea1b6, type: 3}
+      propertyPath: paintHolders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 559187327011913354, guid: abbaee38402a87741ac23dfd30bea1b6, type: 3}
+      propertyPath: 'paintHolders.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8799910141189597500}
     - target: {fileID: 5650722262310992466, guid: abbaee38402a87741ac23dfd30bea1b6, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7906357
@@ -4715,6 +4930,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5182812625397186719}
     m_Modifications:
+    - target: {fileID: 559187327011913354, guid: 12db3dd08586af7409c60f504cbbe14a, type: 3}
+      propertyPath: paintHolders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 559187327011913354, guid: 12db3dd08586af7409c60f504cbbe14a, type: 3}
+      propertyPath: 'paintHolders.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8799910141189597500}
     - target: {fileID: 5650722262310992466, guid: 12db3dd08586af7409c60f504cbbe14a, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7906357
@@ -4811,6 +5034,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5182812625397186719}
     m_Modifications:
+    - target: {fileID: 559187327011913354, guid: 60fe0b0d927a9504b977d20cffe21e33, type: 3}
+      propertyPath: paintHolders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 559187327011913354, guid: 60fe0b0d927a9504b977d20cffe21e33, type: 3}
+      propertyPath: 'paintHolders.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8799910141189597500}
     - target: {fileID: 5650722262310992466, guid: 60fe0b0d927a9504b977d20cffe21e33, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7906357
@@ -5251,6 +5482,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5182812625397186719}
     m_Modifications:
+    - target: {fileID: 559187327011913354, guid: daae860dfeaabe145b149638ed859bc0, type: 3}
+      propertyPath: paintHolders.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 559187327011913354, guid: daae860dfeaabe145b149638ed859bc0, type: 3}
+      propertyPath: 'paintHolders.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8799910141189597500}
+    - target: {fileID: 559187327011913354, guid: daae860dfeaabe145b149638ed859bc0, type: 3}
+      propertyPath: 'paintHolders.Array.data[1]'
+      value: 
+      objectReference: {fileID: 3384695109155044468}
+    - target: {fileID: 559187327011913354, guid: daae860dfeaabe145b149638ed859bc0, type: 3}
+      propertyPath: 'paintHolders.Array.data[2]'
+      value: 
+      objectReference: {fileID: 6366921455676214502}
+    - target: {fileID: 559187327011913354, guid: daae860dfeaabe145b149638ed859bc0, type: 3}
+      propertyPath: 'paintHolders.Array.data[3]'
+      value: 
+      objectReference: {fileID: 6604270656606280805}
     - target: {fileID: 5650722262310992466, guid: daae860dfeaabe145b149638ed859bc0, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7906357
@@ -5463,6 +5714,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5182812625397186719}
     m_Modifications:
+    - target: {fileID: 559187327011913354, guid: 0e895359d65cc4e449fe255735e59d22, type: 3}
+      propertyPath: paintHolders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 559187327011913354, guid: 0e895359d65cc4e449fe255735e59d22, type: 3}
+      propertyPath: 'paintHolders.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8799910141189597500}
     - target: {fileID: 5650722262310992466, guid: 0e895359d65cc4e449fe255735e59d22, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7906357
@@ -5559,6 +5818,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5182812625397186719}
     m_Modifications:
+    - target: {fileID: 559187327011913354, guid: daae860dfeaabe145b149638ed859bc0, type: 3}
+      propertyPath: paintHolders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 559187327011913354, guid: daae860dfeaabe145b149638ed859bc0, type: 3}
+      propertyPath: 'paintHolders.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8799910141189597500}
     - target: {fileID: 5650722262310992466, guid: daae860dfeaabe145b149638ed859bc0, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7906357
@@ -5655,6 +5922,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5182812625397186719}
     m_Modifications:
+    - target: {fileID: 559187327011913354, guid: 58e05d654a79cce439e57b77f538a8ef, type: 3}
+      propertyPath: paintHolders.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 559187327011913354, guid: 58e05d654a79cce439e57b77f538a8ef, type: 3}
+      propertyPath: 'paintHolders.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8195175600268150013}
+    - target: {fileID: 559187327011913354, guid: 58e05d654a79cce439e57b77f538a8ef, type: 3}
+      propertyPath: 'paintHolders.Array.data[1]'
+      value: 
+      objectReference: {fileID: 3071670395323277807}
+    - target: {fileID: 559187327011913354, guid: 58e05d654a79cce439e57b77f538a8ef, type: 3}
+      propertyPath: 'paintHolders.Array.data[2]'
+      value: 
+      objectReference: {fileID: 4916288765262986586}
+    - target: {fileID: 559187327011913354, guid: 58e05d654a79cce439e57b77f538a8ef, type: 3}
+      propertyPath: 'paintHolders.Array.data[3]'
+      value: 
+      objectReference: {fileID: 4745802006621360733}
+    - target: {fileID: 559187327011913354, guid: 58e05d654a79cce439e57b77f538a8ef, type: 3}
+      propertyPath: 'paintHolders.Array.data[4]'
+      value: 
+      objectReference: {fileID: 4528528667075690180}
+    - target: {fileID: 559187327011913354, guid: 58e05d654a79cce439e57b77f538a8ef, type: 3}
+      propertyPath: 'paintHolders.Array.data[5]'
+      value: 
+      objectReference: {fileID: 680049665262914737}
     - target: {fileID: 5650722262310992466, guid: 58e05d654a79cce439e57b77f538a8ef, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7906357
@@ -5751,6 +6046,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5182812625397186719}
     m_Modifications:
+    - target: {fileID: 559187327011913354, guid: b0a47f0b808f9b8408532584005a95b5, type: 3}
+      propertyPath: paintHolders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 559187327011913354, guid: b0a47f0b808f9b8408532584005a95b5, type: 3}
+      propertyPath: 'paintHolders.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8799910141189597500}
     - target: {fileID: 5650722262310992466, guid: b0a47f0b808f9b8408532584005a95b5, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7906357
@@ -5975,6 +6278,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5182812625397186719}
     m_Modifications:
+    - target: {fileID: 559187327011913354, guid: daae860dfeaabe145b149638ed859bc0, type: 3}
+      propertyPath: paintHolders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 559187327011913354, guid: daae860dfeaabe145b149638ed859bc0, type: 3}
+      propertyPath: 'paintHolders.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8799910141189597500}
     - target: {fileID: 5650722262310992466, guid: daae860dfeaabe145b149638ed859bc0, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7906357
@@ -6187,6 +6498,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5182812625397186719}
     m_Modifications:
+    - target: {fileID: 559187327011913354, guid: daae860dfeaabe145b149638ed859bc0, type: 3}
+      propertyPath: paintHolders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 559187327011913354, guid: daae860dfeaabe145b149638ed859bc0, type: 3}
+      propertyPath: 'paintHolders.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8799910141189597500}
     - target: {fileID: 5650722262310992466, guid: daae860dfeaabe145b149638ed859bc0, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7906357
@@ -6843,6 +7162,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5182812625397186719}
     m_Modifications:
+    - target: {fileID: 559187327011913354, guid: 00aa21b64df9bae4baf0230eb7bf685c, type: 3}
+      propertyPath: paintHolders.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 559187327011913354, guid: 00aa21b64df9bae4baf0230eb7bf685c, type: 3}
+      propertyPath: 'paintHolders.Array.data[0]'
+      value: 
+      objectReference: {fileID: 3071670395323277807}
+    - target: {fileID: 559187327011913354, guid: 00aa21b64df9bae4baf0230eb7bf685c, type: 3}
+      propertyPath: 'paintHolders.Array.data[1]'
+      value: 
+      objectReference: {fileID: 4745802006621360733}
+    - target: {fileID: 559187327011913354, guid: 00aa21b64df9bae4baf0230eb7bf685c, type: 3}
+      propertyPath: 'paintHolders.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1326811742443598178}
     - target: {fileID: 5650722262310992466, guid: 00aa21b64df9bae4baf0230eb7bf685c, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7906357
