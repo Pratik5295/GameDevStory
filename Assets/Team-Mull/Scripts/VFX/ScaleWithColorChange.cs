@@ -40,12 +40,10 @@ namespace DevStory.VFX
         //Pointer handlers
         public override void OnPointerEnter(PointerEventData eventData)
         {
-            //base.OnPointerEnter(eventData);
         }
 
         public override void OnPointerExit(PointerEventData eventData)
         {
-            // base.OnPointerExit(eventData);
         }
     }
 }
