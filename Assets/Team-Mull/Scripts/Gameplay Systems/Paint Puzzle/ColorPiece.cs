@@ -35,9 +35,10 @@ namespace DevStory.Gameplay.Puzzles
         public void OnPaintColorSelected()
         {
             //Fire which color has been picked
-            Debug.Log($"New picked color: {Paint.ToString()}");
-
-            Palette.SetGlowColor(Paint);
+            if (Palette)
+            {
+                Palette.SetGlowColor(Paint);
+            }
         }
     }
 }

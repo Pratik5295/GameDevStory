@@ -13,6 +13,8 @@ namespace DevStory.Gameplay.Puzzles
 
         public void SetGlowColor(PuzzlePaint _paint)
         {
+            if (glowImage == null) return;
+
             glowImage.SetNewColor(_paint);
         }
     }
