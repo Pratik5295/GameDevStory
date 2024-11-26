@@ -308,6 +308,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb0b2accbe3a52c4ebc9945cf69f5c38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &53524248 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 987112207253619543, guid: 0c35c60818fd9a74f9ebd070546b9658, type: 3}
+  m_PrefabInstance: {fileID: 53524245}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ee41a7605942d34987d5dc901d159d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &149980106
 GameObject:
   m_ObjectHideFlags: 0
@@ -5108,6 +5119,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9124455556287665393, guid: b9fa0e925d4e0bb448875cec98dd8b97, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 104.73779
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 270302435318690919, guid: b9fa0e925d4e0bb448875cec98dd8b97, type: 3}
@@ -5539,6 +5554,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 756992801}
     m_Modifications:
+    - target: {fileID: 2519939769115884824, guid: b83f889357055c448af1fe6d119e30d1, type: 3}
+      propertyPath: glowImage
+      value: 
+      objectReference: {fileID: 53524248}
     - target: {fileID: 3801893165306182071, guid: b83f889357055c448af1fe6d119e30d1, type: 3}
       propertyPath: m_Name
       value: Paint-Palette
