@@ -100,6 +100,22 @@ PrefabInstance:
       propertyPath: frequency
       value: 2.3
       objectReference: {fileID: 0}
+    - target: {fileID: 7051004259073641943, guid: 11272d798ae48344d9677ff6a1880993, type: 3}
+      propertyPath: waveLength
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 7051004259073641943, guid: 11272d798ae48344d9677ff6a1880993, type: 3}
+      propertyPath: isReference
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7051004259073641943, guid: 11272d798ae48344d9677ff6a1880993, type: 3}
+      propertyPath: lastPosition.x
+      value: 29.30234
+      objectReference: {fileID: 0}
+    - target: {fileID: 7051004259073641943, guid: 11272d798ae48344d9677ff6a1880993, type: 3}
+      propertyPath: lastPosition.y
+      value: 2.8815908
+      objectReference: {fileID: 0}
     - target: {fileID: 8753439099479835004, guid: 11272d798ae48344d9677ff6a1880993, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
