@@ -1,10 +1,15 @@
 using UnityEngine;
+using UnityEngine.UI;
 using static MetaConstants.EnumManager.EnumManager;
+using static UnityEngine.Rendering.DebugUI;
 
 namespace DevStory.Gameplay.AudioPuzzle
 {
     public class UIAudioSlider : MonoBehaviour
     {
+        [SerializeField]
+        private Slider Slider;
+
         //Type of measurement to update on
         [SerializeField]
         private AudioMeasurements type;
@@ -31,6 +36,14 @@ namespace DevStory.Gameplay.AudioPuzzle
             var value = (_amount / 100) * valueMuliplier;
 
             gameWave.OnUpdateMeasurement(type, value);
+        }
+
+        public void ResetSlider()
+        {
+            Slider.value = 0;
+
+            if (gameWave == null) return;
+            gameWave.OnUpdateMeasurement(type, 0);
         }
 
 

@@ -35,5 +35,15 @@ namespace DevStory.UI
                 slider.SetGameWave(_wave);
             }
         }
+
+        public override void Close()
+        {
+            foreach(UIAudioSlider slider in measurementSliders)
+            {
+                slider.ResetSlider();
+            }
+
+            base.Close();
+        }
     }
 }

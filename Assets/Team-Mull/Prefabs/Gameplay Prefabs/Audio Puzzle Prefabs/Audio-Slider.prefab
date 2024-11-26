@@ -324,6 +324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0134a621871b98d4c9bde1056a1f2184, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Slider: {fileID: 1606459509240144388}
   type: 0
   gameWave: {fileID: 0}
   valueMuliplier: 5
