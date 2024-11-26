@@ -29,7 +29,8 @@ namespace DevStory.Utility
                 case PuzzlePaint.ORANGE:
                     return GetColorFromHex("#ffA500");
 
-
+                case PuzzlePaint.PURPLE:
+                    return GetColorFromHex("#800080");
                     
                 default:
                     return Color.black;

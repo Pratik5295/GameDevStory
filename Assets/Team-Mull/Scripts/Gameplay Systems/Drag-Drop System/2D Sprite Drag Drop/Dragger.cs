@@ -3,6 +3,7 @@ using DevStory.Managers;
 using DevStory.Utility;
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace DevStory.Gameplay.DragDrop
 {
@@ -27,6 +28,8 @@ namespace DevStory.Gameplay.DragDrop
         public Action OnElementPickedEvent;
         public Action OnElementDroppedEvent;
 
+        public UnityEvent OnElementPickedAction;
+
         private void Start()
         {
             mainCamera = Camera.main;
@@ -44,6 +47,9 @@ namespace DevStory.Gameplay.DragDrop
 
             PointManager.Instance.SelectSprite(this);
             OnElementPickedEvent?.Invoke();
+
+            //Element picked action fired
+            OnElementPickedAction?.Invoke();
         }
 
         private void OnMouseDrag()

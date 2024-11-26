@@ -118,7 +118,8 @@ namespace MetaConstants.EnumManager
             YELLOW = 2,
             GREEN = 3,
             BLUE = 4,
-            ORANGE = 5
+            ORANGE = 5,
+            PURPLE = 6
         }
 
         /// <summary>

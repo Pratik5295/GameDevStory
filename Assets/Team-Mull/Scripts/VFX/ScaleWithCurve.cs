@@ -12,16 +12,16 @@ namespace DevStory.VFX
         [SerializeField]
         private float scaleAmount;
 
-        private Vector3 targetScale;
+        protected Vector3 targetScale;
         private Vector3 originalScale;
 
         [SerializeField]
         private AnimationCurve curve;
 
         [SerializeField]
-        private float duration;
+        protected float duration;
 
-        private Tween scaleTween;
+        protected Tween scaleTween;
 
 
         private void Start()
