@@ -221,5 +221,25 @@ namespace DevStory.Managers
             //Reset current task to null
             ResetCurrentTask();
         }
+
+        public int GetCountFromPriority(TaskPriority taskPriority)
+        {
+            switch (taskPriority)
+            {
+                case TaskPriority.DEFAULT:
+                    return 1;
+
+                case TaskPriority.LOW:
+                    return 1;
+
+                case TaskPriority.MEDIUM:
+                    return 2;
+
+                case TaskPriority.HIGH:
+                    return 3;
+            }
+
+            return 1;
+        }
     }
 }
