@@ -43,7 +43,7 @@ namespace DevStory.TaskSystem
             taskTitle.text = taskData.TaskName;
 
             //Get how many to show based on priority
-            int indicatorsToShow = GetCountFromPriority(taskData.Priority);
+            int indicatorsToShow = TaskManager.Instance.GetCountFromPriority(taskData.Priority);
 
             ShowIndicators(indicatorsToShow);
         }
@@ -70,24 +70,6 @@ namespace DevStory.TaskSystem
             }
         }
 
-        private int GetCountFromPriority(TaskPriority taskPriority)
-        {
-            switch (taskPriority)
-            {
-                case TaskPriority.DEFAULT:
-                    return 1;
-
-                case TaskPriority.LOW:
-                    return 1;
-
-                case TaskPriority.MEDIUM:
-                    return 2;
-
-                case TaskPriority.HIGH:
-                    return 3;
-            }
-
-            return 1;
-        }
+       
     }
 }
