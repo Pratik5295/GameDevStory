@@ -41,16 +41,16 @@ namespace DevStory.Gameplay.AudioPuzzle
         void Update()
         {
             //Do not spam update if its a reference wave
-            if (isReference)
-            {
-                timeOffset += Time.deltaTime;
-            }
-            else
-            {
-                timeOffset = 0f;
-            }
+            //if (isReference)
+            //{
+            //    timeOffset += Time.deltaTime;
+            //}
+            //else
+            //{
+            //    timeOffset = 0f;
+            //}
 
-            startPosition.x += waveSpeed * Time.deltaTime;
+            //startPosition.x += waveSpeed * Time.deltaTime;
 
             DrawSineWave();
         }
@@ -62,17 +62,17 @@ namespace DevStory.Gameplay.AudioPuzzle
                 float x = startPosition.x + i * waveLength / pointsCount;
                 float y = startPosition.y + amplitude * Mathf.Sin(frequency * x);
 
-                if (isReference)
-                {
-                    if(x - timeOffset < startPosition.x)
-                    {
-                        x = lastPosition.x - timeOffset;
-                    }
-                    else
-                    {
-                        x -= timeOffset;
-                    }
-                }
+                //if (isReference)
+                //{
+                //    if(x - timeOffset < startPosition.x)
+                //    {
+                //        x = lastPosition.x - timeOffset;
+                //    }
+                //    else
+                //    {
+                //        x -= timeOffset;
+                //    }
+                //}
 
                 lineRenderer.SetPosition(i, new Vector3(x, y, 0));
             }
