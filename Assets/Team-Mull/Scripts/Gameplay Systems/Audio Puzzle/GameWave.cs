@@ -15,6 +15,7 @@ namespace DevStory.Gameplay.AudioPuzzle
         private LineRenderer lineRenderer;
 
         [SerializeField] private Vector3 startPosition;
+        [SerializeField] private Vector3 lastPosition;
 
         public float Amplitude => amplitude;
         public float Frequency => frequency;
@@ -22,6 +23,10 @@ namespace DevStory.Gameplay.AudioPuzzle
         [SerializeField]
         [Tooltip("Check this if its going to be an answer/reference wave")]
         private bool isReference = false;
+
+        private float timeOffset;
+
+        private float waveSpeed = 1f;
 
         void Start()
         {
@@ -36,8 +41,16 @@ namespace DevStory.Gameplay.AudioPuzzle
         void Update()
         {
             //Do not spam update if its a reference wave
-            if (isReference) return;
+            //if (isReference)
+            //{
+            //    timeOffset += Time.deltaTime;
+            //}
+            //else
+            //{
+            //    timeOffset = 0f;
+            //}
 
+            //startPosition.x += waveSpeed * Time.deltaTime;
 
             DrawSineWave();
         }
@@ -48,6 +61,19 @@ namespace DevStory.Gameplay.AudioPuzzle
             {
                 float x = startPosition.x + i * waveLength / pointsCount;
                 float y = startPosition.y + amplitude * Mathf.Sin(frequency * x);
+
+                //if (isReference)
+                //{
+                //    if(x - timeOffset < startPosition.x)
+                //    {
+                //        x = lastPosition.x - timeOffset;
+                //    }
+                //    else
+                //    {
+                //        x -= timeOffset;
+                //    }
+                //}
+
                 lineRenderer.SetPosition(i, new Vector3(x, y, 0));
             }
         }
