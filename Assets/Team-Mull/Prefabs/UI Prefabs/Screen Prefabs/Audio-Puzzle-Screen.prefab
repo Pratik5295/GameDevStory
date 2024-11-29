@@ -668,6 +668,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1606459509240144388, guid: a6751a6d3095d804a9bb91b93555cd33, type: 3}
+      propertyPath: m_MaxValue
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 2253723272202210586, guid: a6751a6d3095d804a9bb91b93555cd33, type: 3}
       propertyPath: m_Name
       value: Audio-Slider (1)
