@@ -15,4 +15,4 @@ MonoBehaviour:
   Data:
     CharacterName: You
     CharacterDesignation: Intern
-    CharacterSprite: {fileID: 21300000, guid: 8280f02f808fefd43a80fcb4032ca146, type: 3}
+    CharacterSprite: {fileID: 21300000, guid: 305048d66aa2dba4cb57db1af7cc264d, type: 3}
