@@ -498,6 +498,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 4d69b02d5d51e2740b5173339016f8b5, type: 3}
     - target: {fileID: 2095162879320993467, guid: e75355f049762b8488abf47d361e6097, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2095162879320993467, guid: e75355f049762b8488abf47d361e6097, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -511,7 +515,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2095162879320993467, guid: e75355f049762b8488abf47d361e6097, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4085583532651368651, guid: e75355f049762b8488abf47d361e6097, type: 3}
       propertyPath: m_Name
@@ -519,12 +523,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4143978177117471369, guid: e75355f049762b8488abf47d361e6097, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4143978177117471369, guid: e75355f049762b8488abf47d361e6097, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 9175798290821926132}
+      objectReference: {fileID: 2135859952039330546}
+    - target: {fileID: 4143978177117471369, guid: e75355f049762b8488abf47d361e6097, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnTaskBarButtonClicked
+      objectReference: {fileID: 0}
+    - target: {fileID: 4143978177117471369, guid: e75355f049762b8488abf47d361e6097, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DevStory.UI.TaskBar.UITaskBarButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4143978177117471369, guid: e75355f049762b8488abf47d361e6097, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5298766984468528869, guid: e75355f049762b8488abf47d361e6097, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -630,6 +646,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e75355f049762b8488abf47d361e6097, type: 3}
+--- !u!114 &2135859952039330546 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4098773726420853401, guid: e75355f049762b8488abf47d361e6097, type: 3}
+  m_PrefabInstance: {fileID: 2685796515968802923}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0f4299c6c21bbb4b9dff6ccaf6159b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &7839884920017985166 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5298766984468528869, guid: e75355f049762b8488abf47d361e6097, type: 3}
