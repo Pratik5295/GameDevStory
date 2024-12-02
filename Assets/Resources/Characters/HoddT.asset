@@ -15,4 +15,4 @@ MonoBehaviour:
   Data:
     CharacterName: Sam Lumen
     CharacterDesignation: Team Lead
-    CharacterSprite: {fileID: 21300000, guid: 1c26d760bfe945d42a077a2e86c47a4d, type: 3}
+    CharacterSprite: {fileID: 21300000, guid: 0ee2c3e9bcb8cac42adf6b30ce668dbe, type: 3}
