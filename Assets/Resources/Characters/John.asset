@@ -15,4 +15,4 @@ MonoBehaviour:
   Data:
     CharacterName: 'John '
     CharacterDesignation: Co-worker
-    CharacterSprite: {fileID: 21300000, guid: 9c8861656facd5c4290aa49137cf09d3, type: 3}
+    CharacterSprite: {fileID: 21300000, guid: 8b8c2d5dec7dd8c4b877f1c66dba730d, type: 3}

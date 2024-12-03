@@ -15,7 +15,10 @@ MonoBehaviour:
   Speaker: {fileID: 11400000, guid: 9b4bc280e35f22047a20bfbac949165a, type: 2}
   Message: "You won! \r\n\r\nYou have been selected for a lucky game drop with great
     benefits that will make you the best player! Grab it now! "
-  Options: []
-  Type: 1
+  Options:
+  - optionMessage: Grab it now!
+    nextMessageIndex: 0
+  Type: 2
   hasTask: 0
   nextIndex: 0
+  skipTime: 0

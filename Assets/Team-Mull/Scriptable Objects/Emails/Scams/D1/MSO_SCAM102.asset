@@ -17,7 +17,10 @@ MonoBehaviour:
     serum! For a \u201Clow\u201D price, you\u2019ll receive a vial that guarantees
     to add an extra spring to your step. Why spend eternity moving slowly?\n\r\nJust
     click the link below to place your order. No refund policy applies.\r\n"
-  Options: []
-  Type: 1
+  Options:
+  - optionMessage: Be Free
+    nextMessageIndex: 0
+  Type: 2
   hasTask: 0
   nextIndex: 0
+  skipTime: 0
