@@ -2,8 +2,6 @@ using DevStory.Managers;
 using System;
 using System.Collections.Generic;
 using TMPro;
-using UnityEditor.U2D.Aseprite;
-using UnityEditorInternal;
 using UnityEngine;
 using static MetaConstants.EnumManager.EnumManager;
 
