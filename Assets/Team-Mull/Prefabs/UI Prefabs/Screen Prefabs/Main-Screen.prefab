@@ -240,6 +240,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6630835094230705258}
     m_Modifications:
+    - target: {fileID: 361434387544336257, guid: 338ab8b15c313cf41afedfefd8a0ef24, type: 3}
+      propertyPath: m_text
+      value: Recycle Bin
+      objectReference: {fileID: 0}
     - target: {fileID: 3609554992721929378, guid: 338ab8b15c313cf41afedfefd8a0ef24, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -324,6 +328,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7437426512128379739, guid: 338ab8b15c313cf41afedfefd8a0ef24, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -23.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7437426512128379739, guid: 338ab8b15c313cf41afedfefd8a0ef24, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -99.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8894550940908267816, guid: 338ab8b15c313cf41afedfefd8a0ef24, type: 3}
       propertyPath: m_Name
       value: Icon-Recycle-Bin
@@ -346,6 +358,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6630835094230705258}
     m_Modifications:
+    - target: {fileID: 361434387544336257, guid: 338ab8b15c313cf41afedfefd8a0ef24, type: 3}
+      propertyPath: m_text
+      value: Internet
+      objectReference: {fileID: 0}
     - target: {fileID: 3609554992721929378, guid: 338ab8b15c313cf41afedfefd8a0ef24, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -429,6 +445,14 @@ PrefabInstance:
     - target: {fileID: 4344093130844318246, guid: 338ab8b15c313cf41afedfefd8a0ef24, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7437426512128379739, guid: 338ab8b15c313cf41afedfefd8a0ef24, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 15.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7437426512128379739, guid: 338ab8b15c313cf41afedfefd8a0ef24, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -90.3
       objectReference: {fileID: 0}
     - target: {fileID: 8894550940908267816, guid: 338ab8b15c313cf41afedfefd8a0ef24, type: 3}
       propertyPath: m_Name
